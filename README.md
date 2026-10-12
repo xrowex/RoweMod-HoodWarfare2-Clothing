@@ -2,20 +2,18 @@
 
 Download **RoweMod Studio for Windows** and curated, editable clothes for **Hood Warfare 2**, the first supported game. Studio guides you through fitting, texturing, importing and building your own clothing. You do not need Codex.
 
-[Download Studio 0.2.64](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.64/RoweMod-Studio-0.2.64-Windows.zip) · [RoweMods Studio page](https://rowemods.com/studio) · [All releases](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases)
+[Download Studio 0.2.65](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.65/RoweMod-Studio-0.2.65-Windows.zip) · [RoweMods Studio page](https://rowemods.com/studio) · [All releases](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases)
 
 See [setup recovery and support](STUDIO-FIRST-RUN.md) and [dependency status](DEPENDENCY-STATUS.md). This beta still needs independent fresh-PC gameplay acceptance.
 
 ## Start here
 
-1. Install **Hood Warfare 2** through [Steam](https://store.steampowered.com/app/5155360/), [Blender 5.x](https://www.blender.org/download/) and **Unreal Engine 5.8** through [Epic's launcher](https://www.unrealengine.com/download). These are external tools; the ZIP does not include the game or Unreal Engine. Blender 5.1 is the verified authoring version.
-2. Extract the whole Studio ZIP into a writable folder and open **RoweMod Studio.cmd**. Keep its `app`, `tools` and `docs` folders together. The .NET runtime is included.
-3. Open **Settings**, review the setup checklist and choose any tools Studio did not find. Choose **Read game assets** and capture mappings if requested, with the game closed before capture. Stay at the main menu during that temporary launch and close it when finished. Studio reads your installed game's selected starter when you create your first character.
-4. Choose **Create character → DeShawn**, keep his classic body and name your character. For the first download test, use this character rather than a reshaped body such as Aqua.
-5. Choose **Downloads → ROWE Pants → Download & add to character**, then select your new wearer.
-6. Close the game and choose **Build and Play**. Select your separate custom character in the game, check both teams, and test movement, aiming, reload and firing in third person. Restart once to check persistence.
+1. Extract the complete Studio ZIP into a writable folder and open **RoweMod Studio.cmd**.
+2. Click **Set up automatically** in the first-run checklist. Studio finds your tools, opens missing official installers and handles game mappings and cooker setup. Complete vendor prompts and install Unreal **5.8** in Epic when asked, then return to Studio.
+3. Choose **Start creating → DeShawn**, keep his classic body and name your new character. Studio reads its body, clothes and rig automatically from your installed game.
+4. Choose **Downloads → ROWE Pants → Download & add to character**, then **Build and Play** with the game closed.
 
-If Windows reports missing `VCRUNTIME140` or `MSVCP140`, install the [Microsoft Visual C++ v14 x64 runtime](https://aka.ms/vc14/vc_redist.x64.exe) and restart the app/game. [Microsoft's instructions](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170). This runtime is separate from the optional extension's C++ development tools.
+No Codex or .NET SDK is needed. Manual paths and recovery/report tools are under **Settings → Advanced setup**. Existing matches, artwork and stock characters remain preserved. See [the setup guide](STUDIO-FIRST-RUN.md) and [the friend test](FRIEND-TEST.md).
 
 ## First download: ROWE Pants
 
@@ -33,7 +31,7 @@ To customize the design, use **Textures → Export for Substance / Import textur
 
 Clothing editing does not need MetaHuman data. For character and skin authoring, install **MetaHuman Creator Core Data** for your Unreal 5.8 installation using [Epic's instructions](https://dev.epicgames.com/documentation/metahuman/getting-started-with-metahuman-creator-in-unreal-engine). Epic account sign-in is required.
 
-Studio includes its own **Skin Details extension source**, not a compiled Unreal editor extension. To build it locally, install [Visual Studio 2022 / Build Tools](https://visualstudio.microsoft.com/downloads/) with **Desktop development with C++**, MSVC x64 tools and a Windows SDK. Save and close Unreal Editor, then choose **Settings → Build Skin Details extension**. Studio checks that the result matches your exact editor build.
+Studio includes its own **Skin Details extension source**, not a compiled Unreal editor extension. To build it locally, install [Visual Studio 2022 / Build Tools](https://visualstudio.microsoft.com/downloads/) with **Desktop development with C++**, MSVC x64 tools and a Windows SDK. Save and close Unreal Editor, then choose **Settings → Run setup wizard → Character editing (optional) → Prepare character editing**. Studio checks that the result matches your exact editor build.
 
 For an existing linked MetaHuman character, use **Open in MetaHuman Creator**, author tattoos/scars in **Skin Details**, choose **Send to RoweMod**, then **Import skin details** in Studio. Skin-map import does not automatically prepare new face/body geometry or hairstyles for the game.
 

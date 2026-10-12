@@ -1,5 +1,23 @@
 # Releases
 
+# RoweMod Studio 0.2.65 beta
+
+Open Studio and click **Set up automatically**. The first-run popup shows four simple checks: game, Blender, Unreal and game setup. Manual paths and the legacy asset exporter stay under Advanced.
+
+- Finds installed tools and saves their locations; helps install missing tools from official vendors.
+- Opens Steam/Epic one step at a time, then rechecks when you return. Epic sign-in and Unreal 5.8 installation use Epic's normal screens.
+- Prepares the isolated cooker and captures mappings in the background of the guided flow. It closes only a capture game it can prove it launched; existing matches and loaders are preserved.
+- Resumes interrupted setup on next launch and provides progress, cancellation and receipt-checked recovery.
+- **Start creating** reads the selected starter's body, clothes and rig automatically; there is no separate exporter step.
+- Optional character-editing setup covers MetaHuman data, C++ tools and locally preparing Skin Details.
+
+Extract the entire ZIP, then open **RoweMod Studio.cmd**. After setup, create **DeShawn**, choose **Downloads → ROWE Pants → Download & add to character**, and **Build and Play**. See STUDIO-FIRST-RUN.md and FRIEND-TEST.md.
+
+Verified against the released DLL: 127 isolated UI checks, 24 automatic setup checks, 43 setup/recovery checks and 32 installer/download checks. The actual package marker and helper distribution drive the first-run checks. Windows validated the real Microsoft runtime download, installed vendor signatures and Windows Installer catalog signature without executing an installer. Process-ownership fixtures also passed; no actual fresh game capture was run for this update.
+
+Fresh-PC setup-to-match, vendor installation acceptance and two-PC multiplayer remain unverified. The preceding 0.2.64 binary completed a real isolated clothing cook; that result does not claim fresh-PC gameplay for 0.2.65. New MetaHuman geometry/hair still needs game preparation. Game/engine/data and proprietary decoder payloads are not bundled. Five pinned ImageSharp advisories remain documented in DEPENDENCY-STATUS.md. Previous releases remain available.
+
+
 # RoweMod Studio 0.2.64 beta
 
 Fresh setup now checks the supported game build before authoring and offers **Finish mapping recovery** for Studio's own unchanged temporary capture loader after the game closes. Existing or modified loaders are preserved.

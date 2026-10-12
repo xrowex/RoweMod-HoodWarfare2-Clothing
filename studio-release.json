@@ -1,14 +1,14 @@
 {
   "SchemaVersion": 1,
-  "Version": "0.2.64",
+  "Version": "0.2.65",
   "Channel": "beta",
   "Platform": "windows-x64",
-  "File": "RoweMod-Studio-0.2.64-Windows.zip",
-  "Bytes": 78352074,
-  "Sha256": "97F3306F1AAE344664D527A5704521C2859B7DF83188114969F72984E25E7AB4",
-  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.64/RoweMod-Studio-0.2.64-Windows.zip",
-  "AssemblySha256": "EFD5DF5DDEE8F630EBE29D285ACFBE7DF14B7A21E17452A32A0CBD8CA95DE05B",
+  "File": "RoweMod-Studio-0.2.65-Windows.zip",
+  "Bytes": 78389334,
+  "Sha256": "15C545AC9CBA108990142C631326C4F366C6BFC00E3B9EFEFF9FDEA53DE7271D",
+  "AssemblySha256": "A5D7892C99A34AA1CDCDB1950284F7C152B119E74589399FE21736D9DD5DD320",
   "SelfContained": true,
+  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.65/RoweMod-Studio-0.2.65-Windows.zip",
   "Required": [
     "Hood Warfare 2 approved Steam build 25888787",
     "Blender 5.x",
@@ -17,21 +17,26 @@
   ],
   "Optional": [
     "MetaHuman Creator Core Data and Epic sign-in",
-    "Visual Studio 2022 C++ tools and Windows SDK for Skin Details local build",
+    "C++ development tools and Windows SDK for local Skin Details build",
     "Substance Painter"
   ],
+  "Setup": "First-run automatic checklist; official vendor confirmations and Epic engine installation remain in vendor windows.",
   "ClothingCatalog": "https://raw.githubusercontent.com/xrowex/RoweMod-HoodWarfare2-Clothing/main/catalog.json",
   "Validation": {
-    "UiChecks": 67,
-    "PackagedFirstRunChecks": 29,
+    "UiChecks": 43,
+    "SetupWizardChecks": 41,
+    "PackagedFirstRunChecks": 43,
+    "AutomaticSetupChecks": 24,
     "SetupRecoveryChecks": 43,
-    "SkinPngChecks": 26,
-    "SkinHandoffChecks": 34,
-    "PortableCookVerified": true,
+    "InstallerChecks": 32,
+    "ProcessOwnershipChecks": 6,
+    "MappingCompletenessChecks": 11,
+    "PriorVersionPortableCook": "0.2.64",
     "FreshMachineGameplay": false,
+    "FreshMappingCapture": false,
     "TwoPcMultiplayer": false,
     "LocalExtensionCompilation": false
   },
-  "DependencyStatus": "ImageSharp 3.1.12 remains pinned with five advisories; PNG handoff input hardened. See DEPENDENCY-STATUS.md.",
-  "Note": "Beta testing release; new MetaHuman heads and hairstyles still require separate game preparation."
+  "DependencyStatus": "ImageSharp 3.1.12 remains pinned with five advisories; bounded static PNG handoff. See DEPENDENCY-STATUS.md.",
+  "Note": "Beta testing release. New MetaHuman heads and hairstyles still require separate game preparation."
 }
