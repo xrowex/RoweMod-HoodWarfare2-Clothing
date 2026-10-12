@@ -8,24 +8,25 @@
       "Id": "rowe-pants",
       "Name": "ROWE Pants",
       "Author": "One",
-      "Version": "0.1.0",
+      "Version": "0.1.1",
       "Game": "Hood Warfare 2",
       "Slot": "Pants",
       "CompatibleBody": "Classic DeShawn",
-      "File": "ROWE-Pants-0.1.0.roweclothes",
-      "Bytes": 18506067,
-      "Sha256": "0A1CAA0D126D7C012CE6D68DC0F6E037D52CE01379081EF6BAF97249CF079818",
-      "PackageFormat": 2,
-      "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/rowe-pants-v0.1.0/ROWE-Pants-0.1.0.roweclothes",
-      "ReleaseUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/tag/rowe-pants-v0.1.0",
+      "File": "ROWE-Pants-0.1.1.roweclothes",
+      "Bytes": 23515250,
+      "Sha256": "6C7C8342336C461F2AFACEFB78440491DC9D09C50F88224386C5A8D881917FCB",
+      "PackageFormat": 3,
+      "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/rowe-pants-v0.1.1/ROWE-Pants-0.1.1.roweclothes",
+      "ReleaseUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/tag/rowe-pants-v0.1.1",
       "Redistribution": "Public sharing permission confirmed by the repository owner on 2026-10-12. Underlying asset rights remain with their respective owners.",
-      "Installation": "My clothes -> matching DeShawn-based character -> Pants -> Share -> Import Pants package -> Build and Play",
+      "Installation": "Create classic DeShawn -> Downloads -> ROWE Pants -> Download & add to character -> Build and Play",
       "Maps": [
         "Base color",
         "DirectX Normal"
       ],
       "UseTeamColor": false,
-      "Validation": "Editable package import verified in isolation. Matching source pants checked in a local game on build 60. Two-PC multiplayer remains untested."
+      "Validation": "Fresh local workspace game export and scoped import verified. Source pants have a local-match checkpoint. Fresh-PC setup-to-match and two-PC multiplayer remain untested.",
+      "MinimumStudioVersion": "0.2.62"
     }
   ]
 }

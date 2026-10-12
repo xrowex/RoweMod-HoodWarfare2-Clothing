@@ -1,0 +1,34 @@
+{
+  "SchemaVersion": 1,
+  "Version": "0.2.62",
+  "Channel": "beta",
+  "Platform": "windows-x64",
+  "File": "RoweMod-Studio-0.2.62-Windows.zip",
+  "Bytes": 78334707,
+  "Sha256": "7889BEADF89F77EEAE52C5333422E8FE6686D0B83A000E070FA65E37E580FFC9",
+  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.62/RoweMod-Studio-0.2.62-Windows.zip",
+  "AssemblySha256": "7D4713C2CB7656E7A5FC373EBE5F8F8377C9D423F1E68AF32ECF512EC17295BE",
+  "SelfContained": true,
+  "Required": [
+    "Hood Warfare 2 supported Steam installation",
+    "Blender 5.x",
+    "Unreal Engine 5.8",
+    "Microsoft Visual C++ v14 x64 runtime"
+  ],
+  "Optional": [
+    "MetaHuman Creator Core Data and Epic sign-in",
+    "Visual Studio 2022 C++ tools and Windows SDK for Skin Details local build",
+    "Substance Painter"
+  ],
+  "ClothingCatalog": "https://raw.githubusercontent.com/xrowex/RoweMod-HoodWarfare2-Clothing/main/catalog.json",
+  "Validation": {
+    "UiChecks": 56,
+    "ClothingPackageChecks": 28,
+    "BodyFitRegressionChecks": 15,
+    "FreshLocalWorkspaceImport": true,
+    "FreshMachineGameplay": false,
+    "TwoPcMultiplayer": false,
+    "LocalExtensionCompilation": false
+  },
+  "Note": "External game/Unreal/Blender and MetaHuman data are installed separately. New MetaHuman heads and hairstyles still require game preparation."
+}
