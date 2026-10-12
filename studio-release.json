@@ -1,13 +1,13 @@
 {
   "SchemaVersion": 1,
-  "Version": "0.2.62",
+  "Version": "0.2.63",
   "Channel": "beta",
   "Platform": "windows-x64",
-  "File": "RoweMod-Studio-0.2.62-Windows.zip",
-  "Bytes": 78334707,
-  "Sha256": "7889BEADF89F77EEAE52C5333422E8FE6686D0B83A000E070FA65E37E580FFC9",
-  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.62/RoweMod-Studio-0.2.62-Windows.zip",
-  "AssemblySha256": "7D4713C2CB7656E7A5FC373EBE5F8F8377C9D423F1E68AF32ECF512EC17295BE",
+  "File": "RoweMod-Studio-0.2.63-Windows.zip",
+  "Bytes": 78334690,
+  "Sha256": "9DA538BF87FA20D855B553E0658B6B52C82514610A3A52CE0F3F5480FE53C3B4",
+  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.63/RoweMod-Studio-0.2.63-Windows.zip",
+  "AssemblySha256": "9429D679662BB0C28F7FA40CEE42042B3DA44ED477555812EFB5EF08396DF426",
   "SelfContained": true,
   "Required": [
     "Hood Warfare 2 supported Steam installation",
@@ -26,6 +26,7 @@
     "ClothingPackageChecks": 28,
     "BodyFitRegressionChecks": 15,
     "FreshLocalWorkspaceImport": true,
+    "PortableCookVerified": true,
     "FreshMachineGameplay": false,
     "TwoPcMultiplayer": false,
     "LocalExtensionCompilation": false

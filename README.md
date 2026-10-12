@@ -2,7 +2,7 @@
 
 Download **RoweMod Studio for Windows** and curated, editable clothes for **Hood Warfare 2**, the first supported game. Studio guides you through fitting, texturing, importing and building your own clothing. You do not need Codex.
 
-[Download Studio 0.2.62](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.62/RoweMod-Studio-0.2.62-Windows.zip) · [RoweMods Studio page](https://rowemods.com/studio) · [All releases](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases)
+[Download Studio 0.2.63](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.63/RoweMod-Studio-0.2.63-Windows.zip) · [RoweMods Studio page](https://rowemods.com/studio) · [All releases](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases)
 
 ## Start here
 
@@ -41,7 +41,7 @@ This is a curated collection. Export an item through Studio's **Share -> Export 
 
 ## Compatibility and verification
 
-ROWE Pants 0.1.1 uses clothing-package **version 3** and requires **Studio 0.2.62 or later** with the supported Hood Warfare 2 game build. Studio still imports version 2 packages. Version 3 checks the same indexed body topology, weights and rest rig while allowing export position rounding of less than 10 micrometres per coordinate. Its `Fit/Body.rowefit` file contains cryptographic compatibility evidence, not a body model or readable coordinates. The package also checks the base clothing and payload hashes. Full body/face/hair models, scripts and cooked game containers are excluded.
+ROWE Pants 0.1.1 uses clothing-package **version 3** and requires **Studio 0.2.63 or later** with the supported Hood Warfare 2 game build. Studio still imports version 2 packages. Version 3 checks the same indexed body topology, weights and rest rig while allowing export position rounding of less than 10 micrometres per coordinate. Its `Fit/Body.rowefit` file contains cryptographic compatibility evidence, not a body model or readable coordinates. The package also checks the base clothing and payload hashes. Full body/face/hair models, scripts and cooked game containers are excluded.
 
 The new package imported into an independently exported local Classic DeShawn recipient while preserving other character parts. The matching source pants were checked in a local match. A fully fresh-PC setup-to-match test, automatic preparation of a brand-new MetaHuman head/body/hair, and two-PC multiplayer remain unverified. Releases are prereleases for wider testing; compatibility checks do not guarantee that any custom garment will avoid clipping in every animation.
 

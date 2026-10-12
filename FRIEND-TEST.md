@@ -19,7 +19,7 @@ The cosmetic loader also needs Microsoft's Visual C++ v14 runtime. Game or Unrea
 
 For the shortest first test, choose **Create character → DeShawn** and keep his classic body. Name the character, then choose **Downloads → ROWE Pants → Download & add to character** and pick that new wearer. Studio checks the package's matching body and rig and changes only Pants. Close the game, choose **Build and Play**, then select your new character in the game. The pants keep their authored orange colors on both teams. A custom body such as Aqua is a different fitting target.
 
-ROWE Pants **0.1.1** is intended for Studio **0.2.62**. The versioned release assets are [Studio for Windows](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.62/RoweMod-Studio-0.2.62-Windows.zip) and [ROWE Pants](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/rowe-pants-v0.1.1/ROWE-Pants-0.1.1.roweclothes). You can also download the garment file manually and use **My clothes → wearer → Pants → Share → Import Pants package**.
+ROWE Pants **0.1.1** is intended for Studio **0.2.63**. The versioned release assets are [Studio for Windows](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.63/RoweMod-Studio-0.2.63-Windows.zip) and [ROWE Pants](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/rowe-pants-v0.1.1/ROWE-Pants-0.1.1.roweclothes). You can also download the garment file manually and use **My clothes → wearer → Pants → Share → Import Pants package**.
 
 To test editing your own mesh next:
 

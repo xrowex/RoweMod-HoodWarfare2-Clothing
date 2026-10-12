@@ -26,7 +26,7 @@
       ],
       "UseTeamColor": false,
       "Validation": "Fresh local workspace game export and scoped import verified. Source pants have a local-match checkpoint. Fresh-PC setup-to-match and two-PC multiplayer remain untested.",
-      "MinimumStudioVersion": "0.2.62"
+      "MinimumStudioVersion": "0.2.63"
     }
   ]
 }
