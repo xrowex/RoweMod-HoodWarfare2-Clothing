@@ -1,5 +1,25 @@
 # Releases
 
+# RoweMod Studio 0.2.64 beta
+
+Fresh setup now checks the supported game build before authoring and offers **Finish mapping recovery** for Studio's own unchanged temporary capture loader after the game closes. Existing or modified loaders are preserved.
+
+- **Choose cooker folder** is available in Settings for missing drives or custom locations.
+- **Copy setup report** provides the Studio version and actionable checks for support.
+- Native helper checks cover their actual x64 C++ runtime imports.
+- The portable first launch opens Settings automatically.
+- MetaHuman skin-map comparisons accept bounded static PNGs and exclude ICC/EXIF metadata while preserving exact RGBA/reset behavior.
+- Release packaging checks binary/version agreement and excludes developer debug paths.
+
+Download and extract the whole ZIP, then open **RoweMod Studio.cmd**. Install your own Hood Warfare 2, Blender 5.x and Unreal 5.8. Follow **Settings → Read game assets**, **Create character → DeShawn**, then **Downloads → ROWE Pants → Download & add to character → Build and Play**. See FRIEND-TEST.md and STUDIO-FIRST-RUN.md.
+
+Verified: 67 isolated UI checks, 43 setup/recovery checks, 26 PNG checks and 34 skin handoff/reset checks against the release binary. The same binary completed Unreal clothing import/cook, rig checks and IoStore validation from a folder containing spaces. These tests did not install the package into the game.
+
+This is an early testing beta: independent fresh-PC gameplay, local Skin Details extension compilation and two-PC multiplayer remain unverified. A new MetaHuman head/body/hair still needs game preparation. External licensed engine/data, proprietary compression decoder, private characters and full body references are not bundled.
+
+Five ImageSharp dependency advisories remain in the pinned CUE conversion dependency. The input repair is not a dependency patch; see DEPENDENCY-STATUS.md for current scope and the supported-upgrade task. Previous 0.2.63 remains available for comparison and recovery.
+
+
 ## Studio 0.2.63 beta
 
 

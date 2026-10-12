@@ -1,16 +1,16 @@
 {
   "SchemaVersion": 1,
-  "Version": "0.2.63",
+  "Version": "0.2.64",
   "Channel": "beta",
   "Platform": "windows-x64",
-  "File": "RoweMod-Studio-0.2.63-Windows.zip",
-  "Bytes": 78334690,
-  "Sha256": "9DA538BF87FA20D855B553E0658B6B52C82514610A3A52CE0F3F5480FE53C3B4",
-  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.63/RoweMod-Studio-0.2.63-Windows.zip",
-  "AssemblySha256": "9429D679662BB0C28F7FA40CEE42042B3DA44ED477555812EFB5EF08396DF426",
+  "File": "RoweMod-Studio-0.2.64-Windows.zip",
+  "Bytes": 78352074,
+  "Sha256": "97F3306F1AAE344664D527A5704521C2859B7DF83188114969F72984E25E7AB4",
+  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.64/RoweMod-Studio-0.2.64-Windows.zip",
+  "AssemblySha256": "EFD5DF5DDEE8F630EBE29D285ACFBE7DF14B7A21E17452A32A0CBD8CA95DE05B",
   "SelfContained": true,
   "Required": [
-    "Hood Warfare 2 supported Steam installation",
+    "Hood Warfare 2 approved Steam build 25888787",
     "Blender 5.x",
     "Unreal Engine 5.8",
     "Microsoft Visual C++ v14 x64 runtime"
@@ -22,14 +22,16 @@
   ],
   "ClothingCatalog": "https://raw.githubusercontent.com/xrowex/RoweMod-HoodWarfare2-Clothing/main/catalog.json",
   "Validation": {
-    "UiChecks": 56,
-    "ClothingPackageChecks": 28,
-    "BodyFitRegressionChecks": 15,
-    "FreshLocalWorkspaceImport": true,
+    "UiChecks": 67,
+    "PackagedFirstRunChecks": 29,
+    "SetupRecoveryChecks": 43,
+    "SkinPngChecks": 26,
+    "SkinHandoffChecks": 34,
     "PortableCookVerified": true,
     "FreshMachineGameplay": false,
     "TwoPcMultiplayer": false,
     "LocalExtensionCompilation": false
   },
-  "Note": "External game/Unreal/Blender and MetaHuman data are installed separately. New MetaHuman heads and hairstyles still require game preparation."
+  "DependencyStatus": "ImageSharp 3.1.12 remains pinned with five advisories; PNG handoff input hardened. See DEPENDENCY-STATUS.md.",
+  "Note": "Beta testing release; new MetaHuman heads and hairstyles still require separate game preparation."
 }
