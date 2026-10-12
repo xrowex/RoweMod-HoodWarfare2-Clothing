@@ -1,0 +1,31 @@
+{
+  "SchemaVersion": 1,
+  "Collection": "RoweMod Studio - Hood Warfare 2 clothing",
+  "Hosting": "GitHub Releases",
+  "PublicationStatus": "Published",
+  "Items": [
+    {
+      "Id": "rowe-pants",
+      "Name": "ROWE Pants",
+      "Author": "One",
+      "Version": "0.1.0",
+      "Game": "Hood Warfare 2",
+      "Slot": "Pants",
+      "CompatibleBody": "Classic DeShawn",
+      "File": "ROWE-Pants-0.1.0.roweclothes",
+      "Bytes": 18506067,
+      "Sha256": "0A1CAA0D126D7C012CE6D68DC0F6E037D52CE01379081EF6BAF97249CF079818",
+      "PackageFormat": 2,
+      "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/rowe-pants-v0.1.0/ROWE-Pants-0.1.0.roweclothes",
+      "ReleaseUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/tag/rowe-pants-v0.1.0",
+      "Redistribution": "Public sharing permission confirmed by the repository owner on 2026-10-12. Underlying asset rights remain with their respective owners.",
+      "Installation": "My clothes -> matching DeShawn-based character -> Pants -> Share -> Import Pants package -> Build and Play",
+      "Maps": [
+        "Base color",
+        "DirectX Normal"
+      ],
+      "UseTeamColor": false,
+      "Validation": "Editable package import verified in isolation. Matching source pants checked in a local game on build 60. Two-PC multiplayer remains untested."
+    }
+  ]
+}
