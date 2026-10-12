@@ -1,6 +1,6 @@
 # Hood Warfare 2 clothing for RoweMod Studio
 
-Curated, editable clothing downloads for **Hood Warfare 2**. [Browse on RoweMods](https://rowemods.com/hood-warfare-2) or [browse GitHub Releases](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases).
+Curated, editable clothing downloads for **Hood Warfare 2**. [Browse on RoweMods](https://rowemods.com/studio#hood-warfare-2) or [browse GitHub Releases](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases).
 
 ## First download: ROWE Pants
 
