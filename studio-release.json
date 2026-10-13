@@ -1,14 +1,14 @@
 {
   "SchemaVersion": 1,
-  "Version": "0.2.75",
+  "Version": "0.2.76",
   "Channel": "beta",
   "Platform": "windows-x64",
-  "File": "RoweMod-Studio-0.2.75-Windows.zip",
-  "Bytes": 76378394,
-  "Sha256": "670633A613E4B5E886826ECE588D891C293F0106A00DADEDF3823BA433C61C25",
-  "AssemblySha256": "457B0EC956570617A24C37513584268FA27EDA357361EBAFE65F35262786BF58",
+  "File": "RoweMod-Studio-0.2.76-Windows.zip",
+  "Bytes": 76415994,
+  "Sha256": "DEC7A6BF38EAF39054A5219E42B5C982743E7935D9B1D547A860FE0D3CE6D4B3",
+  "AssemblySha256": "5C5B954CAA5CCA66005B64B5C66A51B1053C696F6FBD6E7E30C3997DA612593F",
   "SelfContained": true,
-  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.75/RoweMod-Studio-0.2.75-Windows.zip",
+  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.76/RoweMod-Studio-0.2.76-Windows.zip",
   "Required": [
     "Hood Warfare 2 approved Steam build 25888787",
     "Microsoft Visual C++ v14 x64 runtime for cosmetic loader"
@@ -22,31 +22,30 @@
   "ClothingCatalog": "https://raw.githubusercontent.com/xrowex/RoweMod-HoodWarfare2-Clothing/main/catalog.json",
   "Validation": {
     "Checks": {
+      "guidedUi": 50,
+      "wardrobeUi": 41,
+      "guidedState": 53,
+      "textureRecovery": 20,
       "playerPackages": 70,
-      "optionalMaps": 12,
-      "integration": 60,
-      "workflowUi": 28,
-      "playerWardrobe": 47
+      "optionalMaps": 12
     },
     "ReceiptSha256": {
-      "playerPackages": "808086E3D86243C344568BCB29962C3CC9BCBA3F40E65D40A64A7E17E5EFB149",
-      "optionalMaps": "ED1783135D52A3087767E0A000CC4F7FAD18D028F4F5AF0E79C493DFB96438CC",
-      "integration": "62AF18DE78700F621C1876AB935037720735CD278867B722DBD78527FC0E8077",
-      "workflowUi": "9B513958688D0119C10CFF9DF87FA2E9BAFA46129D32B3535445AEA517058FB4",
-      "playerWardrobe": "997F5EB89E44C08534F3122A8223BF0ABA5974D8CC0217F50B1EEB9DAD052BC7",
-      "retainedCore": "6D51A925D172CD90D31A759C87CA93C37C0FE7720DA2B004F9F7EA7040AE013B",
-      "nativeWardrobe": "89A7A02794803601B88CC2EE29595E006AECC47FFA9EEF928E6F2B24E012B236",
-      "originalRestoration": "2D302CA939F97A5DD66DDC759863E03C416B653D32DA06D5D54A9ECA676FD602"
+      "guidedUi": "D66B01869E8158A8E5D5E3E59E057E9CA8821ACA79D065BD11208E76EFCA9839",
+      "wardrobeUi": "DFD6915B8FBA9D94F6C09C417461FA6BA37C8EEEBC540775A819BC20A22C44D2",
+      "guidedState": "84A24E9A153C85625773D5AEAD6BBD45D2BBE672D67C56C72485C7825D82D0B5",
+      "textureRecovery": "D9C5F227A65DF2E805D16BD9942C3B9982DF827EE628133CDE8501913D332012",
+      "playerPackages": "164EFADC5F655FDBD0B2FC20514EAAB1DA64A70A8E7FF6339F50320759A1898C",
+      "optionalMaps": "0EF1CFA56FB4EFB63E9D0E1210D1CD0D99CAB997F810F6D6D529F792B3AC691B"
     },
-    "RetainedCorePassed": true,
-    "NativeWardrobeAccepted": true,
-    "OriginalModsAndSavesRestored": true,
+    "TotalChecks": 246,
+    "PackageAuditSha256": "2068A286C15BDA2ED25B86EC83106A5478FE7FDC1B5883DEBF67FC2FA248D721",
+    "RuntimeFilesUnchangedFrom75": true,
+    "NativeWardrobeAccepted": false,
+    "PriorNativeWardrobeAcceptedVersion": "0.2.75",
     "IndependentFriendPcAccepted": false,
     "PainterAcceptedThisVersion": false,
     "MultiplayerWardrobeAccepted": false,
-    "ExtendedMovementStressTest": false,
-    "PriorVersion": "0.2.74",
-    "Scope": "Visual supported native UI inspection in this chat: menu stock/ROWE selection, restart retention, real local pawn spawn and brief pose/firing/reload checks. No prolonged movement, respawn, friend-PC, arbitrary body fitting or wardrobe-network acceptance. Exact final assembly UI/package/ownership checks and a narrow actual clothing-cooker Mutable repair are separately verified."
+    "Scope": "Exact final assembly isolated WinForms/state/preservation and package tests. External editor/cooker/game callbacks are mocked in UI fixtures; no new native game or network acceptance. Shipped runtime tools and cooked wardrobe payloads remain byte-identical to0.2.75."
   },
   "DependencyStatus": "ImageSharp 3.1.12 remains pinned with five advisories; bounded static PNG handoff. See DEPENDENCY-STATUS.md.",
   "Note": "Beta testing release. New MetaHuman heads and hairstyles still require separate game preparation.",
@@ -70,12 +69,14 @@
   "Workflow": {
     "Entry": "Browse mods | My mods | Wardrobe | Create | Settings",
     "Player": "Browse mods -> Subscribe -> matching wearer -> Wardrobe -> Play",
-    "Texture": "Create -> Edit textures -> select game item -> Export FBX & textures -> Substance or built-in Paint -> Import texture set -> Build & test",
-    "Clothing": "Create -> Make clothing -> body and rig fitting kit -> fit and weight paint in Blender -> import mesh and textures -> Build & test",
-    "Character": "Create -> Make a character -> MetaHuman Creator -> Send to RoweMod -> import -> prepare for game",
+    "Texture": "Create -> Edit textures -> starter card -> item card -> Export model & textures -> Artwork -> Use saved artwork & continue -> Build & launch game -> Looks good in game",
+    "Clothing": "Create -> Make clothes -> starter card -> clothing slot -> Export fitting kit -> Import finished mesh -> Artwork -> Build & launch game -> Looks good in game",
+    "Character": "Create -> Make a character -> named starter -> Face, hair & skin -> Open in MetaHuman Creator -> Send to RoweMod -> Import skin details -> Build & launch game -> Looks good in game",
     "OutfitStorage": "Independent compatible clothing slots on one wearer. Authored characters can save prepared garments/outfits; classic player profiles retain stock and prepared choices. Local selection persists across restart.",
     "Fitting": "New clothing must be fitted and weighted to the supplied body and game rig; arbitrary bodies are not fitted automatically.",
-    "MissingTextureRecovery": "Same character/item \u2192 Textures \u2192 Import PNG or Import texture set \u2192 select matching PNG. Existing originals stay preserved; only if none survives does the selected PNG become the new starting texture."
+    "MissingTextureRecovery": "Same saved item -> Artwork -> Import PNG or Import texture set -> select matching PNG. Original maps stay preserved; Normal and Mask are optional Advanced controls.",
+    "NextAction": "One primary action per step; validated saved progress resumes. Changed artwork invalidates old build/game confirmation.",
+    "Wardrobe": "Wearer picture -> category -> compatible garment card -> Play with outfit. Wearer heading and Play stay visible while clothing scrolls."
   },
   "CreatorRequired": [
     "Unreal Engine 5.8 for game asset cooking",
