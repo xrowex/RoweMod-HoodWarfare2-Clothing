@@ -27,3 +27,11 @@ Choose **Build and Play** to apply the maps, then check the character in game. E
 If something looks wrong, send the Studio and Painter versions, the item name, and cropped screenshots of Painter's viewport/Texture Set List and Studio's Task details. Do not send passwords or login codes.
 
 Official Adobe references: [Project creation](https://experienceleague.adobe.com/en/docs/substance-3d-painter/using/getting-started/project-creation), [Normal-map painting](https://experienceleague.adobe.com/en/docs/substance-3d-painter/using/painting/advanced-channel-painting/normal-map-painting), [Output templates](https://experienceleague.adobe.com/en/docs/substance-3d-painter/using/export/export-window/output-templates).
+
+## Recover a missing texture in Studio 0.2.74
+
+Open the **same saved character → Clothes → item → Textures**. Use **Import PNG** on the missing slot, or **Import texture set** and choose the matching material and PNG. Select your original export or painted file for that exact slot. Studio copies it into the creation. If no starting texture survives, the chosen PNG becomes the new starting texture; this does not recover a lost file. Existing originals and unselected maps remain preserved.
+
+For ordinary clothing repainting, use Base Color and DirectX Normal. Keep game-specific masks in their original layout; do not substitute ORM. If you did not intend to edit an optional Mask, leave **Use my texture** off for that Mask. Finish with **Build and Play** after all required enabled maps have files.
+
+If files moved, keep the old folder and send the complete missing-path text plus your current Studio version/folder. Do not keep clicking Reset on an unavailable original. Loader-path conflicts and cooker errors require their own exact diagnostics.

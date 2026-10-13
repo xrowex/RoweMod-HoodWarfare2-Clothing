@@ -1,5 +1,16 @@
 # Releases
 
+# RoweMod Studio 0.2.74 beta
+
+When a saved texture file is missing, Studio can now import a user-selected replacement PNG instead of failing while trying to back up the missing file. Use the same saved character and clothing item: **Textures → Import PNG** or **Import texture set**. The recovery explanation appears on both import paths. If a starting texture survives, it stays preserved; otherwise the selected PNG becomes the new starting texture. Other maps and external artwork stay intact.
+
+Reset on a missing source now points to that recovery action before creating any working files. Failed recovery imports retain their staged pixels for recovery, roll back saved pointers and do not adopt an uncommitted reset baseline. Corrupt preserved originals still stop the import. The garment FBX & texture export from 0.2.73 remains available.
+
+143 checks passed against the exact source/package build: 40 missing-texture recovery checks, 20 external-authoring checks including real Blender fixture imports, and 83 workflow/setup-control checks. The import dialog was rendered and inspected. This is file/UI/fixture acceptance, not a new Painter, friend-PC or cook-to-game test. Loader ownership and Unreal cooking diagnostics remain separate support work.
+
+Studio 0.2.70 and newer receive this update automatically when enabled. Close Studio, the game and Unreal to let it apply, then reopen your saved creation. Earlier versions need one manual download. Keep your existing artwork and old folders while repairing missing references.
+
+
 # RoweMod Studio 0.2.73 beta
 
 **Export FBX & textures** now exports only the clothing item you selected. It opens a folder containing the garment FBX under **Mesh**, matching **Base / Mask / Normal** PNGs under **Textures**, and a short **START-HERE-Substance.txt** guide. The FBX embeds the primary textures and preserves the original UVs, game rig and full weights.

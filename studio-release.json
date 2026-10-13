@@ -1,14 +1,14 @@
 {
   "SchemaVersion": 1,
-  "Version": "0.2.73",
+  "Version": "0.2.74",
   "Channel": "beta",
   "Platform": "windows-x64",
-  "File": "RoweMod-Studio-0.2.73-Windows.zip",
-  "Bytes": 78440989,
-  "Sha256": "C41A89FB92DA8454B936B23C5134E9C9F11027909A5936DD29DA62139B9C3D92",
-  "AssemblySha256": "22C6A4C532A424A81298E3C3DAEB0221C45F58CB4EC2FB8776C69A276E98F11F",
+  "File": "RoweMod-Studio-0.2.74-Windows.zip",
+  "Bytes": 78441649,
+  "Sha256": "2023159EB1E3721FCE386D6E440218F46785CAE023C656F3E5954C608F047892",
+  "AssemblySha256": "6267368303FCAF5522A5A76A2327A6F555D7540E07FDC915E785AD829096C53E",
   "SelfContained": true,
-  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.73/RoweMod-Studio-0.2.73-Windows.zip",
+  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.74/RoweMod-Studio-0.2.74-Windows.zip",
   "Required": [
     "Hood Warfare 2 approved Steam build 25888787",
     "Blender 5.x",
@@ -23,187 +23,215 @@
   "Setup": "First-run setup starts automatically. Mapping capture launches the verified shipping game with temporary process-only Steam context, UTF-8 capture configuration and exact loader/path recovery. Complete official vendor prompts when tools are missing.",
   "ClothingCatalog": "https://raw.githubusercontent.com/xrowex/RoweMod-HoodWarfare2-Clothing/main/catalog.json",
   "Validation": {
-    "UiChecks": {
+    "Checks": {
       "workflow": 20,
       "packagedWorkflow": 20,
       "continuation": 21,
-      "packagedContinuation": 22
+      "packagedContinuation": 22,
+      "recovery": 20,
+      "packagedRecovery": 20,
+      "externalAuthoring": 20
     },
-    "ExportChecks": 8,
-    "IndependentFbxRoundTripVerified": true,
-    "ExportProtectedFiles": 39,
-    "PainterUiAccepted": false,
-    "FriendPainterAccepted": false,
-    "FriendSetupAccepted": false,
-    "GameAcceptedThisVersion": false,
     "ReceiptSha256": {
-      "workflow": "9644DEDAC41B1216D9971360584A2FE106A588EB1C4B4B653D349695E84D8BDE",
-      "packagedWorkflow": "7A322875440AB0E7E31DF4D830737A74748FACD1FA93B818EFB0D773BC8BE67F",
-      "continuation": "F64ABEBE1E0AE9D9F6FAEFF65F02349D77EED8DF9E08C0E88DAAC4701453791C",
-      "packagedContinuation": "194369B10CB0C52FC8D77E3D98F38D9CCE4AF0A31DCCD60ABF41222684D669A0",
-      "Export": "DDDFC068EFEDF08D73E919248A9FA5CBB2585F70749DDBD4B26D6EC11C47B2FB"
+      "workflow": "A78035CB3DA2BD40F75F5EA31373008890993C8B63740D44DE2CCDBE060FF0AF",
+      "packagedWorkflow": "621785F5506FE3476534A4A2F3B0A04A154153D9B3B2012814A59A46C7E91A12",
+      "continuation": "52D1B9242B91E5E02952C568956485F668253B024F2C7F45F6B8B2EEEC52C6E3",
+      "packagedContinuation": "FB513910B24725BB0A127A7A6C6519876E19A602310C8A9A7EE3837F2A2CAABD",
+      "recovery": "EB2BA7688B930AEDAD6F1BEE1EFDB52B030838E53408E6416B9601D806DCEB07",
+      "packagedRecovery": "F7C421C237BA6FCC4C007729B9F522C3CE722D705860838C77239A4D61B43875",
+      "externalAuthoring": "07EDF8A078123BE6F822916DF9305A07240CF4E27E33A652393B3EAC5C6D676F"
     },
-    "Scope": "Selected garment export, actual FBX media/UV/rig/full-weight roundtrip, source preservation, UI callback routing and setup continuation. No new Painter UI, friend setup, cook-to-game or multiplayer acceptance.",
+    "MissingTextureRecoveryVerified": true,
+    "FriendAccepted": false,
+    "PainterAcceptedThisVersion": false,
+    "GameAcceptedThisVersion": false,
+    "Scope": "Missing PNG import/reset recovery, preservation, rollback, real Blender fixture authoring, offscreen import guidance and source/package workflow/setup controls. No new game cooking, friend-PC, Painter, vendor or multiplayer acceptance.",
     "PriorVersion": {
-      "Version": "0.2.72",
+      "Version": "0.2.73",
       "Validation": {
         "UiChecks": {
-          "workflow": 18,
+          "workflow": 20,
+          "packagedWorkflow": 20,
           "continuation": 21,
-          "packagedWorkflow": 18,
           "packagedContinuation": 22
         },
-        "NativeWorkflowAccepted": true,
-        "Scope": "Next-step navigation, clothing task routing, compact layout and setup continuation. No new cook/gameplay/vendor-install/multiplayer acceptance claimed.",
+        "ExportChecks": 8,
+        "IndependentFbxRoundTripVerified": true,
+        "ExportProtectedFiles": 39,
+        "PainterUiAccepted": false,
+        "FriendPainterAccepted": false,
+        "FriendSetupAccepted": false,
+        "GameAcceptedThisVersion": false,
+        "ReceiptSha256": {
+          "workflow": "9644DEDAC41B1216D9971360584A2FE106A588EB1C4B4B653D349695E84D8BDE",
+          "packagedWorkflow": "7A322875440AB0E7E31DF4D830737A74748FACD1FA93B818EFB0D773BC8BE67F",
+          "continuation": "F64ABEBE1E0AE9D9F6FAEFF65F02349D77EED8DF9E08C0E88DAAC4701453791C",
+          "packagedContinuation": "194369B10CB0C52FC8D77E3D98F38D9CCE4AF0A31DCCD60ABF41222684D669A0",
+          "Export": "DDDFC068EFEDF08D73E919248A9FA5CBB2585F70749DDBD4B26D6EC11C47B2FB"
+        },
+        "Scope": "Selected garment export, actual FBX media/UV/rig/full-weight roundtrip, source preservation, UI callback routing and setup continuation. No new Painter UI, friend setup, cook-to-game or multiplayer acceptance.",
         "PriorVersion": {
-          "Version": "0.2.71",
+          "Version": "0.2.72",
           "Validation": {
             "UiChecks": {
-              "wizard": 41,
+              "workflow": 18,
               "continuation": 21,
-              "packagedWizard": 43,
+              "packagedWorkflow": 18,
               "packagedContinuation": 22
             },
-            "UpdaterChecks": 67,
-            "MetaHumanGuideChecks": 40,
-            "SkinDetailsCommandChecks": 26,
-            "ShortCompilerChecks": 25,
-            "GuideFixtureFormShownOffscreen": true,
-            "ActualVendorInstallerLaunched": false,
-            "ActualExtensionCompiled": true,
-            "FreshMappingCapture": false,
-            "FreshLocalDownloadedInstall": false,
-            "FreshMachineGameplay": false,
-            "TwoPcMultiplayer": false,
-            "GuideNativeEntryAcceptance": true,
-            "GuideNativeAccepted": true,
-            "NativeGuideAcceptance": {
-              "SettingsEntry": true,
-              "PreflightAtTop": true,
-              "Continue": true,
-              "ActualBuildPlugin": true,
-              "MatchingEditorBuildId": "55116800",
-              "BuildLogSha256": "63CD4772A90820E69FB46DBE1336A2333EE972F3FDCFCFFAA5D3F4850779F0DB",
-              "LocalBuildReceiptSha256": "EB0EDBA383D18BCA82A534EDAF315E4110671FEC0DDBA7F8B0AC00F6ED9FB19E",
-              "Scope": "Neutral local workspace; Unreal 5.8.3, Creator Core Data and C++ tools already installed. Does not verify missing vendor installation or Epic sign-in"
-            },
-            "ActualHelperUpgrade": {
-              "Passed": true,
-              "PreviousVersion": "0.2.70",
-              "CurrentVersion": "0.2.71",
-              "Checks": 6,
-              "ProtectedFiles": 13,
-              "NormalGuiRestartObserved": true,
-              "NetworkDuringStaging": "Mocked publisher transport serving exact final ZIP",
-              "LiveNetworkVerified": false
-            },
-            "UserGuideSha256": "A466A6007BCF6AC15DCD4351050C833CE94C6AE3E01065F09ED7E4A049CAE936",
-            "ReceiptSha256": {
-              "MetaHumanGuide": "3556C9BFBBB9EF54E76CD3653FF786FBD3C1272C00342D2F8E4E70068DDDCC79",
-              "Updater": "94881E2A4D70A8D36188F83EF260741A688C1B46B98450FE631C180F840B1EB6",
-              "SkinDetailsCommand": "E045B68EFBC6E5B089A6C16E6C6FC8C626EF43226EF3297ACDA8999252158B55",
-              "ShortCompiler": "35DBFCC1552E9CBF947BE3698E0536D507B9750FF35878D01FA3CAD988213B73",
-              "NativeGuide": "9682AAE44A059D8D5FEB2850ADF1F063927A93B11B41C165906FEE9FDB01023E",
-              "RealUpgrade": "5777A7335900946088C6311BB0971D48857447997DE2EA29C1CE5CB918AC06A9",
-              "Ui-wizard": "276D714A69F74A894B72C82CC0DDCE1F0B6761AE9423822FBBE374A0A13767E2",
-              "Ui-continuation": "31CF59464AE53F131BA0675380B132F23D5D8B82A42230D83E9B773DC888321E",
-              "Ui-packagedWizard": "8D504BA7165FC5E731BA028B57A377F6799BAF4B0528B07952409D8168CFA38C",
-              "Ui-packagedContinuation": "DB6B62FF1B4D4D59FF766400837B8045A428FAE2915E0CFDB03AFDEB63EE8AD9"
-            },
-            "PriorPublicReleaseAcceptance": {
-              "Version": "0.2.70",
-              "ZipSha256": "D2A5007654187C1C0283B181B19AD69AE2D81D99A25C76A4A272670BFB46FD08",
-              "AssemblySha256": "34722CB23A68A8A3E85EB915399AACDFBD3180B765AA035647970F1E6BC5B75A",
+            "NativeWorkflowAccepted": true,
+            "Scope": "Next-step navigation, clothing task routing, compact layout and setup continuation. No new cook/gameplay/vendor-install/multiplayer acceptance claimed.",
+            "PriorVersion": {
+              "Version": "0.2.71",
               "Validation": {
-                "UpdaterChecks": 67,
-                "CreatorTeamTargetChecks": 33,
                 "UiChecks": {
                   "wizard": 41,
                   "continuation": 21,
                   "packagedWizard": 43,
                   "packagedContinuation": 22
                 },
-                "UiAutomaticUpdatesEnabled": false,
-                "CreatorScriptSha256": "282B8D86C1BE195F1B72CF86126FC9BA94AB6D80C22A50B4B8EF53B0206B0666",
-                "CaptureScriptSha256": "07406B438318B82ADD3E38CA8C1A86EF339756C20A0FD921029B09D234F4A01E",
-                "CurrentCandidateReceiptSha256": {
-                  "Updater": "53A17DEF8755E3CAD6D1BA3AF772CF4AAB21F4B740DCC42981EE0B8E3ABEEFB0",
-                  "CreatorTeamTargets": "C39068EAA68A550C6C9EA8376AC237A34E3564905AB0005F3F2A4CC3836C57AB",
-                  "Ui-wizard": "ECAC8CEE139C5858727A12A2A904798FD1089F002D1EB3F849E2F07DE3406953",
-                  "Ui-continuation": "84AE3DE0E01DB3B63480E168D7B39C3F5FCE4EEAD2B73EBCA2F9FBBC9A3CF002",
-                  "Ui-packagedWizard": "1E4A3D989DBA7DEB0EB9538AB23C317A0EE693D4C7F2ACDFC9AC5FC84786090A",
-                  "Ui-packagedContinuation": "26A090699C7D4C1596643C7E3D3652F974EE0895A58C19D44904EA6B9F71DCA9",
-                  "RealUpgrade": "634F0EA5297071459D1A2C07921EFB9A2E43B231D8F0EC44696D70E0807ECFAC",
-                  "UpgradedGui": "AFDD4D60F05130E0F68D4ACBD4E56D2578C430A7FEE79C53C8F528FA2C7086B7",
-                  "CosmeticRuntime": "868E4586EE6B7653251DBB6BBB44A18593587DCEBA22185DBAF339CF8986B336",
-                  "GameRestoration": "927B312AB63A3558D6B8F8CEE663A7FF132902A66DCCBA61B18B88B310470FB6",
-                  "Fresh70Setup": "561C6DD127B21BDC34365E57F46E9BBE0796EA02F4259DE0C1E4F1D0C71E5EA5",
-                  "LiveUpgrade": "6D5B17C8808F3DE6B9D061756B02DCF0E3E6BB62805039147800017E4CF0A97A",
-                  "LiveUpgradedGui": "F3709E6B94FC97BFEC8AC543DEE67EFB1B629E14E2381CF97E5D72F41A90F159"
-                },
-                "FreshMappingCapture": true,
+                "UpdaterChecks": 67,
+                "MetaHumanGuideChecks": 40,
+                "SkinDetailsCommandChecks": 26,
+                "ShortCompilerChecks": 25,
+                "GuideFixtureFormShownOffscreen": true,
+                "ActualVendorInstallerLaunched": false,
+                "ActualExtensionCompiled": true,
+                "FreshMappingCapture": false,
                 "FreshLocalDownloadedInstall": false,
                 "FreshMachineGameplay": false,
                 "TwoPcMultiplayer": false,
+                "GuideNativeEntryAcceptance": true,
+                "GuideNativeAccepted": true,
+                "NativeGuideAcceptance": {
+                  "SettingsEntry": true,
+                  "PreflightAtTop": true,
+                  "Continue": true,
+                  "ActualBuildPlugin": true,
+                  "MatchingEditorBuildId": "55116800",
+                  "BuildLogSha256": "63CD4772A90820E69FB46DBE1336A2333EE972F3FDCFCFFAA5D3F4850779F0DB",
+                  "LocalBuildReceiptSha256": "EB0EDBA383D18BCA82A534EDAF315E4110671FEC0DDBA7F8B0AC00F6ED9FB19E",
+                  "Scope": "Neutral local workspace; Unreal 5.8.3, Creator Core Data and C++ tools already installed. Does not verify missing vendor installation or Epic sign-in"
+                },
                 "ActualHelperUpgrade": {
                   "Passed": true,
-                  "PreviousVersion": "0.2.69",
-                  "CurrentVersion": "0.2.70",
-                  "Checks": 7,
-                  "ProtectedFiles": 61,
+                  "PreviousVersion": "0.2.70",
+                  "CurrentVersion": "0.2.71",
+                  "Checks": 6,
+                  "ProtectedFiles": 13,
                   "NormalGuiRestartObserved": true,
-                  "SavedCharacterPreserved": true,
-                  "NetworkDuringStaging": "Shipped production HTTP transport: live published feed and exact public release ZIP",
-                  "ActualNetworkUsed": true,
-                  "ProductionHttpTransportUsed": true,
-                  "LiveNewReleaseNetworkUpgradeVerified": true
+                  "NetworkDuringStaging": "Mocked publisher transport serving exact final ZIP",
+                  "LiveNetworkVerified": false
                 },
-                "CosmeticRuntimeAcceptance": {
-                  "BothTeams": true,
-                  "SelectionSurvivedRestart": true,
-                  "HumanMatchConfirmation": "Pants and feet stay correct",
-                  "CreatorScriptSha256": "282B8D86C1BE195F1B72CF86126FC9BA94AB6D80C22A50B4B8EF53B0206B0666",
-                  "Scope": "Exact final cosmetic Lua in modified public 0.2.68 workspace, using its fresh-created and cooked character; not untouched full 0.2.70 fresh installation"
+                "UserGuideSha256": "A466A6007BCF6AC15DCD4351050C833CE94C6AE3E01065F09ED7E4A049CAE936",
+                "ReceiptSha256": {
+                  "MetaHumanGuide": "3556C9BFBBB9EF54E76CD3653FF786FBD3C1272C00342D2F8E4E70068DDDCC79",
+                  "Updater": "94881E2A4D70A8D36188F83EF260741A688C1B46B98450FE631C180F840B1EB6",
+                  "SkinDetailsCommand": "E045B68EFBC6E5B089A6C16E6C6FC8C626EF43226EF3297ACDA8999252158B55",
+                  "ShortCompiler": "35DBFCC1552E9CBF947BE3698E0536D507B9750FF35878D01FA3CAD988213B73",
+                  "NativeGuide": "9682AAE44A059D8D5FEB2850ADF1F063927A93B11B41C165906FEE9FDB01023E",
+                  "RealUpgrade": "5777A7335900946088C6311BB0971D48857447997DE2EA29C1CE5CB918AC06A9",
+                  "Ui-wizard": "276D714A69F74A894B72C82CC0DDCE1F0B6761AE9423822FBBE374A0A13767E2",
+                  "Ui-continuation": "31CF59464AE53F131BA0675380B132F23D5D8B82A42230D83E9B773DC888321E",
+                  "Ui-packagedWizard": "8D504BA7165FC5E731BA028B57A377F6799BAF4B0528B07952409D8168CFA38C",
+                  "Ui-packagedContinuation": "DB6B62FF1B4D4D59FF766400837B8045A428FAE2915E0CFDB03AFDEB63EE8AD9"
                 },
-                "LocalExtensionCompilation": false,
-                "PriorPublicDownloadedInstall": {
-                  "Version": "0.2.68",
-                  "ZipSha256": "7A6D9EC98E5A1409B006E42BDEC56218FD0435F0A932372A5783EDC501DEE3E2",
-                  "Scope": "Empty Studio workspace on developer PC with existing vendor tools; actual public download. Does not verify another PC or vendor installation.",
-                  "FreshMappingCapture": true,
-                  "CharacterCreation": true,
-                  "ClothingDownloadImport": true,
-                  "Cooking": true,
-                  "CookedInstallation": true,
-                  "GameplayAccepted": false,
-                  "BothTeamsAccepted": false,
-                  "ReceiptSha256": {
-                    "Setup": "FFC6FCC81CF8214704F26794951DDF19A67E8BAE43FB3E209776D7343E427BBC",
-                    "CreateImport": "0803476063D4868AB89D65F1F30694AEED364221EE50F221D10DC4F8F8DE4144",
-                    "CookInstall": "2B4EF60DE09BE775A0682C2CB61A9929E21EE10E2E6CB7569A53B1C644F00A3B"
+                "PriorPublicReleaseAcceptance": {
+                  "Version": "0.2.70",
+                  "ZipSha256": "D2A5007654187C1C0283B181B19AD69AE2D81D99A25C76A4A272670BFB46FD08",
+                  "AssemblySha256": "34722CB23A68A8A3E85EB915399AACDFBD3180B765AA035647970F1E6BC5B75A",
+                  "Validation": {
+                    "UpdaterChecks": 67,
+                    "CreatorTeamTargetChecks": 33,
+                    "UiChecks": {
+                      "wizard": 41,
+                      "continuation": 21,
+                      "packagedWizard": 43,
+                      "packagedContinuation": 22
+                    },
+                    "UiAutomaticUpdatesEnabled": false,
+                    "CreatorScriptSha256": "282B8D86C1BE195F1B72CF86126FC9BA94AB6D80C22A50B4B8EF53B0206B0666",
+                    "CaptureScriptSha256": "07406B438318B82ADD3E38CA8C1A86EF339756C20A0FD921029B09D234F4A01E",
+                    "CurrentCandidateReceiptSha256": {
+                      "Updater": "53A17DEF8755E3CAD6D1BA3AF772CF4AAB21F4B740DCC42981EE0B8E3ABEEFB0",
+                      "CreatorTeamTargets": "C39068EAA68A550C6C9EA8376AC237A34E3564905AB0005F3F2A4CC3836C57AB",
+                      "Ui-wizard": "ECAC8CEE139C5858727A12A2A904798FD1089F002D1EB3F849E2F07DE3406953",
+                      "Ui-continuation": "84AE3DE0E01DB3B63480E168D7B39C3F5FCE4EEAD2B73EBCA2F9FBBC9A3CF002",
+                      "Ui-packagedWizard": "1E4A3D989DBA7DEB0EB9538AB23C317A0EE693D4C7F2ACDFC9AC5FC84786090A",
+                      "Ui-packagedContinuation": "26A090699C7D4C1596643C7E3D3652F974EE0895A58C19D44904EA6B9F71DCA9",
+                      "RealUpgrade": "634F0EA5297071459D1A2C07921EFB9A2E43B231D8F0EC44696D70E0807ECFAC",
+                      "UpgradedGui": "AFDD4D60F05130E0F68D4ACBD4E56D2578C430A7FEE79C53C8F528FA2C7086B7",
+                      "CosmeticRuntime": "868E4586EE6B7653251DBB6BBB44A18593587DCEBA22185DBAF339CF8986B336",
+                      "GameRestoration": "927B312AB63A3558D6B8F8CEE663A7FF132902A66DCCBA61B18B88B310470FB6",
+                      "Fresh70Setup": "561C6DD127B21BDC34365E57F46E9BBE0796EA02F4259DE0C1E4F1D0C71E5EA5",
+                      "LiveUpgrade": "6D5B17C8808F3DE6B9D061756B02DCF0E3E6BB62805039147800017E4CF0A97A",
+                      "LiveUpgradedGui": "F3709E6B94FC97BFEC8AC543DEE67EFB1B629E14E2381CF97E5D72F41A90F159"
+                    },
+                    "FreshMappingCapture": true,
+                    "FreshLocalDownloadedInstall": false,
+                    "FreshMachineGameplay": false,
+                    "TwoPcMultiplayer": false,
+                    "ActualHelperUpgrade": {
+                      "Passed": true,
+                      "PreviousVersion": "0.2.69",
+                      "CurrentVersion": "0.2.70",
+                      "Checks": 7,
+                      "ProtectedFiles": 61,
+                      "NormalGuiRestartObserved": true,
+                      "SavedCharacterPreserved": true,
+                      "NetworkDuringStaging": "Shipped production HTTP transport: live published feed and exact public release ZIP",
+                      "ActualNetworkUsed": true,
+                      "ProductionHttpTransportUsed": true,
+                      "LiveNewReleaseNetworkUpgradeVerified": true
+                    },
+                    "CosmeticRuntimeAcceptance": {
+                      "BothTeams": true,
+                      "SelectionSurvivedRestart": true,
+                      "HumanMatchConfirmation": "Pants and feet stay correct",
+                      "CreatorScriptSha256": "282B8D86C1BE195F1B72CF86126FC9BA94AB6D80C22A50B4B8EF53B0206B0666",
+                      "Scope": "Exact final cosmetic Lua in modified public 0.2.68 workspace, using its fresh-created and cooked character; not untouched full 0.2.70 fresh installation"
+                    },
+                    "LocalExtensionCompilation": false,
+                    "PriorPublicDownloadedInstall": {
+                      "Version": "0.2.68",
+                      "ZipSha256": "7A6D9EC98E5A1409B006E42BDEC56218FD0435F0A932372A5783EDC501DEE3E2",
+                      "Scope": "Empty Studio workspace on developer PC with existing vendor tools; actual public download. Does not verify another PC or vendor installation.",
+                      "FreshMappingCapture": true,
+                      "CharacterCreation": true,
+                      "ClothingDownloadImport": true,
+                      "Cooking": true,
+                      "CookedInstallation": true,
+                      "GameplayAccepted": false,
+                      "BothTeamsAccepted": false,
+                      "ReceiptSha256": {
+                        "Setup": "FFC6FCC81CF8214704F26794951DDF19A67E8BAE43FB3E209776D7343E427BBC",
+                        "CreateImport": "0803476063D4868AB89D65F1F30694AEED364221EE50F221D10DC4F8F8DE4144",
+                        "CookInstall": "2B4EF60DE09BE775A0682C2CB61A9929E21EE10E2E6CB7569A53B1C644F00A3B"
+                      }
+                    },
+                    "Fresh70SetupCapture": true,
+                    "Fresh70SetupCaptureDetails": {
+                      "Scope": "Actual public 0.2.70 download into an empty Studio workspace on developer PC with existing vendor tools; setup and mapping capture only",
+                      "MappingBytes": 2961938,
+                      "MappingSha256": "DDC4260B62697097919B38E8BABA576AE4887FAFE3F72421F0F8384E8726694B",
+                      "AutomaticCaptureGameClosed": true,
+                      "AutomaticProxyOverrideRestoration": true,
+                      "AutomaticNativeSaveRestoration": false,
+                      "NativeSaveChangesDuringCapture": 2,
+                      "NativeSaveRecovery": "Test coordinator preserved capture-generated versions, then manually restored the two protected originals; not an application feature",
+                      "All33OriginalFilesVerifiedAfterCoordinatorRestoration": true
+                    },
+                    "PriorMockedTransportHelperUpgrade": {
+                      "Passed": true,
+                      "PreviousVersion": "0.2.69",
+                      "CurrentVersion": "0.2.70",
+                      "ProtectedFiles": 532,
+                      "NormalGuiRestartObserved": true,
+                      "SavedCharacterPreserved": true,
+                      "NetworkDuringStaging": "Mocked publisher transport serving actual final release ZIP",
+                      "LiveNewReleaseNetworkUpgradeVerified": false
+                    }
                   }
-                },
-                "Fresh70SetupCapture": true,
-                "Fresh70SetupCaptureDetails": {
-                  "Scope": "Actual public 0.2.70 download into an empty Studio workspace on developer PC with existing vendor tools; setup and mapping capture only",
-                  "MappingBytes": 2961938,
-                  "MappingSha256": "DDC4260B62697097919B38E8BABA576AE4887FAFE3F72421F0F8384E8726694B",
-                  "AutomaticCaptureGameClosed": true,
-                  "AutomaticProxyOverrideRestoration": true,
-                  "AutomaticNativeSaveRestoration": false,
-                  "NativeSaveChangesDuringCapture": 2,
-                  "NativeSaveRecovery": "Test coordinator preserved capture-generated versions, then manually restored the two protected originals; not an application feature",
-                  "All33OriginalFilesVerifiedAfterCoordinatorRestoration": true
-                },
-                "PriorMockedTransportHelperUpgrade": {
-                  "Passed": true,
-                  "PreviousVersion": "0.2.69",
-                  "CurrentVersion": "0.2.70",
-                  "ProtectedFiles": 532,
-                  "NormalGuiRestartObserved": true,
-                  "SavedCharacterPreserved": true,
-                  "NetworkDuringStaging": "Mocked publisher transport serving actual final release ZIP",
-                  "LiveNewReleaseNetworkUpgradeVerified": false
                 }
               }
             }
@@ -238,6 +266,7 @@
     "Finish": "Build and Play",
     "AdvancedCreationOptions": "Collapsed until requested",
     "Substance": "Choose clothes \u2192 garment \u2192 Repaint item \u2192 Export FBX & textures \u2192 Painter \u2192 same garment \u2192 Textures \u2192 Import texture set \u2192 Build and Play",
-    "OutfitStorage": "Edit clothing inside an existing character; duplicate only to keep a second selectable outfit. Independent wardrobe slots are not implemented."
+    "OutfitStorage": "Edit clothing inside an existing character; duplicate only to keep a second selectable outfit. Independent wardrobe slots are not implemented.",
+    "MissingTextureRecovery": "Same character/item \u2192 Textures \u2192 Import PNG or Import texture set \u2192 select matching PNG. Existing originals stay preserved; only if none survives does the selected PNG become the new starting texture."
   }
 }

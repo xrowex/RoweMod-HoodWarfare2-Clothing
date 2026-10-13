@@ -2,7 +2,7 @@
 
 Download **RoweMod Studio for Windows** and curated, editable clothes for **Hood Warfare 2**, the first supported game. Studio guides you through fitting, texturing, importing and building your own clothing. You do not need Codex.
 
-[Download Studio 0.2.73](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.73/RoweMod-Studio-0.2.73-Windows.zip) · [RoweMods Studio page](https://rowemods.com/studio) · [All releases](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases)
+[Download Studio 0.2.74](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.74/RoweMod-Studio-0.2.74-Windows.zip) · [RoweMods Studio page](https://rowemods.com/studio) · [All releases](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases)
 
 See [setup recovery and support](STUDIO-FIRST-RUN.md) and [dependency status](DEPENDENCY-STATUS.md). This beta still needs independent fresh-PC gameplay acceptance.
 
@@ -89,3 +89,11 @@ The final 0.2.71 guide was visibly checked through Settings, the initial review 
 ## Paint an existing clothing item
 
 Use **Choose clothes → choose item → Repaint item → Export FBX & textures**. The folder contains that garment FBX, its Base/Mask/Normal PNGs and a Painter guide. Bring painted Base Color and Normal DirectX PNGs back to the same saved character and clothing item, then **Build and Play**. No new character is needed. [Follow the Substance guide](SUBSTANCE-GUIDE.md).
+
+## Recover a missing texture in Studio 0.2.74
+
+Open the **same saved character → Clothes → item → Textures**. Use **Import PNG** on the missing slot, or **Import texture set** and choose the matching material and PNG. Select your original export or painted file for that exact slot. Studio copies it into the creation. If no starting texture survives, the chosen PNG becomes the new starting texture; this does not recover a lost file. Existing originals and unselected maps remain preserved.
+
+For ordinary clothing repainting, use Base Color and DirectX Normal. Keep game-specific masks in their original layout; do not substitute ORM. If you did not intend to edit an optional Mask, leave **Use my texture** off for that Mask. Finish with **Build and Play** after all required enabled maps have files.
+
+If files moved, keep the old folder and send the complete missing-path text plus your current Studio version/folder. Do not keep clicking Reset on an unavailable original. Loader-path conflicts and cooker errors require their own exact diagnostics.

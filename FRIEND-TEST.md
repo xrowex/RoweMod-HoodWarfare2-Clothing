@@ -70,3 +70,11 @@ Starting outfit and advanced model choices are under **Starting outfit & advance
 ## Paint an existing clothing item
 
 Use **Choose clothes → choose item → Repaint item → Export FBX & textures**. The folder contains that garment FBX, its Base/Mask/Normal PNGs and a Painter guide. Bring painted Base Color and Normal DirectX PNGs back to the same saved character and clothing item, then **Build and Play**. No new character is needed. [Follow the Substance guide](SUBSTANCE-GUIDE.md).
+
+## Recover a missing texture in Studio 0.2.74
+
+Open the **same saved character → Clothes → item → Textures**. Use **Import PNG** on the missing slot, or **Import texture set** and choose the matching material and PNG. Select your original export or painted file for that exact slot. Studio copies it into the creation. If no starting texture survives, the chosen PNG becomes the new starting texture; this does not recover a lost file. Existing originals and unselected maps remain preserved.
+
+For ordinary clothing repainting, use Base Color and DirectX Normal. Keep game-specific masks in their original layout; do not substitute ORM. If you did not intend to edit an optional Mask, leave **Use my texture** off for that Mask. Finish with **Build and Play** after all required enabled maps have files.
+
+If files moved, keep the old folder and send the complete missing-path text plus your current Studio version/folder. Do not keep clicking Reset on an unavailable original. Loader-path conflicts and cooker errors require their own exact diagnostics.
