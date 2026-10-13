@@ -1,99 +1,58 @@
-# Hood Warfare 2 clothing for RoweMod Studio
+# RoweMod Studio — Hood Warfare 2
 
-Download **RoweMod Studio for Windows** and curated, editable clothes for **Hood Warfare 2**, the first supported game. Studio guides you through fitting, texturing, importing and building your own clothing. You do not need Codex.
+Play curated clothing mods, keep clothes on one character, or make your own. **Hood Warfare 2 is the first supported game.** No Codex is needed.
 
-[Download Studio 0.2.74](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.74/RoweMod-Studio-0.2.74-Windows.zip) · [RoweMods Studio page](https://rowemods.com/studio) · [All releases](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases)
+[Download Studio 0.2.75 for Windows](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.75/RoweMod-Studio-0.2.75-Windows.zip) · [Studio website](https://rowemods.com/studio) · [Releases](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases)
 
-See [setup recovery and support](STUDIO-FIRST-RUN.md) and [dependency status](DEPENDENCY-STATUS.md). This beta still needs independent fresh-PC gameplay acceptance.
+## Just want to play?
 
-## Clear next steps in Studio
+1. Extract the complete ZIP into a writable folder and open **RoweMod Studio.cmd**.
+2. Choose **Set up for playing**. Have the game installed in Steam and closed for setup.
+3. Open **Browse mods → ROWE Pants → Subscribe**. Studio downloads the verified ready-to-play item and prepares its matching classic wearer.
+4. Open **Wardrobe**, choose that wearer, then **Play with outfit**. In the game's Player Select screen, select the matching player and open **Wardrobe** to choose compatible prepared or stock clothes.
 
-Open **My characters → Customize → Start here**.
-- Choose **Edit character** for MetaHuman, skin maps and the return/import steps.
-- Choose **Choose clothes**, select the item, then pick **Repaint**, **Make a new mesh**, or **Add a clothing package**. Follow only that path.
-- Finish with **Build and Play** at the top right. Editing files does not install the mod by itself.
+Prepared player downloads need **no Epic Launcher, Unreal, Blender or mapping capture**. Items marked **Creator files available** need creator tools and a build before playing.
 
-Starting outfit and advanced model choices are under **Starting outfit & advanced options** when creating a draft. Your existing characters and artwork stay saved.
+## Your workspace
 
-## Start here
+| Page | Use it for |
+| --- | --- |
+| **Browse mods** | Subscribe to ready-to-play items or get editable creator files. |
+| **My mods** | Find downloads, update subscriptions, equip items or edit creator files. |
+| **Wardrobe** | Dress an existing classic/custom wearer. Authored characters also support **Keep current item** and named **Save outfit** presets. |
+| **Create** | Choose **Edit textures**, **Make clothing** or **Make a character**. |
 
-1. Extract the complete Studio ZIP into a writable folder and open **RoweMod Studio.cmd**.
-2. The checklist opens and starts automatically on first launch or when a required check is incomplete. Studio finds your tools, opens missing official installers and handles game mappings and cooker setup. Complete vendor prompts and install Unreal **5.8** in Epic when asked, then return to Studio.
-3. When setup finishes, create **DeShawn**, keep his classic body and name your new character. Studio reads its body, clothes and rig automatically from your installed game.
-4. Choose **Downloads → ROWE Pants → Download & add to character**, then **Build and Play** with the game closed.
+Changing clothes keeps the same character identity. Wardrobe choices and outfit presets are local. A garment must match the body, native slot and game rig; there is no automatic fitting to another body or verified multiplayer wardrobe synchronization.
 
-No Codex or .NET SDK is needed. Manual paths and recovery/report tools are under **Settings → Advanced setup**. Existing matches, artwork and stock characters remain preserved. See [the setup guide](STUDIO-FIRST-RUN.md) and [the friend test](FRIEND-TEST.md).
+## ROWE Pants
 
-## First download: ROWE Pants
+Custom UVs and artwork by **One**, fitted to classic DeShawn. Release 0.1.2 adds player delivery; the unchanged prepared asset retains its filename `ROWE-Pants-0.1.1.roweplay`.
 
-Custom UVs and artwork by **One**. Fits the **classic DeShawn body and game rig**. Includes the garment FBX, Base color and DirectX Normal PNGs. The authored orange ROWE design keeps its colors on both teams.
+- [Ready-to-play pants](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/clothing-rowe-pants-v0.1.2/ROWE-Pants-0.1.1.roweplay): already cooked for compatible players.
+- [Editable creator files](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/rowe-pants-v0.1.1/ROWE-Pants-0.1.1.roweclothes): garment FBX, Base color, DirectX Normal and fit evidence.
 
-[Download ROWE Pants 0.1.1](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/rowe-pants-v0.1.1/ROWE-Pants-0.1.1.roweclothes)
+The thumbnail renders the actual garment and textures under studio lighting; it is not an in-game screenshot. Aqua and other reshaped bodies require a different fit.
 
-Studio's **Downloads** page handles the download and import for you. For a manually downloaded file, choose **My clothes → your Classic DeShawn character → Pants → Share → Import Pants package** and select the `.roweclothes` file, then **Build and Play**.
+## Create something
 
-Importing creates editable copies; it does not install the mod until Build and Play. A different body or rig requires refitting the garment first. Aqua's custom body is a different fitting target. Check walking, crouching, jumping, aiming and reloading after installing.
+**Edit textures:** **Create → Start texture edit → choose an item → Export FBX & textures**. Paint its existing UVs in Substance, then **Textures → Import texture set → Build & test**. No new character or mesh import is needed. [Substance guide](SUBSTANCE-GUIDE.md).
 
-To customize the design, use **Make clothing → Repaint Pants → Export FBX & textures, then Textures → Import texture set**. To change its shape, use **Make clothing → Get fitting kit**, open its beginner guide, fit and weight the mesh around the supplied body in Blender, then **Import finished Pants mesh**. Keep the matching UVs, weights, material slots and game rig. Import Base Color and **DirectX Normal** PNGs from Substance; the current editable-clothing shader does not consume ORM or Emissive.
+**Make clothing:** **Create → Start clothing mesh → choose a starter → Export body & fitting kit**. Fit and weight your garment around the supplied body in Blender, keep the game rig, then **Import finished mesh**, add the painted maps and **Build & test**. Fitting and full weights remain authoring work.
 
-## Optional MetaHuman editing
+**Make a character:** **Create → Start character**. Use MetaHuman Creator for face, hair and Skin Details, then send/import the edits back to Studio. Changed body/head geometry and hair still need game preparation separately from skin-map import.
 
-Clothing editing does not need MetaHuman data. For character and skin authoring, install **MetaHuman Creator Core Data** for your Unreal 5.8 installation using [Epic's instructions](https://dev.epicgames.com/documentation/metahuman/getting-started-with-metahuman-creator-in-unreal-engine). Epic account sign-in is required.
+Creator setup finds tools, handles mapping capture and guides missing official installations. Matching Unreal **5.8.3** and Blender are creator tools. MetaHuman data and extension build tools are optional for character editing. [First-run guide](STUDIO-FIRST-RUN.md) · [MetaHuman setup](METAHUMAN-SETUP-GUIDE.md).
 
-Studio includes its own **Skin Details extension source**, not a compiled Unreal editor extension. To build it locally, install [Visual Studio 2022 / Build Tools](https://visualstudio.microsoft.com/downloads/) with **Desktop development with C++**, MSVC x64 tools and a Windows SDK. Save and close Unreal Editor, then choose **Settings → Run setup wizard → Character editing (optional) → Prepare character editing**. Studio checks that the result matches your exact editor build.
+## Updates, support and verification
 
-For an existing linked MetaHuman character, use **Open in MetaHuman Creator**, author tattoos/scars in **Skin Details**, choose **Send to RoweMod**, then **Import skin details** in Studio. Skin-map import does not automatically prepare new face/body geometry or hairstyles for the game.
+Studio downloads verified updates in the background. Close Studio, the game and Unreal when ready to let them apply; projects, artwork and settings are retained. Settings provides update controls and setup reports. Subscriptions check for mod updates; equip updated assets with the game closed.
 
-## Publishing more clothing
+Local native wardrobe acceptance is verified on the supported Steam build on the developer PC: Player Select stock/ROWE switching, saved selection after restart, and a DeShawn Crips match with black ROWE pants, orange cuffs and correct feet after spawn, aiming, firing, reloading and brief movement/jump taps. Extended movement stress testing remains outstanding. Exact-assembly package/ownership/rollback and optional-map checks passed; these are separate from gameplay. Independent friend-PC setup-to-match and two-PC multiplayer remain unverified.
 
-This is a curated collection. Export an item through Studio's **Share -> Export package**, then provide the `.roweclothes` file, author name, matching body, screenshots, version and asset-sharing permission to the collection owner. Accepted items are published as GitHub Release assets and listed in `catalog.json`. The website reads this catalog; no public upload service is required.
+Follow [FRIEND-TEST.md](FRIEND-TEST.md). For failures, include the Studio version, exact message and **Settings → Advanced setup → Copy setup report**. Keep existing artwork and old folders while resolving missing references.
 
-## Compatibility and verification
+## Share a mod
 
-ROWE Pants 0.1.1 uses clothing-package **version 3** and requires **Studio 0.2.63 or later** with the supported Hood Warfare 2 game build. Studio still imports version 2 packages. Version 3 checks the same indexed body topology, weights and rest rig while allowing export position rounding of less than 10 micrometres per coordinate. Its `Fit/Body.rowefit` file contains cryptographic compatibility evidence, not a body model or readable coordinates. The package also checks the base clothing and payload hashes. Full body/face/hair models, scripts and cooked game containers are excluded.
+Send the collection owner your finished creator package, author name, compatible body, screenshots, version and sharing permission. A curated ready-to-play `.roweplay` also needs a verified cook, exact game/body/rig profile and publisher acceptance. Editable `.roweclothes` files are authoring sources, not ready-to-play mods. There is no public upload account or automatic fit service.
 
-The new package imported into an independently exported local Classic DeShawn recipient while preserving other character parts. The matching source pants were checked in a local match. A fully fresh-PC setup-to-match test, automatic preparation of a brand-new MetaHuman head/body/hair, and two-PC multiplayer remain unverified. Releases are prereleases for wider testing; compatibility checks do not guarantee that any custom garment will avoid clipping in every animation.
-
-## Asset rights
-
-The repository owner confirmed permission to share this package's custom artwork and game-derived pants mesh/rig on October 12, 2026. Assets remain subject to their respective owners' rights. This repository does not apply an open-source license to game or third-party content.
-
-## Previous release integrity
-
-The original 0.1.0 download remains preserved. SHA-256 for `ROWE-Pants-0.1.0.roweclothes`:
-
-`0a1caa0d126d7c012ce6d68dc0f6e037d52ce01379081ef6baf97249cf079818`
-
-## Automatic updates
-
-Studio checks and downloads verified updates in the background when it opens. Close Studio when ready; it waits for the game and Unreal Editor to close, updates program files and reopens Studio. Creations, artwork, settings and exports remain saved. Interrupted updates use guarded rollback. Settings provides Keep Studio updated automatically and Check for updates. Studio 0.2.70 and newer receive this update automatically when enabled. Versions earlier than 0.2.70 need one manual download.
-
-## Downloaded local acceptance and 0.2.70 team repair
-
-The actual public 0.2.68 download passed automatic mapping setup/cleanup, classic DeShawn creation, catalog pants import, Unreal cooking and installation from an empty Studio workspace on the developer PC with tools already installed. Its Bloods target exposed a clothing issue; 0.2.70 corrects that target with 33 isolated creator checks. The exact final cosmetic Lua was tested in the modified public 0.2.68 workspace on both teams, after a restart and in a user-confirmed Bloods match. A first helper test preserved 532 user/generated files with mocked publisher responses. A separate production HTTP test then fetched the live public feed and ZIP, preserved 61 existing files and reopened normal Studio with the saved character. Public 0.2.70 also passed fresh setup and mapping capture on this PC. Full untouched 0.2.70 authoring-to-match, another PC with missing vendor tools and multiplayer remain unverified.
-
-## Public 0.2.70 acceptance update
-
-The unchanged public ZIP passed first-run setup and real mapping capture from an empty Studio workspace on the developer PC, using already-installed vendor tools. The capture game closed automatically and its temporary loader/path changes were restored automatically. Two native game saves changed while the game was running; the test coordinator preserved those generated versions and manually restored the protected originals. Studio does not automatically restore native saves.
-
-A separate upgrade from a 0.2.69 fixture used the shipped production HTTP transport to fetch the live release feed and this exact public ZIP. The real updater helper completed all seven installation/preservation checks, kept 61 existing user/generated files byte-identical, retained recoverable old program files and reopened normal Studio. The saved character, enabled automatic-updates setting and up-to-date status were observed in that restarted GUI.
-
-This verifies public 0.2.70 setup/capture and live update/helper/restart on the developer PC. It does not verify an untouched full 0.2.70 authoring-to-match workflow, missing-vendor installation on another PC or multiplayer. Earlier 0.2.68 authoring/cook/install and exact final cosmetic Lua tests remain separate evidence. The ZIP and DLL hashes are unchanged.
-
-## Guided MetaHuman setup
-
-In Studio 0.2.71 open **Settings → Set up MetaHuman Creator**. Review storage/performance advice before continuing, then complete the required Epic or compiler step and return for a recheck. Choose **Use clothing tools for now** to skip optional character editing. [MetaHuman setup guide](METAHUMAN-SETUP-GUIDE.md) explains matching engine data, plugins, sign-in, local extension tools and recovery. Exact install sizes come from Epic Options; 150 GB is a RoweMod planning estimate. The successful 0.2.70 local setup/updater tests above remain separate from the new guide UI checks and unverified missing-vendor installation on another PC.
-
-The final 0.2.71 guide was visibly checked through Settings, the initial review and Continue. Actual local BuildPlugin compilation succeeded and the matching extension was installed, with Unreal 5.8.3, Creator Core Data and C++ tools already present. A real helper update from a 0.2.70 fixture reopened Studio and preserved 13 user/generated files; staging used mocked publisher HTTP responses. Missing-vendor installation, Epic sign-in and a newly published live 0.2.71 update remain unverified.
-
-## Paint an existing clothing item
-
-Use **Choose clothes → choose item → Repaint item → Export FBX & textures**. The folder contains that garment FBX, its Base/Mask/Normal PNGs and a Painter guide. Bring painted Base Color and Normal DirectX PNGs back to the same saved character and clothing item, then **Build and Play**. No new character is needed. [Follow the Substance guide](SUBSTANCE-GUIDE.md).
-
-## Recover a missing texture in Studio 0.2.74
-
-Open the **same saved character → Clothes → item → Textures**. Use **Import PNG** on the missing slot, or **Import texture set** and choose the matching material and PNG. Select your original export or painted file for that exact slot. Studio copies it into the creation. If no starting texture survives, the chosen PNG becomes the new starting texture; this does not recover a lost file. Existing originals and unselected maps remain preserved.
-
-For ordinary clothing repainting, use Base Color and DirectX Normal. Keep game-specific masks in their original layout; do not substitute ORM. If you did not intend to edit an optional Mask, leave **Use my texture** off for that Mask. Finish with **Build and Play** after all required enabled maps have files.
-
-If files moved, keep the old folder and send the complete missing-path text plus your current Studio version/folder. Do not keep clicking Reset on an unavailable original. Loader-path conflicts and cooker errors require their own exact diagnostics.
+The repository owner confirmed permission to share the ROWE artwork and game-derived pants mesh/rig on October 12, 2026. Underlying assets retain their owners' rights; game/third-party content has no new open-source license here. Previous releases remain available. Historical validation is in [CHANGELOG.md](CHANGELOG.md); [dependency status](DEPENDENCY-STATUS.md) is a separate record.

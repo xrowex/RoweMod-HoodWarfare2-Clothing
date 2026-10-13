@@ -2,31 +2,47 @@
   "SchemaVersion": 1,
   "Collection": "RoweMod Studio - Hood Warfare 2 clothing",
   "Hosting": "GitHub Releases",
-  "PublicationStatus": "Published",
+  "PublicationStatus": "Published curated release",
   "Items": [
     {
       "Id": "rowe-pants",
       "Name": "ROWE Pants",
       "Author": "One",
-      "Version": "0.1.1",
+      "Version": "0.1.2",
       "Game": "Hood Warfare 2",
       "Slot": "Pants",
-      "CompatibleBody": "Classic DeShawn",
+      "CompatibleBody": "Classic DeShawn / Crips",
       "File": "ROWE-Pants-0.1.1.roweclothes",
       "Bytes": 23515250,
       "Sha256": "6C7C8342336C461F2AFACEFB78440491DC9D09C50F88224386C5A8D881917FCB",
       "PackageFormat": 3,
       "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/rowe-pants-v0.1.1/ROWE-Pants-0.1.1.roweclothes",
-      "ReleaseUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/tag/rowe-pants-v0.1.1",
+      "ReleaseUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/tag/clothing-rowe-pants-v0.1.2",
       "Redistribution": "Public sharing permission confirmed by the repository owner on 2026-10-12. Underlying asset rights remain with their respective owners.",
-      "Installation": "Create classic DeShawn -> Downloads -> ROWE Pants -> Download & add to character -> Build and Play",
+      "Installation": "Studio -> Browse mods -> ROWE Pants -> Subscribe -> Equip -> Play. Ready-to-play clothing requires no Blender, Unreal or mapping capture. Creator source remains available separately.",
       "Maps": [
         "Base color",
         "DirectX Normal"
       ],
       "UseTeamColor": false,
-      "Validation": "Fresh local workspace game export and scoped import verified. Source pants have a local-match checkpoint. Fresh-PC setup-to-match and two-PC multiplayer remain untested.",
-      "MinimumStudioVersion": "0.2.63"
+      "Validation": "Production body/rig and cooked package validation passed. Stock/ROWE selection, restart retention and selected pants after local match spawn/firing/reloading/brief pose checks were visually verified on Steam build 25888787. Extended movement, independent friend-PC and two-PC wardrobe synchronization remain unverified.",
+      "MinimumStudioVersion": "0.2.75",
+      "PreviewUrl": "https://raw.githubusercontent.com/xrowex/RoweMod-HoodWarfare2-Clothing/main/images/rowe-pants-v0.1.2.png",
+      "PlayerPackage": {
+        "File": "ROWE-Pants-0.1.1.roweplay",
+        "Bytes": 8666174,
+        "Sha256": "A1A5D8023F718149A67497D72E1A15219C4CD8F9C8E8A5A5D6DB89438136FA30",
+        "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/clothing-rowe-pants-v0.1.2/ROWE-Pants-0.1.1.roweplay",
+        "BodyProfile": {
+          "Slot": "Pants",
+          "TargetMesh": "/Game/Metahumans/DeShawn_Crips/Clothing/DeShawn_Crips_Outfits",
+          "RigSha256": "EF5737B986E80A946C94B78AD688C1543C12AB3B0A5EB2E59FF4284C9DFC8183",
+          "BodySha256": "81482A3053DD48D297F5667FB86D1AE6BFC0CF6719D6EAFE492A21490CD46989",
+          "Character": "DeShawn",
+          "Team": "Crips"
+        }
+      },
+      "PreviewCaption": "Mesh and texture render of the actual ROWE pants source under studio lighting; not an in-game screenshot."
     }
   ]
 }

@@ -1,37 +1,43 @@
-# Paint clothing in Substance Painter
+# Paint clothing in Substance Painter — Studio 0.2.75
 
-You can change clothes on an existing saved character. You do not need a new character or rigging for a texture edit. Duplicate the character only if you want both outfits available as separate selectable versions. Clothing currently belongs to the saved character; independent wardrobe slots are not implemented.
+Repaint an existing item while keeping its mesh, UVs, game rig and weights. You do not need to add or duplicate a character. Keep finished versions in Wardrobe; authored characters also support named outfit presets.
 
-## 1. Get the matching files
+## Get the exact item
 
-In Studio 0.2.73 or newer: **My characters → Customize → Start here → Choose clothes → choose item → Repaint item → Export FBX & textures**.
+Use **Create → Edit textures → Start texture edit**, select a saved character's item or game starter, then **Export FBX & textures** in **Next step**.
 
-Studio opens the export folder. Open the selected item folder, then **Mesh** for its FBX and **Textures** for its PNGs. The export includes only that item, plus a `START-HERE-Substance.txt` guide. Keep the FBX's original UVs and material names. If the garment has several materials, its PNGs are prefixed by material number; match each group to the corresponding Painter texture set.
+For downloaded authoring sources, use **Browse mods → Get creator files → My mods → Edit creator files**. A compiled `.roweplay` is for playing; editable `.roweclothes` files are the authoring route.
 
-## 2. Open it in Painter
+The item export contains its FBX under **Mesh**, matching Base/Mask/Normal PNGs under **Textures** and `START-HERE-Substance.txt`. Preserve UVs and material names. Material-number prefixes identify separate Painter texture sets.
 
-1. **File → New**: select the garment FBX. Use **DirectX** normals, **Compute tangent space per fragment** on and **Auto-unwrap** off.
-2. Import the matching **Base** and **Normal** PNGs as **texture** resources into this project.
-3. Add a fill layer. Assign the Base PNG to **Base Color** and Normal PNG to **Normal**, with UV scale **1**. Paint in layers above it. For several materials, repeat for each texture set.
+## Paint
 
-Embedded FBX textures do not replace this layer setup. Do not also load the same Normal into the baked mesh-map slot: that would apply it twice. The original clothing Mask controls game-specific regions; keep it for the return step. It is not a generic Substance occlusion/roughness/metallic map.
+1. **File → New**: select the FBX. Use **DirectX** normals, **Compute tangent space per fragment** on and **Auto-unwrap** off.
+2. Import the matching Base and Normal PNGs as texture resources.
+3. Add a fill layer with Base in **Base Color**, Normal in **Normal**, UV scale **1**. Paint above it. Repeat for each material set.
 
-## 3. Return the painted maps
+Embedded FBX media does not create Painter layers. Do not also apply the same Normal as a baked mesh map. The original game Mask is not Substance ORM; preserve its channel layout.
 
-Export separate PNG **Base Color** and **Normal DirectX** for each material, at the original texture resolution. The combined Normal DirectX output includes normal/height work. The current clothing shader does not import Substance ORM or Emissive; those channels are not a full PBR roundtrip.
+## Return to Studio
 
-Return to **the same saved character → Clothes → the same item → Textures → Import texture set**. Choose the matching material, select the exported Base and Normal PNGs, and keep the existing Mask. Studio copies the chosen maps into the saved creation. Do not import the FBX again for a texture-only change.
+Export separate PNG **Base Color** and **Normal DirectX** for each material at the original resolution. The combined Normal includes your normal/height work. The current clothing shader does not accept a complete ORM/Emissive roundtrip.
 
-Choose **Build and Play** to apply the maps, then check the character in game. Editing or importing files alone does not install them. To share a compatible finished item, use that item's **Share → Export package**.
+Return to the **same item project → Textures → Import texture set**. Select the corresponding material and Base/Normal PNGs, keeping its Mask. Studio copies them into the project. A texture-only edit does not need another FBX import.
 
-If something looks wrong, send the Studio and Painter versions, the item name, and cropped screenshots of Painter's viewport/Texture Set List and Studio's Task details. Do not send passwords or login codes.
+Click **Build & test** to prepare/install the saved changes and check them in game. Importing files alone does not install them. On an authored wearer, **Wardrobe → Keep current item** preserves a garment version and **Save outfit** keeps named presets on the same character.
+
+## New meshes and skin
+
+For a different garment shape, use **Create → Make clothing → Start clothing mesh → Export body & fitting kit**. Fit around the supplied body, preserve the game armature/vertex-group names, transfer and check full weights in Blender, and finish UVs before painting. Use **Import finished mesh**, import its matching maps and **Build & test**. Studio checks compatibility; it does not automatically fit or weight a new mesh to another body.
+
+MetaHuman tattoos/scars use **Create → Make a character → MetaHuman Creator → Skin Details**, or that character's matching skin export for external painting. Body and garment UVs are different. Skin-map handoff alone does not prepare changed head/body geometry or hair.
+
+## Missing maps and sharing
+
+Restore the exact missing enabled map with **Import PNG** or **Import texture set**. A missing optional Mask can remain disabled; enabled missing maps must be restored before capture/build. Reset cannot recreate pixels from a lost original. Originals and unselected maps are preserved.
+
+Use **Share → Export package** for editable creator sources. A curated ready-to-play release separately needs a verified cook, exact game/body/rig profile and publisher acceptance. There is no automatic public upload or verified cross-player wardrobe synchronization.
+
+For issues, send Studio/Painter versions, item/material name, exact error and cropped viewport/texture-set screenshots. Keep the FBX, Painter project and exported PNGs.
 
 Official Adobe references: [Project creation](https://experienceleague.adobe.com/en/docs/substance-3d-painter/using/getting-started/project-creation), [Normal-map painting](https://experienceleague.adobe.com/en/docs/substance-3d-painter/using/painting/advanced-channel-painting/normal-map-painting), [Output templates](https://experienceleague.adobe.com/en/docs/substance-3d-painter/using/export/export-window/output-templates).
-
-## Recover a missing texture in Studio 0.2.74
-
-Open the **same saved character → Clothes → item → Textures**. Use **Import PNG** on the missing slot, or **Import texture set** and choose the matching material and PNG. Select your original export or painted file for that exact slot. Studio copies it into the creation. If no starting texture survives, the chosen PNG becomes the new starting texture; this does not recover a lost file. Existing originals and unselected maps remain preserved.
-
-For ordinary clothing repainting, use Base Color and DirectX Normal. Keep game-specific masks in their original layout; do not substitute ORM. If you did not intend to edit an optional Mask, leave **Use my texture** off for that Mask. Finish with **Build and Play** after all required enabled maps have files.
-
-If files moved, keep the old folder and send the complete missing-path text plus your current Studio version/folder. Do not keep clicking Reset on an unavailable original. Loader-path conflicts and cooker errors require their own exact diagnostics.

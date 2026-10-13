@@ -1,5 +1,25 @@
 # Releases
 
+# RoweMod Studio 0.2.75 beta
+
+First run separates **Set up for playing** from **Set up for creating**. Curated prepared downloads need only the supported game and cosmetic runtime; Epic, Unreal, Blender and mapping capture are not required for consuming them.
+
+**Browse mods → Subscribe**, **My mods** and **Wardrobe** separate downloads from authoring. Compatible prepared clothing appears in the native Player Select Wardrobe alongside stock choices. Clothes change on the same wearer. Authored characters support protected garment versions and named outfits; classic ready-only profiles keep stock/prepared choices. Local persistence does not establish multiplayer sharing or synchronization.
+
+**Create** offers **Edit textures**, **Make clothing** and **Make a character**. Texture/item projects no longer require a new player identity. The texture route exports the existing garment FBX/maps for Substance; the clothing route exports the actual body/rig fitting kit. New meshes still need manual fit and full weights. Character appearance uses MetaHuman Creator/Skin Details with separate game preparation.
+
+Adds verified ready-to-play `.roweplay` clothing alongside editable `.roweclothes`. Exact game/body/rig compatibility, curated hashes, owned installation and rollback preserve unrelated files. Conflicting native container identities are refused. Immutable prepared snapshots retain their original cooked namespace. Missing disabled Mask sources keep an empty optional binding; missing enabled maps remain errors. WardrobeRevision is excluded from artwork signatures.
+
+The narrow Mutable-import cooking repair passed an actual local native cook and separate 30 native/36 audit checks. Exact final candidate assembly checks passed: 70 player-package/ownership/rollback and 12 optional-map/signature tests. Source-linked wardrobe checks passed separately. Local native wardrobe acceptance is verified on the supported Steam build: Player Select stock/ROWE switching, restart retention and a DeShawn Crips match with visible correct black pants/orange cuffs/feet after spawn, aiming, firing, reloading and brief movement/jump taps. Extended movement stress testing, independent friend-PC setup-to-match, missing-vendor installs and two-PC multiplayer remain pending.
+
+Automatic Studio updates retain projects, artwork and settings. Versions 0.2.70 and newer update when enabled; older installations need one manual download. Close Studio, the game and Unreal to apply. Mod subscriptions check published updates; equip new assets with the game closed.
+
+[Current release notes](RELEASE-NOTES-0.2.75.md) · [Player/creator guide](README.md) · [Friend test](FRIEND-TEST.md)
+
+## Earlier releases
+
+The following sections describe their historical versions. Use the current guides for Studio 0.2.75.
+
 # RoweMod Studio 0.2.74 beta
 
 When a saved texture file is missing, Studio can now import a user-selected replacement PNG instead of failing while trying to back up the missing file. Use the same saved character and clothing item: **Textures → Import PNG** or **Import texture set**. The recovery explanation appears on both import paths. If a starting texture survives, it stays preserved; otherwise the selected PNG becomes the new starting texture. Other maps and external artwork stay intact.

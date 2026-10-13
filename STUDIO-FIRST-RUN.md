@@ -1,86 +1,50 @@
-# Set up RoweMod Studio
+# First run — Studio 0.2.75
 
-Download [Studio for Windows](https://rowemods.com/studio), extract the entire ZIP into a writable folder, then open **RoweMod Studio.cmd**. Keep its folders together. Studio includes its .NET runtime; Codex and a separate .NET installation are unnecessary.
+[Download Studio](https://rowemods.com/studio), extract the entire ZIP into a writable folder and open **RoweMod Studio.cmd**. Keep the folders together. Its runtime is bundled; Codex and a .NET SDK are unnecessary.
 
-## Automatic setup
+## Choose a route
 
-The setup screen opens and starts automatically on first launch, or when a required setup check is incomplete. You do not need to open Settings, scan assets or start mapping capture yourself.
+| Welcome choice | Requirements |
+| --- | --- |
+| **Set up for playing** | Supported Steam game and RoweMod's cosmetic runtime. No Epic, Unreal, Blender, MetaHuman data or mapping capture. |
+| **Set up for creating** | Game, Blender and matching Unreal tools for export/fitting/cooking. MetaHuman tools are optional for character editing. |
 
-Its checklist shows your game, Blender, Unreal Engine and game setup. Studio finds installed tools, saves their locations, prepares its isolated cooker and captures the game's mappings once. It closes only the capture game that it can prove it launched; finish your existing match and close the game before starting setup. Your characters, artwork and stock players stay saved.
+Close the game for setup/install. Changed or unowned loader/package files are preserved and reported as conflicts.
 
-If a tool is missing, Studio opens the official installation path. Complete the vendor's license and Windows permission prompts. Unreal Engine **5.8** is installed through Epic Games Launcher: sign in, select that version and start its installation. Return to the setup screen; it checks again and continues when the requirements are ready. The engine and the game are supplied by their vendors, rather than bundled in the Studio ZIP.
+## Play downloaded mods
 
-When all required items are ready, Studio opens character creation automatically. Select a classic starter and name your character. Studio reads that starter's body, clothes and game rig from your own installed game automatically. If setup is needed after you click **Create and customize**, it opens the checklist, keeps your choices and continues creating when setup finishes.
+Choose **Set up for playing**, then **Browse mods → ready-to-play item → Subscribe**. Studio verifies the download and separate body/rig profile, then prepares the matching wearer. Use **My mods** for downloads and **Wardrobe → Play with outfit** to launch. In Player Select, choose the wearer and open the game's **Wardrobe** for compatible stock/prepared choices.
 
-To reopen setup later, use **Settings → Run setup wizard**. Normal use needs no manual paths. Custom installations, setup reports and recovery tools are under **Settings → Advanced setup**.
+A `.roweplay` contains prepared game assets. A `.roweclothes` contains editable sources and needs creator preparation before play. Player setup does not require a new character or a body export. Imported clothing must match its stated fit; it is not automatically resized. If a saved version is no longer installed, return to **My mods** to install/equip it again.
 
-## Try the ROWE pants
+## Create mods
 
-1. Create a separate character from **DeShawn**, keeping his classic body.
-2. Choose **Downloads → ROWE Pants → Download & add to character**, then select your new wearer.
-3. Close the game and choose **Build and Play**. Select your custom character in game.
+The creator checklist opens when creation needs missing setup. It finds installed tools, guides official installs, prepares an isolated cooker and handles the one-time mapping capture and cleanup. No manual capture-button hunt or asset scan is needed.
 
-ROWE Pants 0.1.1 fits Classic DeShawn and keeps its authored orange colors on both teams. Aqua and other reshaped bodies need clothes fitted separately. The first build compiles shaders and can take several minutes; progress and Cancel stay available.
+Complete official vendor prompts yourself. Use verified Unreal **5.8.3** and return for a recheck. Review Epic's displayed sizes before downloading. Finish existing matches first: Studio only closes a capture process whose ownership it can prove.
 
-To make clothes, choose **My clothes → wearer → garment → Make clothing → Get fitting kit**. Open its `START-HERE.html` guide. The Blender kit contains the matching local body and rig. Fit and weight the garment, import the finished mesh, and optionally paint its final UVs in Substance before importing Base Color and DirectX Normal PNGs. Keep the existing Mask instead of importing an unrelated Substance ORM map.
+Open **Create**:
 
-## Optional character editing
+- **Edit textures → Start texture edit:** select a saved character's item or a game starter. **Export FBX & textures → paint → Textures → Import texture set → Build & test**. This item project does not add a player identity.
+- **Make clothing → Start clothing mesh:** choose a starter, **Export body & fitting kit**, fit and weight in Blender, then **Import finished mesh**, import the final maps and **Build & test**.
+- **Make a character → Start character:** create the identity, use MetaHuman Creator and Skin Details, send/import the edits and prepare them for the game. Changed head/body geometry and hair need separate preparation from skin maps.
 
-Expand **Character editing (optional)** in setup to prepare MetaHuman editing. Epic supplies **MetaHuman Creator Core Data** through Unreal 5.8's Options. Creator handles Epic sign-in when it opens. Skin Details is built locally from the bundled RoweMod source with your installed Unreal editor and C++ development tools. Follow the optional checklist; save and close Unreal when the extension build asks. Clothing editing does not need these optional tools.
+Optional character editing requires **MetaHuman Creator Core Data** and a matching Skin Details extension. **Settings → Set up MetaHuman Creator** guides Epic Options, sign-in and missing C++ build tools. Clothing authoring does not need Core Data. [MetaHuman guide](METAHUMAN-SETUP-GUIDE.md).
 
-For a linked character, use **Open in MetaHuman Creator**, edit skin details there, then **Send to RoweMod → Import skin details** in Studio. New face/body shapes and hairstyles still need game-rig and hair preparation. Importing skin maps does not automatically prepare a brand-new MetaHuman mesh.
+## Keep outfits and artwork
 
-## If setup stops
+In **Wardrobe**, choose a wearer and compatible clothes without duplicating the character. On authored characters, **Keep current item** saves a protected garment version and **Save outfit** keeps named choices. Classic ready-only profiles keep prepared/stock selections without source tools; they do not expose every authoring preset control.
 
-Cancel stops Studio's current setup step safely; it does not terminate a vendor installer. Finish or close that installer before retrying. For interrupted mapping capture, close the capture game and run the setup wizard again. Studio restores only its recorded, unchanged temporary capture loader. An unchanged RoweMod loader is paused and restored automatically, including one installed by an older Studio folder. Changed or unowned loaders are preserved and reported.
+Library copies are separate from current editable art. New clothes still need fitting and full game weights. Selections/presets are local; multiplayer sharing and synchronization are unverified.
 
-Setup accepts the supported unprotected Steam build **25888787**. Unsupported/protected builds remain unavailable for capture and cosmetic installation; keep your artwork and use normal Steam play. For a failed check, expand **Setup details** or copy the report from **Settings → Advanced setup → Copy setup report**. Include the exact failed step when asking for help.
+## Recovery and updates
 
-A fresh second PC still needs to complete setup and a match before this beta receives general release acceptance. Two-PC character visibility also remains unverified. See [FRIEND-TEST.md](FRIEND-TEST.md) for the short acceptance test and [DEPENDENCY-STATUS.md](DEPENDENCY-STATUS.md) for dependency limitations.
+Use **Settings** for creator setup, installation folders and reports. Interrupted capture recovers with the game closed. Changed/unrelated loaders stay preserved.
 
-## Mapping launch repair in 0.2.68
+For a missing enabled texture, use **Import PNG** or **Import texture set** on its exact item/material. A disabled absent Mask can be saved without inventing pixels. Reset cannot recover an unavailable original; retain old artwork folders.
 
-This version gives the capture game its Steam identity only during its own launch, then restores the process environment. You do not need to enter Steam launch options or change Windows environment variables. Capture configuration is written without a UTF-8 byte-order mark. After a failed older attempt, close the capture game and reopen the setup wizard; Studio verifies the recorded loader and runtime path before recovery. Never delete a changed or unrelated loader to force setup. This public ZIP still needs independent fresh-PC setup and match acceptance.
+Studio downloads verified program updates in the background. Close Studio, the game and Unreal to let the helper apply them and reopen Studio while retaining user data. Settings has **Keep Studio updated automatically** and **Check for updates**. Versions before 0.2.70 need one manual download. Mod subscriptions also check updates; equip new assets with the game closed.
 
-## Automatic updates
+## Test status
 
-Studio checks and downloads verified updates in the background when it opens. Close Studio when ready; it waits for the game and Unreal Editor to close, updates program files and reopens Studio. Creations, artwork, settings and exports remain saved. Interrupted updates use guarded rollback. Settings provides Keep Studio updated automatically and Check for updates. Studio 0.2.70 and newer receive this update automatically when enabled. Versions earlier than 0.2.70 need one manual download.
-
-## Downloaded local acceptance and 0.2.70 team repair
-
-The actual public 0.2.68 download passed automatic mapping setup/cleanup, classic DeShawn creation, catalog pants import, Unreal cooking and installation from an empty Studio workspace on the developer PC with tools already installed. Its Bloods target exposed a clothing issue; 0.2.70 corrects that target with 33 isolated creator checks. The exact final cosmetic Lua was tested in the modified public 0.2.68 workspace on both teams, after a restart and in a user-confirmed Bloods match. A first helper test preserved 532 user/generated files with mocked publisher responses. A separate production HTTP test then fetched the live public feed and ZIP, preserved 61 existing files and reopened normal Studio with the saved character. Public 0.2.70 also passed fresh setup and mapping capture on this PC. Full untouched 0.2.70 authoring-to-match, another PC with missing vendor tools and multiplayer remain unverified.
-
-## Public 0.2.70 acceptance update
-
-The unchanged public ZIP passed first-run setup and real mapping capture from an empty Studio workspace on the developer PC, using already-installed vendor tools. The capture game closed automatically and its temporary loader/path changes were restored automatically. Two native game saves changed while the game was running; the test coordinator preserved those generated versions and manually restored the protected originals. Studio does not automatically restore native saves.
-
-A separate upgrade from a 0.2.69 fixture used the shipped production HTTP transport to fetch the live release feed and this exact public ZIP. The real updater helper completed all seven installation/preservation checks, kept 61 existing user/generated files byte-identical, retained recoverable old program files and reopened normal Studio. The saved character, enabled automatic-updates setting and up-to-date status were observed in that restarted GUI.
-
-This verifies public 0.2.70 setup/capture and live update/helper/restart on the developer PC. It does not verify an untouched full 0.2.70 authoring-to-match workflow, missing-vendor installation on another PC or multiplayer. Earlier 0.2.68 authoring/cook/install and exact final cosmetic Lua tests remain separate evidence. The ZIP and DLL hashes are unchanged.
-
-## Guided MetaHuman setup
-
-In Studio 0.2.71 open **Settings → Set up MetaHuman Creator**. Review storage/performance advice before continuing, then complete the required Epic or compiler step and return for a recheck. Choose **Use clothing tools for now** to skip optional character editing. [MetaHuman setup guide](METAHUMAN-SETUP-GUIDE.md) explains matching engine data, plugins, sign-in, local extension tools and recovery. Exact install sizes come from Epic Options; 150 GB is a RoweMod planning estimate. The successful 0.2.70 local setup/updater tests above remain separate from the new guide UI checks and unverified missing-vendor installation on another PC.
-
-The final 0.2.71 guide was visibly checked through Settings, the initial review and Continue. Actual local BuildPlugin compilation succeeded and the matching extension was installed, with Unreal 5.8.3, Creator Core Data and C++ tools already present. A real helper update from a 0.2.70 fixture reopened Studio and preserved 13 user/generated files; staging used mocked publisher HTTP responses. Missing-vendor installation, Epic sign-in and a newly published live 0.2.71 update remain unverified.
-
-## Clear next steps in Studio
-
-Open **My characters → Customize → Start here**.
-- Choose **Edit character** for MetaHuman, skin maps and the return/import steps.
-- Choose **Choose clothes**, select the item, then pick **Repaint**, **Make a new mesh**, or **Add a clothing package**. Follow only that path.
-- Finish with **Build and Play** at the top right. Editing files does not install the mod by itself.
-
-Starting outfit and advanced model choices are under **Starting outfit & advanced options** when creating a draft. Your existing characters and artwork stay saved.
-
-## Paint an existing clothing item
-
-Use **Choose clothes → choose item → Repaint item → Export FBX & textures**. The folder contains that garment FBX, its Base/Mask/Normal PNGs and a Painter guide. Bring painted Base Color and Normal DirectX PNGs back to the same saved character and clothing item, then **Build and Play**. No new character is needed. [Follow the Substance guide](SUBSTANCE-GUIDE.md).
-
-## Recover a missing texture in Studio 0.2.74
-
-Open the **same saved character → Clothes → item → Textures**. Use **Import PNG** on the missing slot, or **Import texture set** and choose the matching material and PNG. Select your original export or painted file for that exact slot. Studio copies it into the creation. If no starting texture survives, the chosen PNG becomes the new starting texture; this does not recover a lost file. Existing originals and unselected maps remain preserved.
-
-For ordinary clothing repainting, use Base Color and DirectX Normal. Keep game-specific masks in their original layout; do not substitute ORM. If you did not intend to edit an optional Mask, leave **Use my texture** off for that Mask. Finish with **Build and Play** after all required enabled maps have files.
-
-If files moved, keep the old folder and send the complete missing-path text plus your current Studio version/folder. Do not keep clicking Reset on an unavailable original. Loader-path conflicts and cooker errors require their own exact diagnostics.
+Developer-PC Player Select stock/ROWE switching and saved selection after restart are checked. Exact-build package/hash/ownership/rollback and optional-map tests passed. The supported-build DeShawn Crips local match passed visible pants/cuffs/feet checks after spawn, aiming, firing, reloading and brief movement/jump taps. Extended movement stress testing remains outstanding. Another PC's complete setup-to-match, missing-vendor installs and two-PC multiplayer remain unverified. [Friend test](FRIEND-TEST.md) · [Changelog](CHANGELOG.md).
