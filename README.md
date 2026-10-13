@@ -2,7 +2,7 @@
 
 Download **RoweMod Studio for Windows** and curated, editable clothes for **Hood Warfare 2**, the first supported game. Studio guides you through fitting, texturing, importing and building your own clothing. You do not need Codex.
 
-[Download Studio 0.2.70](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.70/RoweMod-Studio-0.2.70-Windows.zip) · [RoweMods Studio page](https://rowemods.com/studio) · [All releases](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases)
+[Download Studio 0.2.71](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.71/RoweMod-Studio-0.2.71-Windows.zip) · [RoweMods Studio page](https://rowemods.com/studio) · [All releases](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases)
 
 See [setup recovery and support](STUDIO-FIRST-RUN.md) and [dependency status](DEPENDENCY-STATUS.md). This beta still needs independent fresh-PC gameplay acceptance.
 
@@ -57,7 +57,7 @@ The original 0.1.0 download remains preserved. SHA-256 for `ROWE-Pants-0.1.0.row
 
 ## Automatic updates
 
-Studio checks and downloads verified updates in the background when it opens. Close Studio when ready; it waits for the game and Unreal Editor to close, updates program files and reopens Studio. Creations, artwork, settings and exports remain saved. Interrupted updates use guarded rollback. Settings provides Keep Studio updated automatically and Check for updates. Install 0.2.70 manually once if upgrading from an older version.
+Studio checks and downloads verified updates in the background when it opens. Close Studio when ready; it waits for the game and Unreal Editor to close, updates program files and reopens Studio. Creations, artwork, settings and exports remain saved. Interrupted updates use guarded rollback. Settings provides Keep Studio updated automatically and Check for updates. Studio 0.2.70 and newer receive this update automatically when enabled. Versions earlier than 0.2.70 need one manual download.
 
 ## Downloaded local acceptance and 0.2.70 team repair
 
@@ -70,3 +70,9 @@ The unchanged public ZIP passed first-run setup and real mapping capture from an
 A separate upgrade from a 0.2.69 fixture used the shipped production HTTP transport to fetch the live release feed and this exact public ZIP. The real updater helper completed all seven installation/preservation checks, kept 61 existing user/generated files byte-identical, retained recoverable old program files and reopened normal Studio. The saved character, enabled automatic-updates setting and up-to-date status were observed in that restarted GUI.
 
 This verifies public 0.2.70 setup/capture and live update/helper/restart on the developer PC. It does not verify an untouched full 0.2.70 authoring-to-match workflow, missing-vendor installation on another PC or multiplayer. Earlier 0.2.68 authoring/cook/install and exact final cosmetic Lua tests remain separate evidence. The ZIP and DLL hashes are unchanged.
+
+## Guided MetaHuman setup
+
+In Studio 0.2.71 open **Settings → Set up MetaHuman Creator**. Review storage/performance advice before continuing, then complete the required Epic or compiler step and return for a recheck. Choose **Use clothing tools for now** to skip optional character editing. [MetaHuman setup guide](METAHUMAN-SETUP-GUIDE.md) explains matching engine data, plugins, sign-in, local extension tools and recovery. Exact install sizes come from Epic Options; 150 GB is a RoweMod planning estimate. The successful 0.2.70 local setup/updater tests above remain separate from the new guide UI checks and unverified missing-vendor installation on another PC.
+
+The final 0.2.71 guide was visibly checked through Settings, the initial review and Continue. Actual local BuildPlugin compilation succeeded and the matching extension was installed, with Unreal 5.8.3, Creator Core Data and C++ tools already present. A real helper update from a 0.2.70 fixture reopened Studio and preserved 13 user/generated files; staging used mocked publisher HTTP responses. Missing-vendor installation, Epic sign-in and a newly published live 0.2.71 update remain unverified.

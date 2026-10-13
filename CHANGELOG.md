@@ -1,5 +1,20 @@
 # Releases
 
+# RoweMod Studio 0.2.71 beta
+
+Adds a guided MetaHuman setup route. Open **Settings → Set up MetaHuman Creator**, review storage and performance advice, then continue through the next missing step. The guide points to Epic's matching engine/Core Data Options, asks you to complete sign-in and installer prompts yourself, rechecks when you return, and prepares the local Skin Details extension only when its tools are ready and Unreal is closed. You can choose **Use clothing tools for now**.
+
+Studio 0.2.70 and newer receive this update automatically when enabled. Versions earlier than 0.2.70 need one manual download.
+
+If Unreal is missing, the ordinary first-run checklist uses the same review for clothing setup without requiring optional MetaHuman data or C++ tools. Creating/opening a MetaHuman with missing prerequisites also offers the character setup route.
+
+The **150 GB** SSD suggestion is RoweMod's working budget, not an official download size or a fixed requirement. Epic Launcher displays actual component sizes. Epic recommends 32 GB RAM, 8 GB VRAM and 16 physical high-performance CPU cores; those are recommendations, not minimums. The guide shows a local hardware snapshot without putting it in the download. See METAHUMAN-SETUP-GUIDE.md for official links and editing-performance advice.
+
+The exact candidate passes 127 isolated UI checks, 40 guide/controller checks, 67 updater checks, 26 native command-path checks and 25 short-build-path checks. Separately, the normal restarted Studio was visibly checked: Settings opened the guide with its first heading at the top, Continue advanced correctly, actual Unreal BuildPlugin compilation succeeded, and the installed extension matched the editor BuildId. The guide reached Creator ready. Unreal 5.8.3, Creator Core Data and C++ tools were already installed; this does not verify downloading missing vendor components or Epic sign-in.
+
+A real helper upgrade from a 0.2.70 fixture installed this exact ZIP and reopened normal Studio, passing six checks and preserving 13 existing user/generated files. Its staging used mocked publisher HTTP responses. Prior public 0.2.70 fresh setup and live-feed upgrade acceptance remains separate; a newly published live 0.2.71 network upgrade has not yet been verified. An untouched full 0.2.71 authoring-to-match workflow, missing-vendor installation on another PC and multiplayer remain unverified. Earlier releases stay preserved. Skin Details builds use an owned short temporary folder to avoid Unreal's long-path failure; local build logs and recovery receipts remain in Studio's workspace.
+
+
 # RoweMod Studio 0.2.70 beta
 
 ## Public 0.2.70 acceptance update
