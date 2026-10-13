@@ -32,7 +32,7 @@ For a linked character, use **Open in MetaHuman Creator**, edit skin details the
 
 ## If setup stops
 
-Cancel stops Studio's current setup step safely; it does not terminate a vendor installer. Finish or close that installer before retrying. For interrupted mapping capture, close the capture game and run the setup wizard again. Studio restores only its recorded, unchanged temporary capture loader. An existing or modified loader is preserved and reported.
+Cancel stops Studio's current setup step safely; it does not terminate a vendor installer. Finish or close that installer before retrying. For interrupted mapping capture, close the capture game and run the setup wizard again. Studio restores only its recorded, unchanged temporary capture loader. An unchanged RoweMod loader is paused and restored automatically, including one installed by an older Studio folder. Changed or unowned loaders are preserved and reported.
 
 Setup accepts the supported unprotected Steam build **25888787**. Unsupported/protected builds remain unavailable for capture and cosmetic installation; keep your artwork and use normal Steam play. For a failed check, expand **Setup details** or copy the report from **Settings → Advanced setup → Copy setup report**. Include the exact failed step when asking for help.
 

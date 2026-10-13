@@ -16,7 +16,7 @@ The ROWE pants fit Classic DeShawn; Aqua needs a different fit. Their authored o
 
 Check both teams, then walking, jumping, aiming, reloading and firing in third person. Check a respawn and close/reopen the game to verify saved selection. Confirm stock characters are still available. Send the Studio version, the checklist result and whether the pants stay correct in the match.
 
-If something fails, open **Setup details** or **Settings → Advanced setup → Copy setup report** and include the exact message. Interrupted mapping setup recovers through the same **Set up automatically** button once the game closes. Changed or unowned loaders are preserved.
+If something fails, open **Setup details** or **Settings → Advanced setup → Copy setup report** and include the exact message. Interrupted mapping setup recovers through the same **Set up automatically** button once the game closes. An unchanged existing RoweMod loader is paused and restored automatically. Changed or unowned loaders are preserved.
 
 ## Test making clothes next
 

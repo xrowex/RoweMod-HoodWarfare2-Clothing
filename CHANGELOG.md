@@ -1,5 +1,20 @@
 # Releases
 
+# RoweMod Studio 0.2.67 beta
+
+Fixes automatic setup stopping when an unchanged RoweMod loader is already installed, including one owned by an older Studio folder. Studio verifies and pauses that loader, captures mappings, and restores the original loader and path automatically. Saved characters, installed mods and artwork remain intact.
+
+- Mapping capture now also installs a temporary verified runtime path beside the game. This avoids relying solely on bootstrapper argument forwarding on a clean PC. The original path's exact bytes or absence are restored.
+- Recovery handles interrupted setup, cancellation and capture failure. Changed or unrelated loaders are preserved; existing matches stay running until you close them.
+- Setup still opens and starts automatically on first launch or incomplete required setup, and character creation continues with your saved choices.
+
+Extract the entire ZIP into a writable folder and open **RoweMod Studio.cmd**. Close an existing game when setup asks, then return to Studio for automatic continuation. Complete official vendor prompts if requirements are missing. See STUDIO-FIRST-RUN.md and FRIEND-TEST.md.
+
+Verified against this DLL: 127 isolated wizard/continuation checks, 24 automatic setup sequencing checks, 43 setup/recovery checks, 99 loader/capture recovery checks and 28 actual PowerShell atomic-writer checks. Fixtures do not launch a game. Clothing import, sharing and isolated Unreal cooking passed on 0.2.66; those authoring paths are unchanged in this repair.
+
+The friend's reported UE4SS load failure needs a retest on this version; its exact remote cause is not confirmed. Fresh mapping capture and fresh-PC setup-to-match acceptance remain pending. Two-PC multiplayer and recipient MetaHuman extension compilation remain unverified. Proprietary game, engine and MetaHuman assets are not bundled. See DEPENDENCY-STATUS.md for the pinned ImageSharp advisories. Previous releases remain available.
+
+
 # RoweMod Studio 0.2.66 beta
 
 Open Studio. Setup opens and starts automatically on first launch, or when a required check is incomplete. Mapping capture, closure of Studio's capture game, temporary-loader recovery and cooker preparation are automatic. Existing matches stay open until you close them.
