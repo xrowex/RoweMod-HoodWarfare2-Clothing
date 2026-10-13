@@ -44,9 +44,12 @@
       "RealUpgrade": "634F0EA5297071459D1A2C07921EFB9A2E43B231D8F0EC44696D70E0807ECFAC",
       "UpgradedGui": "AFDD4D60F05130E0F68D4ACBD4E56D2578C430A7FEE79C53C8F528FA2C7086B7",
       "CosmeticRuntime": "868E4586EE6B7653251DBB6BBB44A18593587DCEBA22185DBAF339CF8986B336",
-      "GameRestoration": "927B312AB63A3558D6B8F8CEE663A7FF132902A66DCCBA61B18B88B310470FB6"
+      "GameRestoration": "927B312AB63A3558D6B8F8CEE663A7FF132902A66DCCBA61B18B88B310470FB6",
+      "Fresh70Setup": "561C6DD127B21BDC34365E57F46E9BBE0796EA02F4259DE0C1E4F1D0C71E5EA5",
+      "LiveUpgrade": "6D5B17C8808F3DE6B9D061756B02DCF0E3E6BB62805039147800017E4CF0A97A",
+      "LiveUpgradedGui": "F3709E6B94FC97BFEC8AC543DEE67EFB1B629E14E2381CF97E5D72F41A90F159"
     },
-    "FreshMappingCapture": false,
+    "FreshMappingCapture": true,
     "FreshLocalDownloadedInstall": false,
     "FreshMachineGameplay": false,
     "TwoPcMultiplayer": false,
@@ -54,11 +57,14 @@
       "Passed": true,
       "PreviousVersion": "0.2.69",
       "CurrentVersion": "0.2.70",
-      "ProtectedFiles": 532,
+      "Checks": 7,
+      "ProtectedFiles": 61,
       "NormalGuiRestartObserved": true,
       "SavedCharacterPreserved": true,
-      "NetworkDuringStaging": "Mocked publisher transport serving actual final release ZIP",
-      "LiveNewReleaseNetworkUpgradeVerified": false
+      "NetworkDuringStaging": "Shipped production HTTP transport: live published feed and exact public release ZIP",
+      "ActualNetworkUsed": true,
+      "ProductionHttpTransportUsed": true,
+      "LiveNewReleaseNetworkUpgradeVerified": true
     },
     "CosmeticRuntimeAcceptance": {
       "BothTeams": true,
@@ -84,6 +90,28 @@
         "CreateImport": "0803476063D4868AB89D65F1F30694AEED364221EE50F221D10DC4F8F8DE4144",
         "CookInstall": "2B4EF60DE09BE775A0682C2CB61A9929E21EE10E2E6CB7569A53B1C644F00A3B"
       }
+    },
+    "Fresh70SetupCapture": true,
+    "Fresh70SetupCaptureDetails": {
+      "Scope": "Actual public 0.2.70 download into an empty Studio workspace on developer PC with existing vendor tools; setup and mapping capture only",
+      "MappingBytes": 2961938,
+      "MappingSha256": "DDC4260B62697097919B38E8BABA576AE4887FAFE3F72421F0F8384E8726694B",
+      "AutomaticCaptureGameClosed": true,
+      "AutomaticProxyOverrideRestoration": true,
+      "AutomaticNativeSaveRestoration": false,
+      "NativeSaveChangesDuringCapture": 2,
+      "NativeSaveRecovery": "Test coordinator preserved capture-generated versions, then manually restored the two protected originals; not an application feature",
+      "All33OriginalFilesVerifiedAfterCoordinatorRestoration": true
+    },
+    "PriorMockedTransportHelperUpgrade": {
+      "Passed": true,
+      "PreviousVersion": "0.2.69",
+      "CurrentVersion": "0.2.70",
+      "ProtectedFiles": 532,
+      "NormalGuiRestartObserved": true,
+      "SavedCharacterPreserved": true,
+      "NetworkDuringStaging": "Mocked publisher transport serving actual final release ZIP",
+      "LiveNewReleaseNetworkUpgradeVerified": false
     }
   },
   "DependencyStatus": "ImageSharp 3.1.12 remains pinned with five advisories; bounded static PNG handoff. See DEPENDENCY-STATUS.md.",
