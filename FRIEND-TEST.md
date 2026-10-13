@@ -1,33 +1,29 @@
-# Friend test — Studio 0.2.76
+# Friend test — Studio 0.2.77
 
-Get the complete [Windows Studio beta](https://rowemods.com/studio), extract the whole ZIP into a writable folder and open **RoweMod Studio.cmd**. No Codex or separate .NET installation is needed.
+Download from [rowemods.com/studio](https://rowemods.com/studio), extract the whole ZIP into a writable folder and open **RoweMod Studio.cmd**. No Codex or separate .NET installation is needed.
 
-## Test playing first
+## Playing
 
-1. Install Hood Warfare 2 through Steam and close it.
-2. Choose **Set up for playing**. This route needs no Epic, Unreal, Blender or mapping capture.
-3. Open **Browse mods → ROWE Pants → Subscribe**. Let the download and matching classic-wearer setup finish.
-4. Open **Wardrobe → Dress Classic DeShawn**, choose the pants and **Play with outfit**. Use the wearer/team shown by the item.
-5. In Player Select, select that wearer and open the game's **Wardrobe**. Switch stock pants → ROWE pants → stock. Confirm the player identity stays the same.
-6. Join a local match. Walk, crouch, jump, aim, reload, fire and respawn. Check the feet, hands, pants and body.
-7. Close/reopen the game. Confirm the compatible selection returns and stock players remain available.
+1. Install Hood Warfare 2 through Steam and close it. Choose **Set up for playing**; Epic, Unreal, Blender and mappings are unnecessary.
+2. **Downloads → ROWE Pants → Subscribe**. Let verified download and wearer preparation finish.
+3. **My characters → DeShawn → Choose an outfit → Play with outfit**. Use the item’s matching wearer/team.
+4. In game, switch stock pants → ROWE pants → stock in Player Select Wardrobe. Confirm the same character identity stays selected.
+5. Join a local match: walk, crouch, jump, aim, reload, fire and respawn. Check feet, hands, body and pants.
+6. Close/reopen the game. Confirm compatible selection returns and all stock players remain available.
 
-**Creator files available** means the item needs an authoring build; its `.roweclothes` source is not an installed mod.
+## Saved Blender clothing
 
-Report your Studio version, setup choice, wearer/team, restart result and match result. Include screenshots and exact Task details for any failure. **Settings → Advanced setup → Copy setup report** supplies setup diagnostics.
+1. **Create → Make clothes → starter → slot → Prepare fitting kit**. Confirm the matching bodies/weight sources are green references with labeled profile collections.
+2. Fit and transfer/check weights, then save that same Blender file. If already finished, choose **Use an existing Blender file** instead of another export.
+3. **Build & launch game**. Confirm Studio automatically imports the selected garment while preserving good textures, other body fits and the external source file.
+4. Check the garment in a match before **Looks good in game**. A successful launch alone must not complete the check.
+5. Save a further Blender change and build again. Confirm it is reread and old game-check completion clears. Try Save As and **Choose another saved file**.
+6. In **My clothes**, confirm the clothing is one item with grouped source fits, not another player entry. A prepared fit should still say it requires Build/test. Additional installed custom characters should appear in My characters with model pictures rather than texture sheets.
 
-This independent friend-PC acceptance is still outstanding. Developer-PC file checks, local wardrobe switching and restart checks are separate evidence. The supported-build local developer test passed stock/ROWE switching, restart retention and a DeShawn Crips match with correct pants/cuffs/feet after spawn, aiming, firing, reloading and brief movement/jump taps. Extended movement stress testing and two-PC multiplayer remain unverified.
+Optional texture painting/Substance/sharing stays collapsed until needed. For texture-only edits use **Create → Edit textures** and import matching PNGs without replacing the FBX. New character creation uses a fresh, uniquely named MetaHuman source in the actual Creator. **Create new MetaHuman** should never offer copying the three stock players or another custom character. Confirm its saved draft resumes under Create and does not appear as a game avatar after skin import alone. Both new Body and Face geometry require explicit game-rig preparation and native build; hair needs its own binding. **My characters → stock player → Edit this game character** should reuse its StockEdit workspace without adding an avatar.
 
-## Test creating separately
+Report Studio version, setup choice, wearer/team, source-file steps, restart result and match result. Include screenshots/exact Task details and **Settings → Advanced setup → Copy setup report**. Preserve original artwork and unknown conflicting files.
 
-Use **Create** and follow one path:
+Prior developer-PC local wardrobe acceptance is separate from this independent test. Full friend setup-to-match, extended movement stress and two-PC multiplayer remain unverified. Source/UI fixtures are not a cook-to-game acceptance.
 
-- **Edit textures:** choose a starter and item card, **Export model & textures**, paint the existing UVs in Substance, then **Artwork → Import texture set → Use saved artwork & continue → Build & launch game**. Check it in a match, then confirm **Looks good in game**. This does not add a character.
-- **Make clothes:** choose a starter, **Export fitting kit**, fit and weight it in Blender, then **Import finished mesh**, add matching maps and **Build & launch game**. There is no automatic body fit.
-- **Make a character:** name it, choose a starter card and click **Create character**. Choose **Face, hair & skin**, edit in MetaHuman Creator, return the skin maps and prepare the character for the game. Optional character data/tools are needed only for authoring.
-
-For an authored character, **Wardrobe → Keep current item** preserves a version and **Save outfit** keeps named presets on the same wearer. Test that switching retains other artwork and does not add a new player. Classic ready-only profiles keep stock/prepared choices; authoring preset controls may be unavailable.
-
-[Setup guide](STUDIO-FIRST-RUN.md) · [Substance guide](SUBSTANCE-GUIDE.md). Creator setup handles its mapping capture and cleanup. Complete vendor sign-in/license/install prompts yourself, then return for Studio's recheck.
-
-Keep your original artwork. Restore a missing enabled PNG through **Import PNG** or **Import texture set** on the exact item/material. An absent optional Mask can remain disabled. Send the exact conflict message rather than deleting unknown loader/package files.
+[Setup](STUDIO-FIRST-RUN.md) · [Substance](SUBSTANCE-GUIDE.md).

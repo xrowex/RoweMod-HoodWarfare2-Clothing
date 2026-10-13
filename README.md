@@ -1,60 +1,74 @@
 # RoweMod Studio — Hood Warfare 2
 
-Play curated clothing mods, keep clothes on one character, or make your own. **Hood Warfare 2 is the first supported game.** No Codex is needed.
+Download clothes, dress your existing players, or create something new. **Hood Warfare 2 is the first supported game.** No Codex is needed.
 
-[Download Studio 0.2.76 for Windows](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.76/RoweMod-Studio-0.2.76-Windows.zip) · [Studio website](https://rowemods.com/studio) · [Releases](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases)
+[Download Studio 0.2.77 for Windows](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.77/RoweMod-Studio-0.2.77-Windows.zip) · [Studio website](https://rowemods.com/studio) · [Releases](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases)
 
 ## Just want to play?
 
 1. Extract the complete ZIP into a writable folder and open **RoweMod Studio.cmd**.
-2. Choose **Set up for playing**. Have the game installed in Steam and closed for setup.
-3. Open **Browse mods → ROWE Pants → Subscribe**. Studio downloads the verified ready-to-play item and prepares its matching classic wearer.
-4. Open **Wardrobe**, choose that wearer, then **Play with outfit**. In the game's Player Select screen, select the matching player and open **Wardrobe** to choose compatible prepared or stock clothes.
+2. Choose **Set up for playing**. Have the game installed through Steam and closed for setup.
+3. Open **Downloads → ROWE Pants → Subscribe**. Studio verifies the prepared item and its compatible wearer.
+4. In **My characters**, choose that wearer → **Choose an outfit → Play with outfit**. Select the matching player in the game's Player Select screen, then open its **Wardrobe** for compatible stock/prepared clothes.
 
-Prepared player downloads need **no Epic Launcher, Unreal, Blender or mapping capture**. Items marked **Creator files available** need creator tools and a build before playing.
+Prepared downloads need no Epic, Unreal, Blender or mapping capture. **Creator files available** means editable sources need creator tools and a build before playing.
 
 ## Your workspace
 
 | Page | Use it for |
 | --- | --- |
-| **Browse mods** | Subscribe to ready-to-play items or get editable creator files. |
-| **My mods** | Find downloads, update subscriptions, equip items or edit creator files. |
-| **Wardrobe** | Dress an existing classic/custom wearer. Authored characters also support **Keep current item** and named **Save outfit** presets. |
-| **Create** | Choose **Play mods**, **Edit textures**, **Make clothes** or **Make a character** from picture cards. |
+| **My characters** | The three stock players and your prepared custom characters. Open one to customize it or choose an outfit. |
+| **My clothes** | Individual clothing items, with their prepared source fits grouped under the same item. |
+| **Downloads** | Subscribe to curated ready-to-play items or get editable creator files. |
+| **Create** | Choose Play mods, Edit textures, Make clothes or Make a character from picture cards. |
+| **Settings** | Setup, updates, optional MetaHuman tools and diagnostic reports. |
 
-Changing clothes keeps the same character identity. Wardrobe choices and outfit presets are local. A garment must match the body, native slot and game rig; there is no automatic fitting to another body or verified multiplayer wardrobe synchronization.
+Character cards use model illustrations, never UV sheets. Custom portraits are generated from saved models when creator tools are available; **Refresh character previews** updates them. A labeled placeholder is shown while a portrait is unavailable. Illustrations are not proof of game appearance.
 
-## ROWE Pants
+Existing prepared custom characters appear dynamically. Scratch clothing projects are not player identities. Recoverable library classification keeps saved source files and artwork; it does not delete hidden legacy drafts.
 
-Custom UVs and artwork by **One**, fitted to classic DeShawn. Release 0.1.2 adds player delivery; the unchanged prepared asset retains its filename `ROWE-Pants-0.1.1.roweplay`.
+## Make clothes — save once, build from that file
 
-- [Ready-to-play pants](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/clothing-rowe-pants-v0.1.2/ROWE-Pants-0.1.1.roweplay): already cooked for compatible players.
-- [Editable creator files](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/rowe-pants-v0.1.1/ROWE-Pants-0.1.1.roweclothes): garment FBX, Base color, DirectX Normal and fit evidence.
+Use **Create → Make clothes → starter → clothing slot**. Follow four stages:
 
-The thumbnail renders the actual garment and textures under studio lighting; it is not an in-game screenshot. Aqua and other reshaped bodies require a different fit.
+1. **Prepare once → Prepare fitting kit.** The kit includes the wearer reference, garment and game rig. Green bodies and weight sources are references. Body profiles in the same kit are labeled and separated.
+2. **Edit & save.** Open the working file in Blender, fit your garment and transfer/check full weights. Save that same `Clothing-fitting-kit.blend`.
+3. **Build & Play → Build & launch game.** Studio remembers the working file and reads only the selected garment/body fit automatically before cooking. No second FBX export, manual mesh import or required Substance roundtrip.
+4. **Check in game → Looks good in game.** Walk, jump, aim and reload; check joints, hands, feet, textures and clipping before confirming.
 
-## Create something
+**Already fitted and weighted your file?** Choose **Use an existing Blender file**. For Save As, use **Choose another saved file** once. Your original stays intact; Studio creates its own editable import. A moved file prompts you to choose its location instead of exporting another kit.
 
-**Edit textures:** **Create → Edit textures → starter → item → Export model & textures**. The next screen is **Artwork**: use **Paint texture** or **Import texture set**, then **Use saved artwork & continue → Build & launch game**. Confirm **Looks good in game** after checking it. No new character or mesh import is needed. [Substance guide](SUBSTANCE-GUIDE.md).
+**Optional · textures, Substance & sharing** exposes painting, matching PNG imports, Substance exports and editable packages. Existing good textures stay in place. [Substance guide](SUBSTANCE-GUIDE.md).
 
-**Make clothes:** **Create → Make clothes → starter → clothing slot → Export fitting kit**. Fit and weight your garment around the supplied body in Blender, keeping the game rig. Follow **Import finished mesh → Artwork → Build & launch game → Looks good in game**. Fitting and full weights remain authoring work.
+One item can contain several source fits. **My clothes → item → Add another body fit** groups another prepared fit under that clothing identity. A prepared source fit still needs Build and an in-game check. Studio does not automatically resize or weight new geometry to another body. Ambiguous multi-body or whole-scene imports are refused; green references stay out of garment imports.
 
-**Make a character:** **Create → Make a character → named starter card → Create character**. In that character's task screen choose **Face, hair & skin**. Follow **Open in MetaHuman Creator → Send to RoweMod (inside Creator) → Import skin details → Build & launch game → Looks good in game**. Changed body/head geometry and hair still need game preparation separately from skin-map import.
+Changed Blender saves or artwork invalidate previous build/game-check completion. Failed or canceled work does not count as success. The checklist never treats launching the game as passing a visual test.
 
-The wearer and item stay visible at the top. Steps resume when you reopen Studio; changed artwork invalidates its previous build check. **Advanced · Normal & Mask** reveals optional surface maps. The checklist never counts launching the game as a passed visual test.
+## Textures and characters
 
-Creator setup finds tools, handles mapping capture and guides missing official installations. Matching Unreal **5.8.3** and Blender are creator tools. MetaHuman data and extension build tools are optional for character editing. [First-run guide](STUDIO-FIRST-RUN.md) · [MetaHuman setup](METAHUMAN-SETUP-GUIDE.md).
+**Edit textures:** **Create → Edit textures → starter → item → Export model & textures**. Paint/import on **Artwork**, then **Use saved artwork & continue → Build & launch game**. Base is shown first; **Advanced · Normal & Mask** reveals surface maps. No new character is needed.
 
-## Updates, support and verification
+**Make a new character:** **Create → Make a character → name → Create new MetaHuman** creates a fresh, uniquely named MetaHuman source. It starts with Epic’s Bruce preset; choose a different preset and adjust face/body/hair in Creator. Studio does not clone the stock players or an existing custom character.
 
-Studio downloads verified updates in the background. Close Studio, the game and Unreal when ready to let them apply; projects, artwork and settings are retained. Settings provides update controls and setup reports. Subscriptions check for mod updates; equip updated assets with the game closed.
+The source remains an inactive draft under **Create → Continue MetaHuman draft**. **Open in MetaHuman Creator** edits it. Skin Details → Send to RoweMod → **Import skin details** transfers supported surface maps only. To make it a game player, use **Prepare Body & Face for the game rig**: export the new MetaHuman geometry in Unreal, adapt both meshes to the supplied native game rig, and import both parts. Only a complete compatible Body/Face import and native build can activate it; hair needs separate binding/preparation. This is an explicit authoring workflow, not automatic MetaHuman-to-game geometry conversion.
 
-Local native wardrobe acceptance is verified on the supported Steam build on the developer PC: Player Select stock/ROWE switching, saved selection after restart, and a DeShawn Crips match with black ROWE pants, orange cuffs and correct feet after spawn, aiming, firing, reloading and brief movement/jump taps. Extended movement stress testing remains outstanding. Exact-assembly package/ownership/rollback and optional-map checks passed; these are separate from gameplay. Independent friend-PC setup-to-match and two-PC multiplayer remain unverified.
+**Edit a stock player:** **My characters → Tyreese / DeShawn / Darnell → Edit this game character**. Choose **Edit textures**, **Edit meshes** or **Choose an outfit**. Body, Head & face and clothing cards lead to the selected tools. Stock edits keep that player’s original identity and do not mint another avatar. Prepared custom characters keep their existing editing workflow.
 
-Follow [FRIEND-TEST.md](FRIEND-TEST.md). For failures, include the Studio version, exact message and **Settings → Advanced setup → Copy setup report**. Keep existing artwork and old folders while resolving missing references.
+Creator setup finds installed tools, guides missing official installs and handles one-time mapping capture. Blender and matching Unreal **5.8.3** are creator tools. MetaHuman data/build tools are optional for character editing. [First-run guide](STUDIO-FIRST-RUN.md).
 
-## Share a mod
+## ROWE Pants and sharing
 
-Send the collection owner your finished creator package, author name, compatible body, screenshots, version and sharing permission. A curated ready-to-play `.roweplay` also needs a verified cook, exact game/body/rig profile and publisher acceptance. Editable `.roweclothes` files are authoring sources, not ready-to-play mods. There is no public upload account or automatic fit service.
+Custom UVs and artwork by **One**, fitted to classic DeShawn. The public prepared asset remains `ROWE-Pants-0.1.1.roweplay`:
 
-The repository owner confirmed permission to share the ROWE artwork and game-derived pants mesh/rig on October 12, 2026. Underlying assets retain their owners' rights; game/third-party content has no new open-source license here. Previous releases remain available. Historical validation is in [CHANGELOG.md](CHANGELOG.md); [dependency status](DEPENDENCY-STATUS.md) is a separate record.
+- [Ready-to-play pants](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/clothing-rowe-pants-v0.1.2/ROWE-Pants-0.1.1.roweplay).
+- [Editable creator files](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/rowe-pants-v0.1.1/ROWE-Pants-0.1.1.roweclothes).
+
+Different body shapes need their own fit. Editable `.roweclothes` packages are sources, not installed mods. Send the collection owner a finished package, author name, fit, version, screenshots and sharing permission. A curated `.roweplay` additionally needs a verified cook and exact game/body/rig profile. There is no public upload account or automatic fitting service. Asset rights remain with their owners; there is no new open-source license for game or third-party content. The repository owner confirmed permission to share the ROWE artwork and game-derived pants mesh/rig on October 12, 2026; source-package rights notices are retained.
+
+## Updates and verification
+
+Studio downloads verified updates when enabled. Close Studio, the game and Unreal to apply, then reopen; projects, artwork and settings remain. Settings provides update controls and setup reports. Mod subscriptions check published updates; equip updated assets with the game closed.
+
+This beta changes Studio's libraries and authoring tools. Shipped native cosmetic runtime and prepared clothing payloads remain pinned to the prior portable release; authoring scripts and guides have changed. Prior developer-PC local wardrobe acceptance remains separate. Independent friend-PC setup-to-match, extended movement stress testing and two-PC multiplayer remain unverified.
+
+Follow [FRIEND-TEST.md](FRIEND-TEST.md). Include version, exact error and **Settings → Advanced setup → Copy setup report** for support. Preserve original art and old folders. Historical evidence is in [CHANGELOG.md](CHANGELOG.md); [dependency status](DEPENDENCY-STATUS.md) is a separate record.

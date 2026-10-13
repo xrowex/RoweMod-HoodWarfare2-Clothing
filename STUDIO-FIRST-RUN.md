@@ -1,50 +1,30 @@
-# First run — Studio 0.2.76
+# First run — Studio 0.2.77
 
-[Download Studio](https://rowemods.com/studio), extract the entire ZIP into a writable folder and open **RoweMod Studio.cmd**. Keep the folders together. Its runtime is bundled; Codex and a .NET SDK are unnecessary.
+Extract the entire [Studio ZIP](https://rowemods.com/studio) into a writable folder and open **RoweMod Studio.cmd**. Keep its folders together. Codex and a .NET SDK are unnecessary.
 
-## Choose a route
+Choose **Set up for playing** for prepared downloads: supported Steam game and cosmetic runtime only. Choose **Set up for creating** for Blender and matching Unreal export/fitting/cooking. Creator setup detects installed tools, guides official installs and automatically handles the one-time mapping capture and cleanup. Complete vendor sign-in/license/install prompts yourself and return to Studio. Use Unreal **5.8.3**. Optional MetaHuman tools are needed only for character editing.
 
-| Welcome choice | Requirements |
-| --- | --- |
-| **Set up for playing** | Supported Steam game and RoweMod's cosmetic runtime. No Epic, Unreal, Blender, MetaHuman data or mapping capture. |
-| **Set up for creating** | Game, Blender and matching Unreal tools for export/fitting/cooking. MetaHuman tools are optional for character editing. |
+Finish existing matches before setup. Studio only closes capture processes whose ownership it proves, and preserves changed/unowned loaders or packages as conflicts.
 
-Close the game for setup/install. Changed or unowned loader/package files are preserved and reported as conflicts.
+## Play
 
-## Play downloaded mods
+**Downloads → item → Subscribe**, then **My characters → matching wearer → Choose an outfit → Play with outfit**. Select that player in game and use the native Wardrobe for compatible stock/prepared clothes. A `.roweplay` is prepared; a `.roweclothes` contains editable creator sources and needs a build.
 
-Choose **Set up for playing**, then **Browse mods → ready-to-play item → Subscribe**. Studio verifies the download and separate body/rig profile, then prepares the matching wearer. Use **My mods** for downloads and **Wardrobe → Play with outfit** to launch. In Player Select, choose the wearer and open the game's **Wardrobe** for compatible stock/prepared choices.
+## Create
 
-A `.roweplay` contains prepared game assets. A `.roweclothes` contains editable sources and needs creator preparation before play. Player setup does not require a new character or a body export. Imported clothing must match its stated fit; it is not automatically resized. If a saved version is no longer installed, return to **My mods** to install/equip it again.
+- **Make clothes:** choose a starter and slot, **Prepare fitting kit** once, fit/weight in Blender and save the same working file. **Build & launch game** automatically reads the selected garment before cooking. Already have the fitted file? Choose **Use an existing Blender file**. Use **Choose another saved file** after Save As. Textures/Substance are optional. Confirm **Looks good in game** only after a play check.
+- **Edit textures:** starter → item → **Export model & textures → Artwork → Import texture set → Use saved artwork & continue → Build & launch game**.
+- **Make a new character:** name it → **Create new MetaHuman**. Then choose Open in MetaHuman Creator; select a preset or adjust face, body and hair in the fresh source. Continue its inactive source draft from Create. Skin import transfers maps only. **Prepare Body & Face for the game rig** requires exporting your new geometry in Unreal, adapting both parts to the native rig, then importing/building them. The draft is not an extra game player until that preparation succeeds; hair needs separate binding. Existing stock/custom players are not cloned.
+- **Edit a stock player:** **My characters → player → Edit this game character**. Edit textures or meshes (Body, Head & face or clothes) while retaining the original player identity.
 
-## Create mods
+My characters contains stock and installed custom identities. My clothes groups clothing and its prepared source fits. Green body references in fitting kits are not game garments. Several labeled body fits can share one working Blender file; Studio imports the selected profile, not the whole scene. New geometry still needs manual fitting and full rig weights.
 
-The creator checklist opens when creation needs missing setup. It finds installed tools, guides official installs, prepares an isolated cooker and handles the one-time mapping capture and cleanup. No manual capture-button hunt or asset scan is needed.
+**Settings → Set up MetaHuman Creator** guides optional Core Data, sign-in and C++ tools. [MetaHuman guide](METAHUMAN-SETUP-GUIDE.md).
 
-Complete official vendor prompts yourself. Use verified Unreal **5.8.3** and return for a recheck. Review Epic's displayed sizes before downloading. Finish existing matches first: Studio only closes a capture process whose ownership it can prove.
+## Recover and update
 
-Open **Create**:
+Changed working files/maps require a new build and play check. Failed/canceled actions do not complete steps. A missing working file offers relocation. Restore a missing enabled PNG using Import PNG/Import texture set on its exact item/material; reset cannot recreate a lost original. Interrupted capture recovers through setup with the game closed. Keep original art and avoid deleting unknown conflicts.
 
-- **Edit textures:** choose a starter card, then its item card. **Export model & textures → Artwork → Import texture set → Use saved artwork & continue → Build & launch game**. Check it in a match and confirm **Looks good in game**. This item project does not add a player identity.
-- **Make clothes:** choose a starter and clothing slot, **Export fitting kit**, fit and weight in Blender, then **Import finished mesh → Artwork → Use saved artwork & continue → Build & launch game**.
-- **Make a character:** name it, choose a starter card and click **Create character**. Choose **Face, hair & skin**, use MetaHuman Creator and Skin Details, send/import the edits and prepare them for the game. Changed head/body geometry and hair need separate preparation from skin maps.
+Studio updates retain user data. Close Studio, the game and Unreal to apply. Versions before 0.2.70 need a manual download. Mod updates are separate subscriptions.
 
-Optional character editing requires **MetaHuman Creator Core Data** and a matching Skin Details extension. **Settings → Set up MetaHuman Creator** guides Epic Options, sign-in and missing C++ build tools. Clothing authoring does not need Core Data. [MetaHuman guide](METAHUMAN-SETUP-GUIDE.md).
-
-## Keep outfits and artwork
-
-In **Wardrobe**, choose a wearer and compatible clothes without duplicating the character. On authored characters, **Keep current item** saves a protected garment version and **Save outfit** keeps named choices. Classic ready-only profiles keep prepared/stock selections without source tools; they do not expose every authoring preset control.
-
-Library copies are separate from current editable art. New clothes still need fitting and full game weights. Selections/presets are local; multiplayer sharing and synchronization are unverified.
-
-## Recovery and updates
-
-Use **Settings** for creator setup, installation folders and reports. Interrupted capture recovers with the game closed. Changed/unrelated loaders stay preserved.
-
-For a missing enabled texture, use **Import PNG** or **Import texture set** on its exact item/material. A disabled absent Mask can be saved without inventing pixels. Reset cannot recover an unavailable original; retain old artwork folders.
-
-Studio downloads verified program updates in the background. Close Studio, the game and Unreal to let the helper apply them and reopen Studio while retaining user data. Settings has **Keep Studio updated automatically** and **Check for updates**. Versions before 0.2.70 need one manual download. Mod subscriptions also check updates; equip new assets with the game closed.
-
-## Test status
-
-Developer-PC Player Select stock/ROWE switching and saved selection after restart are checked. Exact-build package/hash/ownership/rollback and optional-map tests passed. The supported-build DeShawn Crips local match passed visible pants/cuffs/feet checks after spawn, aiming, firing, reloading and brief movement/jump taps. Extended movement stress testing remains outstanding. Another PC's complete setup-to-match, missing-vendor installs and two-PC multiplayer remain unverified. [Friend test](FRIEND-TEST.md) · [Changelog](CHANGELOG.md).
+Portable/UI/file verification is not fresh-PC gameplay acceptance. Prior local developer wardrobe checks remain version-specific; independent friend-PC setup-to-match, extended movement and two-PC multiplayer remain outstanding. [Friend test](FRIEND-TEST.md) · [Substance](SUBSTANCE-GUIDE.md).
