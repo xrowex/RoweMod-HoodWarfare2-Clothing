@@ -1,14 +1,14 @@
 {
   "SchemaVersion": 1,
-  "Version": "0.2.67",
+  "Version": "0.2.68",
   "Channel": "beta",
   "Platform": "windows-x64",
-  "File": "RoweMod-Studio-0.2.67-Windows.zip",
-  "Bytes": 78399594,
-  "Sha256": "7CBEC15A3456C8E345F32EFAEE04EDAF36BF916391B2EB5169B40BBCCCC35C9B",
-  "AssemblySha256": "CF86429113E6D3E76423DB38B41E07B80D974817F02D4FE921EC32B1535E6395",
+  "File": "RoweMod-Studio-0.2.68-Windows.zip",
+  "Bytes": 78400010,
+  "Sha256": "7A6D9EC98E5A1409B006E42BDEC56218FD0435F0A932372A5783EDC501DEE3E2",
+  "AssemblySha256": "42AC06A73CC1F834CA9B3748D3F1F4B0B855D037DC294673197FBACD6F756085",
   "SelfContained": true,
-  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.67/RoweMod-Studio-0.2.67-Windows.zip",
+  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.68/RoweMod-Studio-0.2.68-Windows.zip",
   "Required": [
     "Hood Warfare 2 approved Steam build 25888787",
     "Blender 5.x",
@@ -20,7 +20,7 @@
     "C++ development tools and Windows SDK for local Skin Details build",
     "Substance Painter"
   ],
-  "Setup": "First-run or incomplete setup opens and starts automatically. Verified existing RoweMod loaders are paused/restored automatically; capture supplies its own verified runtime path. Vendor prompts remain in vendor windows.",
+  "Setup": "First-run setup starts automatically. Mapping capture launches the verified shipping game with temporary process-only Steam context, UTF-8 capture configuration and exact loader/path recovery. Complete official vendor prompts when tools are missing.",
   "ClothingCatalog": "https://raw.githubusercontent.com/xrowex/RoweMod-HoodWarfare2-Clothing/main/catalog.json",
   "Validation": {
     "UiChecks": {
@@ -33,12 +33,32 @@
     "SetupRecoveryChecks": 43,
     "LoaderHandoffAndCaptureRecoveryChecks": 99,
     "AtomicSetupWriterChecks": 28,
+    "SteamLaunchContextChecks": 34,
+    "DirectShippingOwnershipChecks": 26,
+    "MappingCompletenessChecks": 11,
+    "Utf8CaptureConfigurationChecks": 18,
+    "CaptureScriptSha256": "07406B438318B82ADD3E38CA8C1A86EF339756C20A0FD921029B09D234F4A01E",
+    "DeveloperPrototypeMappingCapture": "Modified 0.2.67 prototype completed separately; not acceptance of this published download",
     "FreshMappingCapture": false,
     "FreshMachineGameplay": false,
     "TwoPcMultiplayer": false,
     "PriorClothingAcceptanceVersion": "0.2.66",
     "PriorDefaultStarterImportAndIsolatedCook": true,
-    "LocalExtensionCompilation": false
+    "LocalExtensionCompilation": false,
+    "ReceiptSha256": {
+      "automatic": "1326096E37D5078786A0C297D3DF38D39AC056B73F63438EAE3FF282FB39F93A",
+      "setup": "351262497EDAE85B6BC0A77FEA14DB403C16EB929F7E46F0811FA5EAB96F58D4",
+      "handoff": "0FB314A8D965239BEC1C92E24659A1088729595E54EF46CC1EFEF55F4390AB79",
+      "steam": "0B0D3ABEEC961B78CBB2F8CEF2E847FEDCB18654ECC6D6F9ECADD960EE0F38EB",
+      "direct": "ECB83CC34440D0435401DAC534A50F09A94CA5D68D9778F35E2D3FB3EABDECAD",
+      "mapping": "9849AB27FA751C77A8A29994BC980229DF99BF00FA9C65A11780A877459DD852",
+      "writer": "B452E7F282D514BBD7B6875DBC0893DCB42DD06FB3ABD1912C820544EED756A3",
+      "encoding": "5169EE0CC90B7947396605CD8C9A9A01CD0F92094B24C94F91344ECBAA9438C5",
+      "ui-wizard": "8A0467655F3E52D96B29F027212798739EC3DE6E100DA5BF779EE15D7B4A6C33",
+      "ui-continuation": "A3CE5C7E6310E3BECF161FC671ABF01FE181AA72C91843FC1C532DD2B9CB5FC1",
+      "ui-packagedWizard": "EC48946D0772D63CB95A27849401B1D999B65241E61547BE6957B7ACBCCD9E27",
+      "ui-packagedContinuation": "5EBEAA80589E49E73B9E732E4CD7B6B1AA96880B4184AF6F70216EA07C678A1C"
+    }
   },
   "DependencyStatus": "ImageSharp 3.1.12 remains pinned with five advisories; bounded static PNG handoff. See DEPENDENCY-STATUS.md.",
   "Note": "Beta testing release. New MetaHuman heads and hairstyles still require separate game preparation."

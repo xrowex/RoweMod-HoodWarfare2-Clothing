@@ -1,5 +1,21 @@
 # Releases
 
+# RoweMod Studio 0.2.68 beta
+
+Repairs one-time mapping setup when launching outside Steam and when Windows PowerShell writes capture configuration. Capture now starts the verified shipping executable directly, supplies its Steam app identity only to that child process, and writes the Lua and runtime configuration as UTF-8 without a byte-order mark.
+
+- Temporary Steam environment values restore exactly after launch or launch failure. Studio does not change your permanent Windows environment or Steam launch options.
+- Capture retains its owned process handle, waits for the mapping writer to close, copies complete bytes through an exclusive source handle, then closes only its proven capture game.
+- Existing verified RoweMod loaders and runtime-path files are paused and restored with their exact previous bytes or absence. Cancellation and interrupted setup retain guarded recovery; changed or unrelated loaders and existing matches stay protected.
+- First-run setup and character creation still continue automatically with your selected starter. The optional MetaHuman route remains separate from clothing setup.
+
+Extract the complete ZIP into a writable folder and open **RoweMod Studio.cmd**. Close an existing game when setup asks. Complete official vendor installation prompts if tools are missing, then return to Studio. If an older setup attempt failed, close its capture game and reopen the setup wizard in this version; do not delete or edit the game loader yourself. See STUDIO-FIRST-RUN.md and FRIEND-TEST.md.
+
+Verified against this DLL: 127 isolated UI checks, 24 automatic setup checks, 43 setup/recovery checks, 99 loader/capture recovery checks and 117 checks against the actual capture script under Windows PowerShell 5.1. Capture fixtures use fake files and mocked process launches; they do not launch the game. The capture script and ZIP match the recorded hashes.
+
+A separate developer prototype based on a modified 0.2.67 app completed capture and closed its capture game. Its loader/path recovery was checked separately; this prototype is not this public 0.2.68 ZIP. Acceptance of this exact public download's fresh mapping capture and fresh-PC setup-to-match workflow remains pending. Clothing import, sharing and isolated Unreal cooking passed on 0.2.66; those authoring paths are unchanged here. Two-PC multiplayer and recipient MetaHuman extension compilation remain unverified. Proprietary game, engine and MetaHuman assets are not bundled. See DEPENDENCY-STATUS.md for pinned ImageSharp advisories. Previous releases remain available.
+
+
 # RoweMod Studio 0.2.67 beta
 
 Fixes automatic setup stopping when an unchanged RoweMod loader is already installed, including one owned by an older Studio folder. Studio verifies and pauses that loader, captures mappings, and restores the original loader and path automatically. Saved characters, installed mods and artwork remain intact.

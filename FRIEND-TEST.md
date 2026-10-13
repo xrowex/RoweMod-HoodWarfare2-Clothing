@@ -31,3 +31,7 @@ Use a disposable disabled creation for deletion: **My characters → test creati
 The setup wizard's **Character editing (optional)** section covers MetaHuman Core Data and the locally built Skin Details extension. Clothing testing does not require it. See [STUDIO-FIRST-RUN.md](STUDIO-FIRST-RUN.md) for that route. A brand-new MetaHuman head/body/hair still needs game preparation; a skin-map import alone does not complete it.
 
 This fresh-PC setup-to-match test is the remaining clothing acceptance gate. Multiplayer needs a separate two-PC test; local success does not verify network visibility. See [DEPENDENCY-STATUS.md](DEPENDENCY-STATUS.md) for the beta's dependency limitations.
+
+## Mapping launch repair in 0.2.68
+
+This version gives the capture game its Steam identity only during its own launch, then restores the process environment. You do not need to enter Steam launch options or change Windows environment variables. Capture configuration is written without a UTF-8 byte-order mark. After a failed older attempt, close the capture game and reopen the setup wizard; Studio verifies the recorded loader and runtime path before recovery. Never delete a changed or unrelated loader to force setup. This public ZIP still needs independent fresh-PC setup and match acceptance.

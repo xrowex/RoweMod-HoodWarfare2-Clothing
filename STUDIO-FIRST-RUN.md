@@ -37,3 +37,7 @@ Cancel stops Studio's current setup step safely; it does not terminate a vendor 
 Setup accepts the supported unprotected Steam build **25888787**. Unsupported/protected builds remain unavailable for capture and cosmetic installation; keep your artwork and use normal Steam play. For a failed check, expand **Setup details** or copy the report from **Settings → Advanced setup → Copy setup report**. Include the exact failed step when asking for help.
 
 A fresh second PC still needs to complete setup and a match before this beta receives general release acceptance. Two-PC character visibility also remains unverified. See [FRIEND-TEST.md](FRIEND-TEST.md) for the short acceptance test and [DEPENDENCY-STATUS.md](DEPENDENCY-STATUS.md) for dependency limitations.
+
+## Mapping launch repair in 0.2.68
+
+This version gives the capture game its Steam identity only during its own launch, then restores the process environment. You do not need to enter Steam launch options or change Windows environment variables. Capture configuration is written without a UTF-8 byte-order mark. After a failed older attempt, close the capture game and reopen the setup wizard; Studio verifies the recorded loader and runtime path before recovery. Never delete a changed or unrelated loader to force setup. This public ZIP still needs independent fresh-PC setup and match acceptance.
