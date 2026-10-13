@@ -1,14 +1,14 @@
 {
   "SchemaVersion": 1,
-  "Version": "0.2.68",
+  "Version": "0.2.70",
   "Channel": "beta",
   "Platform": "windows-x64",
-  "File": "RoweMod-Studio-0.2.68-Windows.zip",
-  "Bytes": 78400010,
-  "Sha256": "7A6D9EC98E5A1409B006E42BDEC56218FD0435F0A932372A5783EDC501DEE3E2",
-  "AssemblySha256": "42AC06A73CC1F834CA9B3748D3F1F4B0B855D037DC294673197FBACD6F756085",
+  "File": "RoweMod-Studio-0.2.70-Windows.zip",
+  "Bytes": 78415313,
+  "Sha256": "D2A5007654187C1C0283B181B19AD69AE2D81D99A25C76A4A272670BFB46FD08",
+  "AssemblySha256": "34722CB23A68A8A3E85EB915399AACDFBD3180B765AA035647970F1E6BC5B75A",
   "SelfContained": true,
-  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.68/RoweMod-Studio-0.2.68-Windows.zip",
+  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.70/RoweMod-Studio-0.2.70-Windows.zip",
   "Required": [
     "Hood Warfare 2 approved Steam build 25888787",
     "Blender 5.x",
@@ -23,43 +23,76 @@
   "Setup": "First-run setup starts automatically. Mapping capture launches the verified shipping game with temporary process-only Steam context, UTF-8 capture configuration and exact loader/path recovery. Complete official vendor prompts when tools are missing.",
   "ClothingCatalog": "https://raw.githubusercontent.com/xrowex/RoweMod-HoodWarfare2-Clothing/main/catalog.json",
   "Validation": {
+    "UpdaterChecks": 67,
+    "CreatorTeamTargetChecks": 33,
     "UiChecks": {
       "wizard": 41,
       "continuation": 21,
       "packagedWizard": 43,
       "packagedContinuation": 22
     },
-    "AutomaticSetupChecks": 24,
-    "SetupRecoveryChecks": 43,
-    "LoaderHandoffAndCaptureRecoveryChecks": 99,
-    "AtomicSetupWriterChecks": 28,
-    "SteamLaunchContextChecks": 34,
-    "DirectShippingOwnershipChecks": 26,
-    "MappingCompletenessChecks": 11,
-    "Utf8CaptureConfigurationChecks": 18,
+    "UiAutomaticUpdatesEnabled": false,
+    "CreatorScriptSha256": "282B8D86C1BE195F1B72CF86126FC9BA94AB6D80C22A50B4B8EF53B0206B0666",
     "CaptureScriptSha256": "07406B438318B82ADD3E38CA8C1A86EF339756C20A0FD921029B09D234F4A01E",
-    "DeveloperPrototypeMappingCapture": "Modified 0.2.67 prototype completed separately; not acceptance of this published download",
+    "CurrentCandidateReceiptSha256": {
+      "Updater": "53A17DEF8755E3CAD6D1BA3AF772CF4AAB21F4B740DCC42981EE0B8E3ABEEFB0",
+      "CreatorTeamTargets": "C39068EAA68A550C6C9EA8376AC237A34E3564905AB0005F3F2A4CC3836C57AB",
+      "Ui-wizard": "ECAC8CEE139C5858727A12A2A904798FD1089F002D1EB3F849E2F07DE3406953",
+      "Ui-continuation": "84AE3DE0E01DB3B63480E168D7B39C3F5FCE4EEAD2B73EBCA2F9FBBC9A3CF002",
+      "Ui-packagedWizard": "1E4A3D989DBA7DEB0EB9538AB23C317A0EE693D4C7F2ACDFC9AC5FC84786090A",
+      "Ui-packagedContinuation": "26A090699C7D4C1596643C7E3D3652F974EE0895A58C19D44904EA6B9F71DCA9",
+      "RealUpgrade": "634F0EA5297071459D1A2C07921EFB9A2E43B231D8F0EC44696D70E0807ECFAC",
+      "UpgradedGui": "AFDD4D60F05130E0F68D4ACBD4E56D2578C430A7FEE79C53C8F528FA2C7086B7",
+      "CosmeticRuntime": "868E4586EE6B7653251DBB6BBB44A18593587DCEBA22185DBAF339CF8986B336",
+      "GameRestoration": "927B312AB63A3558D6B8F8CEE663A7FF132902A66DCCBA61B18B88B310470FB6"
+    },
     "FreshMappingCapture": false,
+    "FreshLocalDownloadedInstall": false,
     "FreshMachineGameplay": false,
     "TwoPcMultiplayer": false,
-    "PriorClothingAcceptanceVersion": "0.2.66",
-    "PriorDefaultStarterImportAndIsolatedCook": true,
+    "ActualHelperUpgrade": {
+      "Passed": true,
+      "PreviousVersion": "0.2.69",
+      "CurrentVersion": "0.2.70",
+      "ProtectedFiles": 532,
+      "NormalGuiRestartObserved": true,
+      "SavedCharacterPreserved": true,
+      "NetworkDuringStaging": "Mocked publisher transport serving actual final release ZIP",
+      "LiveNewReleaseNetworkUpgradeVerified": false
+    },
+    "CosmeticRuntimeAcceptance": {
+      "BothTeams": true,
+      "SelectionSurvivedRestart": true,
+      "HumanMatchConfirmation": "Pants and feet stay correct",
+      "CreatorScriptSha256": "282B8D86C1BE195F1B72CF86126FC9BA94AB6D80C22A50B4B8EF53B0206B0666",
+      "Scope": "Exact final cosmetic Lua in modified public 0.2.68 workspace, using its fresh-created and cooked character; not untouched full 0.2.70 fresh installation"
+    },
     "LocalExtensionCompilation": false,
-    "ReceiptSha256": {
-      "automatic": "1326096E37D5078786A0C297D3DF38D39AC056B73F63438EAE3FF282FB39F93A",
-      "setup": "351262497EDAE85B6BC0A77FEA14DB403C16EB929F7E46F0811FA5EAB96F58D4",
-      "handoff": "0FB314A8D965239BEC1C92E24659A1088729595E54EF46CC1EFEF55F4390AB79",
-      "steam": "0B0D3ABEEC961B78CBB2F8CEF2E847FEDCB18654ECC6D6F9ECADD960EE0F38EB",
-      "direct": "ECB83CC34440D0435401DAC534A50F09A94CA5D68D9778F35E2D3FB3EABDECAD",
-      "mapping": "9849AB27FA751C77A8A29994BC980229DF99BF00FA9C65A11780A877459DD852",
-      "writer": "B452E7F282D514BBD7B6875DBC0893DCB42DD06FB3ABD1912C820544EED756A3",
-      "encoding": "5169EE0CC90B7947396605CD8C9A9A01CD0F92094B24C94F91344ECBAA9438C5",
-      "ui-wizard": "8A0467655F3E52D96B29F027212798739EC3DE6E100DA5BF779EE15D7B4A6C33",
-      "ui-continuation": "A3CE5C7E6310E3BECF161FC671ABF01FE181AA72C91843FC1C532DD2B9CB5FC1",
-      "ui-packagedWizard": "EC48946D0772D63CB95A27849401B1D999B65241E61547BE6957B7ACBCCD9E27",
-      "ui-packagedContinuation": "5EBEAA80589E49E73B9E732E4CD7B6B1AA96880B4184AF6F70216EA07C678A1C"
+    "PriorPublicDownloadedInstall": {
+      "Version": "0.2.68",
+      "ZipSha256": "7A6D9EC98E5A1409B006E42BDEC56218FD0435F0A932372A5783EDC501DEE3E2",
+      "Scope": "Empty Studio workspace on developer PC with existing vendor tools; actual public download. Does not verify another PC or vendor installation.",
+      "FreshMappingCapture": true,
+      "CharacterCreation": true,
+      "ClothingDownloadImport": true,
+      "Cooking": true,
+      "CookedInstallation": true,
+      "GameplayAccepted": false,
+      "BothTeamsAccepted": false,
+      "ReceiptSha256": {
+        "Setup": "FFC6FCC81CF8214704F26794951DDF19A67E8BAE43FB3E209776D7343E427BBC",
+        "CreateImport": "0803476063D4868AB89D65F1F30694AEED364221EE50F221D10DC4F8F8DE4144",
+        "CookInstall": "2B4EF60DE09BE775A0682C2CB61A9929E21EE10E2E6CB7569A53B1C644F00A3B"
+      }
     }
   },
   "DependencyStatus": "ImageSharp 3.1.12 remains pinned with five advisories; bounded static PNG handoff. See DEPENDENCY-STATUS.md.",
-  "Note": "Beta testing release. New MetaHuman heads and hairstyles still require separate game preparation."
+  "Note": "Beta testing release. New MetaHuman heads and hairstyles still require separate game preparation.",
+  "AutomaticUpdates": {
+    "DefaultEnabled": true,
+    "Check": "On startup",
+    "Apply": "After normal Studio exit and game/Unreal close",
+    "PreserveUserContent": true,
+    "OptOut": "Settings: Keep Studio updated automatically"
+  }
 }

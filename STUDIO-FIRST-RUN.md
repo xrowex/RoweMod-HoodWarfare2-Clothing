@@ -41,3 +41,11 @@ A fresh second PC still needs to complete setup and a match before this beta rec
 ## Mapping launch repair in 0.2.68
 
 This version gives the capture game its Steam identity only during its own launch, then restores the process environment. You do not need to enter Steam launch options or change Windows environment variables. Capture configuration is written without a UTF-8 byte-order mark. After a failed older attempt, close the capture game and reopen the setup wizard; Studio verifies the recorded loader and runtime path before recovery. Never delete a changed or unrelated loader to force setup. This public ZIP still needs independent fresh-PC setup and match acceptance.
+
+## Automatic updates
+
+Studio checks and downloads verified updates in the background when it opens. Close Studio when ready; it waits for the game and Unreal Editor to close, updates program files and reopens Studio. Creations, artwork, settings and exports remain saved. Interrupted updates use guarded rollback. Settings provides Keep Studio updated automatically and Check for updates. Install 0.2.70 manually once if upgrading from an older version.
+
+## Downloaded local acceptance and 0.2.70 team repair
+
+The actual public 0.2.68 download passed automatic mapping setup/cleanup, classic DeShawn creation, catalog pants import, Unreal cooking and installation from an empty Studio workspace on the developer PC with tools already installed. Its Bloods target exposed a clothing issue; 0.2.70 corrects that target with 33 isolated creator checks. The exact final cosmetic Lua was tested in the modified public 0.2.68 workspace on both teams, after a restart and in a user-confirmed Bloods match. The actual final ZIP also passed a real helper upgrade from a 0.2.69 fixture and reopened normal Studio while preserving 532 existing user/generated files; staging used mocked publisher HTTP responses. This does not verify a live newly published network upgrade, an untouched full 0.2.70 fresh installation, missing-vendor installation on another PC or multiplayer.

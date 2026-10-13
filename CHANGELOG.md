@@ -1,5 +1,20 @@
 # Releases
 
+# RoweMod Studio 0.2.70 beta
+
+Adds automatic Studio updates and fixes custom DeShawn characters using their added clothing on both teams. DeShawn has distinct Crips and Bloods game assets; an added custom character now resolves those native team-specific body, face, outfit and first-person targets while preserving each team's materials. Classic replacements remain scoped to their original target. Unrelated characters and weapon meshes stay untouched.
+
+Studio checks for updates when it opens and downloads newer verified releases in the background. After you close Studio, the updater waits for Hood Warfare 2 and Unreal Editor to close, replaces only program files, then reopens Studio. Your creations, settings, artwork and exports stay saved; changed program files block the update, and interrupted updates use guarded rollback. Under **Settings**, clear **Keep Studio updated automatically** to opt out, or choose **Check for updates** to check manually. Older Studio versions have no automatic updater: download this release once to enable it.
+
+Extract the complete ZIP into a writable folder and open **RoweMod Studio.cmd**. Setup handles game mappings and a local cooker automatically. Complete official vendor installation prompts if tools are missing, then return to Studio. Create classic DeShawn, choose **Downloads → ROWE Pants → Download & add to character**, then **Build and Play** with the game closed. The orange ROWE artwork should keep its authored color on both teams.
+
+The exact 0.2.70 candidate passes 127 isolated UI checks, 67 isolated updater checks and 33 checks exercising the creator's real Lua script with mocked game objects. A separate real upgrade from a 0.2.69 fixture used the production staging method, this actual final ZIP and the real update helper. The helper installed the exact new inventory, preserved 532 pre-existing user/generated files and reopened normal Studio. The saved character remained visible and automatic updates remained enabled. Network staging used mocked publisher responses serving the actual ZIP; a live newly published release upgrade has not been verified. UI fixtures disable updates; the isolated updater fixtures do not launch the helper.
+
+The actual public 0.2.68 ZIP was downloaded into an empty Studio workspace on the developer PC. Its automatic mapping capture/cleanup, new classic DeShawn creation, ROWE Pants catalog download/import, native Unreal cooking and installation passed separate checks. Its Bloods clothing target exposed the bug corrected here. The exact cosmetic Lua included in 0.2.70 was then tested in that modified 0.2.68 workspace: pants appeared on both teams, selections survived a game restart, and the user confirmed pants and feet stayed correct in a local Bloods match. This is distinct from an untouched full 0.2.70 fresh-install test. Original game files and saves were restored. Existing Blender and Unreal installations were used; another PC, missing-vendor installation, two-PC multiplayer, new MetaHuman geometry/hair preparation and recipient Skin Details compilation remain unverified.
+
+Proprietary game, engine and MetaHuman assets are not bundled. See STUDIO-FIRST-RUN.md, FRIEND-TEST.md and DEPENDENCY-STATUS.md. Previous release assets and SHA-256 records remain preserved.
+
+
 # RoweMod Studio 0.2.68 beta
 
 Repairs one-time mapping setup when launching outside Steam and when Windows PowerShell writes capture configuration. Capture now starts the verified shipping executable directly, supplies its Steam app identity only to that child process, and writes the Lua and runtime configuration as UTF-8 without a byte-order mark.
