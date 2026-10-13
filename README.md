@@ -2,7 +2,7 @@
 
 Play curated clothing mods, keep clothes on one character, or make your own. **Hood Warfare 2 is the first supported game.** No Codex is needed.
 
-[Download Studio 0.2.75 for Windows](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.75/RoweMod-Studio-0.2.75-Windows.zip) · [Studio website](https://rowemods.com/studio) · [Releases](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases)
+[Download Studio 0.2.76 for Windows](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.76/RoweMod-Studio-0.2.76-Windows.zip) · [Studio website](https://rowemods.com/studio) · [Releases](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases)
 
 ## Just want to play?
 
@@ -20,7 +20,7 @@ Prepared player downloads need **no Epic Launcher, Unreal, Blender or mapping ca
 | **Browse mods** | Subscribe to ready-to-play items or get editable creator files. |
 | **My mods** | Find downloads, update subscriptions, equip items or edit creator files. |
 | **Wardrobe** | Dress an existing classic/custom wearer. Authored characters also support **Keep current item** and named **Save outfit** presets. |
-| **Create** | Choose **Edit textures**, **Make clothing** or **Make a character**. |
+| **Create** | Choose **Play mods**, **Edit textures**, **Make clothes** or **Make a character** from picture cards. |
 
 Changing clothes keeps the same character identity. Wardrobe choices and outfit presets are local. A garment must match the body, native slot and game rig; there is no automatic fitting to another body or verified multiplayer wardrobe synchronization.
 
@@ -35,11 +35,13 @@ The thumbnail renders the actual garment and textures under studio lighting; it 
 
 ## Create something
 
-**Edit textures:** **Create → Start texture edit → choose an item → Export FBX & textures**. Paint its existing UVs in Substance, then **Textures → Import texture set → Build & test**. No new character or mesh import is needed. [Substance guide](SUBSTANCE-GUIDE.md).
+**Edit textures:** **Create → Edit textures → starter → item → Export model & textures**. The next screen is **Artwork**: use **Paint texture** or **Import texture set**, then **Use saved artwork & continue → Build & launch game**. Confirm **Looks good in game** after checking it. No new character or mesh import is needed. [Substance guide](SUBSTANCE-GUIDE.md).
 
-**Make clothing:** **Create → Start clothing mesh → choose a starter → Export body & fitting kit**. Fit and weight your garment around the supplied body in Blender, keep the game rig, then **Import finished mesh**, add the painted maps and **Build & test**. Fitting and full weights remain authoring work.
+**Make clothes:** **Create → Make clothes → starter → clothing slot → Export fitting kit**. Fit and weight your garment around the supplied body in Blender, keeping the game rig. Follow **Import finished mesh → Artwork → Build & launch game → Looks good in game**. Fitting and full weights remain authoring work.
 
-**Make a character:** **Create → Start character**. Use MetaHuman Creator for face, hair and Skin Details, then send/import the edits back to Studio. Changed body/head geometry and hair still need game preparation separately from skin-map import.
+**Make a character:** **Create → Make a character → named starter card → Create character**. In that character's task screen choose **Face, hair & skin**. Follow **Open in MetaHuman Creator → Send to RoweMod (inside Creator) → Import skin details → Build & launch game → Looks good in game**. Changed body/head geometry and hair still need game preparation separately from skin-map import.
+
+The wearer and item stay visible at the top. Steps resume when you reopen Studio; changed artwork invalidates its previous build check. **Advanced · Normal & Mask** reveals optional surface maps. The checklist never counts launching the game as a passed visual test.
 
 Creator setup finds tools, handles mapping capture and guides missing official installations. Matching Unreal **5.8.3** and Blender are creator tools. MetaHuman data and extension build tools are optional for character editing. [First-run guide](STUDIO-FIRST-RUN.md) · [MetaHuman setup](METAHUMAN-SETUP-GUIDE.md).
 

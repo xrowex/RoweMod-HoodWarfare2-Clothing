@@ -1,4 +1,4 @@
-# First run — Studio 0.2.75
+# First run — Studio 0.2.76
 
 [Download Studio](https://rowemods.com/studio), extract the entire ZIP into a writable folder and open **RoweMod Studio.cmd**. Keep the folders together. Its runtime is bundled; Codex and a .NET SDK are unnecessary.
 
@@ -25,9 +25,9 @@ Complete official vendor prompts yourself. Use verified Unreal **5.8.3** and ret
 
 Open **Create**:
 
-- **Edit textures → Start texture edit:** select a saved character's item or a game starter. **Export FBX & textures → paint → Textures → Import texture set → Build & test**. This item project does not add a player identity.
-- **Make clothing → Start clothing mesh:** choose a starter, **Export body & fitting kit**, fit and weight in Blender, then **Import finished mesh**, import the final maps and **Build & test**.
-- **Make a character → Start character:** create the identity, use MetaHuman Creator and Skin Details, send/import the edits and prepare them for the game. Changed head/body geometry and hair need separate preparation from skin maps.
+- **Edit textures:** choose a starter card, then its item card. **Export model & textures → Artwork → Import texture set → Use saved artwork & continue → Build & launch game**. Check it in a match and confirm **Looks good in game**. This item project does not add a player identity.
+- **Make clothes:** choose a starter and clothing slot, **Export fitting kit**, fit and weight in Blender, then **Import finished mesh → Artwork → Use saved artwork & continue → Build & launch game**.
+- **Make a character:** name it, choose a starter card and click **Create character**. Choose **Face, hair & skin**, use MetaHuman Creator and Skin Details, send/import the edits and prepare them for the game. Changed head/body geometry and hair need separate preparation from skin maps.
 
 Optional character editing requires **MetaHuman Creator Core Data** and a matching Skin Details extension. **Settings → Set up MetaHuman Creator** guides Epic Options, sign-in and missing C++ build tools. Clothing authoring does not need Core Data. [MetaHuman guide](METAHUMAN-SETUP-GUIDE.md).
 

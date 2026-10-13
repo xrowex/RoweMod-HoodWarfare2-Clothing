@@ -1,4 +1,4 @@
-# Friend test — Studio 0.2.75
+# Friend test — Studio 0.2.76
 
 Get the complete [Windows Studio beta](https://rowemods.com/studio), extract the whole ZIP into a writable folder and open **RoweMod Studio.cmd**. No Codex or separate .NET installation is needed.
 
@@ -22,9 +22,9 @@ This independent friend-PC acceptance is still outstanding. Developer-PC file ch
 
 Use **Create** and follow one path:
 
-- **Start texture edit:** choose an existing item, **Export FBX & textures**, paint the existing UVs in Substance, then **Textures → Import texture set → Build & test**. This does not add a character.
-- **Start clothing mesh:** choose a starter, **Export body & fitting kit**, fit and weight it in Blender, then **Import finished mesh**, add matching maps and **Build & test**. There is no automatic body fit.
-- **Start character:** edit in MetaHuman Creator, return edits to Studio and prepare them for the game. Optional character data/tools are needed only for authoring.
+- **Edit textures:** choose a starter and item card, **Export model & textures**, paint the existing UVs in Substance, then **Artwork → Import texture set → Use saved artwork & continue → Build & launch game**. Check it in a match, then confirm **Looks good in game**. This does not add a character.
+- **Make clothes:** choose a starter, **Export fitting kit**, fit and weight it in Blender, then **Import finished mesh**, add matching maps and **Build & launch game**. There is no automatic body fit.
+- **Make a character:** name it, choose a starter card and click **Create character**. Choose **Face, hair & skin**, edit in MetaHuman Creator, return the skin maps and prepare the character for the game. Optional character data/tools are needed only for authoring.
 
 For an authored character, **Wardrobe → Keep current item** preserves a version and **Save outfit** keeps named presets on the same wearer. Test that switching retains other artwork and does not add a new player. Classic ready-only profiles keep stock/prepared choices; authoring preset controls may be unavailable.
 
