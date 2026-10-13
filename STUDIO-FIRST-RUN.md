@@ -2,15 +2,15 @@
 
 Download [Studio for Windows](https://rowemods.com/studio), extract the entire ZIP into a writable folder, then open **RoweMod Studio.cmd**. Keep its folders together. Studio includes its .NET runtime; Codex and a separate .NET installation are unnecessary.
 
-## One setup button
+## Automatic setup
 
-The setup screen opens on first launch. Click **Set up automatically**.
+The setup screen opens and starts automatically on first launch, or when a required setup check is incomplete. You do not need to open Settings, scan assets or start mapping capture yourself.
 
 Its checklist shows your game, Blender, Unreal Engine and game setup. Studio finds installed tools, saves their locations, prepares its isolated cooker and captures the game's mappings once. It closes only the capture game that it can prove it launched; finish your existing match and close the game before starting setup. Your characters, artwork and stock players stay saved.
 
 If a tool is missing, Studio opens the official installation path. Complete the vendor's license and Windows permission prompts. Unreal Engine **5.8** is installed through Epic Games Launcher: sign in, select that version and start its installation. Return to the setup screen; it checks again and continues when the requirements are ready. The engine and the game are supplied by their vendors, rather than bundled in the Studio ZIP.
 
-When all required items are ready, choose **Start creating**. Select a classic starter and name your character. Studio reads that starter's body, clothes and game rig from your own installed game automatically. You do not need to use the old exporter or scan the complete asset library.
+When all required items are ready, Studio opens character creation automatically. Select a classic starter and name your character. Studio reads that starter's body, clothes and game rig from your own installed game automatically. If setup is needed after you click **Create and customize**, it opens the checklist, keeps your choices and continues creating when setup finishes.
 
 To reopen setup later, use **Settings → Run setup wizard**. Normal use needs no manual paths. Custom installations, setup reports and recovery tools are under **Settings → Advanced setup**.
 

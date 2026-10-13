@@ -1,5 +1,22 @@
 # Releases
 
+# RoweMod Studio 0.2.66 beta
+
+Open Studio. Setup opens and starts automatically on first launch, or when a required check is incomplete. Mapping capture, closure of Studio's capture game, temporary-loader recovery and cooker preparation are automatic. Existing matches stay open until you close them.
+
+- **Create and customize** opens setup if needed and continues with the same name, starter and outfit choices after success. Cancelling keeps those choices.
+- Finds installed tools and helps install missing tools through official vendors. Return from Steam/Epic to resume; Epic sign-in, engine installation and license prompts still use their normal windows.
+- Fixes clothing downloads into an unprepared default starter: its reference game rig is generated automatically from the unchanged local game export.
+- Fixes sharing texture-only clothing on a stock model. Sharing does not switch the author's selected model or change saved artwork.
+- Required setup and clothing are separate from optional MetaHuman Creator/Core Data, local C++ extension compilation and Substance Painter.
+
+Extract the complete ZIP, open **RoweMod Studio.cmd**, finish any vendor prompts, then create **DeShawn**. Choose **Downloads → ROWE Pants → Download & add to character**, then **Build and Play** with the game closed. See STUDIO-FIRST-RUN.md and FRIEND-TEST.md.
+
+Verified against this DLL: 187 isolated UI checks (including the actual packaged checklist and continuation), 24 setup sequencing checks, 43 setup/recovery checks, 32 installer/download checks, 25 reference-rig checks, and real Blender clothing import/sharing. The default starter that failed in 0.2.65 now imports the public pants download. The isolated Unreal 5.8 cook and native container/rig checks passed; no game files were changed or mods installed by that check.
+
+These local fixtures use installed tools and a matching private mapping copy. Fresh-PC vendor installation, fresh mapping capture and setup-to-match acceptance remain pending. Two-PC multiplayer remains unverified. New MetaHuman geometry/hair still needs separate game preparation. Game/engine/MetaHuman data and proprietary decoder assets are not bundled. Five pinned ImageSharp advisories remain documented in DEPENDENCY-STATUS.md. Previous releases remain available.
+
+
 # RoweMod Studio 0.2.65 beta
 
 Open Studio and click **Set up automatically**. The first-run popup shows four simple checks: game, Blender, Unreal and game setup. Manual paths and the legacy asset exporter stay under Advanced.

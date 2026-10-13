@@ -2,15 +2,15 @@
 
 Download **RoweMod Studio for Windows** and curated, editable clothes for **Hood Warfare 2**, the first supported game. Studio guides you through fitting, texturing, importing and building your own clothing. You do not need Codex.
 
-[Download Studio 0.2.65](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.65/RoweMod-Studio-0.2.65-Windows.zip) · [RoweMods Studio page](https://rowemods.com/studio) · [All releases](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases)
+[Download Studio 0.2.66](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.66/RoweMod-Studio-0.2.66-Windows.zip) · [RoweMods Studio page](https://rowemods.com/studio) · [All releases](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases)
 
 See [setup recovery and support](STUDIO-FIRST-RUN.md) and [dependency status](DEPENDENCY-STATUS.md). This beta still needs independent fresh-PC gameplay acceptance.
 
 ## Start here
 
 1. Extract the complete Studio ZIP into a writable folder and open **RoweMod Studio.cmd**.
-2. Click **Set up automatically** in the first-run checklist. Studio finds your tools, opens missing official installers and handles game mappings and cooker setup. Complete vendor prompts and install Unreal **5.8** in Epic when asked, then return to Studio.
-3. Choose **Start creating → DeShawn**, keep his classic body and name your new character. Studio reads its body, clothes and rig automatically from your installed game.
+2. The checklist opens and starts automatically on first launch or when a required check is incomplete. Studio finds your tools, opens missing official installers and handles game mappings and cooker setup. Complete vendor prompts and install Unreal **5.8** in Epic when asked, then return to Studio.
+3. When setup finishes, create **DeShawn**, keep his classic body and name your new character. Studio reads its body, clothes and rig automatically from your installed game.
 4. Choose **Downloads → ROWE Pants → Download & add to character**, then **Build and Play** with the game closed.
 
 No Codex or .NET SDK is needed. Manual paths and recovery/report tools are under **Settings → Advanced setup**. Existing matches, artwork and stock characters remain preserved. See [the setup guide](STUDIO-FIRST-RUN.md) and [the friend test](FRIEND-TEST.md).

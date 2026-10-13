@@ -5,8 +5,8 @@ Download the current [Windows Studio beta](https://rowemods.com/studio). This is
 ## Start
 
 1. Extract the entire ZIP into a writable folder, then open **RoweMod Studio.cmd**.
-2. The setup screen opens. Click **Set up automatically**. Complete any official installer/license prompts. In Epic, sign in and install **Unreal Engine 5.8** when requested, then return to Studio. The checklist rechecks and continues. Close an existing game match before the one-time game setup.
-3. Choose **Start creating**, select classic **DeShawn**, and name your new character. Studio exports its body, clothes and rig automatically from your own game.
+2. The setup screen opens and starts automatically. Complete any official installer/license prompts. In Epic, sign in and install **Unreal Engine 5.8** when requested, then return to Studio. The checklist rechecks and continues. Close an existing game match before the one-time game setup. Mapping capture, capture-game closure and temporary-loader recovery are automatic.
+3. Studio opens character creation when setup finishes. Select classic **DeShawn**, name your new character and click **Create and customize**. Studio exports its body, clothes and rig automatically from your own game. If setup needs attention, this button opens it and continues with your choices when ready.
 4. Choose **Downloads → ROWE Pants → Download & add to character** and pick that character.
 5. Close the game, choose **Build and Play**, then select your custom character in game.
 
