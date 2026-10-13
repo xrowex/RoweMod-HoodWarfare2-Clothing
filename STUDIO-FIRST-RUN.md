@@ -63,3 +63,12 @@ This verifies public 0.2.70 setup/capture and live update/helper/restart on the 
 In Studio 0.2.71 open **Settings → Set up MetaHuman Creator**. Review storage/performance advice before continuing, then complete the required Epic or compiler step and return for a recheck. Choose **Use clothing tools for now** to skip optional character editing. [MetaHuman setup guide](METAHUMAN-SETUP-GUIDE.md) explains matching engine data, plugins, sign-in, local extension tools and recovery. Exact install sizes come from Epic Options; 150 GB is a RoweMod planning estimate. The successful 0.2.70 local setup/updater tests above remain separate from the new guide UI checks and unverified missing-vendor installation on another PC.
 
 The final 0.2.71 guide was visibly checked through Settings, the initial review and Continue. Actual local BuildPlugin compilation succeeded and the matching extension was installed, with Unreal 5.8.3, Creator Core Data and C++ tools already present. A real helper update from a 0.2.70 fixture reopened Studio and preserved 13 user/generated files; staging used mocked publisher HTTP responses. Missing-vendor installation, Epic sign-in and a newly published live 0.2.71 update remain unverified.
+
+## Clear next steps in Studio 0.2.72
+
+Open **My characters → Customize → Start here**.
+- Choose **Edit character** for MetaHuman, skin maps and the return/import steps.
+- Choose **Choose clothes**, select the item, then pick **Repaint**, **Make a new mesh**, or **Add a clothing package**. Follow only that path.
+- Finish with **Build and Play** at the top right. Editing files does not install the mod by itself.
+
+Starting outfit and advanced model choices are under **Starting outfit & advanced options** when creating a draft. Your existing characters and artwork stay saved.

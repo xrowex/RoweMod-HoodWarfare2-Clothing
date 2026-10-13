@@ -2,9 +2,18 @@
 
 Download **RoweMod Studio for Windows** and curated, editable clothes for **Hood Warfare 2**, the first supported game. Studio guides you through fitting, texturing, importing and building your own clothing. You do not need Codex.
 
-[Download Studio 0.2.71](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.71/RoweMod-Studio-0.2.71-Windows.zip) · [RoweMods Studio page](https://rowemods.com/studio) · [All releases](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases)
+[Download Studio 0.2.72](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.72/RoweMod-Studio-0.2.72-Windows.zip) · [RoweMods Studio page](https://rowemods.com/studio) · [All releases](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases)
 
 See [setup recovery and support](STUDIO-FIRST-RUN.md) and [dependency status](DEPENDENCY-STATUS.md). This beta still needs independent fresh-PC gameplay acceptance.
+
+## Clear next steps in Studio 0.2.72
+
+Open **My characters → Customize → Start here**.
+- Choose **Edit character** for MetaHuman, skin maps and the return/import steps.
+- Choose **Choose clothes**, select the item, then pick **Repaint**, **Make a new mesh**, or **Add a clothing package**. Follow only that path.
+- Finish with **Build and Play** at the top right. Editing files does not install the mod by itself.
+
+Starting outfit and advanced model choices are under **Starting outfit & advanced options** when creating a draft. Your existing characters and artwork stay saved.
 
 ## Start here
 

@@ -1,5 +1,16 @@
 # Releases
 
+# RoweMod Studio 0.2.72 beta
+
+Creations now open on **Start here**, with direct **Edit character** and **Choose clothes** actions and a clear **Build and Play** finish. Clothing shows one task at a time: repaint the existing item, fit a new mesh, or import a ready-made package. Each path explains what to export, what to bring back, and what to click next. Starting outfit and advanced model options are collapsed when creating a draft.
+
+The Character page explains **MetaHuman → Send to RoweMod → Import skin details → Build and Play**. Classic models without a linked source get a MetaHuman starter action and an explanation of their texture-editing route. Face/body/hair preparation remains separate from skin-map import.
+
+79 isolated source/package UI and setup-continuation checks passed. The final workflow was also checked in normal Studio with saved Aqua: Start here, clothing item selection and visible clothing tool tabs. Saved creation data is preserved. These checks cover UI/navigation, not a new cook-to-game, missing-vendor or multiplayer test. Prior 0.2.71 native extension and live-update evidence remains version-specific.
+
+Studio 0.2.70 and newer receive the update automatically when enabled. Earlier versions need one manual download. Previous releases remain available.
+
+
 # RoweMod Studio 0.2.71 beta
 
 Adds a guided MetaHuman setup route. Open **Settings → Set up MetaHuman Creator**, review storage and performance advice, then continue through the next missing step. The guide points to Epic's matching engine/Core Data Options, asks you to complete sign-in and installer prompts yourself, rechecks when you return, and prepares the local Skin Details extension only when its tools are ready and Unreal is closed. You can choose **Use clothing tools for now**.
