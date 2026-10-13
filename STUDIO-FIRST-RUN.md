@@ -64,7 +64,7 @@ In Studio 0.2.71 open **Settings → Set up MetaHuman Creator**. Review storage/
 
 The final 0.2.71 guide was visibly checked through Settings, the initial review and Continue. Actual local BuildPlugin compilation succeeded and the matching extension was installed, with Unreal 5.8.3, Creator Core Data and C++ tools already present. A real helper update from a 0.2.70 fixture reopened Studio and preserved 13 user/generated files; staging used mocked publisher HTTP responses. Missing-vendor installation, Epic sign-in and a newly published live 0.2.71 update remain unverified.
 
-## Clear next steps in Studio 0.2.72
+## Clear next steps in Studio
 
 Open **My characters → Customize → Start here**.
 - Choose **Edit character** for MetaHuman, skin maps and the return/import steps.
@@ -72,3 +72,7 @@ Open **My characters → Customize → Start here**.
 - Finish with **Build and Play** at the top right. Editing files does not install the mod by itself.
 
 Starting outfit and advanced model choices are under **Starting outfit & advanced options** when creating a draft. Your existing characters and artwork stay saved.
+
+## Paint an existing clothing item
+
+Use **Choose clothes → choose item → Repaint item → Export FBX & textures**. The folder contains that garment FBX, its Base/Mask/Normal PNGs and a Painter guide. Bring painted Base Color and Normal DirectX PNGs back to the same saved character and clothing item, then **Build and Play**. No new character is needed. [Follow the Substance guide](SUBSTANCE-GUIDE.md).

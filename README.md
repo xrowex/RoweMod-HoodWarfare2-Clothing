@@ -2,11 +2,11 @@
 
 Download **RoweMod Studio for Windows** and curated, editable clothes for **Hood Warfare 2**, the first supported game. Studio guides you through fitting, texturing, importing and building your own clothing. You do not need Codex.
 
-[Download Studio 0.2.72](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.72/RoweMod-Studio-0.2.72-Windows.zip) · [RoweMods Studio page](https://rowemods.com/studio) · [All releases](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases)
+[Download Studio 0.2.73](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.73/RoweMod-Studio-0.2.73-Windows.zip) · [RoweMods Studio page](https://rowemods.com/studio) · [All releases](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases)
 
 See [setup recovery and support](STUDIO-FIRST-RUN.md) and [dependency status](DEPENDENCY-STATUS.md). This beta still needs independent fresh-PC gameplay acceptance.
 
-## Clear next steps in Studio 0.2.72
+## Clear next steps in Studio
 
 Open **My characters → Customize → Start here**.
 - Choose **Edit character** for MetaHuman, skin maps and the return/import steps.
@@ -34,7 +34,7 @@ Studio's **Downloads** page handles the download and import for you. For a manua
 
 Importing creates editable copies; it does not install the mod until Build and Play. A different body or rig requires refitting the garment first. Aqua's custom body is a different fitting target. Check walking, crouching, jumping, aiming and reloading after installing.
 
-To customize the design, use **Textures → Export for Substance / Import texture set**. To change its shape, use **Make clothing → Get fitting kit**, open its beginner guide, fit and weight the mesh around the supplied body in Blender, then **Import finished Pants mesh**. Keep the matching UVs, weights, material slots and game rig. Import Base Color and **DirectX Normal** PNGs from Substance; the current editable-clothing shader does not consume ORM or Emissive.
+To customize the design, use **Make clothing → Repaint Pants → Export FBX & textures, then Textures → Import texture set**. To change its shape, use **Make clothing → Get fitting kit**, open its beginner guide, fit and weight the mesh around the supplied body in Blender, then **Import finished Pants mesh**. Keep the matching UVs, weights, material slots and game rig. Import Base Color and **DirectX Normal** PNGs from Substance; the current editable-clothing shader does not consume ORM or Emissive.
 
 ## Optional MetaHuman editing
 
@@ -85,3 +85,7 @@ This verifies public 0.2.70 setup/capture and live update/helper/restart on the 
 In Studio 0.2.71 open **Settings → Set up MetaHuman Creator**. Review storage/performance advice before continuing, then complete the required Epic or compiler step and return for a recheck. Choose **Use clothing tools for now** to skip optional character editing. [MetaHuman setup guide](METAHUMAN-SETUP-GUIDE.md) explains matching engine data, plugins, sign-in, local extension tools and recovery. Exact install sizes come from Epic Options; 150 GB is a RoweMod planning estimate. The successful 0.2.70 local setup/updater tests above remain separate from the new guide UI checks and unverified missing-vendor installation on another PC.
 
 The final 0.2.71 guide was visibly checked through Settings, the initial review and Continue. Actual local BuildPlugin compilation succeeded and the matching extension was installed, with Unreal 5.8.3, Creator Core Data and C++ tools already present. A real helper update from a 0.2.70 fixture reopened Studio and preserved 13 user/generated files; staging used mocked publisher HTTP responses. Missing-vendor installation, Epic sign-in and a newly published live 0.2.71 update remain unverified.
+
+## Paint an existing clothing item
+
+Use **Choose clothes → choose item → Repaint item → Export FBX & textures**. The folder contains that garment FBX, its Base/Mask/Normal PNGs and a Painter guide. Bring painted Base Color and Normal DirectX PNGs back to the same saved character and clothing item, then **Build and Play**. No new character is needed. [Follow the Substance guide](SUBSTANCE-GUIDE.md).

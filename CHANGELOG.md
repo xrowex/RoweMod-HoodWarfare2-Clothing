@@ -1,5 +1,18 @@
 # Releases
 
+# RoweMod Studio 0.2.73 beta
+
+**Export FBX & textures** now exports only the clothing item you selected. It opens a folder containing the garment FBX under **Mesh**, matching **Base / Mask / Normal** PNGs under **Textures**, and a short **START-HERE-Substance.txt** guide. The FBX embeds the primary textures and preserves the original UVs, game rig and full weights.
+
+Use **My characters → Customize → Start here → Choose clothes → choose item → Repaint item → Export FBX & textures**. Paint the FBX in Substance, then return to the same character and item: **Textures → Import texture set → Build and Play**. Changing textures or replacing clothes does not require a new character. Duplicate a character only when you want to keep two outfits as selectable variants. Independent wardrobe slots are not implemented.
+
+Painter still needs a project and a fill layer using the exported Base and Normal PNGs; embedded FBX media does not set up those layers for you. Use DirectX normals and keep the existing UVs. Export separate Base Color and Normal DirectX PNGs. Keep the original clothing Mask; it is not an ORM map. See [the Substance guide](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/blob/main/SUBSTANCE-GUIDE.md).
+
+83 isolated source/package UI and setup-continuation checks and 8 actual single-item export checks passed. The exported pants FBX was independently reopened to verify topology, UVs, bones, full weights and embedded primary textures. All 39 protected source files stayed byte-identical. This does not claim a new Painter UI, friend setup, cook-to-game or multiplayer test. Earlier acceptance remains tied to its tested versions.
+
+Studio 0.2.70 and newer receive this update automatically when enabled. Earlier versions need one manual download. Previous releases remain available.
+
+
 # RoweMod Studio 0.2.72 beta
 
 Creations now open on **Start here**, with direct **Edit character** and **Choose clothes** actions and a clear **Build and Play** finish. Clothing shows one task at a time: repaint the existing item, fit a new mesh, or import a ready-made package. Each path explains what to export, what to bring back, and what to click next. Starting outfit and advanced model options are collapsed when creating a draft.
