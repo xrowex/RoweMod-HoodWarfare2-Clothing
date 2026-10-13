@@ -1,14 +1,14 @@
 {
   "SchemaVersion": 1,
-  "Version": "0.2.76",
+  "Version": "0.2.77",
   "Channel": "beta",
   "Platform": "windows-x64",
-  "File": "RoweMod-Studio-0.2.76-Windows.zip",
-  "Bytes": 76415994,
-  "Sha256": "DEC7A6BF38EAF39054A5219E42B5C982743E7935D9B1D547A860FE0D3CE6D4B3",
-  "AssemblySha256": "5C5B954CAA5CCA66005B64B5C66A51B1053C696F6FBD6E7E30C3997DA612593F",
+  "File": "RoweMod-Studio-0.2.77-Windows.zip",
+  "Bytes": 77385418,
+  "Sha256": "F7ADE6AF95CE6289CE94780AAF22CC80D12ACD511759E8DF0E4177161957DCB5",
+  "AssemblySha256": "98D5F99000872DC2546BCFAC6E0FFE85822EB1857E12A1CBC38CC8BDDD680B50",
   "SelfContained": true,
-  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.76/RoweMod-Studio-0.2.76-Windows.zip",
+  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.77/RoweMod-Studio-0.2.77-Windows.zip",
   "Required": [
     "Hood Warfare 2 approved Steam build 25888787",
     "Microsoft Visual C++ v14 x64 runtime for cosmetic loader"
@@ -22,33 +22,36 @@
   "ClothingCatalog": "https://raw.githubusercontent.com/xrowex/RoweMod-HoodWarfare2-Clothing/main/catalog.json",
   "Validation": {
     "Checks": {
-      "guidedUi": 50,
-      "wardrobeUi": 41,
+      "guidedUi": 74,
+      "library": 23,
       "guidedState": 53,
-      "textureRecovery": 20,
-      "playerPackages": 70,
-      "optionalMaps": 12
+      "actualLibraryUi": 20,
+      "clothingHandoff": 24,
+      "portraitCache": 30
     },
     "ReceiptSha256": {
-      "guidedUi": "D66B01869E8158A8E5D5E3E59E057E9CA8821ACA79D065BD11208E76EFCA9839",
-      "wardrobeUi": "DFD6915B8FBA9D94F6C09C417461FA6BA37C8EEEBC540775A819BC20A22C44D2",
-      "guidedState": "84A24E9A153C85625773D5AEAD6BBD45D2BBE672D67C56C72485C7825D82D0B5",
-      "textureRecovery": "D9C5F227A65DF2E805D16BD9942C3B9982DF827EE628133CDE8501913D332012",
-      "playerPackages": "164EFADC5F655FDBD0B2FC20514EAAB1DA64A70A8E7FF6339F50320759A1898C",
-      "optionalMaps": "0EF1CFA56FB4EFB63E9D0E1210D1CD0D99CAB997F810F6D6D529F792B3AC691B"
+      "guidedUi": "29E4C06E53313B248E36D10796817150CF9B7C5F9FF47D417EA4D9096B70F15A",
+      "library": "B81B8D5853263091ACC7D686B7B3A8AA354C6BF0CCCC034F305DDF7CE2DCE236",
+      "guidedState": "687E031F2640405E6EA0A7ADE381081EA8B492B0614DB79493719CEB6C635083",
+      "actualLibraryUi": "CFD43CEF31207D51C5D2772EA4778A8934AF6800692A215A67DFA6922B8A2163",
+      "clothingHandoff": "27803E4D02B00562029FC2287E941D063AD069A20F6A01EF85645A000E7BD3DA",
+      "portraitCache": "59AC372B731530EDB106E5C666ABB4C6C791EFFB8A8A144F118A68ACC032632F"
     },
-    "TotalChecks": 246,
-    "PackageAuditSha256": "2068A286C15BDA2ED25B86EC83106A5478FE7FDC1B5883DEBF67FC2FA248D721",
-    "RuntimeFilesUnchangedFrom75": true,
+    "TotalChecks": 224,
+    "PackageAuditSha256": "2BAD0110E9125CBADA499F01EAC0C46D5DD1FF52D3587DFA16CD8B695FF8E110",
+    "WardrobeSourceFixtureChecks": 54,
+    "RuntimeFilesUnchangedFrom76": true,
     "NativeWardrobeAccepted": false,
     "PriorNativeWardrobeAcceptedVersion": "0.2.75",
     "IndependentFriendPcAccepted": false,
     "PainterAcceptedThisVersion": false,
     "MultiplayerWardrobeAccepted": false,
-    "Scope": "Exact final assembly isolated WinForms/state/preservation and package tests. External editor/cooker/game callbacks are mocked in UI fixtures; no new native game or network acceptance. Shipped runtime tools and cooked wardrobe payloads remain byte-identical to0.2.75."
+    "NewMetaHumanGeometryAccepted": false,
+    "ActualSourceBodyProfilesVerified": 4,
+    "Scope": "Exact final assembly library/state/offscreen WinForms/source-routing fixtures. New MetaHuman source creation uses injected source/native adapter callbacks in the identity fixture; no complete new geometry/game acceptance. Four actual body/rig Blender fitting profiles and separate private FBX roundtrips were verified, without installing those fits. Native cosmetic runtime/helpers and prepared payloads remain byte-identical to 0.2.76; authoring scripts and portraits changed."
   },
   "DependencyStatus": "ImageSharp 3.1.12 remains pinned with five advisories; bounded static PNG handoff. See DEPENDENCY-STATUS.md.",
-  "Note": "Beta testing release. New MetaHuman heads and hairstyles still require separate game preparation.",
+  "Note": "Beta. New MetaHuman geometry/hair still needs compatible game preparation. Source fit readiness is separate from installation and animation acceptance.",
   "AutomaticUpdates": {
     "DefaultEnabled": true,
     "Check": "On startup",
@@ -67,16 +70,18 @@
     "LocalSkinDetailsBuild": "Bundled source built for the installed editor"
   },
   "Workflow": {
-    "Entry": "Browse mods | My mods | Wardrobe | Create | Settings",
-    "Player": "Browse mods -> Subscribe -> matching wearer -> Wardrobe -> Play",
-    "Texture": "Create -> Edit textures -> starter card -> item card -> Export model & textures -> Artwork -> Use saved artwork & continue -> Build & launch game -> Looks good in game",
-    "Clothing": "Create -> Make clothes -> starter card -> clothing slot -> Export fitting kit -> Import finished mesh -> Artwork -> Build & launch game -> Looks good in game",
-    "Character": "Create -> Make a character -> named starter -> Face, hair & skin -> Open in MetaHuman Creator -> Send to RoweMod -> Import skin details -> Build & launch game -> Looks good in game",
-    "OutfitStorage": "Independent compatible clothing slots on one wearer. Authored characters can save prepared garments/outfits; classic player profiles retain stock and prepared choices. Local selection persists across restart.",
-    "Fitting": "New clothing must be fitted and weighted to the supplied body and game rig; arbitrary bodies are not fitted automatically.",
-    "MissingTextureRecovery": "Same saved item -> Artwork -> Import PNG or Import texture set -> select matching PNG. Original maps stay preserved; Normal and Mask are optional Advanced controls.",
-    "NextAction": "One primary action per step; validated saved progress resumes. Changed artwork invalidates old build/game confirmation.",
-    "Wardrobe": "Wearer picture -> category -> compatible garment card -> Play with outfit. Wearer heading and Play stay visible while clothing scrolls."
+    "Entry": "My characters | My clothes | Downloads | Create | Settings",
+    "Player": "Downloads -> Subscribe -> matching wearer -> My characters -> Choose an outfit -> Play",
+    "Texture": "My characters -> player -> Edit this game character (stock) or Customize (custom) -> Edit textures -> item -> Export model & textures -> Artwork -> Import texture set -> Build & launch game",
+    "Clothing": "My clothes -> garment -> body fit -> Prepare once -> Edit & save same Blender file -> Build & launch game -> Looks good in game. Existing fitted files can be chosen directly; artwork tools are optional.",
+    "Character": "Create -> Make a character -> fresh unique MetaHuman source -> edit in Creator -> adapt/import Body and Face to native game rig -> Build & launch game -> Check in game. Skin maps alone cannot activate a new avatar.",
+    "StockEditing": "My characters -> Tyreese, DeShawn or Darnell -> Edit this game character -> textures or meshes. Stock player identity is retained.",
+    "Fitting": "Green reference bodies and separate native rigs share one working scene. Each supported body needs its own fitted, weighted variant; shared MetaHuman bone names do not automatically fit clothes.",
+    "Library": "Three classic players plus genuine installed custom avatars dynamically. Clothing fits group under one garment. Legacy tests and drafting records are classified recoverably, never deleted.",
+    "Portraits": "Model illustrations rather than UV maps. Offline cards do not reproduce unavailable hair grooms, iris shading or native game lighting.",
+    "NextAction": "One primary action per stage. Changed Blender saves or artwork invalidate old build and game confirmations.",
+    "MissingTextureRecovery": "Same item -> Artwork -> Import PNG or Import texture set. Preserve original maps and packed Mask layout.",
+    "Wardrobe": "Wearer -> category -> compatible clothing -> Play with outfit. Texture edits and clothing changes do not require a new character."
   },
   "CreatorRequired": [
     "Unreal Engine 5.8 for game asset cooking",
