@@ -1,16 +1,16 @@
 {
   "SchemaVersion": 1,
-  "Version": "0.2.78",
+  "Version": "0.2.79",
   "Channel": "beta",
   "Platform": "windows-x64",
-  "File": "RoweMod-Studio-0.2.78-Windows.zip",
-  "Bytes": 77395574,
-  "Sha256": "A1CBC455F104D73EB59B068EC106A9692EF17B46E886E4BBF80D81286B7CE0EE",
-  "AssemblySha256": "5BA0F58A3C1CE1638DACFD59E4CF49FFF8EDEABA1B958795AF32D65C9E3D7B7A",
+  "File": "RoweMod-Studio-0.2.79-Windows.zip",
+  "Bytes": 77389651,
+  "Sha256": "0406224C8EFAF5C522815F6B451E34903B9985D783F6B9AEB514FFC6E9B507CA",
+  "AssemblySha256": "D28B24D116A25BAE5C7CF66570F9B1F28326E819424D97844151AB2B881309F8",
   "SelfContained": true,
-  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.78/RoweMod-Studio-0.2.78-Windows.zip",
+  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.79/RoweMod-Studio-0.2.79-Windows.zip",
   "Required": [
-    "Hood Warfare 2 approved Steam build 25888787",
+    "Complete Hood Warfare 2 Steam installation",
     "Microsoft Visual C++ v14 x64 runtime for cosmetic loader"
   ],
   "Optional": [
@@ -18,34 +18,30 @@
     "C++ development tools and Windows SDK for local Skin Details build",
     "Substance Painter"
   ],
-  "Setup": "First run asks Play mods or Create mods. Prepared player downloads automatically set up the supported game/runtime without Epic, Unreal, Blender or mapping capture. Creator setup discovers tools and guides official installer/sign-in steps.",
+  "Setup": "First run asks Play mods or Create mods. Complete Steam installations no longer need manual game-build approval. Prepared downloads set up the cosmetic runtime without Epic, Unreal, Blender or mapping capture. Creator setup discovers tools and guides official installer/sign-in steps.",
   "ClothingCatalog": "https://raw.githubusercontent.com/xrowex/RoweMod-HoodWarfare2-Clothing/main/catalog.json",
   "Validation": {
     "Checks": {
-      "signedCompatibility": 23,
-      "playerPackages": 70,
-      "runtimeLaunchPreflight": 17,
-      "wardrobePreload": 29,
-      "cosmeticFrameQueue": 21
+      "runtimeLaunchPreflight": 20,
+      "playerPackages": 72,
+      "guidedWorkflow": 53
     },
-    "TotalChecks": 160,
+    "TotalChecks": 145,
     "ReceiptSha256": {
-      "signedCompatibility": "7FE6AA7A777D71954F809CD2E228B4CF419FB5C1C25F3B0CCA57CB39C5DBF1EF",
-      "playerPackages": "14217FB8E6375673B24746C1F3F065800A525D92C510EBF27D651846CE9736FE",
-      "runtimeLaunchPreflight": "2D4CFBBF10EDFD601C4490B03722FC564342CDDB3AB4A856977034591CEC587D",
-      "wardrobePreload": "4C53B99DCE95CCA09C7F3A904E8AD3C64644F172EC1636B41E35ABC2DA6EC1D5",
-      "cosmeticFrameQueue": "23C99DAFE620AFF87081CCE767B13112B62B57F75970AB5B0C366C0C90CEF448"
+      "runtimeLaunchPreflight": "026300FA69BE4BC1170F5A3BF9DE4688E9437BD1E115D46F2BD9F153C5673D47",
+      "playerPackages": "30B35C44622A77497F8A39D6F65348E5F6698DA02B7025B59A927B63A7B220E6",
+      "guidedWorkflow": "E63B606580BA78183A812EB5A363CF02C2ACEB5F56383FCDE281037E69ACCAA5"
     },
-    "PackageAuditSha256": "519F1CB1FF3AADDDD8830E37A44992C386254FBA3FCB7D655A0E891BD50690C4",
-    "NativePlayerSelectAccepted": true,
-    "NativeSelectionReceiptSha256": "FA28AA02B23017249ED155ECFB8D1D327C51FC2BDA19742F81EA8FDC3FB60744",
-    "AcceptedGameBuild": "25888787",
+    "PackageAuditSha256": "141049529ABB50693F20AAECDF3A72344D573FA2264864C9B128E5C313A3525B",
     "IndependentFriendPcAccepted": false,
     "MultiplayerWardrobeAccepted": false,
-    "Scope": "Signed compatibility, setup messaging and two cosmetic Lua runtime files changed. Other prepared payloads and authoring helpers pinned to77. Developer-PC Player Select accepted separately; no fresh-machine or multiplayer acceptance."
+    "NativeRuntimeUnchangedFrom": "0.2.78",
+    "PublisherFilesAuditedGameBuild": "25921858",
+    "NewCustomGarmentAccepted": false,
+    "Scope": "Manual build approval removed from Studio, setup and prepared clothing. Native runtime, helpers and prepared payloads pinned to78; no new garment or multiplayer acceptance."
   },
   "DependencyStatus": "ImageSharp 3.1.12 remains pinned with five advisories; bounded static PNG handoff. See DEPENDENCY-STATUS.md.",
-  "Note": "Beta. New MetaHuman geometry/hair still needs compatible game preparation. Source fit readiness is separate from installation and animation acceptance.",
+  "Note": "Beta. Normal Steam updates do not require manual approval. Detected protection and incomplete Steam updates still block loader setup. Native format and body/rig checks remain; actual game asset changes can require a Studio repair or recook.",
   "AutomaticUpdates": {
     "DefaultEnabled": true,
     "Check": "On startup",
@@ -80,12 +76,5 @@
   "CreatorRequired": [
     "Unreal Engine 5.8 for game asset cooking",
     "Blender for mesh authoring and rig preparation"
-  ],
-  "GameCompatibility": {
-    "SignedDataUrl": "https://raw.githubusercontent.com/xrowex/RoweMod-HoodWarfare2-Clothing/main/game-compatibility.json",
-    "Check": "Startup and manual setup recheck; no periodic gameplay polling",
-    "ExactBuildRequired": true,
-    "ProtectedBuildsBlocked": true,
-    "PackageCarry": "Exact archive hash approved on both signed exact build tuples"
-  }
+  ]
 }
