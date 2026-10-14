@@ -1,14 +1,14 @@
 {
   "SchemaVersion": 1,
-  "Version": "0.2.81",
+  "Version": "0.2.82",
   "Channel": "beta",
   "Platform": "windows-x64",
-  "File": "RoweMod-Studio-0.2.81-Windows.zip",
-  "Bytes": 77390531,
-  "Sha256": "B3E81E6ABA67C1B8BB847A3B4824476D98F20397C1EAF36B48F32E65665274C6",
-  "AssemblySha256": "4D770CF246FCCB3D0E1596530B80E8981A15704C85D7E818BAEFE6484B7E74DE",
+  "File": "RoweMod-Studio-0.2.82-Windows.zip",
+  "Bytes": 77392194,
+  "Sha256": "97E1A3B3622B262D82E71AE28F0DB1294449A2C38FE28EF41C7AF562E3DA1A9E",
+  "AssemblySha256": "E8231303804E752574A51E9EDD7D3172C7B2EAA4FBB9FB84D8AF1E6EE303D340",
   "SelfContained": true,
-  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.81/RoweMod-Studio-0.2.81-Windows.zip",
+  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.82/RoweMod-Studio-0.2.82-Windows.zip",
   "Required": [
     "Complete Hood Warfare 2 Steam installation",
     "Microsoft Visual C++ v14 x64 runtime for cosmetic loader"
@@ -21,33 +21,41 @@
   "ClothingCatalog": "https://raw.githubusercontent.com/xrowex/RoweMod-HoodWarfare2-Clothing/main/catalog.json",
   "Validation": {
     "Checks": {
-      "skinDetailsPaused": 18,
-      "guidedWorkflow": 53,
-      "dynamicLibrary": 23
+      "updaterFixtures": 67,
+      "originalRejection": 1,
+      "olderUpdaterRealPackage": 12,
+      "legacyInventoryMigration": 12,
+      "guidedWorkflow": 53
     },
-    "TotalChecks": 94,
+    "TotalChecks": 145,
     "ReceiptSha256": {
-      "skinDetailsPaused": "5C5B309C4E3334C62EC9B7C3FB26F6ADF3C44DC52B5667E758ACB2FC6F0E8139",
-      "guidedWorkflow": "1A0E3048936037CF49D206D69386290A6CD3F3629F124C64360A4D009D0D0666",
-      "dynamicLibrary": "5FD923D7C7B7881CEA3E23185D0A1A7C9A3D44D2BD8752168D1E17583BDE25B9"
+      "updaterFixtures": "19EE4750C9045EB33DA9C914476825F80810613BA7930E5C7ACF7681A3C57678",
+      "originalRejection": "8F282091EE5199A3DA42B2E20D598B0343877B28EF9AFD36A3AAD6313BE7BE2B",
+      "olderUpdaterRealPackage": "FB1A2EBE900BD9F6F41A39062FBA4E9E9A4A17B2F93A58ADF3B69372B8F8B0C2",
+      "legacyInventoryMigration": "E792DF9CC1CB73D5C7CEDEDDE7314F80367D8A2A885F8CE3C3EFB8CAB864D609",
+      "guidedWorkflow": "273DEEB361FD6331D67DC3AAF7283B5E3E1F70386AC334E238CAF3829D726116"
     },
-    "PackageAuditSha256": "366EAE2D4F89974C2D1AD913BD3572CC116798E2A25DC8C3E483FFAD15A12DA4",
-    "DeveloperPcStudioLaunchObserved": true,
+    "PackageAuditSha256": "DC59A6F42E611DEFFF43CF8B1BC41C72F05FCD0D735D2C43D8B8006CD579D35F",
+    "ActualOldUpdaterVersion": "0.2.72",
+    "ActualOldUpdaterAcceptsNewPackage": true,
+    "IsolatedActualPackageFileUpgradePassed": true,
+    "ProductionNetworkAcceptance": false,
+    "NativePostUpdateLaunchAccepted": false,
     "IndependentFriendPcAccepted": false,
-    "NewEditorSessionAccepted": false,
-    "MultiplayerWardrobeAccepted": false,
     "NewGameplayAccepted": false,
-    "NativeRuntimeUnchangedFrom": "0.2.80",
-    "Scope": "Skin Details paused in setup, character UI and Creator launch. Native runtime, helpers and prepared payloads pinned to80; no new editor-session, vendor-component or gameplay acceptance."
+    "MultiplayerWardrobeAccepted": false,
+    "NativeRuntimeUnchangedFrom": "0.2.81",
+    "Scope": "Updater paths and portrait lookup changed; stock images relocated with identical bytes. Runtime, helpers and prepared payloads pinned to81; no friend-PC/editor/gameplay acceptance."
   },
   "DependencyStatus": "ImageSharp 3.1.12 remains pinned with five advisories; bounded static PNG handoff. See DEPENDENCY-STATUS.md.",
-  "Note": "Beta. Skin Details is paused; setup and plain MetaHuman Creator no longer require its extension or C++ compilation. Saved artwork remains preserved. New geometry/hair still needs compatible game-rig preparation.",
+  "Note": "Beta. Fixes preview-image paths that older updaters rejected. Skin Details remains paused. Artwork and native runtime remain preserved; independent friend acceptance is still required.",
   "AutomaticUpdates": {
     "DefaultEnabled": true,
     "Check": "On startup",
     "Apply": "After normal Studio exit and game/Unreal close",
     "PreserveUserContent": true,
-    "OptOut": "Settings: Keep Studio updated automatically"
+    "OptOut": "Settings: Keep Studio updated automatically",
+    "LegacyRecovery": "0.2.82 ZIP uses older accepted brand asset paths. 0.2.77\u20130.2.81 installs whose old updater rejects its own inventory need one full-ZIP manual update, retaining their original workspace and artwork."
   },
   "MetaHumanSetup": {
     "Entry": "Settings: Set up MetaHuman Creator",
