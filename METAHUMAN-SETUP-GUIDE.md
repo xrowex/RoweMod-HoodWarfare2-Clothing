@@ -45,7 +45,7 @@ Previously enabled RoweModSkinDetails entries are disabled when Studio next open
 - **Core Data missing:** close all Unreal projects and check that the data was selected for the same engine installation Studio uses.
 - **Plugin missing:** enable MetaHuman Creator in that project and restart Unreal after saving.
 - **Sign-in or texture/rig download fails:** complete Epic's prompt, check internet access and retry. Restricted networks may block Epic's services.
-- **An older version asks to build Skin Details:** update Studio to 0.2.81 or later and reopen it. That step is no longer required.
+- **An older version asks to build Skin Details:** update Studio to 0.2.82 or later and reopen it. That step is no longer required.
 - **Storage warning:** use Epic's actual Options estimates and make room on the selected drive. Keep your character projects and artwork.
 
-This guide accompanies Studio 0.2.81. Installation of missing vendor components on another PC remains unverified. Use **Use clothing tools for now** to leave optional character setup without starting a download.
+This guide accompanies Studio 0.2.82. Installation of missing vendor components on another PC remains unverified. Use **Use clothing tools for now** to leave optional character setup without starting a download.

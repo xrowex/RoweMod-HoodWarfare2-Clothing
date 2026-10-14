@@ -1,4 +1,4 @@
-# First run — Studio 0.2.81
+# First run — Studio 0.2.82
 
 Extract the entire [Studio ZIP](https://rowemods.com/studio) into a writable folder and open **RoweMod Studio.cmd**. Keep its folders together. Codex and a .NET SDK are unnecessary.
 
@@ -28,3 +28,5 @@ Changed working files/maps require a new build and play check. Failed/canceled a
 Studio updates retain user data. Close Studio, the game and Unreal to apply. Versions before 0.2.70 need a manual download. Mod updates are separate subscriptions.
 
 Portable/UI/file verification is not fresh-PC gameplay acceptance. Prior local developer wardrobe checks remain version-specific; independent friend-PC setup-to-match, extended movement and two-PC multiplayer remain outstanding. [Friend test](FRIEND-TEST.md) · [Substance](SUBSTANCE-GUIDE.md).
+
+If the old updater says **Studio archive contains an unsafe program payload**, update to 0.2.82. If the old inventory itself is rejected, close Studio, extract the full current ZIP into a new folder and launch its RoweMod Studio.cmd once. Keep the old workspace and all saved projects; do not delete or merge artwork to repair an update.

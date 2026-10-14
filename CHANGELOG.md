@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.2.82
+
+- Place stock portraits under the program folder accepted by older updaters.
+- Recognize exactly the three legacy stock-image paths when reading old inventories.
+- Identify unsupported program files in updater errors.
+- Keep Skin Details paused and preserve wardrobe, artwork and native runtime.
+
+
 ## 0.2.81
 
 - Pause Skin Details and remove its setup, C++ build and import controls.
