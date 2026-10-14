@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.2.79
+
+- Remove manual game-build approvals and their startup/setup network checks.
+- Allow complete unprotected HW2 Steam updates and retain verified clothing ownership across build changes.
+- Preserve Steam patching, detected protection, archive hashes, native format and rig/body gates.
+- Retain the Player Select preload repair.
+
+
 ## 0.2.78
 
 - Prepare the owned wardrobe class before Player Select; avoid blocking package loads inside the selection screen.
