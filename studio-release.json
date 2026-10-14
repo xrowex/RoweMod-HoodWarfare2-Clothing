@@ -1,14 +1,14 @@
 {
   "SchemaVersion": 1,
-  "Version": "0.2.83",
+  "Version": "0.2.84",
   "Channel": "beta",
   "Platform": "windows-x64",
-  "File": "RoweMod-Studio-0.2.83-Windows.zip",
-  "Bytes": 77393632,
-  "Sha256": "44F38B07331A3CF8B5DDCA4A0A451333217D5BD1FB142EB481675B72B2C2C567",
-  "AssemblySha256": "FA29FC37DD10DE273E4882538235187AC7F02F89EDDAFF365A70D6BB49A2127E",
+  "File": "RoweMod-Studio-0.2.84-Windows.zip",
+  "Bytes": 79689147,
+  "Sha256": "1408862703D822DF98C3734798372A9C2008C87AE7B44CD6C8B0E22491164AA2",
+  "AssemblySha256": "BC587B892AD4641C96197C472FD3D54B00734BBA25B4F60313F951CDECE3FB31",
   "SelfContained": true,
-  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.83/RoweMod-Studio-0.2.83-Windows.zip",
+  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.84/RoweMod-Studio-0.2.84-Windows.zip",
   "Required": [
     "Complete Hood Warfare 2 Steam installation",
     "Microsoft Visual C++ v14 x64 runtime for cosmetic loader"
@@ -20,39 +20,46 @@
   "Setup": "First run asks Play mods or Create mods. Complete Steam installations no longer need manual game-build approval. Prepared downloads set up the cosmetic runtime without Epic, Unreal, Blender or mapping capture. Creator setup discovers tools and guides official installer/sign-in steps.",
   "ClothingCatalog": "https://raw.githubusercontent.com/xrowex/RoweMod-HoodWarfare2-Clothing/main/catalog.json",
   "Validation": {
-    "Checks": {
-      "plainCreatorSetup": 18,
-      "actualOldUpdaterUpgrade": 12
+    "ApplicationChecks": {
+      "Workflow": 81,
+      "Paint": 12,
+      "Reset": 11,
+      "Tattoos": 1,
+      "ClothingColors": 1
     },
-    "TotalChecks": 30,
-    "ReceiptSha256": {
-      "plainCreatorSetup": "4A159358E4BD6E20F5A557C765113D6750EAD7BC3FCB26AE7162906EA7100B47",
-      "actualOldUpdaterUpgrade": "5D524F97E52AF4D41A3DFB166307EFE723F14299541EE75588F73A83BFC1D1A7"
-    },
-    "PackageAuditSha256": "C123F54DA635460BC435CDF224666D06E16B0529F1CD70BC0483ADB36C20A4D7",
-    "NativeEngineLifetimeVerified": true,
-    "NativeLifetimeReceiptSha256": "2FAD3F50C7BA3ADDBE14466D0E46B8A995EE89B0E3A41302124CAAB24FEC910B",
-    "NativeOldHelperExitReproduced": true,
-    "NativeOldHelperReceiptSha256": "5A02B328EE63F2534AF0FA27C8DB599971F1C9BABB9F175A68A67235C6055993",
-    "EngineVersion": "5.8.3",
-    "TicksAfterOpeningHelper": 601,
-    "SecondsAfterOpeningHelper": 5.0,
-    "MetaHumanVisualAccepted": false,
+    "ActualOldUpdaterVersion": "0.2.83",
+    "ActualOldUpdaterUpgradeChecks": 6,
+    "ActualOldUpdaterUsed": true,
+    "UpdaterMockedHttpBeforePublication": true,
+    "UpdaterControlledIsolatedIdlePredicate": true,
+    "ActualUpdaterExitHelperUsed": false,
+    "PackageAuditPassed": true,
+    "PackageAuditSha256": "4C4262D255AB0627466F2C83BC7AA360C96E245EC2F7A5F7A416F253AA15FD8B",
+    "UpgradeReceiptSha256": "7D47042D02890DEA4DCCE4BA8907F28B63C5D0385F65A256AA0DA59D3A1FC45F",
+    "SelfTestReceiptSha256": "5DE3918D464C326B05AF6ED2BF6CD0B0086E4D94B5F91AB8283A0F39772607CB",
+    "AutomaticSourceExportAndRigPreparationVerified": true,
+    "NativeHairBindingCookAndReopenVerified": true,
+    "AnimatedCharacterSelectionPreviewWithHairVerified": true,
+    "LocalCharacterAcceptanceVersion": "0.2.82 unpublished automatic-build candidate",
+    "NativeScriptsPinnedToAcceptedCandidate": true,
+    "OriginalProjectsAndWardrobePreserved": true,
+    "CreatorKeepAliveFixRetainedFrom": "0.2.83",
+    "CreatorOpeningHelperSha256": "40ACDCEE8E6A0F663E146C548BDB2911F271B7A58EDA794FF93ABBF9BBC516E2",
+    "NativeCreatorLifetimeVerificationRetained": true,
     "IndependentFriendPcAccepted": false,
-    "NewGameplayAccepted": false,
+    "FullMatchDeformationVerified": false,
     "MultiplayerWardrobeAccepted": false,
-    "NativeRuntimeUnchangedFrom": "0.2.82",
-    "Scope": "Only Creator opening helper and version metadata changed. Native isolated editor lifetime verified; other runtime/helpers/prepared payloads pinned to82. No friend-PC/MetaHuman visual/gameplay acceptance."
+    "Scope": "Native preparation and local animated Player Select appearance accepted. Exact final ZIP upgraded with the actual old 0.2.83 validator and transaction in an isolated fixture. Full-match deformation and One PC are unverified."
   },
   "DependencyStatus": "ImageSharp 3.1.12 remains pinned with five advisories; bounded static PNG handoff. See DEPENDENCY-STATUS.md.",
-  "Note": "Beta. Fixes the plain MetaHuman opening script allowing Unreal to close after it returns. Native editor lifetime verified in isolation; the truncated friend log does not establish his final exit reason. Skin Details stays paused and artwork is preserved.",
+  "Note": "Beta. Save in MetaHuman Creator, then Build & launch game. Studio prepares Body, Face, compatible Creator hair and a fitted starter outfit automatically. Retains the 0.2.83 Creator keepalive fix; Skin Details stays paused. Local animated character-selection preview accepted; full-match deformation and independent friend-PC acceptance remain outstanding.",
   "AutomaticUpdates": {
     "DefaultEnabled": true,
     "Check": "On startup",
     "Apply": "After normal Studio exit and game/Unreal close",
     "PreserveUserContent": true,
     "OptOut": "Settings: Keep Studio updated automatically",
-    "LegacyRecovery": "0.2.82 ZIP uses older accepted brand asset paths. 0.2.77\u20130.2.81 installs whose old updater rejects its own inventory need one full-ZIP manual update, retaining their original workspace and artwork."
+    "LegacyRecovery": "0.2.77–0.2.81 installs whose old updater rejects their existing inventory need one complete-ZIP manual update, retaining the original workspace and artwork. Current stock portraits use accepted assets/brand paths."
   },
   "MetaHumanSetup": {
     "Entry": "Settings: Set up MetaHuman Creator",
@@ -69,7 +76,7 @@
     "Player": "Downloads -> Subscribe -> matching wearer -> My characters -> Choose an outfit -> Play",
     "Texture": "My characters -> player -> Edit this game character (stock) or Customize (custom) -> Edit textures -> item -> Export model & textures -> Artwork -> Import texture set -> Build & launch game",
     "Clothing": "My clothes -> garment -> body fit -> Prepare once -> Edit & save same Blender file -> Build & launch game -> Looks good in game. Existing fitted files can be chosen directly; artwork tools are optional.",
-    "Character": "Create -> Make a character -> fresh unique MetaHuman source -> edit in Creator -> adapt/import Body and Face to native game rig -> Build & launch game -> Check in game. Skin maps alone cannot activate a new avatar.",
+    "Character": "Create or continue a MetaHuman draft -> Open in MetaHuman Creator -> edit and save -> Build & launch game -> Studio automatically assembles, adapts the native game rig, fits the starter outfit, binds compatible Creator hair and cooks -> Check Player Select and a match. Blender runs in the background; no manual FBX/part import is required.",
     "StockEditing": "My characters -> Tyreese, DeShawn or Darnell -> Edit this game character -> textures or meshes. Stock player identity is retained.",
     "Fitting": "Green reference bodies and separate native rigs share one working scene. Each supported body needs its own fitted, weighted variant; shared MetaHuman bone names do not automatically fit clothes.",
     "Library": "Three stock players plus genuinely installed custom avatars. My clothes includes authored projects, subscribed downloads and sealed character wardrobe garments. Same-name saved versions group by wearer and slot; choose latest or earlier versions without deleting sources.",
@@ -79,7 +86,7 @@
     "Wardrobe": "Wearer -> category -> compatible clothing -> Play with outfit. Texture edits and clothing changes do not require a new character."
   },
   "CreatorRequired": [
-    "Unreal Engine 5.8 for game asset cooking",
-    "Blender for mesh authoring and rig preparation"
+    "Unreal Engine 5.8.3 for character assembly and game asset cooking",
+    "Blender for automatic background mesh and game-rig preparation"
   ]
 }
