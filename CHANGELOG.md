@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.2.83
+
+- Keep plain MetaHuman Creator alive after its Python opening script returns.
+- Keep the editor available on missing-source errors for troubleshooting.
+- Retain paused Skin Details, backward-compatible updater paths and saved artwork.
+
+
 ## 0.2.82
 
 - Place stock portraits under the program folder accepted by older updaters.

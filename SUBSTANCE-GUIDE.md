@@ -1,4 +1,4 @@
-# Paint clothing in Substance Painter — Studio 0.2.82
+# Paint clothing in Substance Painter — Studio 0.2.83
 
 Repaint an existing item while keeping its mesh, UVs, game rig and weights. You do not need to add or duplicate a character. Keep finished versions in Wardrobe; authored characters also support named outfit presets.
 
