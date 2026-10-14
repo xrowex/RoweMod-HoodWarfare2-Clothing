@@ -1,14 +1,14 @@
 {
   "SchemaVersion": 1,
-  "Version": "0.2.77",
+  "Version": "0.2.78",
   "Channel": "beta",
   "Platform": "windows-x64",
-  "File": "RoweMod-Studio-0.2.77-Windows.zip",
-  "Bytes": 77385418,
-  "Sha256": "F7ADE6AF95CE6289CE94780AAF22CC80D12ACD511759E8DF0E4177161957DCB5",
-  "AssemblySha256": "98D5F99000872DC2546BCFAC6E0FFE85822EB1857E12A1CBC38CC8BDDD680B50",
+  "File": "RoweMod-Studio-0.2.78-Windows.zip",
+  "Bytes": 77395574,
+  "Sha256": "A1CBC455F104D73EB59B068EC106A9692EF17B46E886E4BBF80D81286B7CE0EE",
+  "AssemblySha256": "5BA0F58A3C1CE1638DACFD59E4CF49FFF8EDEABA1B958795AF32D65C9E3D7B7A",
   "SelfContained": true,
-  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.77/RoweMod-Studio-0.2.77-Windows.zip",
+  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.78/RoweMod-Studio-0.2.78-Windows.zip",
   "Required": [
     "Hood Warfare 2 approved Steam build 25888787",
     "Microsoft Visual C++ v14 x64 runtime for cosmetic loader"
@@ -22,33 +22,27 @@
   "ClothingCatalog": "https://raw.githubusercontent.com/xrowex/RoweMod-HoodWarfare2-Clothing/main/catalog.json",
   "Validation": {
     "Checks": {
-      "guidedUi": 74,
-      "library": 23,
-      "guidedState": 53,
-      "actualLibraryUi": 20,
-      "clothingHandoff": 24,
-      "portraitCache": 30
+      "signedCompatibility": 23,
+      "playerPackages": 70,
+      "runtimeLaunchPreflight": 17,
+      "wardrobePreload": 29,
+      "cosmeticFrameQueue": 21
     },
+    "TotalChecks": 160,
     "ReceiptSha256": {
-      "guidedUi": "29E4C06E53313B248E36D10796817150CF9B7C5F9FF47D417EA4D9096B70F15A",
-      "library": "B81B8D5853263091ACC7D686B7B3A8AA354C6BF0CCCC034F305DDF7CE2DCE236",
-      "guidedState": "687E031F2640405E6EA0A7ADE381081EA8B492B0614DB79493719CEB6C635083",
-      "actualLibraryUi": "CFD43CEF31207D51C5D2772EA4778A8934AF6800692A215A67DFA6922B8A2163",
-      "clothingHandoff": "27803E4D02B00562029FC2287E941D063AD069A20F6A01EF85645A000E7BD3DA",
-      "portraitCache": "59AC372B731530EDB106E5C666ABB4C6C791EFFB8A8A144F118A68ACC032632F"
+      "signedCompatibility": "7FE6AA7A777D71954F809CD2E228B4CF419FB5C1C25F3B0CCA57CB39C5DBF1EF",
+      "playerPackages": "14217FB8E6375673B24746C1F3F065800A525D92C510EBF27D651846CE9736FE",
+      "runtimeLaunchPreflight": "2D4CFBBF10EDFD601C4490B03722FC564342CDDB3AB4A856977034591CEC587D",
+      "wardrobePreload": "4C53B99DCE95CCA09C7F3A904E8AD3C64644F172EC1636B41E35ABC2DA6EC1D5",
+      "cosmeticFrameQueue": "23C99DAFE620AFF87081CCE767B13112B62B57F75970AB5B0C366C0C90CEF448"
     },
-    "TotalChecks": 224,
-    "PackageAuditSha256": "2BAD0110E9125CBADA499F01EAC0C46D5DD1FF52D3587DFA16CD8B695FF8E110",
-    "WardrobeSourceFixtureChecks": 54,
-    "RuntimeFilesUnchangedFrom76": true,
-    "NativeWardrobeAccepted": false,
-    "PriorNativeWardrobeAcceptedVersion": "0.2.75",
+    "PackageAuditSha256": "519F1CB1FF3AADDDD8830E37A44992C386254FBA3FCB7D655A0E891BD50690C4",
+    "NativePlayerSelectAccepted": true,
+    "NativeSelectionReceiptSha256": "FA28AA02B23017249ED155ECFB8D1D327C51FC2BDA19742F81EA8FDC3FB60744",
+    "AcceptedGameBuild": "25888787",
     "IndependentFriendPcAccepted": false,
-    "PainterAcceptedThisVersion": false,
     "MultiplayerWardrobeAccepted": false,
-    "NewMetaHumanGeometryAccepted": false,
-    "ActualSourceBodyProfilesVerified": 4,
-    "Scope": "Exact final assembly library/state/offscreen WinForms/source-routing fixtures. New MetaHuman source creation uses injected source/native adapter callbacks in the identity fixture; no complete new geometry/game acceptance. Four actual body/rig Blender fitting profiles and separate private FBX roundtrips were verified, without installing those fits. Native cosmetic runtime/helpers and prepared payloads remain byte-identical to 0.2.76; authoring scripts and portraits changed."
+    "Scope": "Signed compatibility, setup messaging and two cosmetic Lua runtime files changed. Other prepared payloads and authoring helpers pinned to77. Developer-PC Player Select accepted separately; no fresh-machine or multiplayer acceptance."
   },
   "DependencyStatus": "ImageSharp 3.1.12 remains pinned with five advisories; bounded static PNG handoff. See DEPENDENCY-STATUS.md.",
   "Note": "Beta. New MetaHuman geometry/hair still needs compatible game preparation. Source fit readiness is separate from installation and animation acceptance.",
@@ -86,5 +80,12 @@
   "CreatorRequired": [
     "Unreal Engine 5.8 for game asset cooking",
     "Blender for mesh authoring and rig preparation"
-  ]
+  ],
+  "GameCompatibility": {
+    "SignedDataUrl": "https://raw.githubusercontent.com/xrowex/RoweMod-HoodWarfare2-Clothing/main/game-compatibility.json",
+    "Check": "Startup and manual setup recheck; no periodic gameplay polling",
+    "ExactBuildRequired": true,
+    "ProtectedBuildsBlocked": true,
+    "PackageCarry": "Exact archive hash approved on both signed exact build tuples"
+  }
 }
