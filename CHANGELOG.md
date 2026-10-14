@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.2.84
+
+- Build a saved MetaHuman automatically: native Body/Face rig adaptation, compatible Creator hair and fitted starter outfit.
+- Keep manual Blender exports and individual part imports out of the default character workflow.
+- Add a hair-card fallback for the animated character-selection preview and fresh revisions for rebuilt wardrobe fits.
+- Retain the 0.2.83 Creator keepalive fix and paused Skin Details.
+- Verify a fresh character in the game selection preview, preserve existing projects/wardrobe proofs, and test upgrade with the actual 0.2.83 updater. Full match and independent friend-PC checks remain outstanding.
+
 ## 0.2.83
 
 - Keep plain MetaHuman Creator alive after its Python opening script returns.

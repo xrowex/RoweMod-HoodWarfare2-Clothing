@@ -2,7 +2,7 @@
 
 Download clothes, dress your existing players, or create something new. **Hood Warfare 2 is the first supported game.** No Codex is needed.
 
-[Download Studio 0.2.83 for Windows](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.83/RoweMod-Studio-0.2.83-Windows.zip) · [Studio website](https://rowemods.com/studio) · [Releases](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases)
+[Download Studio 0.2.84 for Windows](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.84/RoweMod-Studio-0.2.84-Windows.zip) · [Studio website](https://rowemods.com/studio) · [Releases](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases)
 
 ## Just want to play?
 
@@ -50,7 +50,9 @@ Changed Blender saves or artwork invalidate previous build/game-check completion
 
 **Make a new character:** **Create → Make a character → name → Create new MetaHuman** creates a fresh, uniquely named MetaHuman source. It starts with Epic’s Bruce preset; choose a different preset and adjust face/body/hair in Creator. Studio does not clone the stock players or an existing custom character.
 
-The source remains an inactive draft under **Create → Continue MetaHuman draft**. **Open in MetaHuman Creator** edits it. Skin Details is paused; plain Creator does not need the RoweMod extension or a C++ build. Use Studio texture tools or Substance for artwork. To make it a game player, use **Prepare Body & Face for the game rig**: export the new MetaHuman geometry in Unreal, adapt both meshes to the supplied native game rig, and import both parts. Only a complete compatible Body/Face import and native build can activate it; hair needs separate binding/preparation. This is an explicit authoring workflow, not automatic MetaHuman-to-game geometry conversion.
+Open the draft in **MetaHuman Creator**, finish its face, body and hairstyle, and save. Return to Studio and choose **Build & launch game**. Studio assembles the saved character, adapts Body and Face to the native game rig, prepares the Creator hair/brows/lashes, fits the starter outfit and cooks the character automatically. Blender runs in the background; you do not need to open it, export FBX or import each part. Existing saved MetaHuman drafts use the same route. The source stays a draft until the complete build succeeds, and the original Creator asset is preserved.
+
+Check your new character in Player Select and then walk, crouch, jump, aim and reload in a match before confirming **Looks good in game**. Custom clothing authoring still uses the fitting workflow above. Skin Details remains paused; plain Creator does not need the RoweMod extension or a C++ build. Optional advanced mesh and artwork tools remain available.
 
 **Edit a stock player:** **My characters → Tyreese / DeShawn / Darnell → Edit this game character**. Choose **Edit textures**, **Edit meshes** or **Choose an outfit**. Body, Head & face and clothing cards lead to the selected tools. Stock edits keep that player’s original identity and do not mint another avatar. Prepared custom characters keep their existing editing workflow.
 
@@ -69,7 +71,7 @@ Different body shapes need their own fit. Editable `.roweclothes` packages are s
 
 Studio downloads verified updates when enabled. Close Studio, the game and Unreal to apply, then reopen; projects, artwork and settings remain. Settings provides update controls and setup reports. Mod subscriptions check published updates; equip updated assets with the game closed.
 
-This beta changes Studio's libraries and authoring tools. Shipped native cosmetic runtime and prepared clothing payloads remain pinned to the prior portable release; authoring scripts and guides have changed. Prior developer-PC local wardrobe acceptance remains separate. Independent friend-PC setup-to-match, extended movement stress testing and two-PC multiplayer remain unverified.
+Version 0.2.84 retains the 0.2.83 Creator keepalive fix and adds automatic MetaHuman preparation plus updated cosmetic hair/wardrobe handling. A freshly saved MetaHuman was exported, adapted, bound, cooked, reopened and visibly checked in the animated game character-selection preview with its hairstyle and fitted outfit. Existing project definitions and sealed wardrobe proofs were preserved. A full match with the new character, independent friend-PC setup-to-match, extended movement and two-PC multiplayer remain unverified.
 
 Follow [FRIEND-TEST.md](FRIEND-TEST.md). Include version, exact error and **Settings → Advanced setup → Copy setup report** for support. Preserve original art and old folders. Historical evidence is in [CHANGELOG.md](CHANGELOG.md); [dependency status](DEPENDENCY-STATUS.md) is a separate record.
 

@@ -36,7 +36,9 @@ Keep Unreal and its project on an SSD. If performance remains poor, reduce viewp
 
 ## Return to Studio
 
-Save your character in Creator. In Studio use **Prepare Body & Face for the game rig** for new geometry, then **Build & Play** after adapting/importing the native meshes. Hair needs separate compatible preparation. For artwork, use Studio’s texture tools or Substance exports. Skin Details and its Send/Import workflow are paused; no RoweMod extension or C++ workload is required.
+Save your face, body and hairstyle in Creator, then return to Studio and choose **Build & launch game**. Studio automatically assembles the saved source, adapts Body and Face to the native game rig, prepares compatible Creator hair/brows/lashes, fits the starter outfit and cooks the character. Blender must be installed, but it runs in the background: no manual Blender edit, FBX export or part import is required. Existing saved drafts use the same route. The original MetaHuman source stays intact; the draft becomes a selectable character only after preparation and build succeed.
+
+Check Player Select, then movement and outfit fit in a match before **Looks good in game**. Advanced manual authoring is optional. For artwork, use Studio’s texture tools or Substance exports. Skin Details and its Send/Import workflow remain paused; no RoweMod extension or C++ workload is required.
 
 Previously enabled RoweModSkinDetails entries are disabled when Studio next opens the project after Unreal has been saved and closed. Original project settings and saved artwork are preserved.
 
@@ -51,4 +53,4 @@ Previously enabled RoweModSkinDetails entries are disabled when Studio next open
 - **An older version asks to build Skin Details:** update Studio to 0.2.83 or later and reopen it. That step is no longer required.
 - **Storage warning:** use Epic's actual Options estimates and make room on the selected drive. Keep your character projects and artwork.
 
-This guide accompanies Studio 0.2.83. Installation of missing vendor components on another PC remains unverified. Use **Use clothing tools for now** to leave optional character setup without starting a download.
+This guide accompanies Studio 0.2.84. Automatic preparation and the animated character-selection preview were verified locally with a fresh MetaHuman. Full-match deformation and installation of missing vendor components on another PC remain unverified. Use **Use clothing tools for now** to leave optional character setup without starting a download.
