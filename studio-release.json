@@ -1,51 +1,47 @@
 {
   "SchemaVersion": 1,
-  "Version": "0.2.80",
+  "Version": "0.2.81",
   "Channel": "beta",
   "Platform": "windows-x64",
-  "File": "RoweMod-Studio-0.2.80-Windows.zip",
-  "Bytes": 77394607,
-  "Sha256": "E85F7BBD5CA444D9D30F989D6041C8932EC973BCC00544F23FDB90B6431C47A2",
-  "AssemblySha256": "0540CFC5A570A51BBE71A02335AA9B736BC51CE1698FCD26EBEAF5383B62B2EC",
+  "File": "RoweMod-Studio-0.2.81-Windows.zip",
+  "Bytes": 77390531,
+  "Sha256": "B3E81E6ABA67C1B8BB847A3B4824476D98F20397C1EAF36B48F32E65665274C6",
+  "AssemblySha256": "4D770CF246FCCB3D0E1596530B80E8981A15704C85D7E818BAEFE6484B7E74DE",
   "SelfContained": true,
-  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.80/RoweMod-Studio-0.2.80-Windows.zip",
+  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.81/RoweMod-Studio-0.2.81-Windows.zip",
   "Required": [
     "Complete Hood Warfare 2 Steam installation",
     "Microsoft Visual C++ v14 x64 runtime for cosmetic loader"
   ],
   "Optional": [
     "MetaHuman Creator Core Data and Epic sign-in",
-    "C++ development tools and Windows SDK for local Skin Details build",
     "Substance Painter"
   ],
   "Setup": "First run asks Play mods or Create mods. Complete Steam installations no longer need manual game-build approval. Prepared downloads set up the cosmetic runtime without Epic, Unreal, Blender or mapping capture. Creator setup discovers tools and guides official installer/sign-in steps.",
   "ClothingCatalog": "https://raw.githubusercontent.com/xrowex/RoweMod-HoodWarfare2-Clothing/main/catalog.json",
   "Validation": {
     "Checks": {
-      "wardrobeLibrary": 60,
+      "skinDetailsPaused": 18,
       "guidedWorkflow": 53,
       "dynamicLibrary": 23
     },
-    "TotalChecks": 136,
+    "TotalChecks": 94,
     "ReceiptSha256": {
-      "wardrobeLibrary": "825EB5C6CFB6E9648BBACB25C62A63A64C317CC0AC9D40424574F22FB677C69B",
-      "guidedWorkflow": "07B96CFE1AB9338D24A60CF4ABD5F64D8522951843BC0F7C8AD11E4BD9D926AF",
-      "dynamicLibrary": "70C6ECAD52E43060E007EA335112DE99D63881B2278C480FB269559BD30B2F4B"
+      "skinDetailsPaused": "5C5B309C4E3334C62EC9B7C3FB26F6ADF3C44DC52B5667E758ACB2FC6F0E8139",
+      "guidedWorkflow": "1A0E3048936037CF49D206D69386290A6CD3F3629F124C64360A4D009D0D0666",
+      "dynamicLibrary": "5FD923D7C7B7881CEA3E23185D0A1A7C9A3D44D2BD8752168D1E17583BDE25B9"
     },
-    "PackageAuditSha256": "C09EF01D811EE9ED90705038E840E1BC45177A521E435E71788C1D646A09BA68",
-    "DeveloperPcSavedGarmentCardsObserved": true,
-    "ObservedCards": [
-      "Aqua Pants",
-      "Aqua Top"
-    ],
+    "PackageAuditSha256": "366EAE2D4F89974C2D1AD913BD3572CC116798E2A25DC8C3E483FFAD15A12DA4",
+    "DeveloperPcStudioLaunchObserved": true,
     "IndependentFriendPcAccepted": false,
+    "NewEditorSessionAccepted": false,
     "MultiplayerWardrobeAccepted": false,
-    "NewCustomGarmentGameplayAccepted": false,
-    "NativeRuntimeUnchangedFrom": "0.2.79",
-    "Scope": "Saved wardrobe library and UI changed. Native runtime, helpers and prepared payloads pinned to79; no new garment or multiplayer acceptance."
+    "NewGameplayAccepted": false,
+    "NativeRuntimeUnchangedFrom": "0.2.80",
+    "Scope": "Skin Details paused in setup, character UI and Creator launch. Native runtime, helpers and prepared payloads pinned to80; no new editor-session, vendor-component or gameplay acceptance."
   },
   "DependencyStatus": "ImageSharp 3.1.12 remains pinned with five advisories; bounded static PNG handoff. See DEPENDENCY-STATUS.md.",
-  "Note": "Beta. Normal Steam updates do not require manual approval. Detected protection and incomplete Steam updates still block loader setup. Native format and body/rig checks remain; actual game asset changes can require a Studio repair or recook.",
+  "Note": "Beta. Skin Details is paused; setup and plain MetaHuman Creator no longer require its extension or C++ compilation. Saved artwork remains preserved. New geometry/hair still needs compatible game-rig preparation.",
   "AutomaticUpdates": {
     "DefaultEnabled": true,
     "Check": "On startup",
@@ -61,7 +57,7 @@
     "HardwareGuidance": "Epic recommendations; not minimums or installation blockers",
     "CurrentMachineHardwareIncluded": false,
     "Authentication": "User completes Epic sign-in",
-    "LocalSkinDetailsBuild": "Bundled source built for the installed editor"
+    "SkinDetails": "Paused; no extension or local C++ build required"
   },
   "Workflow": {
     "Entry": "My characters | My clothes | Downloads | Create | Settings",
