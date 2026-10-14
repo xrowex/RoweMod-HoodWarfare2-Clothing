@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.87
+
+Add a single visible Epic prerequisite recovery during MetaHuman Build, wait for open editors to close, replace misleading white fabric artwork with automatic paint preparation, and include memory figures in private support reports. See [release notes](RELEASE-NOTES-0.2.87.md).
+
 ## 0.2.86
 
 Stock fabric Base Color is baked from the native material on the garment. Substance imports offer exact PNG colors to avoid double team tint. Real exports for both teams and independent FBX roundtrips passed. See [release notes](RELEASE-NOTES-0.2.86.md).

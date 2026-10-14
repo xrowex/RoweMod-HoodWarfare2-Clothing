@@ -59,3 +59,8 @@ This guide accompanies Studio 0.2.84. Automatic preparation and the animated cha
 
 Creator's Authentication/person icon beside Refresh Preview shows the current account. Epic Launcher sign-in alone does not confirm the Creator request. Click Download Texture Sources, wait, save the character, then retry Studio Build & launch game. If it still fails, press Send to Rowe in Studio. Green means the private server received the diagnostic report. No ZIP or attachment is needed.
 
+
+
+## Build recovery in Studio 0.2.87
+
+Save your design before Build. If Unreal is open, Studio waits for you to save and close it, then continues. Missing Epic texture/rig inputs trigger one visible recovery attempt in a private build copy. Complete Epic sign-in if prompted; Studio requests the inputs and continues automatically. Failed requests stop with diagnostics. For Not enough memory to load MetaHuman Character, press Send to Rowe after the failure: the report includes RAM and Windows commit figures. A fresh start alone does not prove sufficient memory; no memory guard or Windows setting is bypassed.

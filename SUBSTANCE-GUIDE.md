@@ -1,4 +1,4 @@
-# Paint clothing in Substance Painter — Studio 0.2.86
+# Paint clothing in Substance Painter — Studio 0.2.87
 
 Repaint an existing item while keeping its mesh, UVs, game rig and weights. You do not need to add or duplicate a character. Keep finished versions in Wardrobe; authored characters also support named outfit presets.
 
@@ -45,3 +45,5 @@ Use the saved clothing workflow’s **Optional · textures, Substance & sharing 
 For issues, send Studio/Painter versions, item/material name, exact error and cropped viewport/texture-set screenshots. Keep the FBX, Painter project and exported PNGs.
 
 Official Adobe references: [Project creation](https://experienceleague.adobe.com/en/docs/substance-3d-painter/using/getting-started/project-creation), [Normal-map painting](https://experienceleague.adobe.com/en/docs/substance-3d-painter/using/painting/advanced-channel-painting/normal-map-painting), [Output templates](https://experienceleague.adobe.com/en/docs/substance-3d-painter/using/export/export-window/output-templates).
+
+Studio Artwork identifies stock fabric instead of displaying its white detail input. **Paint texture** prepares the actual Base Color automatically; preparation alone leaves the game material active until an edit is saved/enabled. **Reset texture** restores native fabric and preserves artwork files.

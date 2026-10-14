@@ -1,14 +1,14 @@
 {
   "SchemaVersion": 1,
-  "Version": "0.2.86",
+  "Version": "0.2.87",
   "Channel": "beta",
   "Platform": "windows-x64",
-  "File": "RoweMod-Studio-0.2.86-Windows.zip",
-  "Bytes": 79748473,
-  "Sha256": "A96AAD3C6D5D234CCCCE2169086FB81AF9BC8F78CFEA5F7E83D1640400221476",
-  "AssemblySha256": "088B14445F62A2E54085F98B26039682F1BB805F3F1AD8F64FA6C285D6A348FB",
+  "File": "RoweMod-Studio-0.2.87-Windows.zip",
+  "Bytes": 79752441,
+  "Sha256": "4B9ECB80E72A9DFF2056D09E09A9E3FCBCDC1BF25FC8662B5204694A8612F935",
+  "AssemblySha256": "801F33FAFD9F675153D421F01649AC323809C6B9393E27469647F3A93506443F",
   "SelfContained": true,
-  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.86/RoweMod-Studio-0.2.86-Windows.zip",
+  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.87/RoweMod-Studio-0.2.87-Windows.zip",
   "Required": [
     "Complete Hood Warfare 2 Steam installation",
     "Microsoft Visual C++ v14 x64 runtime for cosmetic loader"
@@ -21,29 +21,29 @@
   "ClothingCatalog": "https://raw.githubusercontent.com/xrowex/RoweMod-HoodWarfare2-Clothing/main/catalog.json",
   "Validation": {
     "ApplicationChecks": 191,
-    "FabricPreservationChecks": 8,
-    "RealNativeFabricExports": 2,
-    "NativeBakeUVChannels": 8,
-    "BaseColorResolution": 2048,
-    "IndependentFbxRoundtrips": 2,
-    "ExactPngColorImportChecks": 4,
-    "WebsiteChecks": 5,
-    "ActualOldUpdaterVersion": "0.2.85",
+    "SupportReportChecks": 18,
+    "CloudOutcomeFixtures": 6,
+    "NativePrerequisiteRecoveryPassed": true,
+    "NativeCharacterSourcePreserved": true,
+    "ArtworkUiAndNativePaintChecks": 10,
+    "ActualOldUpdaterVersion": "0.2.86",
     "ActualOldUpdaterUpgradeChecks": 12,
+    "WebsiteChecks": 5,
     "PackageAuditPassed": true,
     "IndependentFriendPcAccepted": false,
+    "FriendMemoryErrorResolved": false,
     "NewGameplayAccepted": false,
-    "Scope": "Real native blue and red team fabric evaluation on Bri Pants; source and artwork preservation; eight UV channels and independent FBX roundtrips. No new Painter UI or game acceptance."
+    "Scope": "Native missing-input recovery downloaded textures and requested joint rig in a private copy. Real fabric bake and offscreen artwork/reset checks passed; no new friend-PC or gameplay acceptance. Memory capture diagnoses rather than bypasses Unreal memory checks."
   },
   "DependencyStatus": "ImageSharp 3.1.12 remains pinned with five advisories; bounded static PNG handoff. See DEPENDENCY-STATUS.md.",
-  "Note": "Beta. Stock fabric exports now bake Base Color from the material instead of exporting a white detail input. Enabled artwork stays unchanged. Import texture set can preserve exact PNG colors. Private Send to Rowe diagnostics retained; Skin Details paused.",
+  "Note": "Beta. MetaHuman Build uses one visible Epic recovery attempt for missing textures/rig and waits for open editors to close. Fabric Paint prepares actual colors; original game fabric no longer appears as a white Base image. Send to Rowe includes RAM/commit diagnostics. Skin Details paused.",
   "AutomaticUpdates": {
     "DefaultEnabled": true,
     "Check": "On startup",
     "Apply": "After normal Studio exit and game/Unreal close",
     "PreserveUserContent": true,
     "OptOut": "Settings: Keep Studio updated automatically",
-    "LegacyRecovery": "0.2.77–0.2.81 installs whose old updater rejects their existing inventory need one complete-ZIP manual update, retaining the original workspace and artwork. Current stock portraits use accepted assets/brand paths."
+    "LegacyRecovery": "0.2.77\u20130.2.81 installs whose old updater rejects their existing inventory need one complete-ZIP manual update, retaining the original workspace and artwork. Current stock portraits use accepted assets/brand paths."
   },
   "MetaHumanSetup": {
     "Entry": "Settings: Set up MetaHuman Creator",
