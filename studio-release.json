@@ -28,14 +28,14 @@
       "ClothingColors": 1
     },
     "ActualOldUpdaterVersion": "0.2.83",
-    "ActualOldUpdaterUpgradeChecks": 6,
+    "ActualOldUpdaterUpgradeChecks": 7,
     "ActualOldUpdaterUsed": true,
     "UpdaterMockedHttpBeforePublication": true,
     "UpdaterControlledIsolatedIdlePredicate": true,
     "ActualUpdaterExitHelperUsed": false,
     "PackageAuditPassed": true,
     "PackageAuditSha256": "4C4262D255AB0627466F2C83BC7AA360C96E245EC2F7A5F7A416F253AA15FD8B",
-    "UpgradeReceiptSha256": "7D47042D02890DEA4DCCE4BA8907F28B63C5D0385F65A256AA0DA59D3A1FC45F",
+    "UpgradeReceiptSha256": "CEC69573C195248C2C8E975AFD68F070057C49A78DA5C12D0D154C09C8AB6517",
     "SelfTestReceiptSha256": "5DE3918D464C326B05AF6ED2BF6CD0B0086E4D94B5F91AB8283A0F39772607CB",
     "AutomaticSourceExportAndRigPreparationVerified": true,
     "NativeHairBindingCookAndReopenVerified": true,
@@ -49,7 +49,8 @@
     "IndependentFriendPcAccepted": false,
     "FullMatchDeformationVerified": false,
     "MultiplayerWardrobeAccepted": false,
-    "Scope": "Native preparation and local animated Player Select appearance accepted. Exact final ZIP upgraded with the actual old 0.2.83 validator and transaction in an isolated fixture. Full-match deformation and One PC are unverified."
+    "Scope": "Native preparation and local animated Player Select appearance accepted. The exact public ZIP was downloaded through the actual old 0.2.83 updater HTTP transport, validated and applied in an isolated fixture, preserving artwork and recoverable old files. Full-match deformation and One PC are unverified.",
+    "ProductionHttpTransportVerified": true
   },
   "DependencyStatus": "ImageSharp 3.1.12 remains pinned with five advisories; bounded static PNG handoff. See DEPENDENCY-STATUS.md.",
   "Note": "Beta. Save in MetaHuman Creator, then Build & launch game. Studio prepares Body, Face, compatible Creator hair and a fitted starter outfit automatically. Retains the 0.2.83 Creator keepalive fix; Skin Details stays paused. Local animated character-selection preview accepted; full-match deformation and independent friend-PC acceptance remain outstanding.",
