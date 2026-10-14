@@ -1,4 +1,4 @@
-# Friend test — Studio 0.2.77
+# Friend test — Studio 0.2.78
 
 Download from [rowemods.com/studio](https://rowemods.com/studio), extract the whole ZIP into a writable folder and open **RoweMod Studio.cmd**. No Codex or separate .NET installation is needed.
 

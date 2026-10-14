@@ -1,4 +1,4 @@
-# First run — Studio 0.2.77
+# First run — Studio 0.2.78
 
 Extract the entire [Studio ZIP](https://rowemods.com/studio) into a writable folder and open **RoweMod Studio.cmd**. Keep its folders together. Codex and a .NET SDK are unnecessary.
 

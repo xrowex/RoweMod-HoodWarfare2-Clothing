@@ -1,3 +1,13 @@
+# Changelog
+
+## 0.2.78
+
+- Prepare the owned wardrobe class before Player Select; avoid blocking package loads inside the selection screen.
+- Explicit game-frame cosmetic queue and preserved slow idle polling.
+- Signed compatibility approvals refresh at startup/recheck; exact build and package-hash checks remain required.
+- Explain Steam patching separately from protection or pending approval.
+- See RELEASE-NOTES-0.2.78.md for native selection acceptance and limits.
+
 # Releases
 
 # RoweMod Studio 0.2.77 beta
