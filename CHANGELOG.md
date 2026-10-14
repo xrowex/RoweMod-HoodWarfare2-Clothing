@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.2.80
+
+- Show existing character wardrobe garments in My clothes and Continue a project.
+- Group repeated saves by wearer, slot and name, retaining selectable earlier versions.
+- Add Wear on character and Equip & edit actions with immutable saved sources preserved.
+- Show loading state while validating saved garment files.
+
+
 ## 0.2.79
 
 - Remove manual game-build approvals and their startup/setup network checks.

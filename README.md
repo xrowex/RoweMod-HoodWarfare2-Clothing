@@ -2,7 +2,7 @@
 
 Download clothes, dress your existing players, or create something new. **Hood Warfare 2 is the first supported game.** No Codex is needed.
 
-[Download Studio 0.2.79 for Windows](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.79/RoweMod-Studio-0.2.79-Windows.zip) · [Studio website](https://rowemods.com/studio) · [Releases](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases)
+[Download Studio 0.2.80 for Windows](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.80/RoweMod-Studio-0.2.80-Windows.zip) · [Studio website](https://rowemods.com/studio) · [Releases](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases)
 
 ## Just want to play?
 
@@ -72,3 +72,5 @@ Studio downloads verified updates when enabled. Close Studio, the game and Unrea
 This beta changes Studio's libraries and authoring tools. Shipped native cosmetic runtime and prepared clothing payloads remain pinned to the prior portable release; authoring scripts and guides have changed. Prior developer-PC local wardrobe acceptance remains separate. Independent friend-PC setup-to-match, extended movement stress testing and two-PC multiplayer remain unverified.
 
 Follow [FRIEND-TEST.md](FRIEND-TEST.md). Include version, exact error and **Settings → Advanced setup → Copy setup report** for support. Preserve original art and old folders. Historical evidence is in [CHANGELOG.md](CHANGELOG.md); [dependency status](DEPENDENCY-STATUS.md) is a separate record.
+
+Saved wardrobe garments also appear in **My clothes** automatically. Choose the card to wear it on its original character or **Equip & edit**. Repeated saves share one card with selectable versions.
