@@ -1,14 +1,14 @@
 {
   "SchemaVersion": 1,
-  "Version": "0.2.82",
+  "Version": "0.2.83",
   "Channel": "beta",
   "Platform": "windows-x64",
-  "File": "RoweMod-Studio-0.2.82-Windows.zip",
-  "Bytes": 77392194,
-  "Sha256": "97E1A3B3622B262D82E71AE28F0DB1294449A2C38FE28EF41C7AF562E3DA1A9E",
-  "AssemblySha256": "E8231303804E752574A51E9EDD7D3172C7B2EAA4FBB9FB84D8AF1E6EE303D340",
+  "File": "RoweMod-Studio-0.2.83-Windows.zip",
+  "Bytes": 77393632,
+  "Sha256": "44F38B07331A3CF8B5DDCA4A0A451333217D5BD1FB142EB481675B72B2C2C567",
+  "AssemblySha256": "FA29FC37DD10DE273E4882538235187AC7F02F89EDDAFF365A70D6BB49A2127E",
   "SelfContained": true,
-  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.82/RoweMod-Studio-0.2.82-Windows.zip",
+  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.83/RoweMod-Studio-0.2.83-Windows.zip",
   "Required": [
     "Complete Hood Warfare 2 Steam installation",
     "Microsoft Visual C++ v14 x64 runtime for cosmetic loader"
@@ -21,34 +21,31 @@
   "ClothingCatalog": "https://raw.githubusercontent.com/xrowex/RoweMod-HoodWarfare2-Clothing/main/catalog.json",
   "Validation": {
     "Checks": {
-      "updaterFixtures": 67,
-      "originalRejection": 1,
-      "olderUpdaterRealPackage": 12,
-      "legacyInventoryMigration": 12,
-      "guidedWorkflow": 53
+      "plainCreatorSetup": 18,
+      "actualOldUpdaterUpgrade": 12
     },
-    "TotalChecks": 145,
+    "TotalChecks": 30,
     "ReceiptSha256": {
-      "updaterFixtures": "19EE4750C9045EB33DA9C914476825F80810613BA7930E5C7ACF7681A3C57678",
-      "originalRejection": "8F282091EE5199A3DA42B2E20D598B0343877B28EF9AFD36A3AAD6313BE7BE2B",
-      "olderUpdaterRealPackage": "FB1A2EBE900BD9F6F41A39062FBA4E9E9A4A17B2F93A58ADF3B69372B8F8B0C2",
-      "legacyInventoryMigration": "E792DF9CC1CB73D5C7CEDEDDE7314F80367D8A2A885F8CE3C3EFB8CAB864D609",
-      "guidedWorkflow": "273DEEB361FD6331D67DC3AAF7283B5E3E1F70386AC334E238CAF3829D726116"
+      "plainCreatorSetup": "4A159358E4BD6E20F5A557C765113D6750EAD7BC3FCB26AE7162906EA7100B47",
+      "actualOldUpdaterUpgrade": "5D524F97E52AF4D41A3DFB166307EFE723F14299541EE75588F73A83BFC1D1A7"
     },
-    "PackageAuditSha256": "DC59A6F42E611DEFFF43CF8B1BC41C72F05FCD0D735D2C43D8B8006CD579D35F",
-    "ActualOldUpdaterVersion": "0.2.72",
-    "ActualOldUpdaterAcceptsNewPackage": true,
-    "IsolatedActualPackageFileUpgradePassed": true,
-    "ProductionNetworkAcceptance": false,
-    "NativePostUpdateLaunchAccepted": false,
+    "PackageAuditSha256": "C123F54DA635460BC435CDF224666D06E16B0529F1CD70BC0483ADB36C20A4D7",
+    "NativeEngineLifetimeVerified": true,
+    "NativeLifetimeReceiptSha256": "2FAD3F50C7BA3ADDBE14466D0E46B8A995EE89B0E3A41302124CAAB24FEC910B",
+    "NativeOldHelperExitReproduced": true,
+    "NativeOldHelperReceiptSha256": "5A02B328EE63F2534AF0FA27C8DB599971F1C9BABB9F175A68A67235C6055993",
+    "EngineVersion": "5.8.3",
+    "TicksAfterOpeningHelper": 601,
+    "SecondsAfterOpeningHelper": 5.0,
+    "MetaHumanVisualAccepted": false,
     "IndependentFriendPcAccepted": false,
     "NewGameplayAccepted": false,
     "MultiplayerWardrobeAccepted": false,
-    "NativeRuntimeUnchangedFrom": "0.2.81",
-    "Scope": "Updater paths and portrait lookup changed; stock images relocated with identical bytes. Runtime, helpers and prepared payloads pinned to81; no friend-PC/editor/gameplay acceptance."
+    "NativeRuntimeUnchangedFrom": "0.2.82",
+    "Scope": "Only Creator opening helper and version metadata changed. Native isolated editor lifetime verified; other runtime/helpers/prepared payloads pinned to82. No friend-PC/MetaHuman visual/gameplay acceptance."
   },
   "DependencyStatus": "ImageSharp 3.1.12 remains pinned with five advisories; bounded static PNG handoff. See DEPENDENCY-STATUS.md.",
-  "Note": "Beta. Fixes preview-image paths that older updaters rejected. Skin Details remains paused. Artwork and native runtime remain preserved; independent friend acceptance is still required.",
+  "Note": "Beta. Fixes the plain MetaHuman opening script allowing Unreal to close after it returns. Native editor lifetime verified in isolation; the truncated friend log does not establish his final exit reason. Skin Details stays paused and artwork is preserved.",
   "AutomaticUpdates": {
     "DefaultEnabled": true,
     "Check": "On startup",
