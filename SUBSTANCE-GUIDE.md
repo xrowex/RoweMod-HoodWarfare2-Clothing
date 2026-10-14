@@ -1,4 +1,4 @@
-# Paint clothing in Substance Painter — Studio 0.2.83
+# Paint clothing in Substance Painter — Studio 0.2.86
 
 Repaint an existing item while keeping its mesh, UVs, game rig and weights. You do not need to add or duplicate a character. Keep finished versions in Wardrobe; authored characters also support named outfit presets.
 
@@ -9,6 +9,8 @@ Use **Create → Edit textures → starter card → item card → Export model &
 For downloaded authoring sources, use **Downloads → Get creator files → Edit creator files**. A compiled `.roweplay` is for playing; editable `.roweclothes` files are the authoring route.
 
 The item export contains its FBX under **Mesh**, matching Base/Mask/Normal PNGs under **Textures** and `START-HERE-Substance.txt`. Preserve UVs and material names. Material-number prefixes identify separate Painter texture sets.
+
+Stock fabric Base Color is baked from the actual material and garment UVs. Enabled custom artwork is unchanged; original Mask and Normal remain separate. A matching Unreal editor/common fabric content is required for stock material baking.
 
 ## Paint
 
@@ -22,7 +24,7 @@ Embedded FBX media does not create Painter layers. Do not also apply the same No
 
 Export separate PNG **Base Color** and **Normal DirectX** for each material at the original resolution. The combined Normal includes your normal/height work. The current clothing shader does not accept a complete ORM/Emissive roundtrip.
 
-Return to the **same item**. In the Edit textures task use **Artwork → Import texture set**. In a saved Blender clothing task expand **Optional · textures, Substance & sharing → Import texture set**. Select the corresponding material and Base/Normal PNGs, keeping its Mask. Studio copies them into the project. A texture-only edit does not need another FBX import.
+Return to the **same item**. In the Edit textures task use **Artwork → Import texture set**. In a saved Blender clothing task expand **Optional · textures, Substance & sharing → Import texture set**. Select the corresponding material and Base/Normal PNGs, keeping its Mask. Leave **Keep PNG colors exactly (recommended for Substance)** checked to avoid applying team tint twice. Studio copies them into the project. A texture-only edit does not need another FBX import.
 
 In the Edit textures task click **Use saved artwork & continue → Build & launch game**. In the saved Blender clothing task click **Build & launch game** directly; artwork is optional. Check the item in a match, then click **Looks good in game** in Studio. Importing files alone does not install them. On an authored wearer, **Wardrobe → Keep current item** preserves a garment version and **Save outfit** keeps named presets on the same character.
 

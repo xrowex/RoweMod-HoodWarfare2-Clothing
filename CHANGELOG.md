@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.86
+
+Stock fabric Base Color is baked from the native material on the garment. Substance imports offer exact PNG colors to avoid double team tint. Real exports for both teams and independent FBX roundtrips passed. See [release notes](RELEASE-NOTES-0.2.86.md).
+
 ## 0.2.85
 
 - Add one-click private Send to Rowe diagnostics with confirmed green delivery and retry support.
