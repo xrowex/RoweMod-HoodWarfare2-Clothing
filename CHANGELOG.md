@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.2.85
+
+- Add one-click private Send to Rowe diagnostics with confirmed green delivery and retry support.
+- Preserve local task failures and native MetaHuman export errors, with bounded, redacted text reports.
+- Replace the misleading texture-download sign-in diagnosis with concrete Creator download/save recovery steps.
+- Retain automatic MetaHuman builds and paused Skin Details; no new complete Creator-outfit transfer or match acceptance.
+
 ## 0.2.84
 
 - Build a saved MetaHuman automatically: native Body/Face rig adaptation, compatible Creator hair and fitted starter outfit.
@@ -301,3 +308,4 @@ The portable workspace also completed Unreal garment import, cooking, rig valida
 ## ROWE Pants 0.1.1
 
 Same garment and artwork as 0.1.0; version-3 body-fit evidence fixes independent FBX export rounding. Use Studio 0.2.63 or later. Original 0.1.0 remains available.
+

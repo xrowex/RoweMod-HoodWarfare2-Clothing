@@ -54,3 +54,8 @@ Previously enabled RoweModSkinDetails entries are disabled when Studio next open
 - **Storage warning:** use Epic's actual Options estimates and make room on the selected drive. Keep your character projects and artwork.
 
 This guide accompanies Studio 0.2.84. Automatic preparation and the animated character-selection preview were verified locally with a fresh MetaHuman. Full-match deformation and installation of missing vendor components on another PC remain unverified. Use **Use clothing tools for now** to leave optional character setup without starting a download.
+
+## Texture sources and private support
+
+Creator's Authentication/person icon beside Refresh Preview shows the current account. Epic Launcher sign-in alone does not confirm the Creator request. Click Download Texture Sources, wait, save the character, then retry Studio Build & launch game. If it still fails, press Send to Rowe in Studio. Green means the private server received the diagnostic report. No ZIP or attachment is needed.
+

@@ -2,7 +2,7 @@
 
 Download clothes, dress your existing players, or create something new. **Hood Warfare 2 is the first supported game.** No Codex is needed.
 
-[Download Studio 0.2.84 for Windows](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.84/RoweMod-Studio-0.2.84-Windows.zip) · [Studio website](https://rowemods.com/studio) · [Releases](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases)
+[Download Studio 0.2.85 for Windows](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.85/RoweMod-Studio-0.2.85-Windows.zip) · [Studio website](https://rowemods.com/studio) · [Releases](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases)
 
 ## Just want to play?
 
@@ -71,8 +71,13 @@ Different body shapes need their own fit. Editable `.roweclothes` packages are s
 
 Studio downloads verified updates when enabled. Close Studio, the game and Unreal to apply, then reopen; projects, artwork and settings remain. Settings provides update controls and setup reports. Mod subscriptions check published updates; equip updated assets with the game closed.
 
-Version 0.2.84 retains the 0.2.83 Creator keepalive fix and adds automatic MetaHuman preparation plus updated cosmetic hair/wardrobe handling. A freshly saved MetaHuman was exported, adapted, bound, cooked, reopened and visibly checked in the animated game character-selection preview with its hairstyle and fitted outfit. Existing project definitions and sealed wardrobe proofs were preserved. A full match with the new character, independent friend-PC setup-to-match, extended movement and two-PC multiplayer remain unverified.
+Version 0.2.85 retains the 0.2.83 Creator keepalive fix and adds automatic MetaHuman preparation plus updated cosmetic hair/wardrobe handling. A freshly saved MetaHuman was exported, adapted, bound, cooked, reopened and visibly checked in the animated game character-selection preview with its hairstyle and fitted outfit. Existing project definitions and sealed wardrobe proofs were preserved. A full match with the new character, independent friend-PC setup-to-match, extended movement and two-PC multiplayer remain unverified.
 
 Follow [FRIEND-TEST.md](FRIEND-TEST.md). Include version, exact error and **Settings → Advanced setup → Copy setup report** for support. Preserve original art and old folders. Historical evidence is in [CHANGELOG.md](CHANGELOG.md); [dependency status](DEPENDENCY-STATUS.md) is a separate record.
 
 Saved wardrobe garments also appear in **My clothes** automatically. Choose the card to wear it on its original character or **Equip & edit**. Repeated saves share one card with selectable versions.
+
+## Need help?
+
+Press **Send to Rowe** in Studio's bottom bar. The button turns green only after the private report is received. Logs are collected automatically; no attachments needed. Reports exclude artwork and models and redact common credentials and personal paths. Nothing uploads until you press the button.
+
