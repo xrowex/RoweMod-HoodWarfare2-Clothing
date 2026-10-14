@@ -20,7 +20,7 @@
   "Setup": "First run asks Play mods or Create mods. Complete Steam installations no longer need manual game-build approval. Prepared downloads set up the cosmetic runtime without Epic, Unreal, Blender or mapping capture. Creator setup discovers tools and guides official installer/sign-in steps.",
   "ClothingCatalog": "https://raw.githubusercontent.com/xrowex/RoweMod-HoodWarfare2-Clothing/main/catalog.json",
   "Validation": {
-    "ApplicationChecks": 191,
+    "ApplicationChecks": 104,
     "SupportReportChecks": 18,
     "CloudOutcomeFixtures": 6,
     "NativePrerequisiteRecoveryPassed": true,
