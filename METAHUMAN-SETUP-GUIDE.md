@@ -1,12 +1,12 @@
 # Set up MetaHuman character editing
 
-MetaHuman editing is optional. You can make and texture clothes in RoweMod Studio without installing MetaHuman data. For faces, bodies, hairstyles and Skin Details, open **Settings → Set up MetaHuman Creator** in Studio. Review storage and performance advice, then click **Continue setup**. The guide leads you through the required step and rechecks when you return from Epic or another installer.
+MetaHuman editing is optional. You can make and texture clothes in RoweMod Studio without installing MetaHuman data. For faces, bodies and hairstyles, open **Settings → Set up MetaHuman Creator** in Studio. Review storage and performance advice, then click **Continue setup**. The guide leads you through the required step and rechecks when you return from Epic or another installer.
 
 ## Choose where to install
 
 Use an SSD with room for Unreal, optional content, downloaded character textures and generated project files. RoweMod recommends planning around **150 GB of free SSD space** for this workflow. This is our working budget, not Epic's download size or a fixed requirement. Existing installations and chosen components change the space needed.
 
-Keep room on the Windows temporary-files drive too: local extension preparation uses temporary build space there, even when Unreal and Studio are installed on another drive.
+Keep room for downloaded textures, generated assets and cooking files. A C++ extension build is not required for plain MetaHuman Creator.
 
 For clothing-only setup, install the matching Unreal tools and leave space for the local cooker and exports. You do not need MetaHuman Core Data or C++ extension tools. The **150 GB** estimate applies to the full character workflow; it is not a fixed clothing-tools requirement. Studio's engine-only guide keeps those optional steps separate.
 
@@ -34,18 +34,18 @@ Start with a moderate viewport quality while placing hair, marks and clothing; r
 
 Keep Unreal and its project on an SSD. If performance remains poor, reduce viewport quality first and check available RAM, VRAM and disk space. The final game result still needs a match test; a beautiful Creator view does not verify game materials, rigging or clothing fit.
 
-## Add RoweMod Skin Details
+## Return to Studio
 
-For the bundled Skin Details extension, install **Visual Studio 2022 / Build Tools** with **Desktop development with C++**, MSVC x64 tools and a Windows SDK from [Microsoft](https://visualstudio.microsoft.com/downloads/). Save and close Unreal before choosing Studio's optional character-editing preparation. Studio builds its own extension source locally for your exact editor; a compiled Epic editor extension is not bundled.
+Save your character in Creator. In Studio use **Prepare Body & Face for the game rig** for new geometry, then **Build & Play** after adapting/importing the native meshes. Hair needs separate compatible preparation. For artwork, use Studio’s texture tools or Substance exports. Skin Details and its Send/Import workflow are paused; no RoweMod extension or C++ workload is required.
 
-For a linked character, open **MetaHuman Creator**, make your edits, choose **Skin Details → Send to RoweMod**, then **Import skin details** in Studio. Substance is optional for additional artwork. A skin-map import keeps the existing game rig; new face/body geometry and hairstyles still need game preparation.
+Previously enabled RoweModSkinDetails entries are disabled when Studio next opens the project after Unreal has been saved and closed. Original project settings and saved artwork are preserved.
 
 ## If setup stops
 
 - **Core Data missing:** close all Unreal projects and check that the data was selected for the same engine installation Studio uses.
 - **Plugin missing:** enable MetaHuman Creator in that project and restart Unreal after saving.
 - **Sign-in or texture/rig download fails:** complete Epic's prompt, check internet access and retry. Restricted networks may block Epic's services.
-- **Local extension build fails:** check the C++ workload and SDK, then copy Studio's setup report with the exact failed step.
+- **An older version asks to build Skin Details:** update Studio to 0.2.81 or later and reopen it. That step is no longer required.
 - **Storage warning:** use Epic's actual Options estimates and make room on the selected drive. Keep your character projects and artwork.
 
-This guide accompanies Studio 0.2.71. Successful public 0.2.70 setup/capture and live updater tests are separate evidence; installation of missing MetaHuman/vendor components on another PC remains unverified. Use **Use clothing tools for now** to leave the optional guide without starting a download.
+This guide accompanies Studio 0.2.81. Installation of missing vendor components on another PC remains unverified. Use **Use clothing tools for now** to leave optional character setup without starting a download.

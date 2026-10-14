@@ -1,4 +1,4 @@
-# Paint clothing in Substance Painter — Studio 0.2.80
+# Paint clothing in Substance Painter — Studio 0.2.81
 
 Repaint an existing item while keeping its mesh, UVs, game rig and weights. You do not need to add or duplicate a character. Keep finished versions in Wardrobe; authored characters also support named outfit presets.
 
@@ -32,7 +32,7 @@ For a different garment shape, use **Create → Make clothes → starter → clo
 
 Substance is optional. In the saved clothing workflow expand **Optional · textures, Substance & sharing → Export this item for Substance**, paint that exact selected garment and bring the maps back through its texture tools. Keep existing good maps if no texture edits are needed. Studio checks compatibility; it does not automatically fit or weight new geometry to another body. Green body/weight references are not included as garment meshes. Prepared source fits grouped in My clothes still need Build and a play check.
 
-MetaHuman tattoos/scars use the actual Creator’s **Skin Details**, or the matching skin export for external painting. **Create → Make a character → Create new MetaHuman** creates a new source; it does not clone a game player. The source draft needs explicit new Body and Face game-rig preparation before a native build can activate it. Imported skin maps alone do not prepare geometry or hair. Body and garment UVs are different. For existing stock skin, choose **My characters → player → Edit this game character → Edit textures** without duplicating the player.
+Skin Details is paused. Use Studio’s texture tools or the matching skin export for external painting in Substance. **Create → Make a character → Create new MetaHuman** creates a new source; it does not clone a game player. The source draft needs explicit new Body and Face game-rig preparation before a native build can activate it. Imported skin maps alone do not prepare geometry or hair. Body and garment UVs are different. For existing stock skin, choose **My characters → player → Edit this game character → Edit textures** without duplicating the player.
 
 ## Missing maps and sharing
 

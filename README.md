@@ -2,7 +2,7 @@
 
 Download clothes, dress your existing players, or create something new. **Hood Warfare 2 is the first supported game.** No Codex is needed.
 
-[Download Studio 0.2.80 for Windows](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.80/RoweMod-Studio-0.2.80-Windows.zip) · [Studio website](https://rowemods.com/studio) · [Releases](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases)
+[Download Studio 0.2.81 for Windows](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.81/RoweMod-Studio-0.2.81-Windows.zip) · [Studio website](https://rowemods.com/studio) · [Releases](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases)
 
 ## Just want to play?
 
@@ -50,7 +50,7 @@ Changed Blender saves or artwork invalidate previous build/game-check completion
 
 **Make a new character:** **Create → Make a character → name → Create new MetaHuman** creates a fresh, uniquely named MetaHuman source. It starts with Epic’s Bruce preset; choose a different preset and adjust face/body/hair in Creator. Studio does not clone the stock players or an existing custom character.
 
-The source remains an inactive draft under **Create → Continue MetaHuman draft**. **Open in MetaHuman Creator** edits it. Skin Details → Send to RoweMod → **Import skin details** transfers supported surface maps only. To make it a game player, use **Prepare Body & Face for the game rig**: export the new MetaHuman geometry in Unreal, adapt both meshes to the supplied native game rig, and import both parts. Only a complete compatible Body/Face import and native build can activate it; hair needs separate binding/preparation. This is an explicit authoring workflow, not automatic MetaHuman-to-game geometry conversion.
+The source remains an inactive draft under **Create → Continue MetaHuman draft**. **Open in MetaHuman Creator** edits it. Skin Details is paused; plain Creator does not need the RoweMod extension or a C++ build. Use Studio texture tools or Substance for artwork. To make it a game player, use **Prepare Body & Face for the game rig**: export the new MetaHuman geometry in Unreal, adapt both meshes to the supplied native game rig, and import both parts. Only a complete compatible Body/Face import and native build can activate it; hair needs separate binding/preparation. This is an explicit authoring workflow, not automatic MetaHuman-to-game geometry conversion.
 
 **Edit a stock player:** **My characters → Tyreese / DeShawn / Darnell → Edit this game character**. Choose **Edit textures**, **Edit meshes** or **Choose an outfit**. Body, Head & face and clothing cards lead to the selected tools. Stock edits keep that player’s original identity and do not mint another avatar. Prepared custom characters keep their existing editing workflow.
 

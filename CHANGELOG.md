@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.2.81
+
+- Pause Skin Details and remove its setup, C++ build and import controls.
+- Open plain linked MetaHuman Creator without extension compilation.
+- Disable previously enabled extension project entries on next launch with original settings backed up.
+- Preserve existing maps, models, artwork and installed plugin files.
+
+
 ## 0.2.80
 
 - Show existing character wardrobe garments in My clothes and Continue a project.
