@@ -1,5 +1,11 @@
 # Set up MetaHuman character editing
 
+Studio 0.2.89 builds the private MetaHuman copy in a short user-local cache.
+If an earlier build reported texture paths exceeding 260 characters or a missing
+baked Body material, update Studio and retry **Build & launch game** on the same
+saved character. Do not move or delete the installation, character or artwork.
+Verified previous builds remain at their existing locations.
+
 MetaHuman editing is optional. You can make and texture clothes in RoweMod Studio without installing MetaHuman data. For faces, bodies and hairstyles, open **Settings → Set up MetaHuman Creator** in Studio. Review storage and performance advice, then click **Continue setup**. The guide leads you through the required step and rechecks when you return from Epic or another installer.
 
 ## Choose where to install

@@ -1,14 +1,14 @@
 {
   "SchemaVersion": 1,
-  "Version": "0.2.88",
+  "Version": "0.2.89",
   "Channel": "beta",
   "Platform": "windows-x64",
-  "File": "RoweMod-Studio-0.2.88-Windows.zip",
-  "Bytes": 79775500,
-  "Sha256": "6B98A92FE5E830DA38D0A0DC39CDAD3DB5E33D73F691EAD73C3349F6FE3B9E4F",
-  "AssemblySha256": "D89365038CFBBE1B82C5B3E13A4FDC08DDA27FD8DD6387506C28C5A3F63B33DF",
+  "File": "RoweMod-Studio-0.2.89-Windows.zip",
+  "Bytes": 79776358,
+  "Sha256": "DAC1990DA16B0C5C2943F153CFF67AE2B8ED17B480EC26DB7F772829D79D3608",
+  "AssemblySha256": "33BC34434B1238F61A13F90D35CC865B2FB5F9E317CB4AEEEE02BF95C43A4DB4",
   "SelfContained": true,
-  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.88/RoweMod-Studio-0.2.88-Windows.zip",
+  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.89/RoweMod-Studio-0.2.89-Windows.zip",
   "Required": [
     "Complete Hood Warfare 2 Steam installation",
     "Microsoft Visual C++ v14 x64 runtime for cosmetic loader"
@@ -36,15 +36,20 @@
     "IndependentFriendPcAccepted": false,
     "FriendMemoryErrorResolved": false,
     "NewGameplayAccepted": false,
-    "Scope": "Native reference preservation and garment FBX roundtrip, draft fixtures, actual form controls and native unrigged Creator editing. No new complete native MetaHuman build, friend-PC memory recovery, universal clothing fit or gameplay acceptance.",
-    "ActualOldUpdaterUpgradeChecks": 7,
+    "Scope": "18 short-cache ownership/preservation checks, 191 application checks, 34 editor-bridge checks, 67 updater checks, 23 groom checks and 18 website/report checks. Real local Unreal assembly/export: 2 meshes and 26 textures, all 28 hashes verified; 809 source files preserved. Prior Bri local private-match transition subset passed; no remote-host join or friend-PC acceptance.",
+    "ActualOldUpdaterUpgradeChecks": 0,
     "IndependentUpdateGuiAccepted": false,
-    "ProductionHttpTransportUsed": true,
-    "ActualOldUpdaterVersion": "0.2.87",
-    "UpdateTransactionScope": "Shipped old updater and live public HTTP; isolated fixture with controlled idle predicate; inventory, backups and five pre-existing user files verified"
+    "ProductionHttpTransportUsed": false,
+    "ActualOldUpdaterVersion": "0.2.88",
+    "UpdateTransactionScope": "Pending live release download verification",
+    "ShortBuildCacheChecks": 18,
+    "NativeMetaHumanExportComplete": true,
+    "NativeMetaHumanOutputHashes": 28,
+    "PreservedNativeSourceFiles": 809,
+    "RemoteHostJoinVerified": false
   },
   "DependencyStatus": "ImageSharp 3.1.12 remains pinned with five advisories; bounded static PNG handoff. See DEPENDENCY-STATUS.md.",
-  "Note": "Beta. Lighter Creator startup and smaller display thumbnails. Send to Rowe includes the latest redacted Creator startup outcome and log tail. Master clothing kit with green bodies and separate rigs; new drafts get Top/Pants/Shoes. Existing artwork preserved. Friend memory recovery remains unverified.",
+  "Note": "Beta. MetaHuman builds use a short private cache independent of install paths; no folder move required. Verified old preparations and artwork stay intact. Destroyed preview references are discarded during map travel. Local native Body/Face and skin export passed; friend-PC recovery and joining another host remain unverified.",
   "AutomaticUpdates": {
     "DefaultEnabled": true,
     "Check": "On startup",
@@ -81,5 +86,6 @@
   "CreatorRequired": [
     "Unreal Engine 5.8.3 for character assembly and game asset cooking",
     "Blender for automatic background mesh and game-rig preparation"
-  ]
+  ],
+  "ReleaseNotes": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/blob/main/RELEASE-NOTES-0.2.89.md"
 }

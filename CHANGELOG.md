@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.2.89
+
+Use a short private MetaHuman build cache independent of the install path, with
+exact character/source ownership and existing verified-cache reuse. Deep
+OneDrive/Downloads paths no longer force users to relocate their work. Discard
+destroyed preview faces before reading hair diagnostics during map travel.
+See [release notes](RELEASE-NOTES-0.2.89.md).
+
 ## 0.2.88
 
 Add lighter MetaHuman Creator startup, smaller display thumbnails and the latest
