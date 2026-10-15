@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.2.90
+
+Import common image formats through project-owned PNG conversion, explain errors
+with concrete next steps, and offer Send to Rowe directly on guided failures.
+Approved signed-in creators can submit gear and previews for Rowe's review;
+published gear feeds Studio downloads. Support revocation and take-down, and
+withdraw ROWE Pants from public discovery. See [release notes](RELEASE-NOTES-0.2.90.md).
+
 ## 0.2.89
 
 Use a short private MetaHuman build cache independent of the install path, with

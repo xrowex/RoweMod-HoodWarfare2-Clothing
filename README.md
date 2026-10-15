@@ -2,13 +2,13 @@
 
 Download clothes, dress your existing players, or create something new. **Hood Warfare 2 is the first supported game.** No Codex is needed.
 
-[Download Studio 0.2.89 for Windows](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.89/RoweMod-Studio-0.2.89-Windows.zip) · [Studio website](https://rowemods.com/studio) · [Releases](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases)
+[Download Studio 0.2.90 for Windows](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.90/RoweMod-Studio-0.2.90-Windows.zip) · [Studio website](https://rowemods.com/studio) · [Releases](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases)
 
 ## Just want to play?
 
 1. Extract the complete ZIP into a writable folder and open **RoweMod Studio.cmd**.
 2. Choose **Set up for playing**. Have the game installed through Steam and closed for setup.
-3. Open **Downloads → ROWE Pants → Subscribe**. Studio verifies the prepared item and its compatible wearer.
+3. Open **Downloads → choose a published item → Subscribe**. Studio verifies the prepared item and its compatible wearer.
 4. In **My characters**, choose that wearer → **Choose an outfit → Play with outfit**. Select the matching player in the game's Player Select screen, then open its **Wardrobe** for compatible stock/prepared clothes.
 
 Prepared downloads need no Epic, Unreal, Blender or mapping capture. **Creator files available** means editable sources need creator tools and a build before playing.
@@ -60,14 +60,13 @@ Check your new character in Player Select and then walk, crouch, jump, aim and r
 
 Creator setup finds installed tools, guides missing official installs and handles one-time mapping capture. Blender and matching Unreal **5.8.3** are creator tools. MetaHuman data/build tools are optional for character editing. [First-run guide](STUDIO-FIRST-RUN.md).
 
-## ROWE Pants and sharing
+## Share gear
 
-Custom UVs and artwork by **One**, fitted to classic DeShawn. The public prepared asset remains `ROWE-Pants-0.1.1.roweplay`:
+[Sign in and request creator access](https://rowemods.com/gear/upload). Rowe approves your account under [Admin → Creators & gear publishing](https://rowemods.com/admin/gear). Optional Discord handles help identify applicants but are not verified Discord links.
 
-- [Ready-to-play pants](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/clothing-rowe-pants-v0.1.2/ROWE-Pants-0.1.1.roweplay).
-- [Editable creator files](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/rowe-pants-v0.1.1/ROWE-Pants-0.1.1.roweclothes).
+Approved creators upload one Studio `.roweclothes` package, fit information and a preview. Include a matching `.roweplay` export to offer Subscribe after review. Packages stay private until Rowe publishes them. Combined upload limit: 32 MiB; PNG/JPEG previews up to 4 MiB and 4096 pixels per side. Taking down an item or revoking a creator immediately removes public discovery and downloads while preserving installed copies and artwork.
 
-Different body shapes need their own fit. Editable `.roweclothes` packages are sources, not installed mods. Send the collection owner a finished package, author name, fit, version, screenshots and sharing permission. A curated `.roweplay` additionally needs a verified cook and exact game/body/rig profile. There is no public upload account or automatic fitting service. Asset rights remain with their owners; there is no new open-source license for game or third-party content. The repository owner confirmed permission to share the ROWE artwork and game-derived pants mesh/rig on October 12, 2026; source-package rights notices are retained.
+ROWE Pants has been withdrawn from the gallery. Its previous release archives remain available for recovery. Shared rigs do not automatically fit different bodies, and asset rights remain with their owners.
 
 ## Updates and verification
 
