@@ -2,7 +2,7 @@
 
 Download clothes, dress your existing players, or create something new. **Hood Warfare 2 is the first supported game.** No Codex is needed.
 
-[Download Studio 0.2.90 for Windows](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.90/RoweMod-Studio-0.2.90-Windows.zip) · [Studio website](https://rowemods.com/studio) · [Releases](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases)
+[Download Studio 0.2.91 for Windows](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.91/RoweMod-Studio-0.2.91-Windows.zip) · [Studio website](https://rowemods.com/studio) · [Releases](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases)
 
 ## Just want to play?
 
@@ -82,3 +82,7 @@ Saved wardrobe garments also appear in **My clothes** automatically. Choose the 
 
 Press **Send to Rowe** in Studio's bottom bar. The button turns green only after the private report is received. Logs are collected automatically; no attachments needed. Reports exclude artwork and models and redact common credentials and personal paths. Nothing uploads until you press the button.
 
+
+## Submit gear from Studio
+
+My clothes → garment → Submit to gallery → Google sign-in → match the connection code → Rowe approves posting access → prepare and review → confirm Send to Rowe. Studio collects the garment and preview. The button turns green only after receipt. Gear stays private until reviewed. See RELEASE-NOTES-0.2.91.md.

@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.91
+
+Submit gear directly from My clothes with Google sign-in, separate creator approval, automatic garment/preview preparation, two confirmations and a durable green receipt. Recover completed MetaHuman exports after verified native shutdown faults. See RELEASE-NOTES-0.2.91.md.
+
+
 ## 0.2.90
 
 Import common image formats through project-owned PNG conversion, explain errors

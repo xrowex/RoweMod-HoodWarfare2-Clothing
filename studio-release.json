@@ -1,14 +1,14 @@
 {
   "SchemaVersion": 1,
-  "Version": "0.2.90",
+  "Version": "0.2.91",
   "Channel": "beta",
   "Platform": "windows-x64",
-  "File": "RoweMod-Studio-0.2.90-Windows.zip",
-  "Bytes": 79781510,
-  "Sha256": "8C32F9D45076432047BBB1C5DE3080656129598AF5E84A1385A4508F152F1044",
-  "AssemblySha256": "05688A1B31AF4CF4E5CA1D9C9F450D0AD5ACA480D5C05A31C5AAC019A805D79A",
+  "File": "RoweMod-Studio-0.2.91-Windows.zip",
+  "Bytes": 79799090,
+  "Sha256": "6C203D2EFBDFAA2643FF422A56EE790E991F724FE293E899F4CC7011BAB20A6D",
+  "AssemblySha256": "D058B738EE9899D9568B9F1C714529F6C37D6BCDB6D7ED1AFFBD4F334212C651",
   "SelfContained": true,
-  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.90/RoweMod-Studio-0.2.90-Windows.zip",
+  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.91/RoweMod-Studio-0.2.91-Windows.zip",
   "Required": [
     "Complete Hood Warfare 2 Steam installation",
     "Microsoft Visual C++ v14 x64 runtime for cosmetic loader"
@@ -23,7 +23,7 @@
     "ApplicationChecks": 191,
     "ImportAndErrorChecks": 44,
     "GearLocalIntegrationChecks": 23,
-    "WebsiteChecks": 25,
+    "WebsiteChecks": 28,
     "UpdaterSafetyChecks": 67,
     "PackageAuditPassed": true,
     "IndependentFriendPcAccepted": false,
@@ -33,7 +33,10 @@
     "ActualOldUpdaterUpgradeChecks": 7,
     "ActualOldUpdaterProductionHttp": true,
     "PreservedUpgradeFiles": 6,
-    "PackagedImportChecks": 44
+    "PackagedImportChecks": 44,
+    "PublishingAndRecoveryChecks": 11,
+    "NativeUploadLocalChecks": 17,
+    "RealGoogleAccountAcceptance": false
   },
   "DependencyStatus": "ImageSharp 3.1.12 remains pinned with five advisories; bounded static PNG handoff. See DEPENDENCY-STATUS.md.",
   "Note": "Beta. MetaHuman builds use a short private cache independent of install paths; no folder move required. Verified old preparations and artwork stay intact. Destroyed preview references are discarded during map travel. Local native Body/Face and skin export passed; friend-PC recovery and joining another host remain unverified.",
@@ -68,11 +71,12 @@
     "NextAction": "One primary action per stage. Changed Blender saves or artwork invalidate old build and game confirmations.",
     "MissingTextureRecovery": "Same item -> Artwork -> Import PNG or Import texture set. Preserve original maps and packed Mask layout.",
     "Wardrobe": "Wearer -> category -> compatible clothing -> Play with outfit. Texture edits and clothing changes do not require a new character.",
-    "MasterKit": "Original Tyreese, DeShawn and Darnell references generated locally from installed game; green Body/Face display, separate rigs, private working copy. New MetaHuman drafts use Top/Pants/Shoes automatically. Fit each intended body."
+    "MasterKit": "Original Tyreese, DeShawn and Darnell references generated locally from installed game; green Body/Face display, separate rigs, private working copy. New MetaHuman drafts use Top/Pants/Shoes automatically. Fit each intended body.",
+    "Publishing": "My clothes -> garment -> Submit to gallery -> Google sign-in -> match code -> Rowe approves posting access -> prepare and review -> two confirmations -> Send to Rowe -> green only after receipt"
   },
   "CreatorRequired": [
     "Unreal Engine 5.8.3 for character assembly and game asset cooking",
     "Blender for automatic background mesh and game-rig preparation"
   ],
-  "ReleaseNotes": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/blob/main/RELEASE-NOTES-0.2.89.md"
+  "ReleaseNotes": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/blob/main/RELEASE-NOTES-0.2.91.md"
 }
