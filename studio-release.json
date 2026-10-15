@@ -36,7 +36,12 @@
     "IndependentFriendPcAccepted": false,
     "FriendMemoryErrorResolved": false,
     "NewGameplayAccepted": false,
-    "Scope": "Native reference preservation and garment FBX roundtrip, draft fixtures, actual form controls and native unrigged Creator editing. No new complete native MetaHuman build, friend-PC memory recovery, universal clothing fit or gameplay acceptance."
+    "Scope": "Native reference preservation and garment FBX roundtrip, draft fixtures, actual form controls and native unrigged Creator editing. No new complete native MetaHuman build, friend-PC memory recovery, universal clothing fit or gameplay acceptance.",
+    "ActualOldUpdaterUpgradeChecks": 7,
+    "IndependentUpdateGuiAccepted": false,
+    "ProductionHttpTransportUsed": true,
+    "ActualOldUpdaterVersion": "0.2.87",
+    "UpdateTransactionScope": "Shipped old updater and live public HTTP; isolated fixture with controlled idle predicate; inventory, backups and five pre-existing user files verified"
   },
   "DependencyStatus": "ImageSharp 3.1.12 remains pinned with five advisories; bounded static PNG handoff. See DEPENDENCY-STATUS.md.",
   "Note": "Beta. Lighter Creator startup and smaller display thumbnails. Send to Rowe includes the latest redacted Creator startup outcome and log tail. Master clothing kit with green bodies and separate rigs; new drafts get Top/Pants/Shoes. Existing artwork preserved. Friend memory recovery remains unverified.",
