@@ -2,7 +2,7 @@
 
 Download clothes, dress your existing players, or create something new. **Hood Warfare 2 is the first supported game.** No Codex is needed.
 
-[Download Studio 0.2.91 for Windows](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.91/RoweMod-Studio-0.2.91-Windows.zip) · [Studio website](https://rowemods.com/studio) · [Releases](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases)
+[Download Studio 0.2.92 for Windows](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.92/RoweMod-Studio-0.2.92-Windows.zip) · [Studio website](https://rowemods.com/studio) · [Releases](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases)
 
 ## Just want to play?
 
@@ -61,6 +61,13 @@ Check your new character in Player Select and then walk, crouch, jump, aim and r
 Creator setup finds installed tools, guides missing official installs and handles one-time mapping capture. Blender and matching Unreal **5.8.3** are creator tools. MetaHuman data/build tools are optional for character editing. [First-run guide](STUDIO-FIRST-RUN.md).
 
 ## Share gear
+
+Open **My clothes → garment → Submit to gallery** (or **Submit this version**
+for a saved wardrobe item). Connect your Google account in the browser and match
+the code. Studio shows **Google connected ✓**. Once Rowe approves posting access,
+enter the item's name, version and description. Confirm preparation, review its
+preview and size, then confirm **Send to Rowe**. Studio collects the files itself.
+**Sent ✓** means the server stored a receipt; the item stays private until review.
 
 [Sign in and request creator access](https://rowemods.com/gear/upload). Rowe approves your account under [Admin → Creators & gear publishing](https://rowemods.com/admin/gear). Optional Discord handles help identify applicants but are not verified Discord links.
 

@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.2.92
+
+Show connected Google status clearly, explain upload failures, align the website's
+multipart limit with gear uploads, and reopen older sealed clothing versions
+without weakening populated provenance checks. Isolate invalid library entries.
+See RELEASE-NOTES-0.2.92.md.
+
 ## 0.2.91
 
 Submit gear directly from My clothes with Google sign-in, separate creator approval, automatic garment/preview preparation, two confirmations and a durable green receipt. Recover completed MetaHuman exports after verified native shutdown faults. See RELEASE-NOTES-0.2.91.md.
