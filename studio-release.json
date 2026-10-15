@@ -1,14 +1,14 @@
 {
   "SchemaVersion": 1,
-  "Version": "0.2.87",
+  "Version": "0.2.88",
   "Channel": "beta",
   "Platform": "windows-x64",
-  "File": "RoweMod-Studio-0.2.87-Windows.zip",
-  "Bytes": 79752441,
-  "Sha256": "4B9ECB80E72A9DFF2056D09E09A9E3FCBCDC1BF25FC8662B5204694A8612F935",
-  "AssemblySha256": "801F33FAFD9F675153D421F01649AC323809C6B9393E27469647F3A93506443F",
+  "File": "RoweMod-Studio-0.2.88-Windows.zip",
+  "Bytes": 79775500,
+  "Sha256": "6B98A92FE5E830DA38D0A0DC39CDAD3DB5E33D73F691EAD73C3349F6FE3B9E4F",
+  "AssemblySha256": "D89365038CFBBE1B82C5B3E13A4FDC08DDA27FD8DD6387506C28C5A3F63B33DF",
   "SelfContained": true,
-  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.87/RoweMod-Studio-0.2.87-Windows.zip",
+  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.88/RoweMod-Studio-0.2.88-Windows.zip",
   "Required": [
     "Complete Hood Warfare 2 Steam installation",
     "Microsoft Visual C++ v14 x64 runtime for cosmetic loader"
@@ -22,28 +22,31 @@
   "Validation": {
     "ApplicationChecks": 191,
     "SupportReportChecks": 18,
-    "CloudOutcomeFixtures": 6,
-    "NativePrerequisiteRecoveryPassed": true,
-    "NativeCharacterSourcePreserved": true,
-    "ArtworkUiAndNativePaintChecks": 10,
-    "ActualOldUpdaterVersion": "0.2.86",
-    "ActualOldUpdaterUpgradeChecks": 12,
-    "WebsiteChecks": 5,
+    "CreatorMemoryUiChecks": 22,
+    "ClothingUiChecks": 7,
+    "EditorBridgeChecks": 34,
+    "UpdaterSafetyChecks": 67,
+    "MasterReferenceMeshes": 16,
+    "GreenBodyFaceReferences": 6,
+    "MasterAdapterFixtureChecks": 9,
+    "NativeGarmentRoundtripChecks": 9,
+    "NativeUnriggedCharacterEditPassed": true,
+    "WebsiteChecks": 10,
     "PackageAuditPassed": true,
     "IndependentFriendPcAccepted": false,
     "FriendMemoryErrorResolved": false,
     "NewGameplayAccepted": false,
-    "Scope": "Native missing-input recovery downloaded textures and requested joint rig in a private copy. Real fabric bake and offscreen artwork/reset checks passed; no new friend-PC or gameplay acceptance. Memory capture diagnoses rather than bypasses Unreal memory checks."
+    "Scope": "Native reference preservation and garment FBX roundtrip, draft fixtures, actual form controls and native unrigged Creator editing. No new complete native MetaHuman build, friend-PC memory recovery, universal clothing fit or gameplay acceptance."
   },
   "DependencyStatus": "ImageSharp 3.1.12 remains pinned with five advisories; bounded static PNG handoff. See DEPENDENCY-STATUS.md.",
-  "Note": "Beta. MetaHuman Build uses one visible Epic recovery attempt for missing textures/rig and waits for open editors to close. Fabric Paint prepares actual colors; original game fabric no longer appears as a white Base image. Send to Rowe includes RAM/commit diagnostics. Skin Details paused.",
+  "Note": "Beta. Lighter Creator startup and smaller display thumbnails. Send to Rowe includes the latest redacted Creator startup outcome and log tail. Master clothing kit with green bodies and separate rigs; new drafts get Top/Pants/Shoes. Existing artwork preserved. Friend memory recovery remains unverified.",
   "AutomaticUpdates": {
     "DefaultEnabled": true,
     "Check": "On startup",
     "Apply": "After normal Studio exit and game/Unreal close",
     "PreserveUserContent": true,
     "OptOut": "Settings: Keep Studio updated automatically",
-    "LegacyRecovery": "0.2.77\u20130.2.81 installs whose old updater rejects their existing inventory need one complete-ZIP manual update, retaining the original workspace and artwork. Current stock portraits use accepted assets/brand paths."
+    "LegacyRecovery": "0.2.77–0.2.81 installs whose old updater rejects their existing inventory need one complete-ZIP manual update, retaining the original workspace and artwork. Current stock portraits use accepted assets/brand paths."
   },
   "MetaHumanSetup": {
     "Entry": "Settings: Set up MetaHuman Creator",
@@ -59,7 +62,7 @@
     "Entry": "My characters | My clothes | Downloads | Create | Settings",
     "Player": "Downloads -> Subscribe -> matching wearer -> My characters -> Choose an outfit -> Play",
     "Texture": "My characters -> player -> Edit this game character (stock) or Customize (custom) -> Edit textures -> item -> Export model & textures -> Artwork -> Import texture set -> Build & launch game",
-    "Clothing": "My clothes -> garment -> body fit -> Prepare once -> Edit & save same Blender file -> Build & launch game -> Looks good in game. Existing fitted files can be chosen directly; artwork tools are optional.",
+    "Clothing": "Create -> Make clothes -> Choose a character -> clothing slot -> Prepare fitting kit once -> Edit & save the same Blender file -> Build & launch game -> Looks good in game. Open kit in Blender supplies the separate master-reference working copy.",
     "Character": "Create or continue a MetaHuman draft -> Open in MetaHuman Creator -> edit and save -> Build & launch game -> Studio automatically assembles, adapts the native game rig, fits the starter outfit, binds compatible Creator hair and cooks -> Check Player Select and a match. Blender runs in the background; no manual FBX/part import is required.",
     "StockEditing": "My characters -> Tyreese, DeShawn or Darnell -> Edit this game character -> textures or meshes. Stock player identity is retained.",
     "Fitting": "Green reference bodies and separate native rigs share one working scene. Each supported body needs its own fitted, weighted variant; shared MetaHuman bone names do not automatically fit clothes.",
@@ -67,7 +70,8 @@
     "Portraits": "Model illustrations rather than UV maps. Offline cards do not reproduce unavailable hair grooms, iris shading or native game lighting.",
     "NextAction": "One primary action per stage. Changed Blender saves or artwork invalidate old build and game confirmations.",
     "MissingTextureRecovery": "Same item -> Artwork -> Import PNG or Import texture set. Preserve original maps and packed Mask layout.",
-    "Wardrobe": "Wearer -> category -> compatible clothing -> Play with outfit. Texture edits and clothing changes do not require a new character."
+    "Wardrobe": "Wearer -> category -> compatible clothing -> Play with outfit. Texture edits and clothing changes do not require a new character.",
+    "MasterKit": "Original Tyreese, DeShawn and Darnell references generated locally from installed game; green Body/Face display, separate rigs, private working copy. New MetaHuman drafts use Top/Pants/Shoes automatically. Fit each intended body."
   },
   "CreatorRequired": [
     "Unreal Engine 5.8.3 for character assembly and game asset cooking",

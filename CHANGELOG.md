@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.2.88
+
+Add lighter MetaHuman Creator startup, smaller display thumbnails and the latest
+redacted Creator session diagnostics in Send to Rowe. Integrate the master
+clothing kit under Create → Make clothes, with green body references, preserved
+native rigs and a complete Top/Pants/Shoes template for new drafts. Fix private
+garment rig selection during FBX export. See [release notes](RELEASE-NOTES-0.2.88.md).
+
 ## 0.2.87
 
 Add a single visible Epic prerequisite recovery during MetaHuman Build, wait for open editors to close, replace misleading white fabric artwork with automatic paint preparation, and include memory figures in private support reports. See [release notes](RELEASE-NOTES-0.2.87.md).

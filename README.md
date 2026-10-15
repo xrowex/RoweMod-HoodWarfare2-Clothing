@@ -2,7 +2,7 @@
 
 Download clothes, dress your existing players, or create something new. **Hood Warfare 2 is the first supported game.** No Codex is needed.
 
-[Download Studio 0.2.87 for Windows](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.87/RoweMod-Studio-0.2.87-Windows.zip) · [Studio website](https://rowemods.com/studio) · [Releases](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases)
+[Download Studio 0.2.88 for Windows](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.88/RoweMod-Studio-0.2.88-Windows.zip) · [Studio website](https://rowemods.com/studio) · [Releases](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases)
 
 ## Just want to play?
 
@@ -29,12 +29,14 @@ Existing prepared custom characters appear dynamically. Scratch clothing project
 
 ## Make clothes — save once, build from that file
 
-Use **Create → Make clothes → starter → clothing slot**. Follow four stages:
+Use **Create → Make clothes → Choose a character → clothing slot**. Follow four stages:
 
 1. **Prepare once → Prepare fitting kit.** The kit includes the wearer reference, garment and game rig. Green bodies and weight sources are references. Body profiles in the same kit are labeled and separated.
 2. **Edit & save.** Open the working file in Blender, fit your garment and transfer/check full weights. Save that same `Clothing-fitting-kit.blend`.
 3. **Build & Play → Build & launch game.** Studio remembers the working file and reads only the selected garment/body fit automatically before cooking. No second FBX export, manual mesh import or required Substance roundtrip.
 4. **Check in game → Looks good in game.** Walk, jump, aim and reload; check joints, hands, feet, textures and clipping before confirming.
+
+Studio also offers **Create → Make clothes → Open kit in Blender**. This opens a working copy of the master game references, grouped by Tyreese, DeShawn and Darnell, with green clipping bodies and separate original rigs. For installed custom bodies, use the selected item's fitting project. New MetaHuman drafts use the master Top/Pants/Shoes adapter automatically. These references remain local and are not bundled game assets; fitting a garment on one body does not establish compatibility with every character.
 
 **Already fitted and weighted your file?** Choose **Use an existing Blender file**. For Save As, use **Choose another saved file** once. Your original stays intact; Studio creates its own editable import. A moved file prompts you to choose its location instead of exporting another kit.
 
@@ -71,7 +73,7 @@ Different body shapes need their own fit. Editable `.roweclothes` packages are s
 
 Studio downloads verified updates when enabled. Close Studio, the game and Unreal to apply, then reopen; projects, artwork and settings remain. Settings provides update controls and setup reports. Mod subscriptions check published updates; equip updated assets with the game closed.
 
-Version 0.2.87 retains the 0.2.83 Creator keepalive fix and adds automatic MetaHuman preparation plus updated cosmetic hair/wardrobe handling. A freshly saved MetaHuman was exported, adapted, bound, cooked, reopened and visibly checked in the animated game character-selection preview with its hairstyle and fitted outfit. Existing project definitions and sealed wardrobe proofs were preserved. A full match with the new character, independent friend-PC setup-to-match, extended movement and two-PC multiplayer remain unverified.
+Version 0.2.88 retains the 0.2.83 Creator keepalive fix and adds automatic MetaHuman preparation plus updated cosmetic hair/wardrobe handling. A freshly saved MetaHuman was exported, adapted, bound, cooked, reopened and visibly checked in the animated game character-selection preview with its hairstyle and fitted outfit. Existing project definitions and sealed wardrobe proofs were preserved. A full match with the new character, independent friend-PC setup-to-match, extended movement and two-PC multiplayer remain unverified.
 
 Follow [FRIEND-TEST.md](FRIEND-TEST.md). Include version, exact error and **Settings → Advanced setup → Copy setup report** for support. Preserve original art and old folders. Historical evidence is in [CHANGELOG.md](CHANGELOG.md); [dependency status](DEPENDENCY-STATUS.md) is a separate record.
 
