@@ -4,9 +4,9 @@
   "Channel": "beta",
   "Platform": "windows-x64",
   "File": "RoweMod-Studio-0.2.95-Windows.zip",
-  "Bytes": 79826508,
-  "Sha256": "3FAC7B5F67FA77CB13C52289010CF7281C04EC17885DF3F19771DA1D29A18EFB",
-  "AssemblySha256": "D42B885AC0A7E39662D007936ADD36D9FDBEF1BC0D1CBDFC291DF7A686335F3A",
+  "Bytes": 79826538,
+  "Sha256": "36517691A149DA736DD3C2EBDF977499C3D244B610722071B756CC692DE7C013",
+  "AssemblySha256": "1B4E2F0EB64D8F97FE59698D8CBE37F091FC8428BBFE344C4A6F598CAD44EAE6",
   "SelfContained": true,
   "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.95/RoweMod-Studio-0.2.95-Windows.zip",
   "Required": [
@@ -20,7 +20,7 @@
   "Setup": "First run asks Play mods or Create mods. Complete Steam installations no longer need manual game-build approval. Prepared downloads set up the cosmetic runtime without Epic, Unreal, Blender or mapping capture. Creator setup discovers tools and guides official installer/sign-in steps.",
   "ClothingCatalog": "https://rowemods.com/api/gear/catalog",
   "Validation": {
-    "BundleChecks": 25,
+    "BundleChecks": 26,
     "BrowseUiChecks": 9,
     "WebsiteContractAuthBundleChecks": 15,
     "BundleWebsiteIntegrationChecks": 7,
