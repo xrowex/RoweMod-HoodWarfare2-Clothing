@@ -1,14 +1,14 @@
 {
   "SchemaVersion": 1,
-  "Version": "0.2.92",
+  "Version": "0.2.93",
   "Channel": "beta",
   "Platform": "windows-x64",
-  "File": "RoweMod-Studio-0.2.92-Windows.zip",
-  "Bytes": 79800925,
-  "Sha256": "2F3801101AA6C9BAE6F1640FAA6FF18D82931DFCCC26CCF2A257A4BD5E34420F",
-  "AssemblySha256": "1C114FCB323DCB802131F411CFD1E3639B2F1728155A6AEA2FCD805B37E61260",
+  "File": "RoweMod-Studio-0.2.93-Windows.zip",
+  "Bytes": 79801915,
+  "Sha256": "3294FBF84D2C5D1EBA0F1A0DE400FA023118BA3E11E248095AB548B113F6C781",
+  "AssemblySha256": "07A149FE24D94B90D7AE62831C11C043E3B2D7F2F115C34739184F5658BAC2C2",
   "SelfContained": true,
-  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.92/RoweMod-Studio-0.2.92-Windows.zip",
+  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.93/RoweMod-Studio-0.2.93-Windows.zip",
   "Required": [
     "Complete Hood Warfare 2 Steam installation",
     "Microsoft Visual C++ v14 x64 runtime for cosmetic loader"
@@ -28,10 +28,10 @@
     "PackageAuditPassed": true,
     "IndependentFriendPcAccepted": false,
     "NewGameplayAccepted": false,
-    "Scope": "Real Google sign-in and approved native Studio connection verified with user; 19 existing sealed wardrobe versions reopen and six isolated integrity checks preserve originals. Built production Worker accepts a 7,263,151-byte package with idempotent retry and private pending download. Live native submission receipt pending; friend-PC and gameplay unverified. Production HTTP upgrade from 0.2.91 passed seven checks and preserved six recipient files in an isolated workspace.",
+    "Scope": "Exact native HttpClient multipart serialization failure reproduced locally; corrected quoted field and file names pass built production Worker with a real 7,263,151-byte package. Browser upload, retry protection and private pending download also pass. Real Google sign-in and approved Studio connection verified; live native submission receipt pending; friend-PC and new gameplay unverified.",
     "ActualOldUpdaterVersion": "0.2.91",
-    "ActualOldUpdaterUpgradeChecks": 7,
-    "ActualOldUpdaterProductionHttp": true,
+    "ActualOldUpdaterUpgradeChecks": 0,
+    "ActualOldUpdaterProductionHttp": false,
     "PreservedUpgradeFiles": 6,
     "PackagedImportChecks": 44,
     "PublishingAndRecoveryChecks": 11,
@@ -39,7 +39,8 @@
     "RealGoogleAccountAcceptance": true,
     "WardrobeCompatibilityChecks": 6,
     "ExistingSavedVersionsReopened": 19,
-    "LargeUploadWorkerChecks": 4
+    "LargeUploadWorkerChecks": 4,
+    "NativeMultipartParserAccepted": true
   },
   "DependencyStatus": "ImageSharp 3.1.12 remains pinned with five advisories; bounded static PNG handoff. See DEPENDENCY-STATUS.md.",
   "Note": "Beta. MetaHuman builds use a short private cache independent of install paths; no folder move required. Verified old preparations and artwork stay intact. Destroyed preview references are discarded during map travel. Local native Body/Face and skin export passed; friend-PC recovery and joining another host remain unverified.",
@@ -81,5 +82,5 @@
     "Unreal Engine 5.8.3 for character assembly and game asset cooking",
     "Blender for automatic background mesh and game-rig preparation"
   ],
-  "ReleaseNotes": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/blob/main/RELEASE-NOTES-0.2.92.md"
+  "ReleaseNotes": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/blob/main/RELEASE-NOTES-0.2.93.md"
 }

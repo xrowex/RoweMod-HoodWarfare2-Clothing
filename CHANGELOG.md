@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.93
+
+Quote native multipart field names and filenames so the production server can
+parse Studio gear uploads. Reproduce the previous failure and verify the exact
+corrected serializer with a real 7 MB garment. See RELEASE-NOTES-0.2.93.md.
+
 ## 0.2.92
 
 Show connected Google status clearly, explain upload failures, align the website's
