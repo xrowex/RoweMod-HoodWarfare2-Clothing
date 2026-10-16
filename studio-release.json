@@ -28,7 +28,11 @@
     "PackageAuditPassed": true,
     "IndependentFriendPcAccepted": false,
     "NewGameplayAccepted": false,
-    "Scope": "Player-only browse and separate creator library verified with native UI and local Worker fixtures. Source-only items cannot appear in the default catalog. Real prior Google submission remains pending and unpublished. Universal fitting and multi-body player bundles are not implemented."
+    "Scope": "Player-only browse and separate creator library verified with native UI and local Worker fixtures. Source-only items cannot appear in the default catalog. Real prior Google submission remains pending and unpublished. Universal fitting and multi-body player bundles are not implemented.",
+    "ActualOldUpdaterVersion": "0.2.93",
+    "ActualOldUpdaterUpgradeChecks": 7,
+    "ActualOldUpdaterProductionHttp": true,
+    "PreservedUpgradeFiles": 6
   },
   "DependencyStatus": "ImageSharp 3.1.12 remains pinned with five advisories; bounded static PNG handoff. See DEPENDENCY-STATUS.md.",
   "Note": "Beta. MetaHuman builds use a short private cache independent of install paths; no folder move required. Verified old preparations and artwork stay intact. Destroyed preview references are discarded during map travel. Local native Body/Face and skin export passed; friend-PC recovery and joining another host remain unverified.",
