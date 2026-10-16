@@ -1,14 +1,14 @@
 {
   "SchemaVersion": 1,
-  "Version": "0.2.94",
+  "Version": "0.2.95",
   "Channel": "beta",
   "Platform": "windows-x64",
-  "File": "RoweMod-Studio-0.2.94-Windows.zip",
-  "Bytes": 79804491,
-  "Sha256": "4F03C1333A7B96E0B2807875DA2251067C7330C5DCC0389185CB1C5C98C232DA",
-  "AssemblySha256": "A708E935BF7EBE472B78F0AAAEAFB79522C7A9AAA6AA7345A301E9605557627C",
+  "File": "RoweMod-Studio-0.2.95-Windows.zip",
+  "Bytes": 79826508,
+  "Sha256": "3FAC7B5F67FA77CB13C52289010CF7281C04EC17885DF3F19771DA1D29A18EFB",
+  "AssemblySha256": "D42B885AC0A7E39662D007936ADD36D9FDBEF1BC0D1CBDFC291DF7A686335F3A",
   "SelfContained": true,
-  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.94/RoweMod-Studio-0.2.94-Windows.zip",
+  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.95/RoweMod-Studio-0.2.95-Windows.zip",
   "Required": [
     "Complete Hood Warfare 2 Steam installation",
     "Microsoft Visual C++ v14 x64 runtime for cosmetic loader"
@@ -20,19 +20,18 @@
   "Setup": "First run asks Play mods or Create mods. Complete Steam installations no longer need manual game-build approval. Prepared downloads set up the cosmetic runtime without Epic, Unreal, Blender or mapping capture. Creator setup discovers tools and guides official installer/sign-in steps.",
   "ClothingCatalog": "https://rowemods.com/api/gear/catalog",
   "Validation": {
-    "BrowseUiChecks": 7,
-    "WebsiteContractAuthChecks": 12,
-    "GearLocalIntegrationChecks": 30,
+    "BundleChecks": 25,
+    "BrowseUiChecks": 9,
+    "WebsiteContractAuthBundleChecks": 15,
+    "BundleWebsiteIntegrationChecks": 7,
+    "ExistingSingleFitInstallChecks": 68,
+    "PlayerWardrobeChecks": 47,
     "PublishingAndRecoveryChecks": 11,
     "UpdaterSafetyChecks": 67,
     "PackageAuditPassed": true,
     "IndependentFriendPcAccepted": false,
     "NewGameplayAccepted": false,
-    "Scope": "Player-only browse and separate creator library verified with native UI and local Worker fixtures. Source-only items cannot appear in the default catalog. Real prior Google submission remains pending and unpublished. Universal fitting and multi-body player bundles are not implemented.",
-    "ActualOldUpdaterVersion": "0.2.93",
-    "ActualOldUpdaterUpgradeChecks": 7,
-    "ActualOldUpdaterProductionHttp": true,
-    "PreservedUpgradeFiles": 6
+    "Scope": "Multi-fit archive export, automatic six-stock-wearer selection and isolated installation, exact custom body evidence selector and unsupported-body refusal verified with synthetic fixtures. Local gallery upload and one-file delivery passed. Existing actual ROWE Pants has unfinished Aqua fit; complete and test every intended artist fit before publishing a wearable bundle."
   },
   "DependencyStatus": "ImageSharp 3.1.12 remains pinned with five advisories; bounded static PNG handoff. See DEPENDENCY-STATUS.md.",
   "Note": "Beta. MetaHuman builds use a short private cache independent of install paths; no folder move required. Verified old preparations and artwork stay intact. Destroyed preview references are discarded during map travel. Local native Body/Face and skin export passed; friend-PC recovery and joining another host remain unverified.",
@@ -69,11 +68,12 @@
     "Wardrobe": "Wearer -> category -> compatible clothing -> Play with outfit. Texture edits and clothing changes do not require a new character.",
     "MasterKit": "Original Tyreese, DeShawn and Darnell references generated locally from installed game; green Body/Face display, separate rigs, private working copy. New MetaHuman drafts use Top/Pants/Shoes automatically. Fit each intended body.",
     "Publishing": "My clothes -> garment -> Submit to gallery -> Google sign-in -> match code -> Rowe approves posting access -> prepare and review -> two confirmations -> Send to Rowe -> green only after receipt",
-    "CreatorDownloads": "Create -> Get editable clothing files -> import, fit and build with creator tools"
+    "CreatorDownloads": "Create -> Get editable clothing files -> import, fit and build with creator tools",
+    "MultiFitPants": "My clothes -> pants -> Add another body fit for each intended body -> finish and build each fit -> Build one pants download all fits -> Submit pants with all fits. Subscribe once -> choose character -> matching verified fit selected automatically."
   },
   "CreatorRequired": [
     "Unreal Engine 5.8.3 for character assembly and game asset cooking",
     "Blender for automatic background mesh and game-rig preparation"
   ],
-  "ReleaseNotes": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/blob/main/RELEASE-NOTES-0.2.94.md"
+  "ReleaseNotes": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/blob/main/RELEASE-NOTES-0.2.95.md"
 }

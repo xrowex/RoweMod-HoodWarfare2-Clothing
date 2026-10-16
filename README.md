@@ -2,7 +2,7 @@
 
 Download clothes, dress your existing players, or create something new. **Hood Warfare 2 is the first supported game.** No Codex is needed.
 
-[Download Studio 0.2.94 for Windows](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.94/RoweMod-Studio-0.2.94-Windows.zip) · [Studio website](https://rowemods.com/studio) · [Releases](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases)
+[Download Studio 0.2.95 for Windows](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.95/RoweMod-Studio-0.2.95-Windows.zip) · [Studio website](https://rowemods.com/studio) · [Releases](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases)
 
 ## Just want to play?
 
@@ -26,6 +26,10 @@ Prepared downloads need no Epic, Unreal, Blender or mapping capture. Browse mods
 Character cards use model illustrations, never UV sheets. Custom portraits are generated from saved models when creator tools are available; **Refresh character previews** updates them. A labeled placeholder is shown while a portrait is unavailable. Illustrations are not proof of game appearance.
 
 Existing prepared custom characters appear dynamically. Scratch clothing projects are not player identities. Recoverable library classification keeps saved source files and artwork; it does not delete hidden legacy drafts.
+
+## One pants download for multiple bodies
+
+In **My clothes**, open the pants item and choose **Build one pants download · all fits**. Studio includes every current stock/custom body profile only after its fit is prepared and cooked. It names missing fits. Use **Add another body fit** to finish them, then **Submit pants with all fits** for gallery review. Players subscribe once and choose a character; Studio selects the matching variant. A new custom body still needs its own fitted and tested variant.
 
 ## Make clothes — save once, build from that file
 
