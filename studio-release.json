@@ -31,7 +31,12 @@
     "PackageAuditPassed": true,
     "IndependentFriendPcAccepted": false,
     "NewGameplayAccepted": false,
-    "Scope": "Multi-fit archive export, automatic six-stock-wearer selection and isolated installation, exact custom body evidence selector and unsupported-body refusal verified with synthetic fixtures. Local gallery upload and one-file delivery passed. Existing actual ROWE Pants has unfinished Aqua fit; complete and test every intended artist fit before publishing a wearable bundle."
+    "Scope": "Multi-fit archive export, automatic six-stock-wearer selection and isolated installation, exact custom body evidence selector and unsupported-body refusal verified with synthetic fixtures. Local gallery upload and one-file delivery passed. Existing actual ROWE Pants has unfinished Aqua fit; complete and test every intended artist fit before publishing a wearable bundle.",
+    "ActualOldUpdaterVersion": "0.2.94",
+    "ActualOldUpdaterUpgradeChecks": 7,
+    "ActualOldUpdaterProductionHttp": true,
+    "PreservedUpgradeFiles": 6,
+    "LegacyWebsiteIntegrationChecks": 46
   },
   "DependencyStatus": "ImageSharp 3.1.12 remains pinned with five advisories; bounded static PNG handoff. See DEPENDENCY-STATUS.md.",
   "Note": "Beta. MetaHuman builds use a short private cache independent of install paths; no folder move required. Verified old preparations and artwork stay intact. Destroyed preview references are discarded during map travel. Local native Body/Face and skin export passed; friend-PC recovery and joining another host remain unverified.",
