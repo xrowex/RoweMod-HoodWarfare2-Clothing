@@ -1,14 +1,14 @@
 {
   "SchemaVersion": 1,
-  "Version": "0.2.93",
+  "Version": "0.2.94",
   "Channel": "beta",
   "Platform": "windows-x64",
-  "File": "RoweMod-Studio-0.2.93-Windows.zip",
-  "Bytes": 79801915,
-  "Sha256": "3294FBF84D2C5D1EBA0F1A0DE400FA023118BA3E11E248095AB548B113F6C781",
-  "AssemblySha256": "07A149FE24D94B90D7AE62831C11C043E3B2D7F2F115C34739184F5658BAC2C2",
+  "File": "RoweMod-Studio-0.2.94-Windows.zip",
+  "Bytes": 79804491,
+  "Sha256": "4F03C1333A7B96E0B2807875DA2251067C7330C5DCC0389185CB1C5C98C232DA",
+  "AssemblySha256": "A708E935BF7EBE472B78F0AAAEAFB79522C7A9AAA6AA7345A301E9605557627C",
   "SelfContained": true,
-  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.93/RoweMod-Studio-0.2.93-Windows.zip",
+  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.94/RoweMod-Studio-0.2.94-Windows.zip",
   "Required": [
     "Complete Hood Warfare 2 Steam installation",
     "Microsoft Visual C++ v14 x64 runtime for cosmetic loader"
@@ -20,29 +20,15 @@
   "Setup": "First run asks Play mods or Create mods. Complete Steam installations no longer need manual game-build approval. Prepared downloads set up the cosmetic runtime without Epic, Unreal, Blender or mapping capture. Creator setup discovers tools and guides official installer/sign-in steps.",
   "ClothingCatalog": "https://rowemods.com/api/gear/catalog",
   "Validation": {
-    "ApplicationChecks": 191,
-    "ImportAndErrorChecks": 44,
-    "GearLocalIntegrationChecks": 23,
-    "WebsiteChecks": 28,
+    "BrowseUiChecks": 7,
+    "WebsiteContractAuthChecks": 12,
+    "GearLocalIntegrationChecks": 30,
+    "PublishingAndRecoveryChecks": 11,
     "UpdaterSafetyChecks": 67,
     "PackageAuditPassed": true,
     "IndependentFriendPcAccepted": false,
     "NewGameplayAccepted": false,
-    "Scope": "Real Google sign-in, approved Studio connection, exact native HttpClient upload, durable private receipt and visible Sent checkmark verified. One pending admin queue entry and idempotent UI retry verified. Exact native multipart parser regression and 7 MB browser/native uploads pass built Worker. Production HTTP update 0.2.92 to 0.2.93 passes seven checks preserving six recipient files. Friend-PC and gameplay acceptance remain unverified.",
-    "ActualOldUpdaterVersion": "0.2.92",
-    "ActualOldUpdaterUpgradeChecks": 7,
-    "ActualOldUpdaterProductionHttp": true,
-    "PreservedUpgradeFiles": 6,
-    "PackagedImportChecks": 44,
-    "PublishingAndRecoveryChecks": 11,
-    "NativeUploadLocalChecks": 17,
-    "RealGoogleAccountAcceptance": true,
-    "WardrobeCompatibilityChecks": 6,
-    "ExistingSavedVersionsReopened": 19,
-    "LargeUploadWorkerChecks": 4,
-    "NativeMultipartParserAccepted": true,
-    "RealNativeGearSubmissionAcceptance": true,
-    "NativeGreenReceiptVerified": true
+    "Scope": "Player-only browse and separate creator library verified with native UI and local Worker fixtures. Source-only items cannot appear in the default catalog. Real prior Google submission remains pending and unpublished. Universal fitting and multi-body player bundles are not implemented."
   },
   "DependencyStatus": "ImageSharp 3.1.12 remains pinned with five advisories; bounded static PNG handoff. See DEPENDENCY-STATUS.md.",
   "Note": "Beta. MetaHuman builds use a short private cache independent of install paths; no folder move required. Verified old preparations and artwork stay intact. Destroyed preview references are discarded during map travel. Local native Body/Face and skin export passed; friend-PC recovery and joining another host remain unverified.",
@@ -66,7 +52,7 @@
   },
   "Workflow": {
     "Entry": "My characters | My clothes | Downloads | Create | Settings",
-    "Player": "Downloads -> Subscribe -> matching wearer -> My characters -> Choose an outfit -> Play",
+    "Player": "Browse mods -> Subscribe -> matching wearer -> My characters -> Choose an outfit -> Play",
     "Texture": "My characters -> player -> Edit this game character (stock) or Customize (custom) -> Edit textures -> item -> Export model & textures -> Artwork -> Import texture set -> Build & launch game",
     "Clothing": "Create -> Make clothes -> Choose a character -> clothing slot -> Prepare fitting kit once -> Edit & save the same Blender file -> Build & launch game -> Looks good in game. Open kit in Blender supplies the separate master-reference working copy.",
     "Character": "Create or continue a MetaHuman draft -> Open in MetaHuman Creator -> edit and save -> Build & launch game -> Studio automatically assembles, adapts the native game rig, fits the starter outfit, binds compatible Creator hair and cooks -> Check Player Select and a match. Blender runs in the background; no manual FBX/part import is required.",
@@ -78,11 +64,12 @@
     "MissingTextureRecovery": "Same item -> Artwork -> Import PNG or Import texture set. Preserve original maps and packed Mask layout.",
     "Wardrobe": "Wearer -> category -> compatible clothing -> Play with outfit. Texture edits and clothing changes do not require a new character.",
     "MasterKit": "Original Tyreese, DeShawn and Darnell references generated locally from installed game; green Body/Face display, separate rigs, private working copy. New MetaHuman drafts use Top/Pants/Shoes automatically. Fit each intended body.",
-    "Publishing": "My clothes -> garment -> Submit to gallery -> Google sign-in -> match code -> Rowe approves posting access -> prepare and review -> two confirmations -> Send to Rowe -> green only after receipt"
+    "Publishing": "My clothes -> garment -> Submit to gallery -> Google sign-in -> match code -> Rowe approves posting access -> prepare and review -> two confirmations -> Send to Rowe -> green only after receipt",
+    "CreatorDownloads": "Create -> Get editable clothing files -> import, fit and build with creator tools"
   },
   "CreatorRequired": [
     "Unreal Engine 5.8.3 for character assembly and game asset cooking",
     "Blender for automatic background mesh and game-rig preparation"
   ],
-  "ReleaseNotes": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/blob/main/RELEASE-NOTES-0.2.93.md"
+  "ReleaseNotes": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/blob/main/RELEASE-NOTES-0.2.94.md"
 }

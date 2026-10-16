@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.94
+
+Separate player and creator downloads. Browse mods requires a playable package
+and body profile; editable sources move under Create. Website cards and detail
+pages use the player package's bytes and checksum. See RELEASE-NOTES-0.2.94.md.
+
 ## 0.2.93
 
 Quote native multipart field names and filenames so the production server can

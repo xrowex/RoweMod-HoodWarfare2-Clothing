@@ -2,7 +2,7 @@
 
 Download clothes, dress your existing players, or create something new. **Hood Warfare 2 is the first supported game.** No Codex is needed.
 
-[Download Studio 0.2.93 for Windows](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.93/RoweMod-Studio-0.2.93-Windows.zip) · [Studio website](https://rowemods.com/studio) · [Releases](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases)
+[Download Studio 0.2.94 for Windows](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.94/RoweMod-Studio-0.2.94-Windows.zip) · [Studio website](https://rowemods.com/studio) · [Releases](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases)
 
 ## Just want to play?
 
@@ -11,7 +11,7 @@ Download clothes, dress your existing players, or create something new. **Hood W
 3. Open **Downloads → choose a published item → Subscribe**. Studio verifies the prepared item and its compatible wearer.
 4. In **My characters**, choose that wearer → **Choose an outfit → Play with outfit**. Select the matching player in the game's Player Select screen, then open its **Wardrobe** for compatible stock/prepared clothes.
 
-Prepared downloads need no Epic, Unreal, Blender or mapping capture. **Creator files available** means editable sources need creator tools and a build before playing.
+Prepared downloads need no Epic, Unreal, Blender or mapping capture. Browse mods only lists ready-to-play packages. Editable sources are separate: **Create → Get editable clothing files**; these need creator tools and a build before playing.
 
 ## Your workspace
 
@@ -19,8 +19,8 @@ Prepared downloads need no Epic, Unreal, Blender or mapping capture. **Creator f
 | --- | --- |
 | **My characters** | The three stock players and your prepared custom characters. Open one to customize it or choose an outfit. |
 | **My clothes** | Individual clothing items, with their prepared source fits grouped under the same item. |
-| **Downloads** | Subscribe to curated ready-to-play items or get editable creator files. |
-| **Create** | Choose Play mods, Edit textures, Make clothes or Make a character from picture cards. |
+| **Downloads** | Browse ready-to-play mods and Subscribe. Creator-only items stay out of this player library. |
+| **Create** | Choose Play mods, Edit textures, Make clothes or Make a character. Get editable clothing files here. |
 | **Settings** | Setup, updates, optional MetaHuman tools and diagnostic reports. |
 
 Character cards use model illustrations, never UV sheets. Custom portraits are generated from saved models when creator tools are available; **Refresh character previews** updates them. A labeled placeholder is shown while a portrait is unavailable. Illustrations are not proof of game appearance.
