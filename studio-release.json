@@ -1,14 +1,14 @@
 {
   "SchemaVersion": 1,
-  "Version": "0.2.101",
+  "Version": "0.2.102",
   "Channel": "beta",
   "Platform": "windows-x64",
-  "File": "RoweMod-Studio-0.2.101-Windows.zip",
-  "Bytes": 80047661,
-  "Sha256": "BF39C565DA787B6592F0097C2A1B00AEE923E3BC1A02330E49C6AA9BE1F01B3F",
-  "AssemblySha256": "62839DBE7ADE71D12AE0361EEC8B4F2F8A0CA5D89ED88F24186E44C69FE8FBE1",
+  "File": "RoweMod-Studio-0.2.102-Windows.zip",
+  "Bytes": 80049017,
+  "Sha256": "B51A010472E0FDBF62649E818EF14F78A74493B15A7DDEE326A8C9B6AE118C90",
+  "AssemblySha256": "8E876505B7722264A37CBB4E9FC31A12C3C03687B49F16884157FA37E895551D",
   "SelfContained": true,
-  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.101/RoweMod-Studio-0.2.101-Windows.zip",
+  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.102/RoweMod-Studio-0.2.102-Windows.zip",
   "Required": [
     "Complete Hood Warfare 2 Steam installation",
     "Microsoft Visual C++ v14 x64 runtime for cosmetic loader"
@@ -20,21 +20,21 @@
   "Setup": "First run asks Play mods or Create mods. Complete Steam installations no longer need manual game-build approval. Prepared downloads set up the cosmetic runtime without Epic, Unreal, Blender or mapping capture. Creator setup discovers tools and guides official installer/sign-in steps.",
   "ClothingCatalog": "https://rowemods.com/api/gear/catalog",
   "Validation": {
-    "ActualOldUpdaterVersion": "0.2.100",
-    "SupportReportChecks": 34,
-    "TwoPcMultiplayer": false,
-    "ServerReportTests": 18,
-    "Scope": "Controlled stage failures, retry correlation, failure-time log snapshots, durable upload retries, full Unicode reconstruction and unauthorized read rejection.",
-    "PackageAuditPassed": true,
     "IndependentFriendPcAccepted": false,
-    "ActualArchiveUpgradeChecks": 12
+    "ActualOldUpdaterVersion": "0.2.101",
+    "SupportAndRestartChecks": 38,
+    "PackageAuditPassed": true,
+    "ServerReportTests": 18,
+    "EditorLifecycleChecks": 10,
+    "ActualArchiveUpgradeChecks": 12,
+    "TwoPcMultiplayer": false
   },
   "DependencyStatus": "ImageSharp 3.1.12 remains pinned with five advisories; bounded static PNG handoff. See DEPENDENCY-STATUS.md.",
-  "Note": "Beta. Complete per-operation diagnostics, build/helper identity, correlated retries and durable one-click reporting. Includes access-denied and generic groom export fixes. Friend-PC retry remains pending.",
+  "Note": "Beta. Automatic Studio restart for ready updates, deferred during builds and painting. Normal Unreal close requested before MetaHuman preparation; save/cancel respected. Includes complete operation diagnostics. Friend-PC retry pending.",
   "AutomaticUpdates": {
     "DefaultEnabled": true,
     "Check": "On startup",
-    "Apply": "After normal Studio exit and game/Unreal close",
+    "Apply": "Automatically after current Studio task and painting finish; helper waits for game and Unreal closure, then relaunches Studio",
     "PreserveUserContent": true,
     "OptOut": "Settings: Keep Studio updated automatically",
     "LegacyRecovery": "0.2.77–0.2.81 installs whose old updater rejects their existing inventory need one complete-ZIP manual update, retaining the original workspace and artwork. Current stock portraits use accepted assets/brand paths."
@@ -58,5 +58,5 @@
     "Unreal Engine 5.8.3 for character assembly and game asset cooking",
     "Blender for automatic background mesh and game-rig preparation"
   ],
-  "ReleaseNotes": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/blob/main/RELEASE-NOTES-0.2.101.md"
+  "ReleaseNotes": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/blob/main/RELEASE-NOTES-0.2.102.md"
 }

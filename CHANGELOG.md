@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.102 beta
+
+Restart Studio automatically for ready updates after active tasks and painting
+finish. Request normal Unreal closure before MetaHuman builds, preserving native
+save/cancel prompts and handling denied close requests. See RELEASE-NOTES-0.2.102.md.
+
 ## 0.2.101 beta
 
 Add per-operation diagnostics, running build/helper identity, complete redacted
