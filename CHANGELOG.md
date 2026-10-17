@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.2.101 beta
+
+Add per-operation diagnostics, running build/helper identity, complete redacted
+exceptions and retry correlation. Persist failed uploads with stable receipt IDs;
+restore their retry controls after reopening Studio. Add authorized direct report
+reads with length and checksum verification. See RELEASE-NOTES-0.2.101.md.
+
 ## 0.2.100 beta
 
 Avoid opening Unreal process handles when checking whether the editor is still
