@@ -2,7 +2,7 @@
 
 Download clothes, dress your existing players, or create something new. **Hood Warfare 2 is the first supported game.** No Codex is needed.
 
-[Download Studio 0.2.95 for Windows](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.95/RoweMod-Studio-0.2.95-Windows.zip) · [Studio website](https://rowemods.com/studio) · [Releases](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases)
+[Download Studio 0.2.96 beta for Windows](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.96/RoweMod-Studio-0.2.96-Windows.zip) · [Studio website](https://rowemods.com/studio) · [Releases](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases)
 
 ## Just want to play?
 
@@ -27,13 +27,28 @@ Character cards use model illustrations, never UV sheets. Custom portraits are g
 
 Existing prepared custom characters appear dynamically. Scratch clothing projects are not player identities. Recoverable library classification keeps saved source files and artwork; it does not delete hidden legacy drafts.
 
-## One pants download for multiple bodies
+## Shared clothing preview
+
+**Create → Make clothes** makes a clothing item independently of a character.
+Choose Top, Pants, Shoes, Gloves, Mask, Bandana or Hat. The master kit uses one
+authoring rig with green body references. Edit and save the Blender file, then
+**Build clothing → Choose character & test**. Studio adapts the item to the
+selected supported body and checks its geometry and skinning before equipping.
+Failed checks preserve the previous outfit. Hand/finger fitting can currently
+refuse gloves; full coverage and gameplay validation remain in progress.
+
+Test movement, first person, clipping, materials and map travel before submitting
+through the Google-authorized gallery review. Players receive the approved
+ready-to-play item through Downloads; creator files remain separate. A shared
+skeleton alone does not prove a correct fit for every body.
+
+## Existing pants bundles
 
 In **My clothes**, open the pants item and choose **Build one pants download · all fits**. Studio includes every current stock/custom body profile only after its fit is prepared and cooked. It names missing fits. Use **Add another body fit** to finish them, then **Submit pants with all fits** for gallery review. Players subscribe once and choose a character; Studio selects the matching variant. A new custom body still needs its own fitted and tested variant.
 
 ## Make clothes — save once, build from that file
 
-Use **Create → Make clothes → Choose a character → clothing slot**. Follow four stages:
+Existing clothing projects retain their saved working files and four stages:
 
 1. **Prepare once → Prepare fitting kit.** The kit includes the wearer reference, garment and game rig. Green bodies and weight sources are references. Body profiles in the same kit are labeled and separated.
 2. **Edit & save.** Open the working file in Blender, fit your garment and transfer/check full weights. Save that same `Clothing-fitting-kit.blend`.

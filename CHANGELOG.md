@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.2.96 beta
+
+Wait for native hair export completion and retain attempt-specific diagnostics.
+Coalesce runtime skin callbacks and avoid detailed groom reads during ordinary
+heartbeats. Recover imported clothing material slots and packed maps. Include
+distance-LOD binding recipes and the shared clothing authoring preview, with
+strict fit refusal and ongoing gameplay validation. See RELEASE-NOTES-0.2.96.md.
+
 ## 0.2.95
 
 Bundle verified pants variants into one download. Choose a wearer and Studio selects the exact body/rig fit. Build and submit all fits directly from My clothes; missing bodies are named before export. Retain single-fit compatibility. See RELEASE-NOTES-0.2.95.md.
