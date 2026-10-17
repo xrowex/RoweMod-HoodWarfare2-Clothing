@@ -1,14 +1,14 @@
 {
   "SchemaVersion": 1,
-  "Version": "0.2.102",
+  "Version": "0.2.103",
   "Channel": "beta",
   "Platform": "windows-x64",
-  "File": "RoweMod-Studio-0.2.102-Windows.zip",
-  "Bytes": 80049017,
-  "Sha256": "B51A010472E0FDBF62649E818EF14F78A74493B15A7DDEE326A8C9B6AE118C90",
-  "AssemblySha256": "8E876505B7722264A37CBB4E9FC31A12C3C03687B49F16884157FA37E895551D",
+  "File": "RoweMod-Studio-0.2.103-Windows.zip",
+  "Bytes": 80049476,
+  "Sha256": "7548519476538EE09D150ACEDE51583791D2965D78BF087B5729557B79D13DA0",
+  "AssemblySha256": "C1A34ECBC743D45BA28963D62158F2829E4CAA64FCF2621270FEA3A41C8C528A",
   "SelfContained": true,
-  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.102/RoweMod-Studio-0.2.102-Windows.zip",
+  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.103/RoweMod-Studio-0.2.103-Windows.zip",
   "Required": [
     "Complete Hood Warfare 2 Steam installation",
     "Microsoft Visual C++ v14 x64 runtime for cosmetic loader"
@@ -21,16 +21,16 @@
   "ClothingCatalog": "https://rowemods.com/api/gear/catalog",
   "Validation": {
     "IndependentFriendPcAccepted": false,
-    "ActualOldUpdaterVersion": "0.2.101",
-    "SupportAndRestartChecks": 38,
-    "PackageAuditPassed": true,
-    "ServerReportTests": 18,
-    "EditorLifecycleChecks": 10,
+    "NativeCameronExportAccepted": false,
+    "InstalledUnrealApiContractChecked": true,
+    "TwoPcMultiplayer": false,
     "ActualArchiveUpgradeChecks": 12,
-    "TwoPcMultiplayer": false
+    "PackageAuditPassed": true,
+    "ActualOldUpdaterVersion": "0.2.102",
+    "GroomLifecycleChecks": 12
   },
   "DependencyStatus": "ImageSharp 3.1.12 remains pinned with five advisories; bounded static PNG handoff. See DEPENDENCY-STATUS.md.",
-  "Note": "Beta. Automatic Studio restart for ready updates, deferred during builds and painting. Normal Unreal close requested before MetaHuman preparation; save/cancel respected. Includes complete operation diagnostics. Friend-PC retry pending.",
+  "Note": "Beta. Register saved MetaHuman characters before transient groom inspection; share one inspection session for generic groom names and preserve pre-existing editor ownership. Twelve lifecycle/slot checks pass. Native Cameron export and friend-PC retry remain pending.",
   "AutomaticUpdates": {
     "DefaultEnabled": true,
     "Check": "On startup",
@@ -58,5 +58,5 @@
     "Unreal Engine 5.8.3 for character assembly and game asset cooking",
     "Blender for automatic background mesh and game-rig preparation"
   ],
-  "ReleaseNotes": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/blob/main/RELEASE-NOTES-0.2.102.md"
+  "ReleaseNotes": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/blob/main/RELEASE-NOTES-0.2.103.md"
 }

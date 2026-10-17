@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.103 beta
+
+Register saved MetaHumans for editing before inspecting generic groom slots.
+Reuse one transient actor per export and preserve registrations owned by another
+editor session. See RELEASE-NOTES-0.2.103.md for validation and remaining acceptance.
+
 ## 0.2.102 beta
 
 Restart Studio automatically for ready updates after active tasks and painting
