@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.97 beta
+
+Stop native loadout and bot-respawn catalog construction from restoring and
+reloading every live cosmetic. Refresh the character list independently and
+retain runtime timing evidence. See RELEASE-NOTES-0.2.97.md.
+
 ## 0.2.96 beta
 
 Wait for native hair export completion and retain attempt-specific diagnostics.

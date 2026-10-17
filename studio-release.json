@@ -1,14 +1,14 @@
 {
   "SchemaVersion": 1,
-  "Version": "0.2.96",
+  "Version": "0.2.97",
   "Channel": "beta",
   "Platform": "windows-x64",
-  "File": "RoweMod-Studio-0.2.96-Windows.zip",
-  "Bytes": 80082364,
-  "Sha256": "FCD489302EBCBD4FDD545D02F4EF128CB1163D7D8E6BA2CD8CE3B18831CE1578",
-  "AssemblySha256": "60852AC4259BF670DDC35D0EEC67B8BDDBCB7C7DE37DEC8C7A2EFB52097F72AE",
+  "File": "RoweMod-Studio-0.2.97-Windows.zip",
+  "Bytes": 80082388,
+  "Sha256": "114B6384A0BECF63EE7AB776646D6AB1ABC9DAF96804C9F30ADB152329E3F4F7",
+  "AssemblySha256": "1E06AC5B51D6C70A594A2CC5AE71A80ED95607565D1F4A39DAE009FD0B2BF2B6",
   "SelfContained": true,
-  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.96/RoweMod-Studio-0.2.96-Windows.zip",
+  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.97/RoweMod-Studio-0.2.97-Windows.zip",
   "Required": [
     "Complete Hood Warfare 2 Steam installation",
     "Microsoft Visual C++ v14 x64 runtime for cosmetic loader"
@@ -20,7 +20,7 @@
   "Setup": "First run asks Play mods or Create mods. Complete Steam installations no longer need manual game-build approval. Prepared downloads set up the cosmetic runtime without Epic, Unreal, Blender or mapping capture. Creator setup discovers tools and guides official installer/sign-in steps.",
   "ClothingCatalog": "https://rowemods.com/api/gear/catalog",
   "Validation": {
-    "SkinRefreshChecks": 23,
+    "SkinRefreshChecks": 24,
     "CharacterSkinEventChecks": 26,
     "GroomStateChecks": 19,
     "MeshPoseChecks": 19,
@@ -33,17 +33,30 @@
     "NativeHairExportSuccessAndFailureVerified": true,
     "IndependentFriendPcAccepted": false,
     "NewGameplayAccepted": false,
-    "Scope": "Queued Lua event and native package tests, isolated actual updater transaction and native hair-export diagnostics. Full universal clothing gameplay acceptance and stutter improvement remain pending."
+    "Scope": "Lua event regression tests, complete portable package audit and actual older-updater transaction. Local private Downtown bot match confirms catalog notifications no longer trigger full cosmetic reloads. Universal all-body/all-slot and friend-PC acceptance remain pending.",
+    "CharacterCatalogChecks": 27,
+    "LocalPrivateMatchHitchRepairVerified": true,
+    "FrameCaptureBefore": {
+      "Seconds": 30,
+      "FramesOver250Ms": 5,
+      "WorstMs": 420.711
+    },
+    "FrameCaptureAfter": {
+      "Seconds": 45,
+      "FramesOver250Ms": 0,
+      "WorstMs": 100.9773,
+      "FramesOver50Ms": 2
+    }
   },
   "DependencyStatus": "ImageSharp 3.1.12 remains pinned with five advisories; bounded static PNG handoff. See DEPENDENCY-STATUS.md.",
-  "Note": "Beta. Hair export waits for explicit native completion and preserves correlated failure diagnostics. Runtime changes coalesce redundant skin callbacks and avoid detailed idle groom reads. Rebuild an existing hairstyle for the distance-LOD binding recipe. Shared clothing authoring is a preview with strict fit refusal; all-body/all-slot gameplay and friend-PC recovery remain unverified.",
+  "Note": "Beta. Stops native loadout and bot-respawn catalogs from repeatedly reloading all cosmetics. Bounded local private-match captures verified removal of the large recurring reload stalls; occasional smaller hitches remain. Includes 0.2.96 hair diagnostics, material fixes and shared clothing preview. Independent friend-PC and full universal clothing gameplay acceptance remain pending.",
   "AutomaticUpdates": {
     "DefaultEnabled": true,
     "Check": "On startup",
     "Apply": "After normal Studio exit and game/Unreal close",
     "PreserveUserContent": true,
     "OptOut": "Settings: Keep Studio updated automatically",
-    "LegacyRecovery": "0.2.77–0.2.81 installs whose old updater rejects their existing inventory need one complete-ZIP manual update, retaining the original workspace and artwork. Current stock portraits use accepted assets/brand paths."
+    "LegacyRecovery": "0.2.77\u20130.2.81 installs whose old updater rejects their existing inventory need one complete-ZIP manual update, retaining the original workspace and artwork. Current stock portraits use accepted assets/brand paths."
   },
   "MetaHumanSetup": {
     "Entry": "Settings: Set up MetaHuman Creator",
@@ -77,5 +90,5 @@
     "Unreal Engine 5.8.3 for character assembly and game asset cooking",
     "Blender for automatic background mesh and game-rig preparation"
   ],
-  "ReleaseNotes": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/blob/main/RELEASE-NOTES-0.2.96.md"
+  "ReleaseNotes": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/blob/main/RELEASE-NOTES-0.2.97.md"
 }
