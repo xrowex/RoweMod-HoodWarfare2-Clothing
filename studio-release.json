@@ -1,14 +1,14 @@
 {
   "SchemaVersion": 1,
-  "Version": "0.2.98",
+  "Version": "0.2.99",
   "Channel": "beta",
   "Platform": "windows-x64",
-  "File": "RoweMod-Studio-0.2.98-Windows.zip",
-  "Bytes": 80091933,
-  "Sha256": "65263078D71013B8C7BC8947DED03622DB3512B632004A4B05C6EC0FC691131B",
-  "AssemblySha256": "141AA180EA252C44B313CAC6F1328B48BD6212C085B3E44A0A2FFD2FC0673B76",
+  "File": "RoweMod-Studio-0.2.99-Windows.zip",
+  "Bytes": 80042768,
+  "Sha256": "6D7A49DA3B3291C7722B7F22A6AE3CAED36B4B0D45162946946C8929B8506F42",
+  "AssemblySha256": "C66E485939388D6028D3B2F392A3AEFE0C304597ADBFAB990078ACBABE228759",
   "SelfContained": true,
-  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.98/RoweMod-Studio-0.2.98-Windows.zip",
+  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.99/RoweMod-Studio-0.2.99-Windows.zip",
   "Required": [
     "Complete Hood Warfare 2 Steam installation",
     "Microsoft Visual C++ v14 x64 runtime for cosmetic loader"
@@ -20,53 +20,17 @@
   "Setup": "First run asks Play mods or Create mods. Complete Steam installations no longer need manual game-build approval. Prepared downloads set up the cosmetic runtime without Epic, Unreal, Blender or mapping capture. Creator setup discovers tools and guides official installer/sign-in steps.",
   "ClothingCatalog": "https://rowemods.com/api/gear/catalog",
   "Validation": {
-    "SkinRefreshChecks": 28,
-    "CharacterSkinEventChecks": 31,
-    "GroomStateChecks": 28,
-    "MeshPoseChecks": 19,
-    "LegacyClothingSurfaceChecks": 6,
-    "UpdaterSafetyChecks": 67,
-    "ActualOldUpdaterVersion": "0.2.95",
-    "ActualArchiveUpgradeChecks": 12,
-    "PreservedUpgradeFiles": 7,
-    "PackageAuditPassed": true,
-    "NativeHairExportSuccessAndFailureVerified": true,
     "IndependentFriendPcAccepted": false,
-    "NewGameplayAccepted": false,
-    "Scope": "Local private-match hair, shoes and supported native-fabric pants rendering across respawn/map transition; exact asset-cache identity and owned material dispatch regression checks; complete package audit and actual 0.2.95 updater transaction. All-body/all-slot and friend-PC acceptance remain pending.",
-    "CharacterCatalogChecks": 27,
-    "LocalPrivateMatchHitchRepairVerified": true,
-    "FrameCaptureBefore": {
-      "Seconds": 30,
-      "FramesOver250Ms": 5,
-      "WorstMs": 420.711
-    },
-    "FrameCaptureAfter": {
-      "Seconds": 45,
-      "FramesOver250Ms": 0,
-      "WorstMs": 100.9773,
-      "FramesOver50Ms": 2
-    },
-    "OwnedClothingRuntimeChecks": 59,
-    "ArtworkDispatchChecks": 11,
-    "NativeMaterialDispatchChecks": 10,
-    "ClothingDispatchChecks": 9,
-    "LocalProductionPantsPackageVerified": true,
-    "FullUniversalGoalComplete": false,
-    "CacheIdentityChecks": 4,
-    "SteadyBriCapture": {
-      "Frames": 3983,
-      "MedianMs": 11.0597,
-      "P99Ms": 21.9333,
-      "MaxMs": 48.4893,
-      "Over50": 0,
-      "Over100": 0,
-      "Over250": 0,
-      "Context": "Private Downtown bot match. Original saved Bri outfit, after load, with camera and crouch inputs; universal selection not yet applied."
-    }
+    "TwoPcMultiplayer": false,
+    "ActualOldUpdaterVersion": "0.2.98",
+    "GenericGroomSlotChecks": 6,
+    "ActualArchiveUpgradeChecks": 12,
+    "Scope": "Local bot match and event-driven idle checks; generic groom helper fixtures. No new friend-PC native export acceptance.",
+    "RuntimeRegressionChecks": 89,
+    "PackageAuditPassed": true
   },
   "DependencyStatus": "ImageSharp 3.1.12 remains pinned with five advisories; bounded static PNG handoff. See DEPENDENCY-STATUS.md.",
-  "Note": "Beta. Stops native loadout and bot-respawn catalogs from repeatedly reloading all cosmetics. Bounded local private-match captures verified removal of the large recurring reload stalls; occasional smaller hitches remain. Includes 0.2.96 hair diagnostics, material fixes and shared clothing preview. Independent friend-PC and full universal clothing gameplay acceptance remain pending.",
+  "Note": "Beta. Fixes generic MetaHuman groom slot export errors. Event-driven cosmetic refresh and character-specific outfits replace universal clothing. One must retry the build; two-PC acceptance remains pending.",
   "AutomaticUpdates": {
     "DefaultEnabled": true,
     "Check": "On startup",
@@ -86,26 +50,13 @@
     "SkinDetails": "Paused; no extension or local C++ build required"
   },
   "Workflow": {
+    "Character": "Save MetaHuman in Creator, then Build & launch game. Compatible saved grooms resolve from named source components.",
     "Entry": "My characters | My clothes | Downloads | Create | Settings",
-    "Player": "Browse mods -> Subscribe -> matching wearer -> My characters -> Choose an outfit -> Play",
-    "Texture": "My characters -> player -> Edit this game character (stock) or Customize (custom) -> Edit textures -> item -> Export model & textures -> Artwork -> Import texture set -> Build & launch game",
-    "Clothing": "Create -> Make clothes -> slot -> edit and save on shared master rig -> Build clothing -> Choose character and test. Existing projects keep their saved working files.",
-    "Character": "Create or continue a MetaHuman draft -> Open in MetaHuman Creator -> edit and save -> Build & launch game -> Studio automatically assembles, adapts the native game rig, fits the starter outfit, binds compatible Creator hair and cooks -> Check Player Select and a match. Blender runs in the background; no manual FBX/part import is required.",
-    "StockEditing": "My characters -> Tyreese, DeShawn or Darnell -> Edit this game character -> textures or meshes. Stock player identity is retained.",
-    "Fitting": "One reusable garment adapted for the selected supported stock or prepared custom body. Geometry/skin/motion checks refuse invalid fits and retain prior outfit. Full all-body/all-slot gameplay acceptance remains in progress; glove finger checks can refuse.",
-    "Library": "Three stock players plus genuinely installed custom avatars. My clothes includes authored projects, subscribed downloads and sealed character wardrobe garments. Same-name saved versions group by wearer and slot; choose latest or earlier versions without deleting sources.",
-    "Portraits": "Model illustrations rather than UV maps. Offline cards do not reproduce unavailable hair grooms, iris shading or native game lighting.",
-    "NextAction": "One primary action per stage. Changed Blender saves or artwork invalidate old build and game confirmations.",
-    "MissingTextureRecovery": "Same item -> Artwork -> Import PNG or Import texture set. Preserve original maps and packed Mask layout.",
-    "Wardrobe": "Wearer -> category -> compatible clothing -> Play with outfit. Texture edits and clothing changes do not require a new character.",
-    "MasterKit": "One native authoring rig with reference items and green body/face references, generated from installed game. Seven slot creation targets; blanks where no verified source garment exists.",
-    "Publishing": "My clothes -> garment -> Submit to gallery -> Google sign-in -> match code -> Rowe approves posting access -> prepare and review -> two confirmations -> Send to Rowe -> green only after receipt",
-    "CreatorDownloads": "Create -> Get editable clothing files -> import, fit and build with creator tools",
-    "MultiFitPants": "My clothes -> pants -> Add another body fit for each intended body -> finish and build each fit -> Build one pants download all fits -> Submit pants with all fits. Subscribe once -> choose character -> matching verified fit selected automatically."
+    "Clothing": "Select one character, export its one-rig Blender outfit kit, fit and weight manually, then build and test on that character. Universal fitting and in-game clothing switching retired."
   },
   "CreatorRequired": [
     "Unreal Engine 5.8.3 for character assembly and game asset cooking",
     "Blender for automatic background mesh and game-rig preparation"
   ],
-  "ReleaseNotes": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/blob/main/RELEASE-NOTES-0.2.98.md"
+  "ReleaseNotes": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/blob/main/RELEASE-NOTES-0.2.99.md"
 }

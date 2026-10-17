@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.2.99 beta
+
+Resolve generic MetaHuman groom names from the saved character's named components.
+Move cosmetic refresh work to lifecycle, selection and file-change events; remove
+periodic cosmetic resends. Retire universal clothing in favor of outfits manually
+fitted to one character. Preserve saved artwork and projects. See RELEASE-NOTES-0.2.99.md
+for verified local checks and remaining friend-PC and multiplayer limitations.
+
 ## 0.2.98 beta
 
 Validate cached Unreal assets by exact path across maps. Preserve owned hair,

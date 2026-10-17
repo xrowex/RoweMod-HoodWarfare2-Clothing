@@ -2,14 +2,14 @@
 
 Download clothes, dress your existing players, or create something new. **Hood Warfare 2 is the first supported game.** No Codex is needed.
 
-[Download Studio 0.2.97 beta for Windows](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.97/RoweMod-Studio-0.2.97-Windows.zip) · [Studio website](https://rowemods.com/studio) · [Releases](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases)
+[Download Studio 0.2.99 beta for Windows](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.99/RoweMod-Studio-0.2.99-Windows.zip) · [Studio website](https://rowemods.com/studio) · [Releases](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases)
 
 ## Just want to play?
 
 1. Extract the complete ZIP into a writable folder and open **RoweMod Studio.cmd**.
 2. Choose **Set up for playing**. Have the game installed through Steam and closed for setup.
 3. Open **Downloads → choose a published item → Subscribe**. Studio verifies the prepared item and its compatible wearer.
-4. In **My characters**, choose that wearer → **Choose an outfit → Play with outfit**. Select the matching player in the game's Player Select screen, then open its **Wardrobe** for compatible stock/prepared clothes.
+4. In **My characters**, choose that wearer → **Choose an outfit → Play with outfit**. Select the matching player in the game's Player Select screen.
 
 Prepared downloads need no Epic, Unreal, Blender or mapping capture. Browse mods only lists ready-to-play packages. Editable sources are separate: **Create → Get editable clothing files**; these need creator tools and a build before playing.
 
@@ -27,20 +27,9 @@ Character cards use model illustrations, never UV sheets. Custom portraits are g
 
 Existing prepared custom characters appear dynamically. Scratch clothing projects are not player identities. Recoverable library classification keeps saved source files and artwork; it does not delete hidden legacy drafts.
 
-## Shared clothing preview
+## Character-specific outfits
 
-**Create → Make clothes** makes a clothing item independently of a character.
-Choose Top, Pants, Shoes, Gloves, Mask, Bandana or Hat. The master kit uses one
-authoring rig with green body references. Edit and save the Blender file, then
-**Build clothing → Choose character & test**. Studio adapts the item to the
-selected supported body and checks its geometry and skinning before equipping.
-Failed checks preserve the previous outfit. Hand/finger fitting can currently
-refuse gloves; full coverage and gameplay validation remain in progress.
-
-Test movement, first person, clipping, materials and map travel before submitting
-through the Google-authorized gallery review. Players receive the approved
-ready-to-play item through Downloads; creator files remain separate. A shared
-skeleton alone does not prove a correct fit for every body.
+Fit each outfit to one selected character using its Blender kit. Universal fitting and in-game clothing switching are retired. Gloves are excluded. See [character outfit workflow](CHARACTER-OUTFITS.md).
 
 ## Existing pants bundles
 
