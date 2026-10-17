@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.2.98 beta
+
+Validate cached Unreal assets by exact path across maps. Preserve owned hair,
+mask and clothing visibility without repeated idle writes. Cook supported
+native fabric graphs into reusable garments and apply their owned materials.
+See RELEASE-NOTES-0.2.98.md for the local test scope and remaining preview limits.
+
 ## 0.2.97 beta
 
 Stop native loadout and bot-respawn catalog construction from restoring and
