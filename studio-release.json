@@ -1,14 +1,14 @@
 {
   "SchemaVersion": 1,
-  "Version": "0.2.99",
+  "Version": "0.2.100",
   "Channel": "beta",
   "Platform": "windows-x64",
-  "File": "RoweMod-Studio-0.2.99-Windows.zip",
-  "Bytes": 80042768,
-  "Sha256": "6D7A49DA3B3291C7722B7F22A6AE3CAED36B4B0D45162946946C8929B8506F42",
-  "AssemblySha256": "C66E485939388D6028D3B2F392A3AEFE0C304597ADBFAB990078ACBABE228759",
+  "File": "RoweMod-Studio-0.2.100-Windows.zip",
+  "Bytes": 80041603,
+  "Sha256": "FF99D8B8318AE4875458FFAE56763B6F68A1E53E927D1B2824BCFEA6E5728E2E",
+  "AssemblySha256": "BE7C68B13E90278D7D419C8B7E768031C5FDC5AC08E7FC9268C04607809C3603",
   "SelfContained": true,
-  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.99/RoweMod-Studio-0.2.99-Windows.zip",
+  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.100/RoweMod-Studio-0.2.100-Windows.zip",
   "Required": [
     "Complete Hood Warfare 2 Steam installation",
     "Microsoft Visual C++ v14 x64 runtime for cosmetic loader"
@@ -21,16 +21,15 @@
   "ClothingCatalog": "https://rowemods.com/api/gear/catalog",
   "Validation": {
     "IndependentFriendPcAccepted": false,
-    "TwoPcMultiplayer": false,
-    "ActualOldUpdaterVersion": "0.2.98",
-    "GenericGroomSlotChecks": 6,
+    "ActualOldUpdaterVersion": "0.2.99",
+    "EditorProcessChecks": 6,
+    "Scope": "Built method tested with native Windows process appearance and exit. One must retry on the updated build.",
     "ActualArchiveUpgradeChecks": 12,
-    "Scope": "Local bot match and event-driven idle checks; generic groom helper fixtures. No new friend-PC native export acceptance.",
-    "RuntimeRegressionChecks": 89,
+    "TwoPcMultiplayer": false,
     "PackageAuditPassed": true
   },
   "DependencyStatus": "ImageSharp 3.1.12 remains pinned with five advisories; bounded static PNG handoff. See DEPENDENCY-STATUS.md.",
-  "Note": "Beta. Fixes generic MetaHuman groom slot export errors. Event-driven cosmetic refresh and character-specific outfits replace universal clothing. One must retry the build; two-PC acceptance remains pending.",
+  "Note": "Beta. Fixes access denied while checking whether Unreal has closed. Includes generic groom-name export repair and event-driven cosmetics. Friend-PC retry remains pending.",
   "AutomaticUpdates": {
     "DefaultEnabled": true,
     "Check": "On startup",
@@ -58,5 +57,5 @@
     "Unreal Engine 5.8.3 for character assembly and game asset cooking",
     "Blender for automatic background mesh and game-rig preparation"
   ],
-  "ReleaseNotes": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/blob/main/RELEASE-NOTES-0.2.99.md"
+  "ReleaseNotes": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/blob/main/RELEASE-NOTES-0.2.100.md"
 }

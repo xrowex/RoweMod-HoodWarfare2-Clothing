@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.100 beta
+
+Avoid opening Unreal process handles when checking whether the editor is still
+running. This fixes the access-denied exception while retaining the wait for
+Unreal to close before building. See RELEASE-NOTES-0.2.100.md.
+
 ## 0.2.99 beta
 
 Resolve generic MetaHuman groom names from the saved character's named components.
