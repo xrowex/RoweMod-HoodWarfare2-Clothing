@@ -1,3 +1,7 @@
+## 0.2.105 beta
+
+Fix custom hair disappearing during camera rotations by expanding owned head and scalp groom render bounds once at assignment. Preserve stock actors, larger authored bounds and restore ownership. Cameron passed the failing camera case in a local match; 44 focused checks and 12 real-package updater checks pass. See RELEASE-NOTES-0.2.105.md.
+
 ## 0.2.104 beta
 
 Resolve GroomAsset_0 through its named native binding; reject conflicting slots and preserve source-inspection lifecycle ownership. Sixteen focused checks, a real native hair export, package audit and twelve production-updater upgrade checks pass. Complete Cameron game launch and One's updated retry remain pending.

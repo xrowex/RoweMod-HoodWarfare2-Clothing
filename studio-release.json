@@ -1,14 +1,14 @@
 {
   "SchemaVersion": 1,
-  "Version": "0.2.104",
+  "Version": "0.2.105",
   "Channel": "beta",
   "Platform": "windows-x64",
-  "File": "RoweMod-Studio-0.2.104-Windows.zip",
-  "Bytes": 80049605,
-  "Sha256": "0FAD2209D3FE64BA44D645AAC07A2AA53EF808C9EE70C03596297D1470089E2A",
-  "AssemblySha256": "990BA9F20AA6B089F1B0D921EF63ACA3D3FA6D9EBAE85D399B8E2EBF3803A0FB",
+  "File": "RoweMod-Studio-0.2.105-Windows.zip",
+  "Bytes": 80051396,
+  "Sha256": "6A10DE6928EB8BCCA197EC15644260C3DA7859E1A92B3F4F41B9E90161F029F9",
+  "AssemblySha256": "2A8B5E9764D7EE954A4767C9525C10895F0A29CAEEB4BB4330EA4D796A95A5CC",
   "SelfContained": true,
-  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.104/RoweMod-Studio-0.2.104-Windows.zip",
+  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.105/RoweMod-Studio-0.2.105-Windows.zip",
   "Required": [
     "Complete Hood Warfare 2 Steam installation",
     "Microsoft Visual C++ v14 x64 runtime for cosmetic loader"
@@ -20,30 +20,25 @@
   "Setup": "First run asks Play mods or Create mods. Complete Steam installations no longer need manual game-build approval. Prepared downloads set up the cosmetic runtime without Epic, Unreal, Blender or mapping capture. Creator setup discovers tools and guides official installer/sign-in steps.",
   "ClothingCatalog": "https://rowemods.com/api/gear/catalog",
   "Validation": {
-    "IndependentFriendPcAccepted": false,
-    "NativeCameronExportAccepted": true,
-    "InstalledUnrealApiContractChecked": true,
-    "TwoPcMultiplayer": false,
-    "ActualArchiveUpgradeChecks": 12,
     "PackageAuditPassed": true,
-    "ActualOldUpdaterVersion": "0.2.103",
-    "GroomLifecycleChecks": 16,
-    "CompleteLocalBuildLaunchAccepted": true,
-    "LocalRuntimeVersion": "0.2.103.0 with the exact repaired helper shipped in 0.2.104",
-    "ActualOldUpdaterVersions": [
-      "0.2.102",
-      "0.2.103"
-    ]
+    "ActualArchiveUpgradeChecks": 12,
+    "ActualOldUpdaterVersion": "0.2.104",
+    "GroomOwnershipAndSlotChecks": 44,
+    "LocalHairCameraTestAccepted": true,
+    "LocalHairCameraTestEvidence": "User confirmation plus match component bounds diagnostics",
+    "IndependentFriendHairFixAccepted": false,
+    "PriorOne104BuildAcceptedByUser": true,
+    "TwoPcMultiplayer": false
   },
   "DependencyStatus": "ImageSharp 3.1.12 remains pinned with five advisories; bounded static PNG handoff. See DEPENDENCY-STATUS.md.",
-  "Note": "Beta. Generic assembled grooms resolve through their named native bindings. Sixteen focused checks and real native hair export pass. Local Cameron completed five parts, hair binding, installation, automatic launch and visible Player Select with the shipped repaired helper; One-PC retry and match gameplay remain unverified.",
+  "Note": "Beta. Fixes automatic custom hair disappearing with camera rotations using owned head and scalp groom render bounds. The previously failing Cameron camera test passed in a local match, confirmed by the player. 44 focused code checks and 12 real-package updater checks pass. One confirmed the earlier 0.2.104 build repair; his independent test of this hair fix and two-PC multiplayer acceptance remain pending.",
   "AutomaticUpdates": {
     "DefaultEnabled": true,
     "Check": "On startup",
     "Apply": "Automatically after current Studio task and painting finish; helper waits for game and Unreal closure, then relaunches Studio",
     "PreserveUserContent": true,
     "OptOut": "Settings: Keep Studio updated automatically",
-    "LegacyRecovery": "0.2.77–0.2.81 installs whose old updater rejects their existing inventory need one complete-ZIP manual update, retaining the original workspace and artwork. Current stock portraits use accepted assets/brand paths."
+    "LegacyRecovery": "0.2.77\u20130.2.81 installs whose old updater rejects their existing inventory need one complete-ZIP manual update, retaining the original workspace and artwork. Current stock portraits use accepted assets/brand paths."
   },
   "MetaHumanSetup": {
     "Entry": "Settings: Set up MetaHuman Creator",
@@ -64,5 +59,5 @@
     "Unreal Engine 5.8.3 for character assembly and game asset cooking",
     "Blender for automatic background mesh and game-rig preparation"
   ],
-  "ReleaseNotes": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/blob/main/RELEASE-NOTES-0.2.104.md"
+  "ReleaseNotes": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/blob/main/RELEASE-NOTES-0.2.105.md"
 }
