@@ -1,3 +1,7 @@
+## 0.2.117 beta
+
+Isolate customized clothing materials and textures for every supported slot; preserve original surface maps and explicit packed-map layouts in shared gear. Include the responsive Studio library, scaling repair, branding, mod profiles and download recovery. Existing artwork remains saved. Recipient clothing and two-PC gameplay acceptance remain pending. See RELEASE-NOTES-0.2.117.md.
+
 ## 0.2.112 beta
 
 Keep saved character texture bindings stable across reloads, inherit unchanged fixed references, rebuild legacy shared overrides, and validate before installation. Recognize the source editor's completed shutdown without blocking on unrelated projects. See RELEASE-NOTES-0.2.112.md.

@@ -1,0 +1,2 @@
+677bc02ca4b43fb59b9d52a5d666393a47e753c82e066c0aa0faa1998f050381  RoweMod-Studio-0.2.117-Windows.zip
+5deb3b5abfa73f1bd93568c4e30fe6f587391c009eaea61233c14801fdf5a30d  RoweMod.HoodWarfare2.dll
