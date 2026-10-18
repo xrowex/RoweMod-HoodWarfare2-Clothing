@@ -1,3 +1,7 @@
+## 0.2.109 beta
+
+Resolve groom slots from saved wardrobe bindings, including goatees and custom names. Export face materials with their actual available texture maps and retain untextured utility materials. Attach the current editable-export log to support reports and clarify errors. Repair missing inventory-owned files at the current version and reject packages missing runtime helpers. Native hair export and independent face FBX checks pass; One's updated retry is pending. See RELEASE-NOTES-0.2.109.md.
+
 ## 0.2.108 beta
 
 Persistent per-item Blender files, automatic saved-clothing handoff on build, visible in-file instructions and a persistent checklist. Includes explicit structural rig/weight checks and event-driven editor-close refresh. See RELEASE-NOTES-0.2.108.md.

@@ -2,7 +2,9 @@
 
 Download clothes, dress your existing players, or create something new. **Hood Warfare 2 is the first supported game.** No Codex is needed.
 
-[Download Studio 0.2.108 beta for Windows](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.108/RoweMod-Studio-0.2.108-Windows.zip) · [Studio website](https://rowemods.com/studio) · [Releases](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases)
+[Download Studio 0.2.109 beta for Windows](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.109/RoweMod-Studio-0.2.109-Windows.zip) · [Studio website](https://rowemods.com/studio) · [Releases](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases)
+
+Studio 0.2.109 repairs saved goatee/facial-hair exports and editable face exports, improves error details and support logs, and adds missing-program-file repair. Native hair export and independent face FBX checks pass locally; the recipient retry remains pending.
 
 ## Just want to play?
 

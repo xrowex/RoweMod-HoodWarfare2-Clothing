@@ -1,14 +1,14 @@
 {
   "SchemaVersion": 1,
-  "Version": "0.2.108",
+  "Version": "0.2.109",
   "Channel": "beta",
   "Platform": "windows-x64",
-  "File": "RoweMod-Studio-0.2.108-Windows.zip",
-  "Bytes": 80131873,
-  "Sha256": "E3E5BABDBDC64C26EDCD29C354E017940AF3E02F0E953D010CC3765D266647F9",
-  "AssemblySha256": "FBB0E1F9BBEDE4E8A0A21CDC5E73CA5CFFA4FA67729ADFF88A283500D5BB410F",
+  "File": "RoweMod-Studio-0.2.109-Windows.zip",
+  "Bytes": 80136254,
+  "Sha256": "EF4D12924049481898B30D4C33D175687BE760F02131F69F6A920D4CBC6250C7",
+  "AssemblySha256": "5A1322E66486287C86F7D72AEB8B2E1AF09FF19B07E29105A7E991B4166F681A",
   "SelfContained": true,
-  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.108/RoweMod-Studio-0.2.108-Windows.zip",
+  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.109/RoweMod-Studio-0.2.109-Windows.zip",
   "Required": [
     "Complete Hood Warfare 2 Steam installation",
     "Microsoft Visual C++ v14 x64 runtime for cosmetic loader"
@@ -22,7 +22,7 @@
   "Validation": {
     "PackageAuditPassed": true,
     "ActualArchiveUpgradeChecks": 12,
-    "ActualOldUpdaterVersion": "0.2.107",
+    "ActualOldUpdaterVersion": "0.2.108",
     "GroomOwnershipAndSlotChecks": 44,
     "LocalHairCameraTestAccepted": true,
     "LocalHairCameraTestEvidence": "User confirmation plus match component bounds diagnostics",
@@ -40,17 +40,28 @@
     "LogicalAndPhysicalSourceProofPassed": true,
     "SavedBlenderFileChecks": 15,
     "LibraryDeletionChecks": 33,
-    "EmbeddedChecklistSaveReopenPassed": true
+    "EmbeddedChecklistSaveReopenPassed": true,
+    "NativeGoateeExportPassed": true,
+    "NativeFacialHairSlotChecks": 23,
+    "IndependentFaceFbxExportPassed": true,
+    "FaceExportVertices": 34657,
+    "FaceExportBones": 875,
+    "UpdaterChecks": 77,
+    "SupportChecks": 45,
+    "ImportAndErrorChecks": 47,
+    "PackageHelperClosureChecks": 3,
+    "One109RetryVerified": false
   },
   "DependencyStatus": "ImageSharp 3.1.12 remains pinned with five advisories; bounded static PNG handoff. See DEPENDENCY-STATUS.md.",
-  "Note": "Beta. Each clothing item keeps its Blender working file. Save and close, then Build and launch reads saved changes automatically. Includes embedded instructions, persistent manual checkmarks and explicit rig/weight checks. Local saved-file and source-preservation tests pass; each garment still needs a fit and movement check in game. Multiplayer two-PC visual acceptance remains pending.",
+  "Note": "Beta. Fix saved goatee/facial-hair slot lookup and editable face exports with partial auxiliary texture sets. Add actionable errors, current Blender export logs in support reports, missing-owned-file repair and runtime-helper packaging checks. Native hair and independent face FBX checks pass locally; One's updated retry remains pending.",
   "AutomaticUpdates": {
     "DefaultEnabled": true,
     "Check": "On startup",
     "Apply": "Automatically after current Studio task and painting finish; helper waits for game and Unreal closure, then relaunches Studio",
     "PreserveUserContent": true,
     "OptOut": "Settings: Keep Studio updated automatically",
-    "LegacyRecovery": "0.2.77\u20130.2.81 installs whose old updater rejects their existing inventory need one complete-ZIP manual update, retaining the original workspace and artwork. Current stock portraits use accepted assets/brand paths."
+    "LegacyRecovery": "0.2.77\u20130.2.81 installs whose old updater rejects their existing inventory need one complete-ZIP manual update, retaining the original workspace and artwork. Current stock portraits use accepted assets/brand paths.",
+    "MissingFileRepair": "At the current published version, restore missing inventory-owned program files through the verified updater transaction; preserve modified files and user content."
   },
   "MetaHumanSetup": {
     "Entry": "Settings: Set up MetaHuman Creator",
@@ -63,7 +74,7 @@
     "SkinDetails": "Paused; no extension or local C++ build required"
   },
   "Workflow": {
-    "Character": "Save MetaHuman in Creator, then Build & launch game. Assembled grooms resolve from named native bindings or groom assets; registered source lookup handles fully generic names.",
+    "Character": "Save MetaHuman in Creator, then Build & launch game. Groom slots resolve through saved wardrobe selections and native groom bindings without loading a second Creator preview actor.",
     "Entry": "My characters | Downloads | Create | Settings",
     "Clothing": "My characters -> character -> Clothes -> Make clothes -> Edit in Blender. Save the item file and close Blender, then Build and launch automatically reads changed clothing. Follow the embedded guide and ROWE checklist. Fit and weight manually to this character."
   },
@@ -71,5 +82,5 @@
     "Unreal Engine 5.8.3 for character assembly and game asset cooking",
     "Blender for automatic background mesh and game-rig preparation"
   ],
-  "ReleaseNotes": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/blob/main/RELEASE-NOTES-0.2.108.md"
+  "ReleaseNotes": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/blob/main/RELEASE-NOTES-0.2.109.md"
 }
