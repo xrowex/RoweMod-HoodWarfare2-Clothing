@@ -1,0 +1,11 @@
+# RoweMod Studio 0.2.106 beta — multiplayer downloads and outfit tools
+
+Missing custom characters now download automatically from players in the current Steam match. Keep Studio open on both PCs. Downloads are checked against their advertised fingerprint, archive and file hashes, native cosmetic paths, mount filenames, game build and complete IoStore containers before use. Verified characters can mount during a running match and their private cache is reused on later joins. Failed or incompatible packs leave the stock character visible with a diagnostic reason. This is cosmetic synchronization; outfits remain fitted to one character. Local test coverage includes a previously unavailable cooked mesh mounted and loaded in an active match, a multi-chunk native transfer simulation, cache reuse and rejected malformed archives. The complete two-PC visual test with One remains pending.
+
+The character clothing screen shows the saved outfit selection and lets you add or replace a Blender/FBX mesh directly in each existing clothing slot. Refresh clothing pictures to render the selected garment meshes while the game is closed. Build & launch applies saved changes in game. This does not add native slots that a character does not provide or fit clothes automatically to another body.
+
+Fixes One's outfit-kit export error: the portable/updater package now includes the missing `studio_character_outfit_kit.py` helper. Missing helpers produce a direct repair message. A real Cameron outfit kit exported and reopened with one rig, preserving the character's source files.
+
+Adds confirmed permanent Delete actions for custom characters, saved clothing and its versions, and downloaded clothing. Stock characters and external Blender/FBX/Unreal sources are preserved. Deleting installed content requires the game to be closed. The exact packaged binary must pass the Delete UI release checks.
+
+Update Studio on both PCs and restart the game once to load the new multiplayer runtime. Join the same private match using a character that the other PC has never installed. Leave Studio open until the transfer completes, check the character appears without restarting, then rejoin and check the cache is reused. Newly downloaded revisions of already-loaded native assets may require a game restart; a failed mount never replaces an active local creation.

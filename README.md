@@ -2,7 +2,7 @@
 
 Download clothes, dress your existing players, or create something new. **Hood Warfare 2 is the first supported game.** No Codex is needed.
 
-[Download Studio 0.2.105 beta for Windows](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.105/RoweMod-Studio-0.2.105-Windows.zip) · [Studio website](https://rowemods.com/studio) · [Releases](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases)
+[Download Studio 0.2.106 beta for Windows](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.106/RoweMod-Studio-0.2.106-Windows.zip) · [Studio website](https://rowemods.com/studio) · [Releases](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases)
 
 ## Just want to play?
 
@@ -31,9 +31,13 @@ Existing prepared custom characters appear dynamically. Scratch clothing project
 
 Fit each outfit to one selected character using its Blender kit. Universal fitting and in-game clothing switching are retired. Gloves are excluded. See [character outfit workflow](CHARACTER-OUTFITS.md).
 
-## Existing pants bundles
+## Multiplayer characters
 
-In **My clothes**, open the pants item and choose **Build one pants download · all fits**. Studio includes every current stock/custom body profile only after its fit is prepared and cooked. It names missing fits. Use **Add another body fit** to finish them, then **Submit pants with all fits** for gallery review. Players subscribe once and choose a character; Studio selects the matching variant. A new custom body still needs its own fitted and tested variant.
+Keep Studio open on both PCs. Missing custom characters download from the current Steam match and reuse the verified cache. Compatible cooked assets can load while playing. Full two-PC visual acceptance is pending.
+
+## Outfit slots and deletion
+
+Open a character's Clothes page to view the saved outfit and add or replace a Blender/FBX mesh in an existing slot. Refresh clothing pictures while the game is closed. Custom characters, clothing versions and downloads have confirmed Delete actions; stock and external sources are preserved.
 
 ## Make clothes — save once, build from that file
 

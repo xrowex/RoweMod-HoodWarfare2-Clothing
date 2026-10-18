@@ -1,14 +1,14 @@
 {
   "SchemaVersion": 1,
-  "Version": "0.2.105",
+  "Version": "0.2.106",
   "Channel": "beta",
   "Platform": "windows-x64",
-  "File": "RoweMod-Studio-0.2.105-Windows.zip",
-  "Bytes": 80051396,
-  "Sha256": "6A10DE6928EB8BCCA197EC15644260C3DA7859E1A92B3F4F41B9E90161F029F9",
-  "AssemblySha256": "2A8B5E9764D7EE954A4767C9525C10895F0A29CAEEB4BB4330EA4D796A95A5CC",
+  "File": "RoweMod-Studio-0.2.106-Windows.zip",
+  "Bytes": 80124101,
+  "Sha256": "C275FCEFE1BABAD567EF789C93EDCBF05D3DD5D8ACFAD6F4BD277DCCDDE00F3D",
+  "AssemblySha256": "D8F02CC0256B2DD030C082B64638F6DE5672CD31AB9853F036201A7D77BE4F03",
   "SelfContained": true,
-  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.105/RoweMod-Studio-0.2.105-Windows.zip",
+  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.106/RoweMod-Studio-0.2.106-Windows.zip",
   "Required": [
     "Complete Hood Warfare 2 Steam installation",
     "Microsoft Visual C++ v14 x64 runtime for cosmetic loader"
@@ -22,16 +22,23 @@
   "Validation": {
     "PackageAuditPassed": true,
     "ActualArchiveUpgradeChecks": 12,
-    "ActualOldUpdaterVersion": "0.2.104",
+    "ActualOldUpdaterVersion": "0.2.105",
     "GroomOwnershipAndSlotChecks": 44,
     "LocalHairCameraTestAccepted": true,
     "LocalHairCameraTestEvidence": "User confirmation plus match component bounds diagnostics",
     "IndependentFriendHairFixAccepted": false,
     "PriorOne104BuildAcceptedByUser": true,
-    "TwoPcMultiplayer": false
+    "TwoPcMultiplayer": false,
+    "NetworkStateChecks": 22,
+    "NativeTransferSimulationPassed": true,
+    "MultiplayerArchiveChecks": 14,
+    "LiveMountChecks": 7,
+    "LocalInMatchUnseenAssetLoadPassed": true,
+    "DeleteAndOutfitUiChecks": 13,
+    "RealBlenderOutfitReopenPassed": true
   },
   "DependencyStatus": "ImageSharp 3.1.12 remains pinned with five advisories; bounded static PNG handoff. See DEPENDENCY-STATUS.md.",
-  "Note": "Beta. Fixes automatic custom hair disappearing with camera rotations using owned head and scalp groom render bounds. The previously failing Cameron camera test passed in a local match, confirmed by the player. 44 focused code checks and 12 real-package updater checks pass. One confirmed the earlier 0.2.104 build repair; his independent test of this hair fix and two-PC multiplayer acceptance remain pending.",
+  "Note": "Beta. Automatic Steam peer cosmetic downloads, verified cache reuse and live native mounting. Local unseen-asset load passed in an active match; two-PC visual acceptance remains pending. Fixes the missing Blender outfit helper and adds current outfit selections, per-slot mesh imports and permanent Delete controls.",
   "AutomaticUpdates": {
     "DefaultEnabled": true,
     "Check": "On startup",
@@ -52,12 +59,12 @@
   },
   "Workflow": {
     "Character": "Save MetaHuman in Creator, then Build & launch game. Assembled grooms resolve from named native bindings or groom assets; registered source lookup handles fully generic names.",
-    "Entry": "My characters | My clothes | Downloads | Create | Settings",
-    "Clothing": "Select one character, export its one-rig Blender outfit kit, fit and weight manually, then build and test on that character. Universal fitting and in-game clothing switching retired."
+    "Entry": "My characters | Downloads | Create | Settings",
+    "Clothing": "Character Clothes shows saved outfit and direct mesh imports for existing slots. Refresh clothing pictures while the game is closed. Fit and weight manually on this character rig, build and test. Universal fitting remains retired."
   },
   "CreatorRequired": [
     "Unreal Engine 5.8.3 for character assembly and game asset cooking",
     "Blender for automatic background mesh and game-rig preparation"
   ],
-  "ReleaseNotes": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/blob/main/RELEASE-NOTES-0.2.105.md"
+  "ReleaseNotes": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/blob/main/RELEASE-NOTES-0.2.106.md"
 }
