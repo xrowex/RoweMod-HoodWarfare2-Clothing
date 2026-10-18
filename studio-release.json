@@ -28,10 +28,15 @@
     "PackageAuditPassed": true,
     "ActualOldUpdaterVersion": "0.2.103",
     "GroomLifecycleChecks": 16,
-    "CompleteLocalBuildLaunchAccepted": false
+    "CompleteLocalBuildLaunchAccepted": true,
+    "LocalRuntimeVersion": "0.2.103.0 with the exact repaired helper shipped in 0.2.104",
+    "ActualOldUpdaterVersions": [
+      "0.2.102",
+      "0.2.103"
+    ]
   },
   "DependencyStatus": "ImageSharp 3.1.12 remains pinned with five advisories; bounded static PNG handoff. See DEPENDENCY-STATUS.md.",
-  "Note": "Beta. Resolve generic assembled grooms from their native binding names, refuse conflicting slots, and retain registered source lookup for fully generic assets. Sixteen focused checks and native hair export pass; full local game launch and One-PC retry remain pending.",
+  "Note": "Beta. Generic assembled grooms resolve through their named native bindings. Sixteen focused checks and real native hair export pass. Local Cameron completed five parts, hair binding, installation, automatic launch and visible Player Select with the shipped repaired helper; One-PC retry and match gameplay remain unverified.",
   "AutomaticUpdates": {
     "DefaultEnabled": true,
     "Check": "On startup",
