@@ -1,3 +1,7 @@
+## 0.2.107 beta
+
+Fix source-pinned outfit thumbnail verification through Windows redirected paths. Actual single-slot mesh rendering and cached source proof pass. Includes the MP, outfit tools, Blender repair and deletion changes from 0.2.106.
+
 ## 0.2.106 beta
 
 Automatic peer character downloads, verified cache reuse and live mounting; saved outfit and mesh-slot tools; missing Blender kit helper repair; permanent library deletion. Local live mounting passed in a running match; full two-PC visual testing remains pending. See RELEASE-NOTES-0.2.106.md.
