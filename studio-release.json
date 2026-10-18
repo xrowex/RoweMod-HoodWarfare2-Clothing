@@ -1,14 +1,14 @@
 {
   "SchemaVersion": 1,
-  "Version": "0.2.110",
+  "Version": "0.2.112",
   "Channel": "beta",
   "Platform": "windows-x64",
-  "File": "RoweMod-Studio-0.2.110-Windows.zip",
-  "Bytes": 80139214,
-  "Sha256": "BE7947D0C5F25A81107EB00E69DE15AB9E03FF790C97A42F0E8B43ACB1CE185D",
-  "AssemblySha256": "898B13B2168D5E41BF5C027F8E0C54C825092809884E6F83D5124DE15491ACF9",
+  "File": "RoweMod-Studio-0.2.112-Windows.zip",
+  "Bytes": 80248932,
+  "Sha256": "A1F52CF1E55B2535400407B62999A9215CB5B565676F3880122F6EF9F3497162",
+  "AssemblySha256": "CA7DAB4C242640B5695FD2BFF9955E01714A8E57F2FFDB9723FC3838F16B7B14",
   "SelfContained": true,
-  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.110/RoweMod-Studio-0.2.110-Windows.zip",
+  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.112/RoweMod-Studio-0.2.112-Windows.zip",
   "Required": [
     "Complete Hood Warfare 2 Steam installation",
     "Microsoft Visual C++ v14 x64 runtime for cosmetic loader"
@@ -22,7 +22,7 @@
   "Validation": {
     "PackageAuditPassed": true,
     "ActualArchiveUpgradeChecks": 12,
-    "ActualOldUpdaterVersion": "0.2.109",
+    "ActualOldUpdaterVersion": "0.2.110",
     "GroomOwnershipAndSlotChecks": 44,
     "LocalHairCameraTestAccepted": true,
     "LocalHairCameraTestEvidence": "User confirmation plus match component bounds diagnostics",
@@ -56,10 +56,14 @@
     "NativeMissingTransferRejected": true,
     "NativeHairReopenPassed": true,
     "SpawnLoadoutChecks": 10,
-    "HairRecoveryChecks": 19
+    "HairRecoveryChecks": 19,
+    "TextureBindingChecks": 23,
+    "SourceEditorLifecycleChecks": 21,
+    "BridgeHandoffChecks": 34,
+    "One112RetryVerified": false
   },
   "DependencyStatus": "ImageSharp 3.1.12 remains pinned with five advisories; bounded static PNG handoff. See DEPENDENCY-STATUS.md.",
-  "Note": "Beta. Recover the observed completed-export Unreal shutdown error only after a fresh Unreal process independently verifies every saved hair asset and unchanged inputs. Repair native custom-character spawn references. Local checks pass; recipient build retry and repeated multiplayer join acceptance remain pending.",
+  "Note": "Beta. Preserve saved character texture bindings, inherit verified unchanged fixed textures, rebuild legacy shared-texture packages, and validate the complete runtime request before installation. Recognize completed source-owned editor shutdowns. Local package and regression checks pass; recipient full build retry and multiplayer acceptance remain pending.",
   "AutomaticUpdates": {
     "DefaultEnabled": true,
     "Check": "On startup",
@@ -88,5 +92,5 @@
     "Unreal Engine 5.8.3 for character assembly and game asset cooking",
     "Blender for automatic background mesh and game-rig preparation"
   ],
-  "ReleaseNotes": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/blob/main/RELEASE-NOTES-0.2.110.md"
+  "ReleaseNotes": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/blob/main/RELEASE-NOTES-0.2.112.md"
 }

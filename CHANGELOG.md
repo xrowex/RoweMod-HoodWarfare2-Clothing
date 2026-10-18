@@ -1,3 +1,7 @@
+## 0.2.112 beta
+
+Keep saved character texture bindings stable across reloads, inherit unchanged fixed references, rebuild legacy shared overrides, and validate before installation. Recognize the source editor's completed shutdown without blocking on unrelated projects. See RELEASE-NOTES-0.2.112.md.
+
 ## 0.2.110 beta
 
 Verify saved hair assets in a fresh Unreal process after the observed completed-export shutdown error. Keep transient cosmetic menu references out of native saved/network spawn loadouts. Local native and regression checks pass; recipient retry and multiplayer camera acceptance remain pending. See RELEASE-NOTES-0.2.110.md.
