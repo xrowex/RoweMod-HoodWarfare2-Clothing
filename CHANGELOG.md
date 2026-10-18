@@ -1,3 +1,7 @@
+## 0.2.104 beta
+
+Resolve GroomAsset_0 through its named native binding; reject conflicting slots and preserve source-inspection lifecycle ownership. Sixteen focused checks, a real native hair export, package audit and twelve production-updater upgrade checks pass. Complete Cameron game launch and One's updated retry remain pending.
+
 # Changelog
 
 ## 0.2.103 beta
