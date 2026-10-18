@@ -2,7 +2,7 @@
 
 Download clothes, dress your existing players, or create something new. **Hood Warfare 2 is the first supported game.** No Codex is needed.
 
-[Download Studio 0.2.107 beta for Windows](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.107/RoweMod-Studio-0.2.107-Windows.zip) · [Studio website](https://rowemods.com/studio) · [Releases](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases)
+[Download Studio 0.2.108 beta for Windows](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.108/RoweMod-Studio-0.2.108-Windows.zip) · [Studio website](https://rowemods.com/studio) · [Releases](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases)
 
 ## Just want to play?
 
@@ -39,24 +39,24 @@ Keep Studio open on both PCs. Missing custom characters download from the curren
 
 Open a character's Clothes page to view the saved outfit and add or replace a Blender/FBX mesh in an existing slot. Refresh clothing pictures while the game is closed. Custom characters, clothing versions and downloads have confirmed Delete actions; stock and external sources are preserved.
 
-## Make clothes — save once, build from that file
+## Make clothes - save and close Blender
 
-Existing clothing projects retain their saved working files and four stages:
+Open **My characters → character → Clothes → Make clothes → Edit in Blender**.
+Each clothing item keeps its own Blender file inside the project. Later edits open
+that same file. Work in **EDIT CLOTHING**; the body, face and other clothes are
+references around one game rig. Fit and weight the garment to this character.
 
-1. **Prepare once → Prepare fitting kit.** The kit includes the wearer reference, garment and game rig. Green bodies and weight sources are references. Body profiles in the same kit are labeled and separated.
-2. **Edit & save.** Open the working file in Blender, fit your garment and transfer/check full weights. Save that same `Clothing-fitting-kit.blend`.
-3. **Build & Play → Build & launch game.** Studio remembers the working file and reads only the selected garment/body fit automatically before cooking. No second FBX export, manual mesh import or required Substance roundtrip.
-4. **Check in game → Looks good in game.** Walk, jump, aim and reload; check joints, hands, feet, textures and clipping before confirming.
+Use the embedded **ROWE - START HERE** guide and **ROWE** sidebar checklist.
+Manual checkmarks record your fit, weights and pose checks. **Check rig & weights**
+checks structure, not good deformation or clipping. Choose **Save & close Blender**,
+then **Build & launch** in Studio. Saved changes are read automatically; no separate
+FBX export or import picker is required. Missing files are reported without replacement.
 
-Studio also offers **Create → Make clothes → Open kit in Blender**. This opens a working copy of the master game references, grouped by Tyreese, DeShawn and Darnell, with green clipping bodies and separate original rigs. For installed custom bodies, use the selected item's fitting project. New MetaHuman drafts use the master Top/Pants/Shoes adapter automatically. These references remain local and are not bundled game assets; fitting a garment on one body does not establish compatibility with every character.
+Existing explicitly selected Blender files stay linked. Advanced imports remain
+available from clothing details. Final movement, first-person, material and clipping
+checks in game are required before sharing. Clothing stays fitted to one character;
+a new body requires its own fitting work.
 
-**Already fitted and weighted your file?** Choose **Use an existing Blender file**. For Save As, use **Choose another saved file** once. Your original stays intact; Studio creates its own editable import. A moved file prompts you to choose its location instead of exporting another kit.
-
-**Optional · textures, Substance & sharing** exposes painting, matching PNG imports, Substance exports and editable packages. Existing good textures stay in place. [Substance guide](SUBSTANCE-GUIDE.md).
-
-One item can contain several source fits. **My clothes → item → Add another body fit** groups another prepared fit under that clothing identity. A prepared source fit still needs Build and an in-game check. Studio does not automatically resize or weight new geometry to another body. Ambiguous multi-body or whole-scene imports are refused; green references stay out of garment imports.
-
-Changed Blender saves or artwork invalidate previous build/game-check completion. Failed or canceled work does not count as success. The checklist never treats launching the game as passing a visual test.
 
 ## Textures and characters
 

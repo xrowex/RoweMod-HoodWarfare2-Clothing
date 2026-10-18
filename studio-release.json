@@ -1,14 +1,14 @@
 {
   "SchemaVersion": 1,
-  "Version": "0.2.107",
+  "Version": "0.2.108",
   "Channel": "beta",
   "Platform": "windows-x64",
-  "File": "RoweMod-Studio-0.2.107-Windows.zip",
-  "Bytes": 80123658,
-  "Sha256": "9987820FCF9E6F7066F4ADB80072A0DF6F4C9322EFC6964CF36D70C91C124981",
-  "AssemblySha256": "2AEF9DE744DE86EC269ADDBA78C6D10406AFE44828C8D68897951C115408FB70",
+  "File": "RoweMod-Studio-0.2.108-Windows.zip",
+  "Bytes": 80131873,
+  "Sha256": "E3E5BABDBDC64C26EDCD29C354E017940AF3E02F0E953D010CC3765D266647F9",
+  "AssemblySha256": "FBB0E1F9BBEDE4E8A0A21CDC5E73CA5CFFA4FA67729ADFF88A283500D5BB410F",
   "SelfContained": true,
-  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.107/RoweMod-Studio-0.2.107-Windows.zip",
+  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.108/RoweMod-Studio-0.2.108-Windows.zip",
   "Required": [
     "Complete Hood Warfare 2 Steam installation",
     "Microsoft Visual C++ v14 x64 runtime for cosmetic loader"
@@ -22,7 +22,7 @@
   "Validation": {
     "PackageAuditPassed": true,
     "ActualArchiveUpgradeChecks": 12,
-    "ActualOldUpdaterVersion": "0.2.106",
+    "ActualOldUpdaterVersion": "0.2.107",
     "GroomOwnershipAndSlotChecks": 44,
     "LocalHairCameraTestAccepted": true,
     "LocalHairCameraTestEvidence": "User confirmation plus match component bounds diagnostics",
@@ -37,10 +37,13 @@
     "DeleteAndOutfitUiChecks": 13,
     "RealBlenderOutfitReopenPassed": true,
     "ActualSingleSlotRenderPassed": true,
-    "LogicalAndPhysicalSourceProofPassed": true
+    "LogicalAndPhysicalSourceProofPassed": true,
+    "SavedBlenderFileChecks": 15,
+    "LibraryDeletionChecks": 33,
+    "EmbeddedChecklistSaveReopenPassed": true
   },
   "DependencyStatus": "ImageSharp 3.1.12 remains pinned with five advisories; bounded static PNG handoff. See DEPENDENCY-STATUS.md.",
-  "Note": "Beta. Automatic Steam peer cosmetic downloads, verified cache reuse and live native mounting. Local unseen-asset load passed in an active match; two-PC visual acceptance remains pending. Fixes the missing Blender outfit helper and adds current outfit selections, per-slot mesh imports and permanent Delete controls. Also repairs redirected Windows path verification for actual garment thumbnails; Cameron pants render and source-pinned cache passed.",
+  "Note": "Beta. Each clothing item keeps its Blender working file. Save and close, then Build and launch reads saved changes automatically. Includes embedded instructions, persistent manual checkmarks and explicit rig/weight checks. Local saved-file and source-preservation tests pass; each garment still needs a fit and movement check in game. Multiplayer two-PC visual acceptance remains pending.",
   "AutomaticUpdates": {
     "DefaultEnabled": true,
     "Check": "On startup",
@@ -62,11 +65,11 @@
   "Workflow": {
     "Character": "Save MetaHuman in Creator, then Build & launch game. Assembled grooms resolve from named native bindings or groom assets; registered source lookup handles fully generic names.",
     "Entry": "My characters | Downloads | Create | Settings",
-    "Clothing": "Character Clothes shows saved outfit and direct mesh imports for existing slots. Refresh clothing pictures while the game is closed. Fit and weight manually on this character rig, build and test. Universal fitting remains retired."
+    "Clothing": "My characters -> character -> Clothes -> Make clothes -> Edit in Blender. Save the item file and close Blender, then Build and launch automatically reads changed clothing. Follow the embedded guide and ROWE checklist. Fit and weight manually to this character."
   },
   "CreatorRequired": [
     "Unreal Engine 5.8.3 for character assembly and game asset cooking",
     "Blender for automatic background mesh and game-rig preparation"
   ],
-  "ReleaseNotes": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/blob/main/RELEASE-NOTES-0.2.107.md"
+  "ReleaseNotes": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/blob/main/RELEASE-NOTES-0.2.108.md"
 }

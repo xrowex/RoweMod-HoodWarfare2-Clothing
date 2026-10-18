@@ -1,3 +1,7 @@
+## 0.2.108 beta
+
+Persistent per-item Blender files, automatic saved-clothing handoff on build, visible in-file instructions and a persistent checklist. Includes explicit structural rig/weight checks and event-driven editor-close refresh. See RELEASE-NOTES-0.2.108.md.
+
 ## 0.2.107 beta
 
 Fix source-pinned outfit thumbnail verification through Windows redirected paths. Actual single-slot mesh rendering and cached source proof pass. Includes the MP, outfit tools, Blender repair and deletion changes from 0.2.106.
