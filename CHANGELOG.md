@@ -1,3 +1,7 @@
+## 0.2.110 beta
+
+Verify saved hair assets in a fresh Unreal process after the observed completed-export shutdown error. Keep transient cosmetic menu references out of native saved/network spawn loadouts. Local native and regression checks pass; recipient retry and multiplayer camera acceptance remain pending. See RELEASE-NOTES-0.2.110.md.
+
 ## 0.2.109 beta
 
 Resolve groom slots from saved wardrobe bindings, including goatees and custom names. Export face materials with their actual available texture maps and retain untextured utility materials. Attach the current editable-export log to support reports and clarify errors. Repair missing inventory-owned files at the current version and reject packages missing runtime helpers. Native hair export and independent face FBX checks pass; One's updated retry is pending. See RELEASE-NOTES-0.2.109.md.

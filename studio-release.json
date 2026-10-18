@@ -1,14 +1,14 @@
 {
   "SchemaVersion": 1,
-  "Version": "0.2.109",
+  "Version": "0.2.110",
   "Channel": "beta",
   "Platform": "windows-x64",
-  "File": "RoweMod-Studio-0.2.109-Windows.zip",
-  "Bytes": 80136254,
-  "Sha256": "EF4D12924049481898B30D4C33D175687BE760F02131F69F6A920D4CBC6250C7",
-  "AssemblySha256": "5A1322E66486287C86F7D72AEB8B2E1AF09FF19B07E29105A7E991B4166F681A",
+  "File": "RoweMod-Studio-0.2.110-Windows.zip",
+  "Bytes": 80139214,
+  "Sha256": "BE7947D0C5F25A81107EB00E69DE15AB9E03FF790C97A42F0E8B43ACB1CE185D",
+  "AssemblySha256": "898B13B2168D5E41BF5C027F8E0C54C825092809884E6F83D5124DE15491ACF9",
   "SelfContained": true,
-  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.109/RoweMod-Studio-0.2.109-Windows.zip",
+  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.110/RoweMod-Studio-0.2.110-Windows.zip",
   "Required": [
     "Complete Hood Warfare 2 Steam installation",
     "Microsoft Visual C++ v14 x64 runtime for cosmetic loader"
@@ -22,7 +22,7 @@
   "Validation": {
     "PackageAuditPassed": true,
     "ActualArchiveUpgradeChecks": 12,
-    "ActualOldUpdaterVersion": "0.2.108",
+    "ActualOldUpdaterVersion": "0.2.109",
     "GroomOwnershipAndSlotChecks": 44,
     "LocalHairCameraTestAccepted": true,
     "LocalHairCameraTestEvidence": "User confirmation plus match component bounds diagnostics",
@@ -50,17 +50,23 @@
     "SupportChecks": 45,
     "ImportAndErrorChecks": 47,
     "PackageHelperClosureChecks": 3,
-    "One109RetryVerified": false
+    "One109RetryVerified": false,
+    "One110RetryVerified": false,
+    "MultiplayerSpawnCameraAccepted": false,
+    "NativeMissingTransferRejected": true,
+    "NativeHairReopenPassed": true,
+    "SpawnLoadoutChecks": 10,
+    "HairRecoveryChecks": 19
   },
   "DependencyStatus": "ImageSharp 3.1.12 remains pinned with five advisories; bounded static PNG handoff. See DEPENDENCY-STATUS.md.",
-  "Note": "Beta. Fix saved goatee/facial-hair slot lookup and editable face exports with partial auxiliary texture sets. Add actionable errors, current Blender export logs in support reports, missing-owned-file repair and runtime-helper packaging checks. Native hair and independent face FBX checks pass locally; One's updated retry remains pending.",
+  "Note": "Beta. Recover the observed completed-export Unreal shutdown error only after a fresh Unreal process independently verifies every saved hair asset and unchanged inputs. Repair native custom-character spawn references. Local checks pass; recipient build retry and repeated multiplayer join acceptance remain pending.",
   "AutomaticUpdates": {
     "DefaultEnabled": true,
     "Check": "On startup",
     "Apply": "Automatically after current Studio task and painting finish; helper waits for game and Unreal closure, then relaunches Studio",
     "PreserveUserContent": true,
     "OptOut": "Settings: Keep Studio updated automatically",
-    "LegacyRecovery": "0.2.77\u20130.2.81 installs whose old updater rejects their existing inventory need one complete-ZIP manual update, retaining the original workspace and artwork. Current stock portraits use accepted assets/brand paths.",
+    "LegacyRecovery": "0.2.77–0.2.81 installs whose old updater rejects their existing inventory need one complete-ZIP manual update, retaining the original workspace and artwork. Current stock portraits use accepted assets/brand paths.",
     "MissingFileRepair": "At the current published version, restore missing inventory-owned program files through the verified updater transaction; preserve modified files and user content."
   },
   "MetaHumanSetup": {
@@ -82,5 +88,5 @@
     "Unreal Engine 5.8.3 for character assembly and game asset cooking",
     "Blender for automatic background mesh and game-rig preparation"
   ],
-  "ReleaseNotes": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/blob/main/RELEASE-NOTES-0.2.109.md"
+  "ReleaseNotes": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/blob/main/RELEASE-NOTES-0.2.110.md"
 }
