@@ -1,14 +1,14 @@
 {
   "SchemaVersion": 1,
-  "Version": "0.2.117",
+  "Version": "0.2.120",
   "Channel": "beta",
   "Platform": "windows-x64",
-  "File": "RoweMod-Studio-0.2.117-Windows.zip",
-  "Bytes": 82431177,
-  "Sha256": "677BC02CA4B43FB59B9D52A5D666393A47E753C82E066C0AA0FAA1998F050381",
-  "AssemblySha256": "5DEB3B5ABFA73F1BD93568C4E30FE6F587391C009EAEA61233C14801FDF5A30D",
+  "File": "RoweMod-Studio-0.2.120-Windows.zip",
+  "Bytes": 82437824,
+  "Sha256": "55201723D1C008396BBA6BC39EADFA7FAF41F498FCB87225AD07868620FCBCCB",
+  "AssemblySha256": "BC271C333D845F2F5C2F966C2DABB3BFF78D3EF95AD0B661295222C6BA543B5F",
   "SelfContained": true,
-  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.117/RoweMod-Studio-0.2.117-Windows.zip",
+  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.120/RoweMod-Studio-0.2.120-Windows.zip",
   "Required": [
     "Complete Hood Warfare 2 Steam installation",
     "Microsoft Visual C++ v14 x64 runtime for cosmetic loader"
@@ -22,23 +22,35 @@
   "Validation": {
     "PackageAuditPassed": true,
     "ActualArchiveUpgradeChecks": 12,
-    "ActualOldUpdaterVersion": "0.2.112",
-    "ClothingIsolationChecks": 84,
-    "NativeClothingCookPassed": true,
-    "IndependentSavedMaterialReadback": true,
+    "ActualOldUpdaterVersion": "0.2.117",
+    "ClothingIsolationChecks": 81,
+    "NativeClothingCookReadback": true,
     "LibraryDeletionChecks": 13,
-    "ResponsiveUiBehaviorChecks": 13,
-    "ResponsiveUiLayouts": 6,
-    "One117ClothingRetryVerified": false,
+    "UiStyleAssertions": 250,
+    "UiStyleLayouts": 60,
+    "UiScaleLayouts": 6,
+    "ModManagerAssertions": 85,
+    "ModManagerLayouts": 18,
+    "ProfileLayouts": 4,
+    "ProfileReadChecks": 25,
+    "UiLifecycleChecks": 20,
+    "UiBehaviorChecks": 13,
+    "ThumbnailCacheChecks": 15,
+    "ProfileRecoveryChecks": 81,
+    "TextureWorkflowChecks": 34,
+    "PaintHistoryChecks": 11,
+    "One120RetryVerified": false,
     "TwoPcMultiplayer": false,
     "FreshMachineGameplayVerified": false,
-    "PriorModManagementCandidate": {
-      "Version": "0.2.116-test",
-      "ProfileChecks": 81,
-      "ReportChecks": 59,
-      "DownloadChecks": 25,
-      "PlayerPackageChecks": 82,
-      "MultiplayerCacheChecks": 14
+    "Benchmark": {
+      "Scope": "Same generated 300-character offscreen WinForms fixture; local measurement, not game FPS",
+      "BaselineVersion": "0.2.116",
+      "BaselineFirstReadyMs": 36736.5099,
+      "CandidateFirstReadyMs": 751.7126,
+      "BaselineNavigationMs": 41695.1235,
+      "CandidateNavigationMs": 860.5827,
+      "BaselineControls": 2148,
+      "CandidateControls": 75
     }
   },
   "DependencyStatus": "ImageSharp 3.1.12 remains pinned with five advisories; bounded static PNG handoff. See DEPENDENCY-STATUS.md.",
@@ -49,7 +61,7 @@
     "Apply": "Automatically after current Studio task and painting finish; helper waits for game and Unreal closure, then relaunches Studio",
     "PreserveUserContent": true,
     "OptOut": "Settings: Keep Studio updated automatically",
-    "LegacyRecovery": "0.2.77\u20130.2.81 installs whose old updater rejects their existing inventory need one complete-ZIP manual update, retaining the original workspace and artwork. Current stock portraits use accepted assets/brand paths.",
+    "LegacyRecovery": "0.2.77–0.2.81 installs whose old updater rejects their existing inventory need one complete-ZIP manual update, retaining the original workspace and artwork. Current stock portraits use accepted assets/brand paths.",
     "MissingFileRepair": "At the current published version, restore missing inventory-owned program files through the verified updater transaction; preserve modified files and user content."
   },
   "MetaHumanSetup": {
@@ -71,5 +83,5 @@
     "Unreal Engine 5.8.3 for character assembly and game asset cooking",
     "Blender for automatic background mesh and game-rig preparation"
   ],
-  "ReleaseNotes": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/blob/main/RELEASE-NOTES-0.2.117.md"
+  "ReleaseNotes": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/blob/main/RELEASE-NOTES-0.2.120.md"
 }

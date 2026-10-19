@@ -1,3 +1,7 @@
+## 0.2.120 beta
+
+Use compact orange/charcoal rows throughout Studio, virtualize large libraries and wardrobe choices, and retain selection, scroll and keyboard focus through refreshes. Profile inventory/review, saved stock-edit discovery and creator wearer reads are cancellable background work. Preview/progress work is bounded, with exclusive build/install/recovery retained. Preserve artwork and the clothing isolation fix. See RELEASE-NOTES-0.2.120.md for measured results and acceptance limits.
+
 ## 0.2.117 beta
 
 Isolate customized clothing materials and textures for every supported slot; preserve original surface maps and explicit packed-map layouts in shared gear. Include the responsive Studio library, scaling repair, branding, mod profiles and download recovery. Existing artwork remains saved. Recipient clothing and two-PC gameplay acceptance remain pending. See RELEASE-NOTES-0.2.117.md.
