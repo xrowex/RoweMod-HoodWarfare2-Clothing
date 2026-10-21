@@ -1,6 +1,12 @@
+# Changelog
+
+## 0.2.121 beta
+
+Install and repair the bundled Rowe Clothing editor dependency automatically before Creator opens, with exact Unreal build checks, verified files and preserved previous versions. Add Creator garment import, fitting, saved shaping and viewer movement/rotation controls with garment-based initial placement. No compiler or manual plugin installation is needed. The private tattoo tool remains excluded. See RELEASE-NOTES-0.2.121.md for verification and beta limits.
+
 ## 0.2.120 beta
 
-Use compact orange/charcoal rows throughout Studio, virtualize large libraries and wardrobe choices, and retain selection, scroll and keyboard focus through refreshes. Profile inventory/review, saved stock-edit discovery and creator wearer reads are cancellable background work. Preview/progress work is bounded, with exclusive build/install/recovery retained. Preserve artwork and the clothing isolation fix. See RELEASE-NOTES-0.2.120.md for measured results and acceptance limits.
+Unify Studio's compact orange/charcoal interface, virtualize large libraries and wardrobe choices, and preserve selection, scroll and keyboard focus through refreshes. Move profile review, wardrobe discovery, stock-edit discovery and creator wearer reads off the UI thread with cancellation and late-result protection. Bound preview/progress work while preserving exclusive build/install/recovery jobs and the clothing isolation repair. See RELEASE-NOTES-0.2.120.md for measured results and validation limits.
 
 ## 0.2.117 beta
 
@@ -8,37 +14,68 @@ Isolate customized clothing materials and textures for every supported slot; pre
 
 ## 0.2.112 beta
 
-Keep saved character texture bindings stable across reloads, inherit unchanged fixed references, rebuild legacy shared overrides, and validate before installation. Recognize the source editor's completed shutdown without blocking on unrelated projects. See RELEASE-NOTES-0.2.112.md.
+Preserve saved texture binding intent across reloads, inherit verified unchanged
+fixed textures, rebuild legacy packages containing shared overrides, and validate
+the entire runtime request before installation. Identify unsupported edited maps
+by character, part, material and channel. Recognize completed source-owned Unreal
+shutdowns without force-killing editors or blocking on unrelated projects.
 
 ## 0.2.110 beta
 
-Verify saved hair assets in a fresh Unreal process after the observed completed-export shutdown error. Keep transient cosmetic menu references out of native saved/network spawn loadouts. Local native and regression checks pass; recipient retry and multiplayer camera acceptance remain pending. See RELEASE-NOTES-0.2.110.md.
+Independently reopen saved hair assets after the observed post-shutdown Unreal
+access violation; continue only after a successful fresh-process verification and
+unchanged inputs. Preserve the original failure in reports. Keep transient custom
+menu entries out of native saved/network spawn references, using their exact stock
+base while retaining custom cosmetic identity separately. Multiplayer acceptance
+of the intermittent pre-spawn camera issue remains pending.
 
 ## 0.2.109 beta
 
-Resolve groom slots from saved wardrobe bindings, including goatees and custom names. Export face materials with their actual available texture maps and retain untextured utility materials. Attach the current editable-export log to support reports and clarify errors. Repair missing inventory-owned files at the current version and reject packages missing runtime helpers. Native hair export and independent face FBX checks pass; One's updated retry is pending. See RELEASE-NOTES-0.2.109.md.
+Resolve facial-hair slots from saved wardrobe selections and native bindings,
+including goatees and copied custom groom names. Validate mappings before transfer
+work and include slot identities in diagnostics. Repair missing owned program files
+at the current version and reject portable packages that omit referenced helpers.
+Support partial texture sets on facial auxiliary materials, retain untextured utility
+materials, and attach the current editable-export process log to support reports.
 
 ## 0.2.108 beta
 
-Persistent per-item Blender files, automatic saved-clothing handoff on build, visible in-file instructions and a persistent checklist. Includes explicit structural rig/weight checks and event-driven editor-close refresh. See RELEASE-NOTES-0.2.108.md.
+Keep a persistent per-item Blender file; Edit in Blender reopens it and Build & launch
+reads saved changes automatically. Add a dedicated editable garment collection,
+embedded instructions and persistent Blender checklist with explicit rig/weight checks.
+Preserve manually authored clothes during MetaHuman starter preparation.
 
 ## 0.2.107 beta
 
-Fix source-pinned outfit thumbnail verification through Windows redirected paths. Actual single-slot mesh rendering and cached source proof pass. Includes the MP, outfit tools, Blender repair and deletion changes from 0.2.106.
+Verify both logical and physical Windows paths for source-pinned outfit previews.
+Actual Cameron pants rendering and cached source proof pass. Includes 0.2.106's
+multiplayer downloads, outfit imports, missing Blender helper and permanent Delete controls.
 
 ## 0.2.106 beta
 
-Automatic peer character downloads, verified cache reuse and live mounting; saved outfit and mesh-slot tools; missing Blender kit helper repair; permanent library deletion. Local live mounting passed in a running match; full two-PC visual testing remains pending. See RELEASE-NOTES-0.2.106.md.
+Download, validate, cache and live-mount missing multiplayer characters from the
+current Steam match. Show the saved outfit and direct per-slot mesh import actions.
+Ship the missing character-outfit Blender helper that blocked One's fitting kit.
+Local live mounting passed in a running match; full two-PC visual acceptance is pending.
+
+Add permanent **Delete** controls for custom characters, clothing and saved versions,
+and downloaded clothing. Confirm before deleting managed files and owned installed
+packages; preserve stock characters, external authoring sources and unrelated work.
+The portable/updater package passes the exact-binary Delete UI release check in
+`tools/TestStudioDeleteRelease.ps1`; `PackageStudioPortable.ps1` enforces this check.
 
 ## 0.2.105 beta
 
-Fix custom hair disappearing during camera rotations by expanding owned head and scalp groom render bounds once at assignment. Preserve stock actors, larger authored bounds and restore ownership. Cameron passed the failing camera case in a local match; 44 focused checks and 12 real-package updater checks pass. See RELEASE-NOTES-0.2.105.md.
+Keep automatic custom MetaHuman hair visible through camera rotations by expanding
+the owned head and scalp groom render bounds once at assignment. Preserve stock
+actors, authored larger bounds and restoration ownership. Cameron's failing camera
+case passed in a local match; 44 focused checks pass. See RELEASE-NOTES-0.2.105.md.
 
 ## 0.2.104 beta
 
-Resolve GroomAsset_0 through its named native binding; reject conflicting slots and preserve source-inspection lifecycle ownership. Sixteen focused checks, a real native hair export, package audit and twelve production-updater upgrade checks pass. Complete Cameron game launch and One's updated retry remain pending.
-
-# Changelog
+Resolve generic assembled grooms through their named native binding and preserve
+source-inspection lifecycle ownership. One's updated build succeeded, confirmed
+by the user. See RELEASE-NOTES-0.2.104.md for the original validation scope.
 
 ## 0.2.103 beta
 

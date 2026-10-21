@@ -2,9 +2,9 @@
 
 Download clothes, dress your existing players, or create something new. **Hood Warfare 2 is the first supported game.** No Codex is needed.
 
-[Download Studio 0.2.120 beta for Windows](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.120/RoweMod-Studio-0.2.120-Windows.zip) · [Studio website](https://rowemods.com/studio) · [Releases](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases)
+[Download Studio 0.2.121 beta for Windows](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.121/RoweMod-Studio-0.2.121-Windows.zip) · [Studio website](https://rowemods.com/studio) · [Releases](https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases)
 
-Studio 0.2.120 adds the compact interface, faster virtual libraries, stable keyboard/scroll state and cancellable profile and wardrobe reads. It retains the clothing customization repair, mod profiles and download recovery. [Release notes](RELEASE-NOTES-0.2.120.md).
+Studio 0.2.121 adds automatic Rowe Clothing dependency installation and repair, Creator garment import and fitting, and viewer shaping controls. No compiler or manual plugin copying is required. It retains the clothing customization repair, mod profiles and download recovery. [Release notes](RELEASE-NOTES-0.2.121.md).
 
 ## Just want to play?
 

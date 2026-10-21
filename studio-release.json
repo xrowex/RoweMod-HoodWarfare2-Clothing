@@ -1,14 +1,14 @@
 {
   "SchemaVersion": 1,
-  "Version": "0.2.120",
+  "Version": "0.2.121",
   "Channel": "beta",
   "Platform": "windows-x64",
-  "File": "RoweMod-Studio-0.2.120-Windows.zip",
-  "Bytes": 82437824,
-  "Sha256": "55201723D1C008396BBA6BC39EADFA7FAF41F498FCB87225AD07868620FCBCCB",
-  "AssemblySha256": "BC271C333D845F2F5C2F966C2DABB3BFF78D3EF95AD0B661295222C6BA543B5F",
+  "File": "RoweMod-Studio-0.2.121-Windows.zip",
+  "Bytes": 82683675,
+  "Sha256": "CE86B40149298C79D8013E249CFDE2AF12EC9F338D217B43679577438C1B281A",
+  "AssemblySha256": "D9A075844F865A42F37A96B708D6C7611A403055C9EFB27E7E92029C36B15504",
   "SelfContained": true,
-  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.120/RoweMod-Studio-0.2.120-Windows.zip",
+  "DownloadUrl": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/releases/download/studio-v0.2.121/RoweMod-Studio-0.2.121-Windows.zip",
   "Required": [
     "Complete Hood Warfare 2 Steam installation",
     "Microsoft Visual C++ v14 x64 runtime for cosmetic loader"
@@ -22,39 +22,17 @@
   "Validation": {
     "PackageAuditPassed": true,
     "ActualArchiveUpgradeChecks": 12,
-    "ActualOldUpdaterVersion": "0.2.117",
-    "ClothingIsolationChecks": 81,
-    "NativeClothingCookReadback": true,
-    "LibraryDeletionChecks": 13,
-    "UiStyleAssertions": 250,
-    "UiStyleLayouts": 60,
-    "UiScaleLayouts": 6,
-    "ModManagerAssertions": 85,
-    "ModManagerLayouts": 18,
-    "ProfileLayouts": 4,
-    "ProfileReadChecks": 25,
-    "UiLifecycleChecks": 20,
-    "UiBehaviorChecks": 13,
-    "ThumbnailCacheChecks": 15,
-    "ProfileRecoveryChecks": 81,
-    "TextureWorkflowChecks": 34,
-    "PaintHistoryChecks": 11,
-    "One120RetryVerified": false,
+    "ActualOldUpdaterVersion": "0.2.120",
+    "DependencyInstallerChecks": 9,
+    "HandoffChecks": 34,
+    "ProjectPluginNativeLoad": true,
+    "ViewerInteractionUserConfirmed": true,
+    "MeshEstimatedPositionsInteractiveVerified": false,
     "TwoPcMultiplayer": false,
-    "FreshMachineGameplayVerified": false,
-    "Benchmark": {
-      "Scope": "Same generated 300-character offscreen WinForms fixture; local measurement, not game FPS",
-      "BaselineVersion": "0.2.116",
-      "BaselineFirstReadyMs": 36736.5099,
-      "CandidateFirstReadyMs": 751.7126,
-      "BaselineNavigationMs": 41695.1235,
-      "CandidateNavigationMs": 860.5827,
-      "BaselineControls": 2148,
-      "CandidateControls": 75
-    }
+    "FreshMachineGameplayVerified": false
   },
   "DependencyStatus": "ImageSharp 3.1.12 remains pinned with five advisories; bounded static PNG handoff. See DEPENDENCY-STATUS.md.",
-  "Note": "Beta. Customize all supported clothing slots without replacing shared game textures; preserve unchanged maps and explicit surface layouts in downloaded gear. Includes responsive library/scaling repair, branding, mod profiles and recovery. Audited ZIP and actual 0.2.112 updater upgrade passed locally; One's clothing retry and two-PC gameplay acceptance remain pending.",
+  "Note": "Beta: automatic project-local Rowe Clothing plugin installation, verification and repair. Creator garment import, fit/weight transfer and viewer shaping controls. Exact Unreal build required; no compiler or manual plugin copy. Private tattoo tool excluded. Final mesh-estimated interactive positions and two-PC gameplay remain beta checks.",
   "AutomaticUpdates": {
     "DefaultEnabled": true,
     "Check": "On startup",
@@ -77,11 +55,11 @@
   "Workflow": {
     "Character": "Save MetaHuman in Creator, then Build & launch game. Groom slots resolve through saved wardrobe selections and native groom bindings without loading a second Creator preview actor.",
     "Entry": "My characters | Downloads | Create | Settings",
-    "Clothing": "My characters -> character -> Clothes -> Make clothes -> Edit in Blender. Save the item file and close Blender, then Build and launch automatically reads changed clothing. Follow the embedded guide and ROWE checklist. Fit and weight manually to this character."
+    "Clothing": "Open a character in Creator from Studio. Rowe Clothing installs automatically; import garment geometry, adjust placement and shape, Fit & rig, then select the saved wardrobe item. Garments remain fitted to this character."
   },
   "CreatorRequired": [
     "Unreal Engine 5.8.3 for character assembly and game asset cooking",
     "Blender for automatic background mesh and game-rig preparation"
   ],
-  "ReleaseNotes": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/blob/main/RELEASE-NOTES-0.2.120.md"
+  "ReleaseNotes": "https://github.com/xrowex/RoweMod-HoodWarfare2-Clothing/blob/main/RELEASE-NOTES-0.2.121.md"
 }
