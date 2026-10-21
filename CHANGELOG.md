@@ -40,6 +40,10 @@ Resolve GroomAsset_0 through its named native binding; reject conflicting slots 
 
 # Changelog
 
+## 0.2.121 beta
+
+Install and repair Rowe Clothing automatically before Creator opens. Includes garment import, fitting and viewer shaping controls, with verified dependencies and no compiler or manual plugin copy. The private tattoo tool remains excluded. See RELEASE-NOTES-0.2.121.md for beta verification limits.
+
 ## 0.2.103 beta
 
 Register saved MetaHumans for editing before inspecting generic groom slots.
